@@ -21,7 +21,20 @@
 
 		for ($i = 0; $i < $tutCnt; $i++) {
 			$tagCount = count($tutorials[$i]['tags']);
-			
+
+// search the categories and title and display any of those matches			
+			if (($tutorials[$i]['title'] == $q) || ($tutorials[$i]['cat'] == $q)) {
+				echo '<li class="searchResults"><span class="catSmall">'
+				.$tutorials[$i]['cat']
+				.':</span> <a href="index.php?cat='
+				.$tutorials[$i]['cat']
+				.'&file='.$tutorials[$i]['file']
+				.'&q='.$q
+				.'">'
+				.$tutorials[$i]['title']
+				.'</a></li>';
+			}
+// search the tags and display any of those matches
 			for ($x = 0; $x < $tagCount; $x++) {
 				if ($tutorials[$i]['tags'][$x] == $q) {
 					echo '<li class="searchResults"><span class="catSmall">'

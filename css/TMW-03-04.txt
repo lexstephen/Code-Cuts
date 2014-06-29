@@ -1,0 +1,18 @@
+<h3>Responsive Objects</h3>
+
+<p>Sometimes preserving the aspect ratio on a scaled image or object is going to mean empty spaces onn your page on either the horizontal or vertical axis, as the object is too small for the container.  Two properties exist to deal with that: <em>object-fit</em> controls how the object in question is resized within its container.  <em>Contain</em> resizes the object so the whole of it shows iside the container with empty space added as required. <em>Cover</em> makes the shortest length of the object equal to the shortest length of the container, with the longest length overflowing the container. <em>Fill</em> resizes the object to match the container's dimensions (often distorting it.)</code></p>
+
+<ul>
+<li>#obj-fill {object-fit: fill;}</li>
+<li>#obj-contain {object-fit: contain;}</li>
+<li>#obj-cover {object-fit: cover;}</li>
+</ul>
+
+<p>By default, the object sits dead center of its parent when object-fit is applied, but you can change that with the <em>object-position</em> property.  This works like background-position in that you can use either two values to specify an offset from the top left of the container or extra positional keywords (top, right, bottom, left, center) to offset from another side.  </p>
+<ul>
+<li>#obj-1 {object-position: center top;}</li>
+<li>#obj-2 {object-position: center bottom;}</li>
+<li>#obj-3 {object-position: right;}</li>
+</ul>
+
+<!-- taken from The Modern Web c2013 by Peter Gasston -->

@@ -1,0 +1,16 @@
+<h3>Relative Units</h3>
+
+<p>Rather than using percentages, it can be advantageous to use units relative to a fixed size, such as a viewport.  The units vh and vw stand for viewport height and viewport width respectively. Each number you use with this value is equal to 1 percent of the respective length of the viewport.  To make an element that is half the height of the viewport use: <code>E {height: 50vh; }</code></p>
+
+<ul>
+<li>E {width: 85vw;}</li>
+</ul>
+
+<p>When manipulating text, you can use the <em>root em</em> (rem) typographical unit to ensure consistent sizing.  Where rem differs from em is that the latter is inherited, whereas the former is fixed.  If you set the font-size of 10px on the main html document, you can then use rem to scale up and down from that base 10px as needed - it will not inherit the scale of any parent elements it may be present in.</p>
+
+<ul>
+<li>html {font-size: 10px;}</li>
+<li>p {font-size: 1.2rem;}</li>
+<li>p b {font-size: 1.3rem;}</li>
+</ul>
+<!-- taken from The Modern Web c2013 by Peter Gasston -->

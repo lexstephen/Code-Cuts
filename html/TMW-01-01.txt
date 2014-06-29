@@ -1,0 +1,32 @@
+<h2>WAI-ARIA</h2>
+<p>The Web Accessibility Initiative's Accessible Rich Internet Application suite, created to help with accessibility.  It creates a number of HTML extensions allowing browsers and assistive technology aware of interactive content.</p>
+
+<dl>
+	<dt>aria-haspopup="true"</dt>
+	<dd>Useful when JavaScript might interact with this link in a way that is not expected of a normal link</dd>
+</dl>
+
+<h2>Landmark Roles</h2>
+<p>Attributes that make screen readers and other accessible navigation devies aware of page structure; do not directly correspond to HTML5 structural elements. Used in the context of &lt;div role="banner"&gt;..&lt;/div&gt;</p>
+
+<dl>
+	<dt>application</dt>
+	<dd>Shows an area of a page that's an interactive application rather than a document.</dd>
+	<dt>banner</dt>
+	<dd>includes general site content, probably contained in the page header, analogous to the header element.</dd>
+	<dt>complementary</dt>
+	<dd>content that's related but not integral to main content, like a sidebar; analogous to the aside element.</dd>
+	<dt>contentinfo</dt>
+	<dd>information about the document such as legal instructions; often located in the footer, in this context, analogous to the footer element</dd>
+	<dt>form</dt>
+	<dd>indicates any form except search, for example, a contact form</dd>
+	<dt>main</dt>
+	<dd>indicates the core content of a document</dd>
+	<dt>navigation</dt>
+	<dd>contains groups of links for navigating this or related documents, analogous to nav</dd>
+	<dt>search</dt>
+	<dd>indicates forms specifically used to search a site</dd>
+</dl>
+
+<p>Tip: style with an Exact Attribute Value Selector - <code>div[role='contentinfo'] {...}</code></p>
+<!-- taken from The Modern Web c2013 by Peter Gasston -->

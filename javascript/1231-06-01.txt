@@ -1,0 +1,113 @@
+
+<div id="enterInfo2">
+	<label for="firstName" class="label">First Name:</label>
+		<input type="text" id="firstName"><br>
+	<label for="lastName" class="label">Last Name:</label>
+		<input type="text" id="lastName"><br>
+	<label for="studentID" class="label">Student ID:</label>
+		<input type="text" id="studentID"><br>
+	<input type="button" value="Update" onclick="readInputs()"><br><br>
+	
+	<p id="overWrite"></p>
+</div>
+
+<script>
+	var Student = {
+		"fName": "Alexis",
+		"lName": "Dicks",
+		"sID": "100563954",
+		"toString" : function () 
+			{document.getElementById("overWrite").innerHTML = this.fName + " " + this.lName + " " + this.sID;},
+		"updateStudent":  function (x,y,z) 
+			{this.fName = x;
+			this.lName = y;
+			this.sID = z;}
+	}
+	function readInputs() {
+		x = document.getElementById("firstName").value;
+		y = document.getElementById("lastName").value;
+		z = document.getElementById("studentID").value;
+		
+		Student.updateStudent(x,y,z);
+		Student.toString();
+	}
+</script>
+
+<div id="enterInfo">
+	<label for="courseName" class="label">Course Name:</label>
+		<input type="text" id="courseName"><br>
+	<label for="courseCode" class="label">Course Code:</label>
+		<input type="text" id="courseCode"><br>
+	<label for="semester" class="label">Semester:</label>
+		<input type="text" id="semester"><br><br>
+	&nbsp;<input type="submit" value="Add Course" onclick="addCourse('added');">
+	 <input type="submit" value="Show Courses" onclick="writeTable('courseTable');"><br><br>
+	
+	<div id="added">
+		<! -- where the courseTable will be printed -->
+	</div>
+</div>
+
+<div id="courseTable">
+	<! -- where the courseTable will be printed -->
+</div>
+
+<script>
+function $(id) { return document.getElementById(id); }
+
+function Course(name,code,semester) {
+		this.name = name;
+		this.code = code;
+		this.semester = semester;
+		
+		this.toString = function() {
+			return this.name + " " + this.code + " " + this.semester;
+		}
+		
+		this.getRow = function() {
+			return "<tr><td>" + this.name + "</td><td>" + this.code + "</td><td>" + this.semester + "</td></tr>";
+		}
+	}
+	
+	var courses = new Array ();
+	
+	var course01 = new Course("Web Development Fundamentals",1223,1);
+	var course02 = new Course("Web Programming",1231,2);
+	var course03 = new Course("Advanced Web Progamming",1230,3);
+	
+	courses[0] = course01;
+	courses[1] = course02;
+	courses[2] = course03;
+	
+function addCourse(id) {
+		this.name = $('courseName').value;
+		this.code = $('courseCode').value;
+		this.semester = $('semester').value;
+		
+		courses[courses.length] = new Course(name,code,semester);
+		
+		this.toString = function() {
+			return this.name + " has been added to your timetable.";
+		}
+		
+		$(id).innerHTML = this.toString();
+}
+
+function writeTable(id) {
+		var thisTable = "<table>";
+		thisTable += "<tr>";
+		thisTable += "<td>Course Name</td>";
+		thisTable += "<td>Course Code</td>";
+		thisTable += "<td>Semester</td>";
+		thisTable += "</tr>";
+		
+		for (x=0; x<courses.length;x++) {
+			thisTable += courses[x].getRow();
+		}
+		
+		thisTable += "</table>";
+		
+		$(id).innerHTML = thisTable;
+}
+
+</script>

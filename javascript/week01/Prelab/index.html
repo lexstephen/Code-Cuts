@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+	<title>Lab week 4 - Prelab 1 Ex1 - Which is Bigger?</title>
+	<style>
+		body	{background-color: #00ace0;
+				color: #00000;
+				font-weight: bold;
+				font-family: Arial, Verdana, "sans serif";}
+	</style>
+</head>
+
+<body>
+
+<div id="heading">Which is Bigger?</div>
+
+<script type="text/javascript">
+	var firstNumber = prompt("Please enter a number:");
+	var secondNumber = prompt("Please enter another number:");
+	
+	//determine if user has provided adequate values
+	if (isNaN(firstNumber)) {
+			var firstNumber = prompt("Please enter a numeric value!");
+	} else if (isNaN(secondNumber)) {
+			var secondNumber = prompt("Please enter a numeric value!");
+	}
+	
+	//determine which number is larger
+	if (firstNumber > secondNumber) {
+		document.write("The first number is larger than the second.");
+	} else if (firstNumber < secondNumber) {
+		document.write("The second number is greater than the first");
+	} else if (firstNumber == secondNumber) {
+		document.write("The numbers are equal!");
+	}
+	
+</script>
+
+<p>Go to <a href="index2.html">Page 2</a>?</p>
+</body>
+</html>

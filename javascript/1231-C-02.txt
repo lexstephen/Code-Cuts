@@ -1,0 +1,10 @@
+<a href='http://yahoo.com'>Yahoo</a>
+<script>
+	var elem = document.body.querySelector("a[href='http://yahoo.com']");
+	elem.onclick = function(evt)
+	{
+		alert("We don't use Yahoo!");
+		evt.preventDefault();
+		window.location = 'http://www.google.ca';
+	}
+</script>

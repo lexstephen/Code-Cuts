@@ -1,0 +1,55 @@
+<div id="divB01a">
+	<label for="elems">How many elements would you like in your array?</label> 
+		<input type="text" id="elems"> <br>
+	<label for="max">Maximum number in the array?</label> 
+		<input type="text" id="max"> <br><br>
+		<input type="button" value="CREATE MY ARRAY!" onclick="readInputs();"> 
+</div>
+<div id="divB02a">
+	<b>Your personalized array is</b> [<span id="overBWrite">x</span>]
+</div>
+
+<div id="divB02b">
+	<b>And in list form:</b><br>
+	<span id="overBWrite2"></span>
+</div>
+
+<script type="text/javascript">
+function $(id) { return document.getElementById(id); }
+
+function readInputs() {
+	var theElementCount = $('elems').value;
+	var theMaxValue = $('max').value;
+	
+	if (isNaN(theElementCount) || isNaN(theElementCount)) {return false;}
+	else {
+		theElementCount = parseFloat(theElementCount);
+		theMaxValue = parseFloat(theMaxValue);
+		
+	}
+		listedArray = generateArray(theElementCount,theMaxValue);
+		writeArray(listedArray);
+}
+
+function generateArray(x,y) {
+	var elementCount = x;
+	var maxValue = y;
+	
+	var theNumbers = new Array();
+	for (i = 0; i < elementCount; i++) {
+				theNumbers[i] = parseInt(Math.random() * maxValue);
+				$('overBWrite').innerHTML = theNumbers.join(" - ");
+		}
+	return theNumbers;
+}
+
+function writeArray(theNumbers) {
+	var vals = new Array();
+	vals = theNumbers;
+	$('overBWrite2').innerHTML = "<ul>";
+	for (i = 0; i < vals.length; i++) {
+			$('overBWrite2').innerHTML += "<li>" + vals[i] + "</li>";
+	}
+	$('overBWrite2').innerHTML += "</ul>";	
+}
+</script>

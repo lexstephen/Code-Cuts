@@ -1,0 +1,70 @@
+
+<div id="divA01a">
+	<label for="number1">First Number:</label> 
+		<input type="text" id="number1"> <br>
+	<label for="number2">Second Number:</label> 
+		<input type="text" id="number2"> <br><br>
+		
+		<input type="button" value="+" onclick="addVal();">
+		<input type="button" value="-" onclick="subtractVal();">
+		<input type="button" value="/" onclick="divideVal();">
+		<input type="button" value="*" onclick="multiplyVal();">
+		<input type="button" value="%" onclick="modulusVal();">
+
+</div>
+<div id="divA02z">
+	<b><span id="overAWrite2">The result</span></b> is <b><span id="overAWrite">x</span></b>.
+</div>
+
+<script type="text/javascript">
+function $(id) { return document.getElementById(id); }
+
+function getVal(x) {
+	var number = $(x).value;
+	if (isNaN(number)) {return false;}
+	else {
+		number = parseFloat(number);
+		return number;
+	}
+}
+
+function addVal() {
+	var numberOne = getVal('number1');
+	var numberTwo = getVal('number2');
+	if (!(numberOne) || !(numberTwo)) {$('overAWrite').innerHTML = "Please enter a number.";}
+		else {$('overAWrite').innerHTML = numberOne + numberTwo;
+				$('overAWrite2').innerHTML = numberOne + " + " + numberTwo;}
+}
+
+function subtractVal() {
+	var numberOne = getVal('number1');
+	var numberTwo = getVal('number2');
+	if (!(numberOne) || !(numberTwo)) {$('overAWrite').innerHTML = "Please enter a number.";}
+		else {$('overAWrite').innerHTML = numberOne - numberTwo;
+				$('overAWrite2').innerHTML = numberOne + " - " + numberTwo;}
+}
+
+function divideVal() {
+	var numberOne = getVal('number1');
+	var numberTwo = getVal('number2');
+	if (!(numberOne) || !(numberTwo)) {$('overAWrite').innerHTML = "Please enter a number.";}
+		else {$('overAWrite').innerHTML = numberOne / numberTwo;
+				$('overAWrite2').innerHTML = + numberOne + " / " + numberTwo;}
+}
+
+function multiplyVal() {
+	var numberOne = getVal('number1');
+	var numberTwo = getVal('number2');
+	if (!(numberOne) || !(numberTwo)) {$('overAWrite').innerHTML = "Please enter a number.";}
+		else {$('overAWrite').innerHTML = numberOne * numberTwo;
+				$('overAWrite2').innerHTML = numberOne + " * " + numberTwo;}
+}
+
+function modulusVal() {
+	var numberOne = getVal('number1');
+	var numberTwo = getVal('number2');
+	if (!(numberOne) || !(numberTwo)) {$('overAWrite').innerHTML = "Please enter a number.";}
+		else {$('overAWrite').innerHTML = numberOne % numberTwo;
+				$('overAWrite2').innerHTML = numberOne + " % " + numberTwo;}
+}
+</script>

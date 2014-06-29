@@ -1,0 +1,11 @@
+<h3>Box-Sizing</h3>
+
+<p>The CSS box model makes padding, borders and margins extra to the content's dimensions, making layouts fit to 100% a difficult task.  The CSS <em>box-sizing</em> property changes the boundary from where the width is measured, so the stated width includes the border and the padding. This does not affect the margins, however, but judicious use of the calc() function can help.</p>
+
+<ul>
+<li>F {<br>box-sizing: border-box;<br>padding: 0 20px;<br>width: 50%;}</li>
+<li>F {<br>box-sizing: border-box;<br>margin: 0 20px;<br>padding: 0 10px;<br>width: calc(50% - 40px);}</li>
+<li>F {<br>border: 4px #000 solid;<br>border-width: 0 4px;<br>margin: 0 20px;<br>padding: 0 1em;<br>width: calc(50% - calc(48px + 2em));}</li>
+</ul>
+
+<!-- taken from The Modern Web c2013 by Peter Gasston -->

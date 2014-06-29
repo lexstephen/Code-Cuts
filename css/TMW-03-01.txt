@@ -1,0 +1,64 @@
+<h2>Media Queries</h2>
+
+<p>Call the stylesheet only when the viewing media device is a screen.  Can be extended to include a logical query:
+<code>&lt;link rel="stylesheet" href="foo.css" media="screen"&gt;<br>
+&lt;link rel="stylesheet" href="foo.css" media="screen and (query)"&gt;</code>
+
+<p>Can also be used inline:</p>
+<code>@media screen and (query) {..}</code>
+
+<p>Based on dimensions:</p>
+<code>@media screen and (width: 480px) {..}</code>
+
+<p>When <em>and</em> is used, the rules are applied only if all of the media query logic is true; using a comma-separated list of media queries means the rules are applied if any are true (see below.)
+<ul>
+<li>@media screen and (max-width: 480px;)</li>
+<li>@media screen and (min-width: 480px;)</li>
+<li>@media screen and (max-device-width: 799px;)</li>
+<li>@media screen and (min-device-width: 801px;)</li>
+<li>@media screen and (device-width: 800px;)</li>
+<li>@media screen and (device-aspect-ratio: 4/3)</li>
+<li>@media screen and (min-aspect-ratio: 8/5)</li>
+<li>@media screen and (orientation: portrait)</li>
+<li>@media (orientation: landscape) and (min-width: 800em)</li>
+<li>@media not all and (device-aspect-ratio: 8/5) [for everything that does not have an 8/5 ratio]</li>
+</ul>
+
+<h3>High resolution screens</h3>
+
+<ul>
+<li>window.devicePixelRatio [use in Console to find DPR)<.li>
+<li>E {background-image: url(foo.png);}</li>
+<li>@media screen and (-webkit-min-device-resolution: 2) {<br>E {background-image: url(foo-hi-res.png);}<br>}</li>
+<li>@media screen and (resolution: 96dpi) {<br>E {background-image: url(foo.png);}<br>}</li>
+<li>@media screen and (min-resolution: 192dpi) {..}</li>
+@media screen and (min-resolution: 2dppx) {..}</li>
+<li>@media screen and (min-resolution: 2dppx),<br>screen and (-webkit-min-device-resolution: 2) { .. }</li>
+</ul>
+
+<h3>Viewport</h3>
+<p>By default, mobile browsers show a site zoomed out in order to accommodate the whole thing.  This is known as the layout viewport.  To control the dimensions and scaling of the browser viewport, the <em>viewport meta tag</em> is used: <code>&lt;meta&nbsp;name="viewport"&nbsp;content="width=device-width"&gt;</code>.  Many different values can be used in the code; "width=device-width" means "make the width of this document the same as the with of this device."</p>
+<ul>
+<li>&lt;meta name="viewport" content="initial-scale=1.5; user-scalable=no"&gt;</li>
+<li>&lt;meta name="viewport" content="width=480"&gt;</li>
+<li>@viewport { width: 480px; }</li>
+<li>@media screen and (max-width: 480px) {<br>@viewport { width: 480px; }<br>}</li>
+<li>@media screen and (min-width: 481px) {<br>@viewport { width: device-width; }<br>}</li>
+</ul>
+
+<h3>Input Mechanisms</h3>
+<p>Traditionally computer use was limited to mouse and keyboard but as smartphone and tablet use rises, it was necessary to propose the <em>pointer</em> feature.  It has three parameters.  A device with keyboard/voice control is considered "none"; finger-based screens are mostly classified as "coarse"; and a mouse or stylus input is considered "fine."</p>
+<ul>
+<li>@media screen and (pointer: coarse) {<br>a { padding: 1em; }<br>}</li>
+</ul>
+
+<h3>Media Queries in JavaScript</h3>
+<p>The matchMedia() method is used to run these types of queries, which are provided in a string as an argument. You can combine its functionality with an EventListener that fires if the state changes.</p>
+<ul>
+<li>window.matchMedia('screen and (min-width: 800px)');</li>
+<li>var mq = window.matchMedia('screen and (min-width: 800px)');<br>if (mq.matches) { foo(); }<br>else { // do something else }</li>
+<li>function widthWatch(mq) {<br>if (mq.matches) { foo(); }<br>else { // do something else }<br>}<br>var mq = window.matchMedia('screen and (min-width: 800px)');<br>mq.addListener(widthWatch);<br>widthWatch(mq);</li>
+</ul>
+
+
+<!-- taken from The Modern Web c2013 by Peter Gasston -->

@@ -1,0 +1,124 @@
+<div id="div01"></div>
+<div id="div02"></div>
+
+<script type="text/javascript">
+	//initialize an array called theNumbers
+	var iterationCount = prompt("How many elements would you like in this array?");
+	var theNumbers = new Array(); 
+	
+	//set up variables referencing page elements
+	var div01 = document.getElementById("div01");
+	var div02 = document.getElementById("div02");
+			
+	//set up the two columns as variables
+	var allVariables = "<ul><li class=\"heading\">All Numbers</li>";
+	var variableFacts = "<ul id=\"facts\"><li class=\"heading\">Number Statistics</li>";
+	
+	//set up variables for all the number facts
+	var max = 0;
+	var min = iterationCount*100; 
+	var sumAll = 0;
+	var sumEven = 0;
+	var sumOdd = 0;
+	
+	//count up to find the largest value
+	for (i = 0; i < iterationCount; i++) {
+	
+		//pick a number to store in array slot i
+			theNumbers[i] = parseInt(Math.random() * 100);
+		
+		//print number & link styling to allVariables list
+			allVariables += "<li>" + theNumbers[i] + "</li>";
+
+		//a. The smallest number in the array
+		if (min > theNumbers[i]) {
+			min = theNumbers[i];
+		}
+		
+		//b. The largest number in the array
+		if (max < theNumbers[i]) {
+			max = theNumbers[i];
+		}
+		
+		//c. The sum of all the values in the array
+		sumAll += theNumbers[i];
+		
+		//d. The sum of all the odd values in the array
+		if (theNumbers[i]%2 != 0) {
+			sumOdd += theNumbers[i];
+		}
+		
+		//e. The sum of all the even values 
+		else if (theNumbers[i]%2 === 0) {
+			sumEven += theNumbers[i];
+		}
+	}
+	
+	variableFacts += "<li>The largest number is " 
+						+ max 
+						+ ".</li><li>The smallest number is " 
+						+ min 
+						+ ".</li><li>Sum of all numbers is " 
+						+ sumAll 
+						+ ".</li><li>Sum of all odd numbers is " 
+						+ sumOdd 
+						+ ".</li><li>Sum of all even numbers is " 
+						+ sumEven 
+						+ ".</li>";
+			
+	//close the lists
+	allVariables += "</ul>";
+	variableFacts += "</ul>";
+
+	//write to the columns
+	div01.innerHTML = allVariables;
+	div02.innerHTML = variableFacts;
+</script>
+
+
+<div id="divA01"></div>
+<div id="divA02"></div>
+<div id="divA03"></div>
+
+<script type="text/javascript">
+	//initialize an array called theNumbers2
+	var theNumbers2 = new Array(); 
+	
+	//set up variables referencing page elements
+	var divA01 = document.getElementById("divA01");
+	var divA02 = document.getElementById("divA02");
+	var divA03 = document.getElementById("divA03");
+			
+	//set up the three lists
+	var allVariables = "<ul><li class=\"heading\">All Numbers</li>";
+	var evenVariables = "<ul><li class=\"heading\">Even Numbers</li>";
+	var oddVariables = "<ul><li class=\"heading\">Odd Numbers</li>";
+	
+	//50 iterations determining which variable to assign the number to
+	for (i = 0; i < 50; i++) {
+		//pick a number to store in array slot i
+			theNumbers2[i] = parseInt(Math.random() * 100);
+		
+		//print number & link styling to allVariables
+			allVariables += "<li>" + theNumbers2[i] + "</li>";
+			
+		//determine if the number is even
+		if (theNumbers2[i]%2 === 0) {
+			evenVariables += "<li>" + theNumbers2[i] + "</li>";
+		}
+		
+		//determine if the number is odd
+		else if (theNumbers2[i]%2 != 0) {
+			oddVariables += "<li>" + theNumbers2[i] + "</li>";}
+		}
+		
+		//close the lists
+			allVariables += "</ul>";
+			evenVariables += "</ul>";
+			oddVariables += "</ul>";
+			
+		//write the lists
+			divA01.innerHTML = allVariables;
+			divA02.innerHTML = evenVariables;
+			divA03.innerHTML = oddVariables;
+</script>

@@ -1,0 +1,42 @@
+
+	<table>
+	<tr>
+		<td><img src="javascript/images/album01.jpg" id="album01" width="100" onclick="clickMe('album01');" onmouseout="leaveMe('album01');" onmouseover="hoverMe('album01');"></td>
+		<td><img src="javascript/images/album02.jpg" id="album02" width="100" onclick="clickMe('album02');" onmouseout="leaveMe('album02');" onmouseover="hoverMe('album02');"></td>
+		<td><img src="javascript/images/album03.jpg" id="album03" width="100" onclick="clickMe('album03');" onmouseout="leaveMe('album03');" onmouseover="hoverMe('album03');"></td>
+	</tr>
+	<tr>
+		<td><img src="javascript/images/album04.jpg" id="album04" width="100" onclick="clickMe('album04');" onmouseout="leaveMe('album04');" onmouseover="hoverMe('album04');"></td>
+		<td><img src="javascript/images/album05.jpg" id="album05" width="100" onclick="clickMe('album05');" onmouseout="leaveMe('album05');" onmouseover="hoverMe('album05');"></td>
+		<td><img src="javascript/images/album06.jpg" id="album06" width="100" onclick="clickMe('album06');" onmouseout="leaveMe('album06');" onmouseover="hoverMe('album06');"></td>
+	</tr>
+	<tr>	
+		<td><img src="javascript/images/album07.jpg" id="album07" width="100" onclick="clickMe('album07');" onmouseout="leaveMe('album07');" onmouseover="hoverMe('album07');"></td>
+		<td><img src="javascript/images/album08.jpg" id="album08" width="100" onclick="clickMe('album08');" onmouseout="leaveMe('album08');" onmouseover="hoverMe('album08');"></td>
+		<td><img src="javascript/images/album09.jpg" id="album09" width="100" onclick="clickMe('album09');" onmouseout="leaveMe('album09');" onmouseover="hoverMe('album09');"></td>
+	</tr>
+	</table>
+
+
+<script>
+function $(id) { return document.getElementById(id); }
+
+	function clickMe(x)
+	{
+				document.images[x].width = 200;
+				document.images[x].style.transition = "width 1s";
+				
+	}
+	
+	function hoverMe(x)
+	{
+				document.images[x].style.border = '5px #036 solid';
+	}
+	
+	function leaveMe(x)
+	{
+				document.images[x].style.border = 0;
+				document.images[x].width = 100;
+	}
+		
+</script>

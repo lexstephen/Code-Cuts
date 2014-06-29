@@ -1,0 +1,240 @@
+<h1>Associative Array</h1>
+
+<script type="text/javascript">
+
+
+	// add properties to objects to make an associative array
+	myBooks = new Array;
+	myBooks["Title"] = "The Catcher in the Rye";
+	myBooks["Author"] = "Salinger, JD";
+	
+	// two different ways of pulling the object value out
+	document.write('<b>Title</b>: ' + myBooks["Title"] + "<br>");
+	document.write('<b>Author</b>: ' + myBooks.Author + "<br>");
+	
+	// assign a new object and its value
+	myBooks = {Format: 'Paperback'};
+	document.write('<b>Format</b>: ' + myBooks.Format + "<br>");
+
+</script>
+
+
+<h1>Array of Arrays</h1>
+<script type="text/javascript">
+
+	var newBooks = new Array(2);
+
+	for (i = 0; i < 3; i++) {
+		newBooks[i] = new Array(2);
+	}
+
+
+	newBooks[0][0] = "Catcher in the Rye";
+	newBooks[0][1] = "JD Salinger";
+	newBooks[1][0] = "The Wars";
+	newBooks[1][1] = "Timothy Findley";
+	newBooks[2][0] = "Tender is the Night";
+	newBooks[2][1] = "F Scott Fitzgerald";
+
+
+	for (x in newBooks) {
+		document.write(
+			newBooks[x][0] + " by " 
+			+ newBooks[x][1] + "<br>");
+	}
+</script>
+
+<h1>3D Arrays</h1>
+<script type="text/javascript">
+
+	var mixTape = {
+		trackOne: 	['She & Him', 'In The Sun'], 
+		trackTwo: 	['Talking Heads', 'Burning Down The House'],
+		trackThree: 	['Modest Mouse', 'Dirty Fingernails']
+	};
+
+	for (var x = 0; x < mixTape.trackOne.length; x++) {
+		document.write(mixTape.trackOne[x] + " ");
+	}
+
+	document.write("<br>");
+
+
+	for (var x = 0; x < mixTape.trackTwo.length; x++) {
+		document.write(mixTape.trackTwo[x] + " ");
+	}
+
+	document.write("<br>");
+
+
+	for (var x = 0; x < mixTape.trackThree.length; x++) {
+		document.write(mixTape.trackThree[x] + " ");
+	}
+
+</script>
+
+<div id="div02a">
+<h1>Multidimensional Array</h1>
+<script type="text/javascript">
+	var student = ["Alexis", "Dicks-Stephen", 100563954];
+	
+	// use join function
+	document.write(student.join(' ') + "<br>");
+	document.write("<b>Last value in array:</b> " + student[student.length-1] + "<br>");
+</script>
+
+<h1>Multiple Records</h1>
+
+<script type="text/javascript">
+	var students = [
+		["Alexis", "Dicks-Stephen", 100563954],
+		["Holden", "Caulfield", 100458799],
+		["Duddy", "Kravitz", 100289358]
+	]; 
+	
+	// loop through each student record
+	for (x = 0; x < students.length; x++) {
+		document.write(students[x].join(' ') + "<br><br>");
+	}
+	
+	document.write("<b>students[0][0]</b>: " + students[0][0] + "<br>");
+	document.write("<b>students[2][2]</b>: " + students[2][1] + "<br><br>");
+	
+</script>
+
+</div>
+
+<h1>Built-in Functions</h1>
+
+<script type="text/javascript">
+	
+	var animals = ["Dog", "Bird", "Rat", "Rabbit"];
+	var food = ["grass", "leaf", "water", "pellets", "leaf"];
+	var names = ["Alexis","Andrew","Max","Eleanor"];
+	var drinks = ["Coca-Cola", "Fanta", "Apple juice", "Orange juice"];
+
+		// print comma separated array elements
+		document.write('animal array is: ' + animals + '<br><br>');
+		document.write('food array is: ' + food + '<br><br><br>');
+	
+	// indexOf // search for an element and return its position
+	document.write('<b>indexOf</b> leaf ' + food.indexOf('leaf') + '<br><br><br>');
+	
+	// lastIndexOf // search for an element, starting at end, return position
+	document.write('<b>lastIndexOf</b> leaf ' + food.lastIndexOf('leaf') + '<br><br><br>');
+	
+	// pop /// remove last element of an array and return it
+	document.write('<b>pop</b> food: ' + food.pop() + '<br><br>');
+	
+		// print comma separated array elements
+		document.write('food array is: ' + food + '<br><br><br>')
+	
+	// reverse // reverse order of elements
+	document.write('<b>reverse</b> food: ' + food.reverse() + '<br><br>');
+	
+		// print comma separated array elements
+		document.write('food array is: ' + food + '<br><br><br>');
+	
+	// concatenate // join two or more arrays and return a copy
+	document.write('food <b>concatenated</b> to animals: ' + animals.concat(food) + '<br><br>');
+	
+		// print comma separated array elements
+		document.write('animal array is: ' + animals + '<br><br>');
+		document.write('food array is: ' + food + '<br><br><br>');
+	
+	// shift // remove first element of an array and return it
+	document.write('<b>shift</b> food: ' + food.shift() + '<br><br>');
+	
+		// print comma separated array elements
+		document.write('food array is: ' + food + '<br><br><br>')
+
+		// print comma separated array elements
+		document.write('drinks array is: ' + drinks + '<br><br><br>')
+
+	// splice // join all elements of an array into a string
+	// howmany = how many elements should be removed to make room for new
+	// array.splice(index,howmany,item1,item2...)
+	drinks.splice(2,0,'Iced Tea','Root Beer');
+	document.write('<b>splice</b> Iced Tea and Root Beer in at index 2 with 0 removed<br>');
+	
+		// print comma separated array elements
+		document.write('drinks array is: ' + drinks + '<br><br><br>');
+		
+	// join // list elements with styled separator
+	document.write('Drinks<b>.join(\' - \')</b>: ' + drinks.join(' - ') + '<br><br><br>');
+	
+		// print comma separated array elements
+		document.write('names array is: ' + names + '<br><br>');
+	
+	// slice // add new elements to the end of an aray and return the new length
+	// array.slice(start,end)
+	document.write('<b>slice(0,2)</b> names: ' + names.slice(0,2) + '<br><br><br>');
+	
+	
+		document.write('names.<b>push(\'Elizabeth\')</b> combined with a <b>join</b> ');
+	// push //
+	names.push('Elizabeth');
+	// join //
+	document.write(names.join(" | ") + '<br><br><br>');
+	
+		document.write('names.<b>unshift(\'Ruth\')</b> combined with a <b>join</b> ');
+	// unshift // add new element to the beginning of the array
+	names.unshift('Ruth');	
+	// join //
+	document.write('(' + names.join( ')(' ) + ')<br>');
+	
+</script>
+
+<div id="div02a">
+<h1>Manual Coding</h1>
+
+<div id="replace"></div>
+
+<script type="text/javascript">
+
+	// create a variable to replace the #replace div
+	overWriteVar = document.getElementById('replace');
+
+	var animals = ["Dog", "Bird", "Rat", "Rabbit"];
+
+	// print array elements to div
+	overWriteVar.innerHTML = "<b>Print Array animals</b>: ";
+	overWriteVar.innerHTML += animals + "<br>";
+	overWriteVar.innerHTML += '<br>';
+	
+	// pop by subtracting from .length
+	overWriteVar.innerHTML += "<b>pop</b> animals by subtracting from <b>animals.length</b>: ";
+	animals.length = animals.length-1;
+	overWriteVar.innerHTML += animals + "<br>";
+	overWriteVar.innerHTML += '<br>';
+	
+	// shift 
+	// remove first element by overwriting the element with the next, etc
+	// begins at 1 so that it knows value of [1] to write onto [0]
+	overWriteVar.innerHTML += "<b>shift</b> by overwriting index[0] with [1]'s value, etc: ";
+	for (var x = 1; x < animals.length; x++) 
+		animals[x-1]=animals[x];
+	animals.length = animals.length-1;	
+	overWriteVar.innerHTML += animals + "<br>";
+	overWriteVar.innerHTML += '<br>';
+	
+	// push
+	// add new elements to the end of an array
+	overWriteVar.innerHTML += "<b>push</b> by adding an element to [array.length]: ";
+	animals[animals.length] = "Eagle";
+	overWriteVar.innerHTML += animals + "<br>";
+	overWriteVar.innerHTML += '<br>';
+	
+	// unshift // add new element to the beginning of an array
+	// by assigning index.length-1 to index.length etc
+	overWriteVar.innerHTML += "<b>unshift</b> with a for loop decrementing from the highest index in an array and assigning the previous value to it, then assigning a new value to [0]: ";
+	for (var x = animals.length; x >= 0; x--) 
+		animals[x] = animals[x - 1];
+	animals[0] = "Giraffe";
+	
+	overWriteVar.innerHTML += animals + "<br>";
+	overWriteVar.innerHTML += '<br>';
+	
+</script>
+
+</div>

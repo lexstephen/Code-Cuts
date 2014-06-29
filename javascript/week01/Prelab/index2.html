@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+	<title>Lab week 4 - Prelab 1 Ex2 - Show Me the Grade!</title>
+	<style>
+		body	{background-color: #00ace0;
+				color: #00000;
+				font-family: Arial, Verdana, "sans serif";}
+		#heading	{margin: 20px;
+				font-weight: bold;}
+	</style>
+</head>
+
+<body>
+
+<div id="heading">Show Me the Grade!</div>
+
+
+<script type="text/javascript">
+	var theGrade = prompt("Please enter your grade as a numeric value:");
+	if (isNaN(theGrade)) {
+		var theGrade = prompt("Please enter your grade as a numeric value:");
+	}
+	if(theGrade < 50) {
+		document.write("You failed, son");
+	} else if (theGrade <= 52) {
+		document.write("Your " + theGrade + " is worth a D-, which is better than nothing.");
+	} else if (theGrade <= 56) {
+		document.write("Your " + theGrade + " is worth a D, which is better than nothing.");
+	} else if (theGrade <= 59) {
+		document.write("Your " + theGrade + " is worth a D+, which is better than nothing.");
+	} else if (theGrade <= 62) {
+		document.write("Your " + theGrade + " is worth a C-, which is better than nothing.");
+	} else if (theGrade <= 66) {
+		document.write("Your " + theGrade + " is worth a C, which is better than nothing.");
+	} else if (theGrade <= 69) {
+		document.write("Your " + theGrade + " is worth a C+, which is better than nothing.");
+	} else if (theGrade <= 72) {
+		document.write("Your " + theGrade + " is worth a B-, which is not that bad.");
+	} else if (theGrade <= 76) {
+		document.write("Your " + theGrade + " is worth a B, which is not that bad.");
+	} else if (theGrade <= 79) {
+		document.write("Your " + theGrade + " is worth a B+, which is not that bad.");
+	} else if (theGrade <= 84) {
+		document.write("Your " + theGrade + " is worth an A-, you did well.");
+	} else if (theGrade <= 89) {
+		document.write("Your " + theGrade + " is worth an A, you did a fine job.");
+	} else if (theGrade <= 100) {
+		document.write("Your " + theGrade + " is worth an A+, you're doing great!");
+	} else {
+		document.write("Please enter a valid percentage between 0 and 100.");
+	}
+</script>
+
+<p>Go to <a href="index3.html">Page 3</a>?</p>
+
+</body>
+</html>

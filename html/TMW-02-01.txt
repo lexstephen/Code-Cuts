@@ -1,0 +1,47 @@
+<h2>Semantic Markup</h2>
+
+<h3>Microformats</h3>
+<p>Work with current development methods; not an extension to HTML but instead a design principle or set of standard usage patterns.</p>
+<dl>
+	<dt>Rel-Tag</dt>
+	<dd><code>&lt;a href="http://flickr.com/tags/gorillas/" rel="tag"&gt;Gorillas&lt;/a&gt;</code> - keyword tag in the rel attribute lets other machines know that the URL linked to in the element is a page described by a tag</dd>
+	<dt>hCard</dt>
+	<dd>Marks up common user details with a standard business card syntax: includes <code>class="url fn"</code> (full name of the contact) and <code>class="url org"</code> (the organization the contact works for.)</dd>
+	<dt>& More</dt>
+	<dd>Patterns exist for events, reviews, geographic coordinates, recipes and more.  Used by Google to improve SEO.</dd>
+</dl>
+
+<h3>RDFa</h3>
+<p>Resource Description Format in Attributes; extension of HTML that provides context to content.</p>
+<dl>
+	<dt>Dublin Core (<a href="http://dublincore.org">link</a>)</dt>
+	<dd>A schema that provides a standardized vocabulary for content.</dd>
+	<dt>Property, Content</dt>
+	<dd><code>&lt;p property="http://purl.org/dc/elements/1,1/date" content="2013-04-01"&gt;April 1&lt;/a&gt;</code></dd>
+</dl>
+
+<h3>Microdata</h3>
+<p>A series of name-value pairs that provide meaningful machine-readable data.</p>
+<p><code>&lt;p itemscope&gt;I live in &lt;span itemprop="city"&gt;Toronto&lt;/span&gt;.  My birthday this year is on &lt;span itemprop="birthday" datetime="2014-11-14"&gt;November 14&lt;/span&gt;.&lt/p&gt;</code></p>
+
+<dl>
+	<dt>Itemscope</dt>
+	<dd>Used on the containing element to mark the limits or scope of a particular item</dd>
+	<dt>Itemprop</dt>
+	<dd>The property is the name-value pair; the value of the itemprop attribute is the name and the element's content is the value.</dd>
+	<dt>Itemtype</dt>
+	<dd>Describe content with predefined schema by linking to it with the itemtype attribute: <code>&lt;p itemscope itemtype="http://example.org/birthday"&gt;My birthday this year is on &lt;span itemprop="birthday" datetime="2014-11-14"&gt;November 14&lt;/span&gt;</code>.</dd>
+</dl>
+
+<h3>Schema.org</h3>
+<p>A set of shared vocabularies for marking up common patterns using microdata, including reviews, events, places, items, and objects. In a book review you may use:</p>
+<p><code>&lt;div class="review" itemscope itemtype="http://schema.org/Review"&gt;<br>&lt;h1&gt;&lt;span itemprop="itemReviewed"&gt;The Book of CSS3&lt;/span&gt;, by &lt;span itemprop="creator"&gt;Peter Gasston&lt/span&gt;&lt/h1&gt;<br>&lt;p&gt;&lt;span itemprop="reviewBody"&gt;Amazing!&lt;/span&gt; &lt;span itemprop="reviewRating"&gt;5&lt;/span&gt; stars!&lt;/p&gt;<br>&lt;/div&gt;</code></p>
+
+<h3>Data Attributes</h3>
+<p>Let you store extra information without implying any extra meaning, as using a class might.  Each data attribute starts with the word data- and then a user-defined key, i.e., <code>&lt;p data-id="123"&gt;Peter&lt;/p&gt;</code> could be used to identify the data attribute <em>id</em> with the value Peter.</p>
+<h3>Data Attributes API</h3>
+<p>A simple DOM API is available that uses the dataset property.  To get the value of a data attribute, use this property with the key of the attribute you're querying:</p>
+<p><code>var el = document.querySelector('p');<br>var id = el.dataset['id'];<br>
+el.dataset['id'] = 100; // modify the value</code></p>
+
+<!-- taken from The Modern Web c2013 by Peter Gasston -->

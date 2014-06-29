@@ -1,0 +1,21 @@
+<ul class="list" name="list1">
+	<li><a href='http://yahoo.com'>One</a></li>
+	<li><a href="http://yahoo.com">Two</a></li>
+	<li><a href="http://yahoo.com">Three</a></li>
+</ul>
+
+<script>
+	var lists = document.getElementsByTagName('ul');
+	var firstList = lists[1]; // would be [0] to get first but that is the sidebar
+	var odd = false;
+	
+	// apply styles to even and odd objects
+	for (var i=0; i<firstList.childNodes.length; i++) {
+		if(firstList.childNodes[i].nodeType != 3)
+		{
+			odd = !odd;
+			if (odd) 
+				firstList.childNodes[i].style.backgroundColor = "red";
+		}
+	}
+</script>

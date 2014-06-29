@@ -1,0 +1,27 @@
+<div id="div01a">
+<label for="bgColour" class="label">Change background of div: (<i>red</i>; <i>#002200</i>; <i>blue</i>..)</label> 
+	<input type="text" id="bgColour"> <br>
+
+<label for="textColour" class="label">Change text colour in div (<i>white</i>; <i>#fefefe</i>; <i>yellow</i>..)</label>
+	<input type="text" id="textColour"> <br><br>
+	<input type="button" value="UPDATE PAGE" onclick="changeText();changeBg()"> <br>
+
+</div>
+<div id="div02a">
+	<pre>i carry your heart with me(i carry it in
+my heart)i am never without it(anywhere
+i go you go,my dear;and whatever is done
+by only me is your doing,my darling)</pre>
+</div>
+
+<script type="text/javascript">
+function $(id) { return document.getElementById(id); }
+
+function changeBg() { 
+	$('div02a').style.backgroundColor = $('bgColour').value;
+}
+
+function changeText() {
+	$('div02a').style.color = $('textColour').value;
+}
+</script>

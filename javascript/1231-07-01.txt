@@ -1,0 +1,45 @@
+<div id="col2">
+	<h3>Current Coordinates</h3>
+	<div id="overWrite">&nbsp;</div>
+</div>
+
+<div id="col3">
+	<h3>Clicked Coordinates</h3>
+	<div id="col1">
+		 <button id="clearIt">clear</button> 
+	</div>
+
+	<div id="overWrite2"></div>
+</div>
+
+<script>
+function $(id) { return document.getElementById(id); }
+
+onmousemove = function(evt) {
+	x = evt.pageX;
+	y = evt.pageY;
+	$('overWrite').innerHTML = x + ", " + y;
+}
+	
+$('clearIt').onclick = function () {
+	$('overWrite2').innerHTML = "";
+		onclick = function() {
+			return false;
+		}
+}	
+
+$('clearIt').onmouseout = function () {
+		onclick = function(evt) {
+			x = evt.pageX;
+			y = evt.pageY;
+			$('overWrite2').innerHTML += x + ", " + y + " | ";
+		}
+}	
+
+onclick = function(evt) {
+	x = evt.pageX;
+	y = evt.pageY;
+	$('overWrite2').innerHTML += x + ", " + y + " | ";
+}
+	
+</script>

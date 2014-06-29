@@ -1,0 +1,15 @@
+<h3>Multi Columns</h3>
+
+<p>The Multi-Column Layout Module allows you to set content to display in columns, with a 1em default gap..</p>
+
+<ul>
+<li>columns: 120px 3;</li>
+<li>column-count: 3;</li>
+<li>column-width: 120px;</li>
+<li>column-gap: 2em;</li>
+<li>column-rule: 2px dotted gray;</li>
+<li>column-span: all; [allows you to temporarily break out of the column structure]</li>
+<li>h2 {break-before: column;} [also break-after & break-inside]</li>
+</ul>
+
+<!-- taken from The Modern Web c2013 by Peter Gasston -->

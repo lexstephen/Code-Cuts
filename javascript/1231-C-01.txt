@@ -1,0 +1,52 @@
+<h1 class="red">This is a heading</h1>
+<div id='main' class='red'>test</div>
+
+<div id='main2' name='mydiv'>
+	<b>this bold child</b>
+	<a id='mylink' class='mylinkclass' href='http://google.ca'>Google.ca</a>
+	<u>this underline child</u>
+	<span>this is span tag</span>
+</div>
+
+<script>
+var obj = document.getElementById('main');
+var _body = document.getElementsByTagName('body')[0];
+
+for(i = 0; i < _body.childNodes.length;i++)
+{
+	var o = _body.childNodes[i];
+	console.log("o.nodeType / o.nodeName: ", o.nodeType + ' ' + o.nodeName);
+}
+
+var obj2 = document.getElementsByName('mydiv')[0];
+console.log("nodeType: ", obj2.nodeType);
+
+if(obj2.hasChildNodes())
+{
+	for(i in obj2.childNodes)
+	{
+		if(obj2.childNodes[i].nodeType != 3)
+		console.log("obj2.childNodes[i]: ",obj2.childNodes[i]);
+	}
+}
+
+var main = document.getElementById('main2');
+
+var mainChildren = main.childNodes;
+
+console.log("Cycling through NON-TEXT elements");
+
+for (var i=0; i<mainChildren.length; i++)
+{	
+	if(mainChildren[i].nodeType != 3)
+		{
+			console.log(mainChildren[i]);
+		}
+}
+
+for (var i=0; i<main.attributes.length; i++) 
+{
+	console.log(main.attributes[i].name + " - " + 
+		main.attributes[i].value);
+}
+</script>

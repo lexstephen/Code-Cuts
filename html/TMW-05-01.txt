@@ -1,0 +1,42 @@
+<h3>Forms</h3>
+
+<ul>
+<li>&lt;input type="search"&gt;</li>
+<li>&lt;input type="tel"&gt;</li>
+<li>&lt;input type="email"&gt;</li>
+<li>&lt;input type="url"&gt;</li>
+<li>&lt;input type="text" autofocus&gt; [goes to element on page load]</li>
+<li>&lt;input type="text" placeholder="Disappears when user starts to type"&gt;</li>
+<li>input:-moz-placeholder {}<br>input:-ms-input-placeholder {}<br>input::-webkit-input-placeholder {}</li>
+<li>&lt;input type="email" autocomplete="off"&gt;</li>
+<li>&lt;input type="text" spellcheck="true"&gt;</li>
+<li>&lt;input type="text" spellcheck lang="es"&gt;</li>
+<li>&lt;input type="file" multiple&gt;</li>
+<li>&lt;input type="number"&gt;</li>
+<li>&lt;input type="range"&gt;</li>
+<li>&lt;input type="number" max="100" min="10" step="10" value="50"&gt;</li>
+<li>&lt;input type="date"&gt;</li>
+<li>&lt;input type="time"&gt;</li>
+<li>&lt;input type="month" max="2016-06" min="2012-01" step="3"&gt;</li>
+<li>&lt;input type="week"&gt;</li>
+<li>&lt;input type="datetime"&gt;</li>
+<li>&lt;input type="datetime-local"&gt; [no time zone required]</li>
+<li>&lt;input type="color"&gt;</li>
+<li>input:required {border: 1px red solid;}<br>input:optional {..}<br>input:valid {color: green;}<br>input:invalid {color: red;}</li>
+</ul>
+
+<p>A form no longer has to contain all elements within its tags - you can tie any loose input to a form by using code such as: <code>&lt;form id="foo"&gt;....&lt;/form&gt;<br>&lt;input type="text" id="bar" form="foo"&gt;</code></p>
+
+<h3>Datalist</h3>
+
+<p>A datalist can be specified anywhere on the page and referred to by an input for use in autocompleting values.</p>
+
+<code>&lt;datalist&nbsp;id="apes"&gt;<br>
+&nbsp;&lt;option&gt;Chimpanzee&lt;/option&gt;<br>
+&nbsp;&lt;option&gt;Gorilla,&nbsp;Eastern&lt;/option&gt;<br>
+&nbsp;&lt;option&gt;Gorilla,&nbsp;Western&lt;/option&gt;<br>
+&nbsp;&lt;option&gt;Orangutangs&lt;/option&gt;<br>
+&lt;/datalist&gt;<br><br>
+&lt;input&nbsp;type="text"&nbsp;list="apes"&gt;</code>
+
+<!-- taken from The Modern Web c2013 by Peter Gasston -->

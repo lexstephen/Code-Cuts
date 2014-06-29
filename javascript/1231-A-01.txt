@@ -1,0 +1,48 @@
+<html lang="en-us" ng-app="SongEx">
+<head>
+	<title>Adventures in AngularJS</title>
+</head>
+
+<body>
+<article>
+<div ng-controller="SongList">
+	<p>Search Beatles Songs: <span class="hiL">{{ lookFor.title }} {{ lookFor.year }} {{ lookFor.album }}</span></p>
+	<table>
+		<tr>
+			<td><a href="" ng-click="sortOrder='title'; reverse=!reverse;">Title</a></td>
+			<td><a href="" ng-click="sortOrder='year'; reverse=!reverse;">Year</a></td>
+			<td><a href="" ng-click="sortOrder='album'; reverse=!reverse;">Album</a></td>
+		</tr>
+			<td><input type="text" ng-model="lookFor.title"></td>
+			<td><input type="text" ng-model="lookFor.year"></td>
+			<td><input type="text" ng-model="lookFor.album"></td>
+		</tr>
+		<tr ng-repeat="song in theSongs | filter:lookFor:strict | orderBy:sortOrder">
+			<td>{{ song.title }}</td>
+			<td>{{ song.year }}</td>
+			<td>{{ song.album }}</td>
+		</tr>
+	</table>
+	</div>
+</article>
+	
+<script src="JavaScript/images/angular.min.js"></script>
+<script src="JavaScript/images/beatles.js"></script>
+
+<!-- beatles.js at a glance:
+
+var beatApp = angular.module('SongEx', []);
+
+beatApp.controller('SongList', function($rootScope) {
+	$rootScope.theSongs = [
+		{"title": "Tell Me Why", "year": "1964", "album": "A Hard Day\'s Night"},
+		{"title": "A Hard Day\'s Night", "year": "1964", "album": "A Hard Day\'s Night"},
+		{"title": "Only a Northern Song", "year": "1967", "album": "Yellow Submarine"},
+		{"title": "Hey Bulldog", "year": "1968", "album": "Yellow Submarine"}
+	];
+});
+
+-->
+
+</body>
+</html>

@@ -1,0 +1,97 @@
+<div id="heading"></div>
+
+<script type="text/javascript">
+	var numberOfRows = prompt("How many rows would you like?");
+	var numberOfCols = prompt("How many columns would you like?");
+	
+	//determine if user has provided adequate values
+	if (isNaN(numberOfRows) || numberOfRows <= 0) {
+		document.getElementById("heading").innerHTML = "Please enter a positive integer. <a href='index2.html'>Try again</a>.";
+	} else if (isNaN(numberOfCols) || numberOfCols <= 0) {
+		document.getElementById("heading").innerHTML = "Please enter a positive integer. <a href='index2.html'>Try again</a>.";
+	} else {
+		var multiTable = "<table>";
+		for (rowIteration = 1; rowIteration <= numberOfRows; rowIteration++) {
+			multiTable += "<tr>";
+				for (colIteration = 1; colIteration <= numberOfCols; colIteration++) {
+					multiTable += "<td>" + colIteration * rowIteration + "</td>";
+				}
+			multiTable += "</tr>";
+		}
+		multiTable += "</table>";
+		document.getElementById("heading").innerHTML = multiTable;
+	}
+</script>
+
+<div id="heading2"></div>
+
+<script type="text/javascript">
+	var entries = prompt("How many list items would you like?");
+
+	
+	//determine if user has provided adequate values
+	if (isNaN(entries) || entries <= 0) {
+		document.getElementById("heading2").innerHTML = "Please enter a positive integer. <a href='index.html'>Try again</a>.";
+
+	} else {
+
+		var printedList = "<ul>";
+	
+		for (var i = 1; i <= entries; i++) {
+
+			printedList += "<li>List Item #" + i + "</li>";
+
+		}
+
+		printedList += "</ul>";
+	
+		document.getElementById("heading2").innerHTML = printedList;
+	}
+</script>
+
+<div id="heading3"></div>
+
+<script type="text/javascript">
+	var smallerNumber = prompt("Please enter a number");
+	var biggerNumber = prompt("Please enter a larger number");
+	
+	if (isNaN(smallerNumber) || biggerNumber <= smallerNumber || smallerNumber <= 0) {
+		document.getElementById("heading3").innerHTML = "You entered " + smallerNumber + " and " + biggerNumber + ". Please enter a positive integer.<br><code>Failed: isNaN(smallerNumber) || biggerNumber <= smallerNumber || smallerNumber <= 0</code><br><a href='index.html'>Try again</a>.";
+	} else if (isNaN(biggerNumber) || biggerNumber <= smallerNumber || biggerNumber <= 0) {
+		document.getElementById("heading3").innerHTML = "You entered " + smallerNumber + " and " + biggerNumber + ". Please enter a positive integer.<br><code>Failed: isNaN(biggerNumber) || biggerNumber <= smallerNumber || biggerNumber <= 0</code><br><a href='index.html'>Try again</a>.";
+	} else {
+		var multiTable = "<table>";
+		
+		for (var i = biggerNumber; i >= smallerNumber; i = i - 1) {
+			multiTable += "<tr>";
+				for (var j = smallerNumber; j <= i; j++) {
+						multiTable += "<td>";
+							if(j % 2==1) {
+								multiTable += "<u>" + j + "</u>";
+							} else {
+								multiTable += j;
+							}
+						multiTable += "</td>";
+				}
+			multiTable += "</tr>";
+		} 
+		var useThisDamnNumber = parseInt(smallerNumber) + 1;
+		for (var k = useThisDamnNumber; k <= biggerNumber; k++) {
+			multiTable += "<tr>";
+				for (var l = smallerNumber; l <= k; l++) {
+						multiTable += "<td>";
+							if(l % 2) {
+								multiTable += "<u>" + l + "</u>";
+							} else {
+								multiTable += l;
+							}
+						multiTable += "</td>";
+				}
+			multiTable += "</tr>";
+		}
+
+		multiTable += "</table>";
+		
+		document.getElementById("heading3").innerHTML = multiTable;
+	}
+</script>

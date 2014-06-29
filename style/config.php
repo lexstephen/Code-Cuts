@@ -49,20 +49,12 @@
 	$t18['tags'] = array('header', 'section', 'footer', 'background', 'gradient', 'float');
 	$t19['tags'] = array('header', 'nav', 'footer', 'accessibility', 'role', 'attributes', 'exact attribute value selector', 'form');
 	$t20['tags'] = array('attributes', 'exact attribute value selector', 'microformats', 'rel', 'hCard', 'RDFa', 'microdata', 'itemscope', 'itemprop', 'itemtype', 'datetime', 'schema', 'data attributes', 'API', 'querySelector');
-	$t21['tags'] = array('media', 'devicePixelRatio', 'webkit', 'viewport', 'meta', 'pointer', 'matchMedia()', 'addListener');
+	$t21['tags'] = array('background', 'rel', 'width', 'if', 'else', 'function', 'screen', 'device-width', 'orientation', 'portrait', 'landscape', 'device-aspect-ratio', 'responsive', 'media', 'devicePixelRatio', 'webkit', 'viewport', 'meta', 'pointer', 'matchMedia()', 'addListener');
 	$t22['tags'] = array('width', 'border', 'function', 'margin', 'padding', 'calc', 'box-sizing', 'responsive');
 	$t23['tags'] = array('width', 'height', 'viewport', 'rem', 'em', 'font', 'responsive', 'vw', 'vh');
 	$t24['tags'] = array('img', 'width', 'height', 'viewport', 'responsive', 'object-fit', 'object-position');
 	$t25['tags'] = array('border', 'columns');
 	$t26['tags'] = array('datetime', 'form', 'input', 'autofocus', 'placeholder', 'required', 'spellcheck', 'autocomplete', 'datalist', 'list', 'max', 'min', 'lang');
-	
-/* 
-	no matter what I do something in t21 fucks everything up, tag-wise
-	seems like there is an arbitrary length to how many array elements I can have and something is truncating and causing the tags to spill onto t22-t26 search results
-	hiding the following tags from t21 made the list short enough to work correctly: 
-	
-		'background', 'rel', 'width', 'if', 'else', 'function', 'screen', 'device-width', 'orientation', 'portrait', 'landscape', 'device-aspect-ratio', 'responsive'
-*/
 
 // merge the arrays into one super array to be used henceforth
 	$tutorials = array($t01, $t02, $t03, $t04, $t05, $t06, $t07, $t08, $t09, $t10, $t11, $t12, $t13, $t14, $t15, $t16, $t17, $t18, $t19, $t20, $t21, $t22, $t23, $t24, $t25, $t26);

@@ -1,5 +1,5 @@
-@import url(http://fonts.googleapis.com/css?family=Bangers); 
 @import url(http://fonts.googleapis.com/css?family=Lobster);
+@import url(http://fonts.googleapis.com/css?family=Cabin); 
 
 body {
 	background-color : #1a35bd; 
@@ -80,7 +80,7 @@ width: 99%;
 			border: 0;
 			border-bottom : 5px solid #000; 
 			color: #fff;
-			font-family : Lobster, Arial Black, "sans serif"; 
+			font-family : Cabin, Arial Black, "sans serif"; 
 			font-size : 1.8em; 
 			font-weight : bold; 
 			padding : 3px; 

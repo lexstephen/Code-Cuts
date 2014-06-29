@@ -25,11 +25,13 @@
 			$tagCount = count($tutorials[$i]['tags']);
 			
 			for ($x = 0; $x < $tagCount; $x++) {
-				$theTags[$x] = strtolower($tutorials[$i]['tags'][$x]);
-			}
-			
-			if ((in_array(strtolower($q),$theTags))) {
-					echo '<li class="searchResults"><span class="catSmall">'
+					$theTags[$x] = strtolower($tutorials[$i]['tags'][$x]);
+/*					echo $tutorials[$i]['tags'][$x].' is in tutorial<br>';
+					echo $theTags[$x].' <br>'; */
+			if ($tutorials[$i]['tags'][$x] == $q) {
+				if (in_array(strtolower($q),$theTags,'strict')) {
+						/* echo '<b>'.$theTags[$x].'</b> <br>'; */
+						echo '<li class="searchResults"><span class="catSmall">'
 						.$tutorials[$i]['cat']
 						.':</span> <a href="index.php?cat='
 						.$tutorials[$i]['cat']
@@ -38,7 +40,10 @@
 						.'">'
 						.$tutorials[$i]['title']
 						.'</a></li>';
+				} 
 			}
+			}
+			
 		}
 	}
 	

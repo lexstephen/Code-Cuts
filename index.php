@@ -21,7 +21,7 @@
 					$metaAuthor = $tutorials[$i]['author'];
 					
 // have to make a separate array to get the implode function to work 
-// couldn't use the tutorials subarray in its spot
+// couldn't use the tutorials subarray in its spot ~8 lines down
 					$theTags = array();
 					$tagCount = count($tutorials[$i]['tags']);
 					
@@ -33,6 +33,7 @@
 				}
 		}
 	}
+
 // show them some default text if they haven't selected one yet
 	else {
 		$cat = 'index';
@@ -48,12 +49,17 @@
 	
 	echo '<section id="mainSection">';
 
-// html and php for stylesheet (sidebar pulls in search.php)
+// html and php for sidebar (sidebar pulls in search.php)
 	include 'style/sidebar.php'; 	// sidebar
 	
 // html and php for file preview panes
-	include 'style/article.php'; 	// file preview pane
-
+// show file preview pane if a tutorial is selected 
+// or just a welcome message without textarea if user is on the default page
+	if(isset($_GET['cat']) && isset($_GET['file'])) {
+		include 'style/article.php'; 	// file preview pane
+	} else {
+		include 'style/welcome.php';
+	}
 // module that lists all tags in use across tutorials
 	include 'style/tags.php'; 		// code to show all tags
 	

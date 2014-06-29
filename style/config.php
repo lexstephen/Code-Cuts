@@ -60,11 +60,7 @@
 	$tutorials = array($t01, $t02, $t03, $t04, $t05, $t06, $t07, $t08, $t09, $t10, $t11, $t12, $t13, $t14, $t15, $t16, $t17, $t18, $t19, $t20, $t21, $t22, $t23, $t24, $t25, $t26);
 	
 // merge all the tag arrays and then return unique entries then re-set the indexes
-	$preciseTags = 	array_values(
-						array_unique(
-							array_merge($t01['tags'], $t02['tags'], $t03['tags'], $t04['tags'], $t05['tags'], $t06['tags'], $t07['tags'], $t08['tags'], $t09['tags'], $t10['tags'], $t11['tags'], $t12['tags'], $t13['tags'], $t14['tags'], $t15['tags'], $t16['tags'], $t17['tags'], $t18['tags'], $t19['tags'], $t20['tags'], $t21['tags'], $t22['tags'], $t23['tags'], $t24['tags'], $t25['tags'], $t26['tags'])
-						)
-					);
+	$preciseTags = 	array_values(array_unique(array_merge($t01['tags'], $t02['tags'], $t03['tags'], $t04['tags'], $t05['tags'], $t06['tags'], $t07['tags'], $t08['tags'], $t09['tags'], $t10['tags'], $t11['tags'], $t12['tags'], $t13['tags'], $t14['tags'], $t15['tags'], $t16['tags'], $t17['tags'], $t18['tags'], $t19['tags'], $t20['tags'], $t21['tags'], $t22['tags'], $t23['tags'], $t24['tags'], $t25['tags'], $t26['tags'])));
 	
 // alphabetize the list of tags
 	sort($preciseTags);

@@ -16,34 +16,25 @@
 // heading displays the query
 		echo '<li class="searchResultHead">Search results: <b>'.$q.'</b></li>';
 
-/* loop through all the various tags subarrays in config file's $tutorials/$i/$tags to find a match with query
-	to ensure a total match, we will build a temporary array, theTags, which holds the lowercase values of all the tags
-	and compares it against a lowercase version of the search query */
+// loop through all the various tags subarrays in config file's $tutorials/$i/$tags
+// to find a match with query 
 
 		for ($i = 0; $i < $tutCnt; $i++) {
-
 			$tagCount = count($tutorials[$i]['tags']);
 			
 			for ($x = 0; $x < $tagCount; $x++) {
-					$theTags[$x] = strtolower($tutorials[$i]['tags'][$x]);
-/*					echo $tutorials[$i]['tags'][$x].' is in tutorial<br>';
-					echo $theTags[$x].' <br>'; */
-			if ($tutorials[$i]['tags'][$x] == $q) {
-				if (in_array(strtolower($q),$theTags,'strict')) {
-						/* echo '<b>'.$theTags[$x].'</b> <br>'; */
-						echo '<li class="searchResults"><span class="catSmall">'
-						.$tutorials[$i]['cat']
-						.':</span> <a href="index.php?cat='
-						.$tutorials[$i]['cat']
-						.'&file='.$tutorials[$i]['file']
-						.'&q='.$q
-						.'">'
-						.$tutorials[$i]['title']
-						.'</a></li>';
-				} 
+				if ($tutorials[$i]['tags'][$x] == $q) {
+					echo '<li class="searchResults"><span class="catSmall">'
+					.$tutorials[$i]['cat']
+					.':</span> <a href="index.php?cat='
+					.$tutorials[$i]['cat']
+					.'&file='.$tutorials[$i]['file']
+					.'&q='.$q
+					.'">'
+					.$tutorials[$i]['title']
+					.'</a></li>';
+				}
 			}
-			}
-			
 		}
 	}
 	

@@ -23,7 +23,7 @@
 			$tagCount = count($tutorials[$i]['tags']);
 
 // search the categories and display any of those matches			
-			if ($tutorials[$i]['cat'] == $q) {
+			if (strtolower($tutorials[$i]['cat']) == strtolower($q)) {
 				echo '<li class="searchResults"><span class="catSmall">'
 				.$tutorials[$i]['cat']
 				.':</span> <a href="index.php?cat='
@@ -35,6 +35,8 @@
 				.'</a></li>';
 			}
 // search the tags and display any of those matches
+// tried to use in_array here but it returned every value after the match ??
+
 			for ($x = 0; $x < $tagCount; $x++) {
 				if ($tutorials[$i]['tags'][$x] == $q) {
 					echo '<li class="searchResults"><span class="catSmall">'

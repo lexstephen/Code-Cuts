@@ -1,3 +1,6 @@
+
+
+
 <article id="codeArea" role="main">
 	<div id="codeBanner"><?php
 // display article's category, title
@@ -22,6 +25,7 @@
 // code preview pane
 		include $cat.'/'.$file.'.'.$fileType; 
 	?></textarea>
+	<input type="button" value="Update" onclick="postCode()">
 	
 	<?php
 // display article's tags

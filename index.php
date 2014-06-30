@@ -4,6 +4,9 @@
 	$siteTitle = "Code Cuts";
 	$useStylesheet = "style/style.css";
 	$fileType = "txt";
+	$metaAuthor = "Alexis Dicks-Stephen";
+	$metaTitle = "HTML, CSS, JavaScript and PHP Tutorials";
+	$metaKeywords = "html, css, javascript, php";
 	
 // these variables determine which file is in the preview pane
 // if they've already selected a file for viewing, preserve that
@@ -38,14 +41,12 @@
 	else {
 		$cat = 'index';
 		$file = 'index';
-		$metaAuthor = "Alexis Dicks-Stephen";
-		$metaTitle = "HTML, CSS, JavaScript and PHP Tutorials";
-		$metaKeywords = "html, css, javascript, php";
 	}
 	
 // this has the html up until the end of the header tag
 // meta info populated on the fly depending on above codes
 	include 'style/header.php'; 	// header
+	include 'style/scripts.js';
 	
 	echo '<section id="mainSection">';
 

@@ -26,6 +26,7 @@
 		include $cat.'/'.$file.'.'.$fileType; 
 	?></textarea>
 	<input type="button" value="Update" onclick="postCode()">
+	 <input type="button" value="Reset" onclick="resetCode()"> 
 	
 	<?php
 // display article's tags

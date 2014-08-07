@@ -1,13 +1,16 @@
 <?php 
 
 // print the search form
-	echo '<ul><li class="sidebarHead">Search</li>
-			<li class="searchForm"><form action="index.php" role="search">
-			<input type="search" name="q" list="tagSearch"> 
-			<input type="hidden" name="cat" value="'.$cat.'"> 
-			<input type="hidden" name="file" value="'.$file.'"> 
-			<input type="submit" value="Go!">
-			</form></li>';
+	echo '<ul>
+			<li class="sidebarHead">Search</li>
+			<li class="searchForm">
+			<form action="index.php" role="search">
+				<input type="search" name="q" list="tagSearch"> 
+				<input type="hidden" name="cat" value="'.$cat.'"> 
+				<input type="hidden" name="file" value="'.$file.'"> 
+				<input type="submit" value="Go!">
+			</form>
+			</li>';
 
 // once they hit search, look for query and build a list of results
 	if(isset($_GET['q'])) {

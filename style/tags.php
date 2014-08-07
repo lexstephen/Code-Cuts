@@ -1,17 +1,21 @@
 <?php  
-	echo 	'<article id="tagList">
+	echo 	'
+			<article id="tagList">';
+	echo 	'
 			<datalist id="tagSearch">';
 			
 		for ($x = 0; $x < $preciseTagsCnt; $x++) {
 			echo 	'<option>'
 					.$preciseTags[$x]
-					.'</option>';
+					.'</option>
+					';
 		}
 	
 	echo 	'</datalist>';
 
 	for ($y = 0; $y < $preciseTagsCnt; $y++) {
-		$formattedTag[$y] = '<a href="index.php?q='
+		$formattedTag[$y] = '
+		<a href="index.php?q='
 								.$preciseTags[$y]
 								.'">'
 								.$preciseTags[$y]
@@ -20,9 +24,11 @@
 	
 	$tagList = implode(', ', $formattedTag);
 	
-	echo 'Browse Tags: '
+	echo '
+	Browse Tags: '
 	.$tagList;
 	
-	echo '</article>';
+	echo '
+	</article>';
 
 ?>	

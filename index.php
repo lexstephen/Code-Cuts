@@ -46,7 +46,7 @@
 // this has the html up until the end of the header tag
 // meta info populated on the fly depending on above codes
 	include 'style/header.php'; 	// header
-	include 'style/scripts.js';
+	include 'style/scripts.php';
 	
 	echo '<section id="mainSection">';
 

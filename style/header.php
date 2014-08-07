@@ -8,7 +8,13 @@
 	
 	<title><?php echo $siteTitle; ?> | <?php echo $metaTitle; ?></title>
 	
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="<?php echo $useStylesheet; ?>">
+	  <script>
+  $(function() {
+    $( "#sidebar" ).accordion();
+  });
+  </script>
 </head>
 
 <body>

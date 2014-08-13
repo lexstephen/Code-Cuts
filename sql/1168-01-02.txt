@@ -1,0 +1,174 @@
+<pre>
+/* script name: LOAD1BIGPV11E.SQL                        */
+/* purpose:     Loads Oracle tables for Big PVFC DB EDM  */
+/*             (NOT Raw Materials, Supplies, Uses tbls)  */
+/* date:        7 Sept2013                               */
+/* updated:                                              */
+/*                                                       */
+
+/* make sure tables are empty before adding records      */
+
+delete from Vendor_T;
+delete from Shipped_T;
+delete from Payment_T;
+delete from PaymentType_T;
+delete from OrderLine_T;
+delete from Order_T;
+delete from CustomerShipAddress_T;
+delete from ProducedIn_T;
+delete from Product_T;
+delete from ProductLine_T;
+delete from WorksIn_T;
+delete from WorkCenter_T;
+delete from EmployeeSkills_T;
+delete from Skill_T;
+delete from Employee_T;
+delete from Salesperson_T;
+delete from DoesBusinessIn_T;
+delete from Territory_T;
+delete from Customer_T;
+
+
+/* load all tables but Raw Materials and Supplies and Uses        */
+
+REM INSERTING into Customer_T
+Insert into Customer_T (CustomerID,CustomerName,CustomerAddress,CustomerCity,CustomerState,CustomerPostalCode) values (1,'Contemporary Casuals','1355 S Hines Blvd','Gainesville','FL','32601-2871');
+Insert into Customer_T (CustomerID,CustomerName,CustomerAddress,CustomerCity,CustomerState,CustomerPostalCode) values (2,'Value Furnitures','15145 S.W. 17th St.','Plano','TX','75094-7743');
+Insert into Customer_T (CustomerID,CustomerName,CustomerAddress,CustomerCity,CustomerState,CustomerPostalCode) values (3,'Home Furnishings','1900 Allard Ave','Albany','NY','12209-1125');
+Insert into Customer_T (CustomerID,CustomerName,CustomerAddress,CustomerCity,CustomerState,CustomerPostalCode) values (4,'Eastern Furniture','1925 Beltline Rd.','Carteret','NJ','07008-3188');
+Insert into Customer_T (CustomerID,CustomerName,CustomerAddress,CustomerCity,CustomerState,CustomerPostalCode) values (5,'Impressions','5585 Westcott Ct.','Sacramento','CA','94206-4056');
+Insert into Customer_T (CustomerID,CustomerName,CustomerAddress,CustomerCity,CustomerState,CustomerPostalCode) values (6,'Furniture Gallery','325 Flatiron Dr.','Boulder','CO','80514-4432');
+Insert into Customer_T (CustomerID,CustomerName,CustomerAddress,CustomerCity,CustomerState,CustomerPostalCode) values (7,'New Furniture','Palace Ave','Farmington','NM',null);
+Insert into Customer_T (CustomerID,CustomerName,CustomerAddress,CustomerCity,CustomerState,CustomerPostalCode) values (8,'Dunkins Furniture','7700 Main St','Syracuse','NY','31590');
+Insert into Customer_T (CustomerID,CustomerName,CustomerAddress,CustomerCity,CustomerState,CustomerPostalCode) values (9,'A Carpet','434 Abe Dr','Rome','NY','13440');
+Insert into Customer_T (CustomerID,CustomerName,CustomerAddress,CustomerCity,CustomerState,CustomerPostalCode) values (12,'Flanigan Furniture','Snow Flake Rd','Ft Walton Beach','FL','32548');
+Insert into Customer_T (CustomerID,CustomerName,CustomerAddress,CustomerCity,CustomerState,CustomerPostalCode) values (13,'Ikards','1011 S. Main St','Las Cruces','NM','88001');
+Insert into Customer_T (CustomerID,CustomerName,CustomerAddress,CustomerCity,CustomerState,CustomerPostalCode) values (14,'Wild Bills','Four Horse Rd','Oak Brook','Il','60522');
+Insert into Customer_T (CustomerID,CustomerName,CustomerAddress,CustomerCity,CustomerState,CustomerPostalCode) values (15,'Janet''s Collection','Janet Lane','Virginia Beach','VA','10012');
+Insert into Customer_T (CustomerID,CustomerName,CustomerAddress,CustomerCity,CustomerState,CustomerPostalCode) values (16,'ABC Furniture Co.','152 Geramino Drive','Rome','NY','13440');
+
+
+INSERT INTO Territory_T  (TerritoryID, TerritoryName)
+	VALUES  (1, 'SouthEast');
+INSERT INTO Territory_T  (TerritoryID, TerritoryName)
+	VALUES  (2, 'SouthWest');
+INSERT INTO Territory_T  (TerritoryID, TerritoryName)
+	VALUES  (3, 'NorthEast');
+INSERT INTO Territory_T  (TerritoryID, TerritoryName)
+	VALUES  (4, 'NorthWest');
+INSERT INTO Territory_T  (TerritoryID, TerritoryName)
+	VALUES  (5, 'Central');
+INSERT INTO Territory_T  (TerritoryID, TerritoryName)
+	VALUES  (6, 'Alaska');
+INSERT INTO Territory_T  (TerritoryID, TerritoryName)
+	VALUES  (12, 'Hawaii');
+INSERT INTO Territory_T  (TerritoryID, TerritoryName)
+	VALUES  (13, 'Colorado');
+INSERT INTO Territory_T  (TerritoryID, TerritoryName)
+	VALUES  (15, 'Arizona');
+
+
+INSERT INTO DoesBusinessIn_T  (CustomerID, TerritoryID)
+	VALUES  (1, 1);
+INSERT INTO DoesBusinessIn_T  (CustomerID, TerritoryID)
+	VALUES  (2, 2);
+INSERT INTO DoesBusinessIn_T  (CustomerID, TerritoryID)
+	VALUES  (3, 3);
+INSERT INTO DoesBusinessIn_T  (CustomerID, TerritoryID)
+	VALUES  (4, 4);
+INSERT INTO DoesBusinessIn_T  (CustomerID, TerritoryID)
+	VALUES  (5, 5);
+INSERT INTO DoesBusinessIn_T  (CustomerID, TerritoryID)
+	VALUES  (6, 6);
+INSERT INTO DoesBusinessIn_T  (CustomerID, TerritoryID)
+	VALUES  (7, 1);
+
+REM INSERTING into Salesperson_T
+Insert into Salesperson_T (SalespersonID,SalespersonName,SalespersonTelephone,SalespersonFax,SalesTerritoryID,SalespersonAddress,SalespersonCity,SalespersonState,SalespersonZip) 
+values (1,'Doug Henny','8134445555',null,2,null,null,null,null);
+Insert into Salesperson_T (SalespersonID,SalespersonName,SalespersonTelephone,SalespersonFax,SalesTerritoryID,SalespersonAddress,SalespersonCity,SalespersonState,SalespersonZip) 
+values (2,'Robert Lewis','8139264006',null,13,'124 Deerfield','Lutz','FL','33549');
+Insert into Salesperson_T (SalespersonID,SalespersonName,SalespersonTelephone,SalespersonFax,SalesTerritoryID,SalespersonAddress,SalespersonCity,SalespersonState,SalespersonZip) 
+values (3,'William Strong','3153821212',null,3,'787 Syracuse Lane','Syracuse','NY','33240');
+Insert into Salesperson_T (SalespersonID,SalespersonName,SalespersonTelephone,SalespersonFax,SalesTerritoryID,SalespersonAddress,SalespersonCity,SalespersonState,SalespersonZip) 
+values (4,'Julie Dawson','4355346677',null,4,null,null,null,null);
+Insert into Salesperson_T (SalespersonID,SalespersonName,SalespersonTelephone,SalespersonFax,SalesTerritoryID,SalespersonAddress,SalespersonCity,SalespersonState,SalespersonZip) 
+values (5,'Jacob Winslow','2238973498',null,5,null,null,null,null);
+Insert into Salesperson_T (SalespersonID,SalespersonName,SalespersonTelephone,SalespersonFax,SalesTerritoryID,SalespersonAddress,SalespersonCity,SalespersonState,SalespersonZip) 
+values (6,'Pepe Lepue',null,null,13,null,'Platsburg','NY',null);
+Insert into Salesperson_T (SalespersonID,SalespersonName,SalespersonTelephone,SalespersonFax,SalesTerritoryID,SalespersonAddress,SalespersonCity,SalespersonState,SalespersonZip) 
+values (8,'Fred Flinstone',null,null,2,'1 Rock Lane','Bedrock','Ca','99999');
+Insert into Salesperson_T (SalespersonID,SalespersonName,SalespersonTelephone,SalespersonFax,SalesTerritoryID,SalespersonAddress,SalespersonCity,SalespersonState,SalespersonZip) 
+values (9,'Mary James','3035555454',null,4,'9 Red Line','Denver','CO','55555');
+Insert into Salesperson_T (SalespersonID,SalespersonName,SalespersonTelephone,SalespersonFax,SalesTerritoryID,SalespersonAddress,SalespersonCity,SalespersonState,SalespersonZip) 
+values (10,'Mary Smithson','4075555555',null,15,'4585 Maple Dr','Orlando','FL','32826');
+
+
+
+INSERT INTO Skill_T  (SkillID, SkillDescription)
+VALUES  ('BS12', '12in Band Saw');
+INSERT INTO Skill_T  (SkillID, SkillDescription)
+VALUES  ('QC1', 'Quality Control');
+INSERT INTO Skill_T  (SkillID, SkillDescription)
+VALUES  ('RT1', 'Router');
+INSERT INTO Skill_T  (SkillID, SkillDescription)
+VALUES  ('SO1', 'Sander-Orbital');
+INSERT INTO Skill_T  (SkillID, SkillDescription)
+VALUES  ('SB1', 'Sander-Belt');
+INSERT INTO Skill_T  (SkillID, SkillDescription)
+VALUES  ('TS10', '10in Table Saw');
+INSERT INTO Skill_T  (SkillID, SkillDescription)
+VALUES  ('TS12', '12in Table Saw');
+INSERT INTO Skill_T  (SkillID, SkillDescription)
+VALUES  ('UC1', 'Upholstery Cutter');
+INSERT INTO Skill_T  (SkillID, SkillDescription)
+VALUES  ('US1', 'Upholstery Sewer');
+INSERT INTO Skill_T  (SkillID, SkillDescription)
+VALUES  ('UT1', 'Upholstery Tacker');
+
+
+REM INSERTING into Employee_T
+Insert into Employee_T (EmployeeID,EmployeeName,EmployeeAddress,EmployeeCity,EmployeeState,EmployeeZip,EmployeeDateHired,EmployeeBirthDate,EmployeeSupervisor) values ('123-44-345','Phil Morris','2134 Hilltop Rd','Knoxville','TN',null,to_timestamp('12-JUN-99','DD-MON-RR HH.MI.SSXFF AM'),to_timestamp('05-JAN-57','DD-MON-RR HH.MI.SSXFF AM'),'454-56-768');
+Insert into Employee_T (EmployeeID,EmployeeName,EmployeeAddress,EmployeeCity,EmployeeState,EmployeeZip,EmployeeDateHired,EmployeeBirthDate,EmployeeSupervisor) values ('332445667','Lawrence Haley','5970 Spring Crest Rd','Nashville','TN','54545',to_timestamp('05-JAN-99','DD-MON-RR HH.MI.SSXFF AM'),to_timestamp('15-AUG-63','DD-MON-RR HH.MI.SSXFF AM'),'454-56-768');
+Insert into Employee_T (EmployeeID,EmployeeName,EmployeeAddress,EmployeeCity,EmployeeState,EmployeeZip,EmployeeDateHired,EmployeeBirthDate,EmployeeSupervisor) values ('454-56-768','Robert Lewis','17834 Deerfield Ln','Knoxville','TN','55555',to_timestamp('01-JAN-98','DD-MON-RR HH.MI.SSXFF AM'),to_timestamp('25-AUG-64','DD-MON-RR HH.MI.SSXFF AM'),'123-44-345');
+Insert into Employee_T (EmployeeID,EmployeeName,EmployeeAddress,EmployeeCity,EmployeeState,EmployeeZip,EmployeeDateHired,EmployeeBirthDate,EmployeeSupervisor) values ('555955585','Mary Smith','75 Jane Lane','Clearwater','FL','33879',to_timestamp('15-AUG-00','DD-MON-RR HH.MI.SSXFF AM'),to_timestamp('06-MAY-69','DD-MON-RR HH.MI.SSXFF AM'),'332445667');
+Insert into Employee_T (EmployeeID,EmployeeName,EmployeeAddress,EmployeeCity,EmployeeState,EmployeeZip,EmployeeDateHired,EmployeeBirthDate,EmployeeSupervisor) values ('Laura','Laura Ellenburg','5342 Picklied Trout Lane','Nashville','TN','38010',to_timestamp('22-FEB-00','DD-MON-RR HH.MI.SSXFF AM'),null,'454-56-768');
+
+
+
+INSERT INTO EmployeeSkills_T  (EmployeeID, SkillID, QualifyDate)
+VALUES  ('123-44-345', 'BS12','');
+INSERT INTO EmployeeSkills_T  (EmployeeID, SkillID, QualifyDate)
+VALUES  ('123-44-345', 'RT1', '');
+INSERT INTO EmployeeSkills_T  (EmployeeID, SkillID, QualifyDate)
+VALUES  ('123-44-345', 'QC1', '01-JAN-01');
+INSERT INTO EmployeeSkills_T  (EmployeeID, SkillID, QualifyDate)
+VALUES  ('123-44-345', 'TS10', '24-FEB-01');
+INSERT INTO EmployeeSkills_T  (EmployeeID, SkillID, QualifyDate)
+VALUES  ('332445667', 'BS12','20-JAN-99');
+INSERT INTO EmployeeSkills_T  (EmployeeID, SkillID, QualifyDate)
+VALUES  ('332445667', 'TS10','20-JAN-99');
+INSERT INTO EmployeeSkills_T  (EmployeeID, SkillID, QualifyDate)
+VALUES  ('454-56-768', 'BS12', '25-FEB-01');
+INSERT INTO EmployeeSkills_T  (EmployeeID, SkillID, QualifyDate)
+VALUES  ('454-56-768', 'RT1', '10-MAR-01');
+INSERT INTO EmployeeSkills_T  (EmployeeID, SkillID, QualifyDate)
+VALUES  ('454-56-768', 'TS10', '10-MAR-01');
+INSERT INTO EmployeeSkills_T  (EmployeeID, SkillID, QualifyDate)
+VALUES  ('Laura', 'UC1', '22-FEB-00');
+INSERT INTO EmployeeSkills_T  (EmployeeID, SkillID, QualifyDate)
+VALUES  ('Laura', 'US1', '22-FEB-00');
+INSERT INTO EmployeeSkills_T  (EmployeeID, SkillID, QualifyDate)
+VALUES  ('Laura', 'UT1', '22-FEB-00');
+
+/*  end of loading the uses table            */
+
+
+/* save all changes to table rows                                  */
+COMMIT;
+
+/* run basic queries over every table to verify data               
+select * from USES_T;
+select * from SUPPLIES_T;
+select * from RawMaterial_T; */
+</pre>

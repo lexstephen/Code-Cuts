@@ -83,6 +83,7 @@ width: 95%;
 			font-family : Cabin, Arial Black, "sans serif"; 
 			font-size : 1.8em; 
 			font-weight : bold; 
+			margin: 0;
 			padding : 3px; 
 			text-align : center; 
 		}

@@ -64,6 +64,25 @@
 	echo '
 	</ul>';
 
+// SQL Section
+	echo '
+	<h3 class="sidebarHead">SQL</h3>
+	<ul>';
+	for ($i = 0; $i < $tutCnt; $i++) {
+	// print JS tutorials
+		if ($tutorials[$i]['cat'] == 'sql') {
+			echo '
+			<li><a href="index.php?cat='
+				.$tutorials[$i]['cat']
+				.'&file='.$tutorials[$i]['file']
+				.'">'
+				.$tutorials[$i]['title']
+				.'</a></li>';
+		}
+	}
+	echo '
+	</ul>';
+
 // ************************************************** //
 echo '
 </div>';

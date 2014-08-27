@@ -1,15 +1,15 @@
 <?php 
 
 // manually enter the file, title and category of each entry
-	$t01 = array ('file' => '1231-01-01', 'title' => 'Median Numbers', 'cat' => 'JavaScript', 'author' => 'Alexis Dicks-Stephen');
-	$t02 = array ('file' => '1231-01-02', 'title' => 'Case Statement', 'cat' => 'JavaScript', 'author' => 'Alexis Dicks-Stephen'); 
-	$t03 = array ('file' => '1231-01-03', 'title' => 'isNaN', 'cat' => 'JavaScript', 'author' => 'Alexis Dicks-Stephen'); 
-	$t04 = array ('file' => '1231-02-01', 'title' => 'Dynamic HTML with Loops', 'cat' => 'JavaScript', 'author' => 'Alexis Dicks-Stephen'); 
-	$t05 = array ('file' => '1231-03-01', 'title' => 'Random Number Array', 'cat' => 'JavaScript', 'author' => 'Alexis Dicks-Stephen'); 
-	$t06 = array ('file' => '1231-04-01', 'title' => 'Printing & Comparing Array Elements', 'cat' => 'JavaScript', 'author' => 'Alexis Dicks-Stephen'); 
-	$t07 = array ('file' => '1231-04-02', 'title' => 'Modifying Arrays', 'cat' => 'JavaScript', 'author' => 'Alexis Dicks-Stephen'); 
-	$t08 = array ('file' => '1231-05-01', 'title' => 'Modifying Style Elements', 'cat' => 'JavaScript', 'author' => 'Alexis Dicks-Stephen'); 
-	$t09 = array ('file' => '1231-05-02', 'title' => 'Calculator', 'cat' => 'JavaScript', 'author' => 'Alexis Dicks-Stephen'); 
+	$t1 = array ('file' => '1231-01-01', 'title' => 'Median Numbers', 'cat' => 'JavaScript', 'author' => 'Alexis Dicks-Stephen');
+	$t2 = array ('file' => '1231-01-02', 'title' => 'Case Statement', 'cat' => 'JavaScript', 'author' => 'Alexis Dicks-Stephen'); 
+	$t3 = array ('file' => '1231-01-03', 'title' => 'isNaN', 'cat' => 'JavaScript', 'author' => 'Alexis Dicks-Stephen'); 
+	$t4 = array ('file' => '1231-02-01', 'title' => 'Dynamic HTML with Loops', 'cat' => 'JavaScript', 'author' => 'Alexis Dicks-Stephen'); 
+	$t5 = array ('file' => '1231-03-01', 'title' => 'Random Number Array', 'cat' => 'JavaScript', 'author' => 'Alexis Dicks-Stephen'); 
+	$t6 = array ('file' => '1231-04-01', 'title' => 'Printing & Comparing Array Elements', 'cat' => 'JavaScript', 'author' => 'Alexis Dicks-Stephen'); 
+	$t7 = array ('file' => '1231-04-02', 'title' => 'Modifying Arrays', 'cat' => 'JavaScript', 'author' => 'Alexis Dicks-Stephen'); 
+	$t8 = array ('file' => '1231-05-01', 'title' => 'Modifying Style Elements', 'cat' => 'JavaScript', 'author' => 'Alexis Dicks-Stephen'); 
+	$t9 = array ('file' => '1231-05-02', 'title' => 'Calculator', 'cat' => 'JavaScript', 'author' => 'Alexis Dicks-Stephen'); 
 	$t10 = array ('file' => '1231-05-03', 'title' => 'Creating Arrays on the fly', 'cat' => 'JavaScript', 'author' => 'Alexis Dicks-Stephen'); 
 	$t11 = array ('file' => '1231-06-01', 'title' => 'Creating & Updating Objects', 'cat' => 'JavaScript', 'author' => 'Alexis Dicks-Stephen'); 
 	$t12 = array ('file' => '1231-07-01', 'title' => 'Mouse Coordinates', 'cat' => 'JavaScript', 'author' => 'Alexis Dicks-Stephen'); 
@@ -31,15 +31,15 @@
 	$t28 = array ('file' => '1168-01-02', 'title' => 'Load a Database', 'cat' => 'sql', 'author' => 'Adapted from 1168 Course materials'); 
 	
 // add a fourth array element to the above with its associated tags
-	$t01['tags'] = array('if', 'else', 'prompt', 'for', 'median');
-	$t02['tags'] = array('prompt', 'switch', 'case', 'getElementById', 'innerText');
-	$t03['tags'] = array('if', 'else', 'prompt', 'isNaN');
-	$t04['tags'] = array('table', 'ul', 'li', 'if', 'else', 'prompt', 'getElementById', 'innerHTML', 'isNaN');
-	$t05['tags'] = array('ul', 'li', 'if', 'else', 'prompt', 'getElementById', 'innerHTML', 'parseInt', 'Math', 'array');
-	$t06['tags'] = array('ul', 'li', 'if', 'else', 'prompt', 'getElementById', 'innerHTML', 'isNaN', 'parseInt', 'Math', 'mean', 'median', 'mode', 'length', 'array', 'multidimensional array');
-	$t07['tags'] = array('for', 'getElementById', 'innerHTML', 'length', 'array', 'multidimensional array', 'indexOf', 'lastIndexOf', 'pop', 'reverse', 'concat', 'shift', 'splice', 'join', 'slice', 'push', 'unshift');
-	$t08['tags'] = array('form', 'input', 'style', 'backgroundColor', 'color', 'getElementById', 'function', 'onclick');
-	$t09['tags'] = array('form', 'input', 'if', 'else', 'getElementById', 'innerHTML', 'isNaN', 'parseFloat', 'Math', 'function', 'onclick');
+	$t1['tags'] = array('if', 'else', 'prompt', 'for', 'median');
+	$t2['tags'] = array('prompt', 'switch', 'case', 'getElementById', 'innerText');
+	$t3['tags'] = array('if', 'else', 'prompt', 'isNaN');
+	$t4['tags'] = array('table', 'ul', 'li', 'if', 'else', 'prompt', 'getElementById', 'innerHTML', 'isNaN');
+	$t5['tags'] = array('ul', 'li', 'if', 'else', 'prompt', 'getElementById', 'innerHTML', 'parseInt', 'Math', 'array');
+	$t6['tags'] = array('ul', 'li', 'if', 'else', 'prompt', 'getElementById', 'innerHTML', 'isNaN', 'parseInt', 'Math', 'mean', 'median', 'mode', 'length', 'array', 'multidimensional array');
+	$t7['tags'] = array('for', 'getElementById', 'innerHTML', 'length', 'array', 'multidimensional array', 'indexOf', 'lastIndexOf', 'pop', 'reverse', 'concat', 'shift', 'splice', 'join', 'slice', 'push', 'unshift');
+	$t8['tags'] = array('form', 'input', 'style', 'backgroundColor', 'color', 'getElementById', 'function', 'onclick');
+	$t9['tags'] = array('form', 'input', 'if', 'else', 'getElementById', 'innerHTML', 'isNaN', 'parseFloat', 'Math', 'function', 'onclick');
 	$t10['tags'] = array('form', 'input', 'for', 'getElementById', 'innerHTML', 'isNaN', 'parseFloat', 'Math', 'length', 'array', 'join', 'function', 'onclick');
 	$t11['tags'] = array('form', 'input', 'getElementById', 'innerHTML', 'this', 'toString', 'length', 'array', 'object', 'function', 'onclick');
 	$t12['tags'] = array('getElementById', 'innerHTML', 'function', 'onclick', 'onmousemove', 'onmouseout', 'pageX', 'pageY');
@@ -60,11 +60,23 @@
 	$t27['tags'] = array('create table', 'drop table', 'linesize', 'pagesize', 'constraint', 'primary key', 'foreign key', 'references', 'describe', 'commit');
 	$t28['tags'] = array('delete from', 'insert into', 'commit', 'select', 'select *');
 	
+	/* my attempt to automate the array building is not working 
+	$numberOfTutorials = 28;
+	$buildTutorialArray = '';
+	
+	for ($x = 1; $x <= $numberOfTutorials; $x++) {
+		if ($x == $numberOfTutorials) 
+			$buildTutorialArray += '$t'.$x;
+		else 
+			$buildTutorialArray += '$t'.$x.', ';
+	}
+	*/
+	
 // merge the arrays into one super array to be used henceforth
-	$tutorials = array($t01, $t02, $t03, $t04, $t05, $t06, $t07, $t08, $t09, $t10, $t11, $t12, $t13, $t14, $t15, $t16, $t17, $t18, $t19, $t20, $t21, $t22, $t23, $t24, $t25, $t26, $t27, $t28);
+	$tutorials = array($t1, $t2, $t3, $t4, $t5, $t6, $t7, $t8, $t9, $t10, $t11, $t12, $t13, $t14, $t15, $t16, $t17, $t18, $t19, $t20, $t21, $t22, $t23, $t24, $t25, $t26, $t27, $t28);
 
 // merge all the tag arrays and then return unique entries
-	$preciseTags = array_unique(array_merge($t01['tags'], $t02['tags'], $t03['tags'], $t04['tags'], $t05['tags'], $t06['tags'], $t07['tags'], $t08['tags'], $t09['tags'], $t10['tags'], $t11['tags'], $t12['tags'], $t13['tags'], $t14['tags'], $t15['tags'], $t16['tags'], $t17['tags'], $t18['tags'], $t19['tags'], $t20['tags'], $t21['tags'], $t22['tags'], $t23['tags'], $t24['tags'], $t25['tags'], $t26['tags'], $t27['tags'], $t28['tags']));
+	$preciseTags = array_unique(array_merge($t1['tags'], $t2['tags'], $t3['tags'], $t4['tags'], $t5['tags'], $t6['tags'], $t7['tags'], $t8['tags'], $t9['tags'], $t10['tags'], $t11['tags'], $t12['tags'], $t13['tags'], $t14['tags'], $t15['tags'], $t16['tags'], $t17['tags'], $t18['tags'], $t19['tags'], $t20['tags'], $t21['tags'], $t22['tags'], $t23['tags'], $t24['tags'], $t25['tags'], $t26['tags'], $t27['tags'], $t28['tags']));
 	
 // alphabetize the list of tags
 	sort($preciseTags);

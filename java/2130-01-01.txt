@@ -1,0 +1,30 @@
+
+// Import the Scanner class
+import java.util.Scanner;
+	
+public class Maths {
+	  public static void main(String[] args) { 
+			double theRadius = 5.5;
+			double itsPi = 3.14; 
+			double thePerimeter = 2*theRadius*itsPi;
+			double theArea = theRadius*theRadius*itsPi;
+			
+			System.out.println("The perimeter is " + thePerimeter);
+			
+			System.out.println("The area is " + theArea);
+			
+			System.out.println("Enter a new radius:");
+			
+			Scanner input = new Scanner(System.in);
+			theRadius = input.nextDouble();
+			
+			System.out.println("Your answer was " + theRadius);
+			
+			thePerimeter = 2*theRadius*itsPi;
+			theArea = theRadius*theRadius*itsPi;
+			
+			System.out.println("The perimeter is " + thePerimeter);
+			
+			System.out.println("The area is " + theArea);
+	}
+}

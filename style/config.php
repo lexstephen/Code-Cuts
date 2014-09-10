@@ -29,6 +29,7 @@
 	$t26 = array ('file' => 'TMW-05-01', 'title' => 'Forms', 'cat' => 'HTML', 'author' => 'Adapted from The Modern Web c2013 by Peter Gasston');
 	$t27 = array ('file' => '1168-01-01', 'title' => 'Create a Database', 'cat' => 'sql', 'author' => 'Adapted from 1168 Course materials'); 
 	$t28 = array ('file' => '1168-01-02', 'title' => 'Load a Database', 'cat' => 'sql', 'author' => 'Adapted from 1168 Course materials'); 
+	$t29 = array ('file' => '2130-01-01', 'title' => 'Print Line and Read Line', 'cat' => 'Java', 'author' => 'Alexis Dicks-Stephen'); 
 	
 // add a fourth array element to the above with its associated tags
 	$t1['tags'] = array('if', 'else', 'prompt', 'for', 'median');
@@ -59,6 +60,7 @@
 	$t26['tags'] = array('datetime', 'form', 'input', 'autofocus', 'placeholder', 'required', 'spellcheck', 'autocomplete', 'datalist', 'list', 'max', 'min', 'lang');
 	$t27['tags'] = array('create table', 'drop table', 'linesize', 'pagesize', 'constraint', 'primary key', 'foreign key', 'references', 'describe', 'commit');
 	$t28['tags'] = array('delete from', 'insert into', 'commit', 'select', 'select *');
+	$t29['tags'] = array('System', 'out', 'println', 'Scanner', 'in', 'nextDouble()');
 	
 	/* my attempt to automate the array building is not working 
 	$numberOfTutorials = 28;
@@ -73,10 +75,10 @@
 	*/
 	
 // merge the arrays into one super array to be used henceforth
-	$tutorials = array($t1, $t2, $t3, $t4, $t5, $t6, $t7, $t8, $t9, $t10, $t11, $t12, $t13, $t14, $t15, $t16, $t17, $t18, $t19, $t20, $t21, $t22, $t23, $t24, $t25, $t26, $t27, $t28);
+	$tutorials = array($t1, $t2, $t3, $t4, $t5, $t6, $t7, $t8, $t9, $t10, $t11, $t12, $t13, $t14, $t15, $t16, $t17, $t18, $t19, $t20, $t21, $t22, $t23, $t24, $t25, $t26, $t27, $t28, $t29);
 
 // merge all the tag arrays and then return unique entries
-	$preciseTags = array_unique(array_merge($t1['tags'], $t2['tags'], $t3['tags'], $t4['tags'], $t5['tags'], $t6['tags'], $t7['tags'], $t8['tags'], $t9['tags'], $t10['tags'], $t11['tags'], $t12['tags'], $t13['tags'], $t14['tags'], $t15['tags'], $t16['tags'], $t17['tags'], $t18['tags'], $t19['tags'], $t20['tags'], $t21['tags'], $t22['tags'], $t23['tags'], $t24['tags'], $t25['tags'], $t26['tags'], $t27['tags'], $t28['tags']));
+	$preciseTags = array_unique(array_merge($t1['tags'], $t2['tags'], $t3['tags'], $t4['tags'], $t5['tags'], $t6['tags'], $t7['tags'], $t8['tags'], $t9['tags'], $t10['tags'], $t11['tags'], $t12['tags'], $t13['tags'], $t14['tags'], $t15['tags'], $t16['tags'], $t17['tags'], $t18['tags'], $t19['tags'], $t20['tags'], $t21['tags'], $t22['tags'], $t23['tags'], $t24['tags'], $t25['tags'], $t26['tags'], $t27['tags'], $t28['tags'], $t29['tags']));
 	
 // alphabetize the list of tags
 	sort($preciseTags);

@@ -45,6 +45,25 @@
 	echo '
 	</ul>';
 
+// Java Section
+	echo '
+	<h3 class="sidebarHead">Java</h3>
+	<ul>';
+	for ($i = 0; $i < $tutCnt; $i++) {
+	// print Java tutorials
+		if ($tutorials[$i]['cat'] == 'Java') {
+			echo '
+			<li><a href="index.php?cat='
+				.$tutorials[$i]['cat']
+				.'&file='.$tutorials[$i]['file']
+				.'">'
+				.$tutorials[$i]['title']
+				.'</a></li>';
+		}
+	}
+	echo '
+	</ul>';
+
 // JavaScript Section
 	echo '
 	<h3 class="sidebarHead">JavaScript</h3>

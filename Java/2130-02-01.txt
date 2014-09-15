@@ -1,0 +1,21 @@
+
+// Import the Scanner class
+import java.util.Scanner;
+	
+public class Maths {
+	  public static void main(String[] args) { 
+		// CELSIUS --> FAHRENHEIT CONVERTER
+		
+		double theCelsius;
+
+		System.out.println("Enter the temperature in Celsius:");
+		
+		Scanner input = new Scanner(System.in);
+		theCelsius = input.nextDouble();
+
+		double theFahrenheit = (9.0/5) * theCelsius + 32; 
+		
+		System.out.println(theCelsius + " degrees Celsius is " + theFahrenheit + " degrees Fahrenheit");
+		
+	}
+}

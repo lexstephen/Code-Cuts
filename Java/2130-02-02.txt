@@ -1,0 +1,28 @@
+
+// Import the Scanner class
+import java.util.Scanner;
+	
+public class Maths {
+	  public static void main(String[] args) { 
+		// VOLUME OF A CYLINDER
+			
+		double theRadius, theLength;
+		final double thePi = 3.14159;
+
+		System.out.println("Enter the radius and length of a cylinder:");
+		
+		Scanner lineInput = new Scanner(System.in);
+		theRadius = lineInput.nextDouble();
+		theLength = lineInput.nextDouble();
+		
+		double theArea = theRadius * theRadius * thePi;
+		double theVolume = theArea * theLength;
+
+		DecimalFormat af = new DecimalFormat("#.####");
+		DecimalFormat vf = new DecimalFormat("#.#");
+        
+		System.out.println("The area is " + af.format(theArea) + ", and the volume is " + vf.format(theVolume) + ".");
+		
+		
+	}
+}

@@ -65,22 +65,41 @@
 	</ul>';
 
 // JavaScript Section
-	echo '
+echo '
 	<h3 class="sidebarHead">JavaScript</h3>
 	<ul>';
-	for ($i = 0; $i < $tutCnt; $i++) {
-	// print JS tutorials
-		if ($tutorials[$i]['cat'] == 'JavaScript') {
-			echo '
+for ($i = 0; $i < $tutCnt; $i++) {
+    // print JS tutorials
+    if ($tutorials[$i]['cat'] == 'JavaScript') {
+        echo '
 			<li><a href="index.php?cat='
-				.$tutorials[$i]['cat']
-				.'&file='.$tutorials[$i]['file']
-				.'">'
-				.$tutorials[$i]['title']
-				.'</a></li>';
-		}
-	}
-	echo '
+            .$tutorials[$i]['cat']
+            .'&file='.$tutorials[$i]['file']
+            .'">'
+            .$tutorials[$i]['title']
+            .'</a></li>';
+    }
+}
+echo '
+	</ul>';
+
+// PHP Section
+echo '
+	<h3 class="sidebarHead">PHP</h3>
+	<ul>';
+for ($i = 0; $i < $tutCnt; $i++) {
+    // print PHP tutorials
+    if ($tutorials[$i]['cat'] == 'PHP') {
+        echo '
+			<li><a href="index.php?cat='
+            .$tutorials[$i]['cat']
+            .'&file='.$tutorials[$i]['file']
+            .'">'
+            .$tutorials[$i]['title']
+            .'</a></li>';
+    }
+}
+echo '
 	</ul>';
 
 // SQL Section

@@ -1,0 +1,117 @@
+&lt;?php
+	#                        #
+	#  Alexis Dicks-Stephen  #
+	#  #100563954            #
+	#                        #
+
+	if (isset($_GET['genderFemale']))
+		$genderFemale = true;
+	else
+		$genderFemale = false;
+ 
+	if ($_GET) {
+		$whichSemester = $_GET['whichSemester'];
+		$gpa = $_GET['gpa'];
+		$yourName = $_GET['yourName'];
+		$color = $_GET['color'];
+	}
+	else {
+		$whichSemester = 1;
+		$gpa = 2.95;
+		$yourName = "Sweet Jane";
+		$genderFemale = true;
+		$color = "#888";
+	}
+	
+	$honourRoll = $gpa &gt; 3.5;
+?&gt;
+		&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+	&lt;title&gt;Week 2&lt;/title&gt;
+	&lt;style&gt;
+		#answer	{font-family: Verdana; background-color: #fff; color: #000; width: 300px; height: 200px; 
+				margin: 20px; margin-top: -205px; margin-right: 673px; padding: 20px; padding-left: 50px; text-transform: lowercase; font-size: 90%; float: right;
+				border: 1px &lt;?php echo $color; ?&gt; solid;
+				background-image: -moz-radial-gradient(45px 45px 45deg, circle cover, #fff 0%, &lt;?php echo $color; ?&gt; 100%, red 95%);
+				background-image: -webkit-radial-gradient(45px 45px, circle cover, #fff, &lt;?php echo $color; ?&gt;);
+				background-image: radial-gradient(45px 45px 45deg, circle cover, #fff 0%, &lt;?php echo $color; ?&gt; 100%, red 95%);}
+		h1		{font-size: 600%; color: &lt;?php echo $color; ?&gt;; margin-top: -10px;}
+		label	{display: block; float: left; width: 150px; text-transform: lowercase; text-align: left;}
+		form	{width: 350px;}
+		#gpaForm input	{border: 1px &lt;?php echo $color; ?&gt; solid; margin: 5px; padding: 5px;}
+		#gpaForm input[type="submit"]	{margin: 20px; clear: all; border: 0; height: 25px; width: 25px; float: left; margin: 2px; border-radius: 50%;}
+		.color1	{background-color: red; color: red;}
+		.color2	{background-color: orange; color: orange;}
+		.color3	{background-color: yellow; color: yellow;}
+		.color4	{background-color: green; color: green;}
+		.color5	{background-color: blue; color: blue;}
+		.color6	{background-color: indigo; color: indigo;}
+		.color7	{background-color: violet; color: violet;}
+	&lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;h1&gt;GPA Calculator&lt;/h1&gt;
+
+&lt;form id="gpaForm"&gt;
+	&lt;label for="yourName"&gt;Your Name&lt;/label&gt; 
+		&lt;input type="text" name="yourName" id="nameCheck" value="&lt;?php echo $yourName; ?&gt;"&gt;&lt;br&gt;
+
+	&lt;label for="whichSemester"&gt;Which Semester&lt;/label&gt; 
+		&lt;input type="text" name="whichSemester" id="semCheck" value="&lt;?php echo $whichSemester; ?&gt;"&gt;&lt;br&gt;
+
+	&lt;label for="gpa"&gt;GPA&lt;/label&gt; 
+		&lt;input type="text" name="gpa" id="gpaCheck" value="&lt;?php echo $gpa; ?&gt;"&gt;&lt;br&gt;
+		
+	&lt;label for="genderFemale"&gt;Are you female?&lt;/label&gt; 
+		&lt;input type="checkbox" name="genderFemale" id="genCheck" &lt;?php if ($genderFemale)	echo " checked"; ?&gt;&gt;&lt;br&gt;
+	
+	&lt;input type="hidden" name="color" value="&lt;?php echo $color; ?&gt;"&gt;
+	
+	&lt;label for="submit"&gt;
+		&lt;!-- 
+		&lt;a href="lab02.php?color=red&yourName=&lt;?php echo $yourName; ?&gt;&whichSemester=&lt;?php echo $whichSemester; ?&gt;&gpa=&lt;?php echo $gpa; ?&gt;&genderFemale=&lt;?php echo $genderFemale; ?&gt;"&gt;&lt;div class="color1"&gt;&nbsp;&lt;/div&gt;&lt;/a&gt;
+		&lt;a href="lab02.php?color=orange&yourName=&lt;?php echo $yourName; ?&gt;&whichSemester=&lt;?php echo $whichSemester; ?&gt;&gpa=&lt;?php echo $gpa; ?&gt;&genderFemale=&lt;?php echo $genderFemale; ?&gt;"&gt;&lt;div class="color2"&gt;&nbsp;&lt;/div&gt;&lt;/a&gt;
+		&lt;a href="lab02.php?color=yellow&yourName=&lt;?php echo $yourName; ?&gt;&whichSemester=&lt;?php echo $whichSemester; ?&gt;&gpa=&lt;?php echo $gpa; ?&gt;&genderFemale=&lt;?php echo $genderFemale; ?&gt;"&gt;&lt;div class="color3"&gt;&nbsp;&lt;/div&gt;&lt;/a&gt;
+		&lt;a href="lab02.php?color=green&yourName=&lt;?php echo $yourName; ?&gt;&whichSemester=&lt;?php echo $whichSemester; ?&gt;&gpa=&lt;?php echo $gpa; ?&gt;&genderFemale=&lt;?php echo $genderFemale; ?&gt;"&gt;&lt;div class="color4"&gt;&nbsp;&lt;/div&gt;&lt;/a&gt;
+		&lt;a href="lab02.php?color=blue&yourName=&lt;?php echo $yourName; ?&gt;&whichSemester=&lt;?php echo $whichSemester; ?&gt;&gpa=&lt;?php echo $gpa; ?&gt;&genderFemale=&lt;?php echo $genderFemale; ?&gt;"&gt;&lt;div class="color5"&gt;&nbsp;&lt;/div&gt;&lt;/a&gt;
+		&lt;a href="lab02.php?color=indigo&yourName=&lt;?php echo $yourName; ?&gt;&whichSemester=&lt;?php echo $whichSemester; ?&gt;&gpa=&lt;?php echo $gpa; ?&gt;&genderFemale=&lt;?php echo $genderFemale; ?&gt;"&gt;&lt;div class="color6"&gt;&nbsp;&lt;/div&gt;&lt;/a&gt;
+		&lt;a href="lab02.php?color=violet&yourName=&lt;?php echo $yourName; ?&gt;&whichSemester=&lt;?php echo $whichSemester; ?&gt;&gpa=&lt;?php echo $gpa; ?&gt;&genderFemale=&lt;?php echo $genderFemale; ?&gt;"&gt;&lt;div class="color7"&gt;&nbsp;&lt;/div&gt;&lt;/a&gt;
+		--&gt;
+		
+	&lt;/label&gt;
+		&lt;input class="color1" type="submit" name="color" value="red" onclick="return checkNumber('semCheck'); return checkNumber('gpaCheck'); "&gt;
+		&lt;input class="color2" type="submit" name="color" value="orange" onclick="return checkNumber('semCheck'); return checkNumber('gpaCheck'); "&gt;
+		&lt;input class="color3" type="submit" name="color" value="yellow" onclick="return checkNumber('semCheck'); return checkNumber('gpaCheck'); "&gt;
+		&lt;input class="color4" type="submit" name="color" value="green" onclick="return checkNumber('semCheck'); return checkNumber('gpaCheck'); "&gt;
+		&lt;input class="color5" type="submit" name="color" value="blue" onclick="return checkNumber('semCheck'); return checkNumber('gpaCheck'); "&gt;
+		&lt;input class="color6" type="submit" name="color" value="indigo" onclick="return checkNumber('semCheck'); return checkNumber('gpaCheck'); "&gt;
+		&lt;input class="color7" type="submit" name="color" value="violet" onclick="return checkNumber('semCheck'); return checkNumber('gpaCheck'); "&gt;
+&lt;/form&gt;
+&lt;?php 
+	if ((is_numeric($whichSemester)) && (is_numeric($gpa))) {
+		$pronoun = ($genderFemale)?"She":"He";
+		
+		echo "&lt;div id=\"answer\"&gt;$yourName is in semester $whichSemester and is averaging a $gpa GPA. ";
+
+		if ($honourRoll)
+			echo "$pronoun is on the honour roll.&lt;/div&gt;";
+		else
+			echo "$pronoun is not on the honour roll.&lt;/div&gt;";
+	}
+?&gt;
+&lt;script type="text/javascript"&gt;
+function checkNumber(x) {
+	if (isNaN(document.getElementById(x).value)) {	
+			alert("Please enter your semester and gpa as a number.");
+			document.getElementById('nameCheck').value = "---";
+			document.getElementById('semCheck').value = "---";
+			document.getElementById('gpaCheck').value = "---";
+			document.getElementById('genCheck').value = "---";
+	}
+}
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;

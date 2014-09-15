@@ -1,6 +1,3 @@
-
-
-
 <article id="codeArea" role="main">
 	<div id="codeBanner"><?php
 // display article's category, title
@@ -16,14 +13,14 @@
 		}
 	?></div>
 	
-	<div id="previewArea"><?php 
+	<iframe id="previewArea" src="<?php
 // live preview pane
-		include $cat.'/'.$file.'.'.$fileType; 
-	?></div>
+		echo $cat.'/'.$file.'.'.$fileTypePreview;
+	?>"></iframe>
 
 	<textarea id="previewCode"><?php
 // code preview pane
-		include $cat.'/'.$file.'.'.$fileType; 
+		include $cat.'/'.$file.'.'.$fileTypeCode;
 	?></textarea>
 	<input type="button" value="Update" onclick="postCode()">
 	 <input type="button" value="Reset" onclick="resetCode()"> 

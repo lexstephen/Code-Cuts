@@ -1,36 +1,41 @@
 <?php 
 
 // manually enter the file, title and category of each entry
-	$t1 = array ('file' => '1231-01-01', 'title' => 'Median Numbers', 'cat' => 'JavaScript', 'author' => 'Alexis Dicks-Stephen');
-	$t2 = array ('file' => '1231-01-02', 'title' => 'Case Statement', 'cat' => 'JavaScript', 'author' => 'Alexis Dicks-Stephen'); 
-	$t3 = array ('file' => '1231-01-03', 'title' => 'isNaN', 'cat' => 'JavaScript', 'author' => 'Alexis Dicks-Stephen'); 
-	$t4 = array ('file' => '1231-02-01', 'title' => 'Dynamic HTML with Loops', 'cat' => 'JavaScript', 'author' => 'Alexis Dicks-Stephen'); 
-	$t5 = array ('file' => '1231-03-01', 'title' => 'Random Number Array', 'cat' => 'JavaScript', 'author' => 'Alexis Dicks-Stephen'); 
-	$t6 = array ('file' => '1231-04-01', 'title' => 'Printing & Comparing Array Elements', 'cat' => 'JavaScript', 'author' => 'Alexis Dicks-Stephen'); 
-	$t7 = array ('file' => '1231-04-02', 'title' => 'Modifying Arrays', 'cat' => 'JavaScript', 'author' => 'Alexis Dicks-Stephen'); 
-	$t8 = array ('file' => '1231-05-01', 'title' => 'Modifying Style Elements', 'cat' => 'JavaScript', 'author' => 'Alexis Dicks-Stephen'); 
-	$t9 = array ('file' => '1231-05-02', 'title' => 'Calculator', 'cat' => 'JavaScript', 'author' => 'Alexis Dicks-Stephen'); 
-	$t10 = array ('file' => '1231-05-03', 'title' => 'Creating Arrays on the fly', 'cat' => 'JavaScript', 'author' => 'Alexis Dicks-Stephen'); 
-	$t11 = array ('file' => '1231-06-01', 'title' => 'Creating & Updating Objects', 'cat' => 'JavaScript', 'author' => 'Alexis Dicks-Stephen'); 
-	$t12 = array ('file' => '1231-07-01', 'title' => 'Mouse Coordinates', 'cat' => 'JavaScript', 'author' => 'Alexis Dicks-Stephen'); 
-	$t13 = array ('file' => '1231-07-02', 'title' => 'Manipulating Images', 'cat' => 'JavaScript', 'author' => 'Alexis Dicks-Stephen'); 
-	$t14 = array ('file' => '1231-C-01', 'title' => 'Console Logging', 'cat' => 'JavaScript', 'author' => 'Alexis Dicks-Stephen'); 
-	$t15 = array ('file' => '1231-C-02', 'title' => 'Prevent Default', 'cat' => 'JavaScript', 'author' => 'Alexis Dicks-Stephen'); 
-	$t16 = array ('file' => '1231-C-03', 'title' => 'Styling Lists on the fly', 'cat' => 'JavaScript', 'author' => 'Alexis Dicks-Stephen'); 
-	$t17 = array ('file' => '1231-A-01', 'title' => 'Searching with Angular', 'cat' => 'JavaScript', 'author' => 'Alexis Dicks-Stephen'); 
-	$t18 = array ('file' => '1223-04-01', 'title' => 'Background Gradient', 'cat' => 'CSS', 'author' => 'Alexis Dicks-Stephen'); 
-	$t19 = array ('file' => 'TMW-01-01', 'title' => 'Accessibility: WAI-ARIA & Landmark Roles', 'cat' => 'HTML', 'author' => 'Adapted from The Modern Web c2013 by Peter Gasston'); 
-	$t20 = array ('file' => 'TMW-02-01', 'title' => 'Semantic Markup & Data Attributes', 'cat' => 'HTML', 'author' => 'Adapted from The Modern Web c2013 by Peter Gasston');
-	$t21 = array ('file' => 'TMW-03-01', 'title' => 'Media Queries', 'cat' => 'CSS', 'author' => 'Adapted from The Modern Web c2013 by Peter Gasston'); 
-	$t22 = array ('file' => 'TMW-03-02', 'title' => 'Box-Sizing', 'cat' => 'CSS', 'author' => 'Adapted from The Modern Web c2013 by Peter Gasston'); 
-	$t23 = array ('file' => 'TMW-03-03', 'title' => 'Relative Units', 'cat' => 'CSS', 'author' => 'Adapted from The Modern Web c2013 by Peter Gasston'); 
-	$t24 = array ('file' => 'TMW-03-04', 'title' => 'Responsive Objects', 'cat' => 'CSS', 'author' => 'Adapted from The Modern Web c2013 by Peter Gasston'); 
-	$t25 = array ('file' => 'TMW-04-01', 'title' => 'Multi Columns', 'cat' => 'CSS', 'author' => 'Adapted from The Modern Web c2013 by Peter Gasston'); 
-	$t26 = array ('file' => 'TMW-05-01', 'title' => 'Forms', 'cat' => 'HTML', 'author' => 'Adapted from The Modern Web c2013 by Peter Gasston');
-	$t27 = array ('file' => '1168-01-01', 'title' => 'Create a Database', 'cat' => 'sql', 'author' => 'Adapted from 1168 Course materials'); 
-	$t28 = array ('file' => '1168-01-02', 'title' => 'Load a Database', 'cat' => 'sql', 'author' => 'Adapted from 1168 Course materials'); 
-	$t29 = array ('file' => '2130-01-01', 'title' => 'Print Line and Read Line', 'cat' => 'Java', 'author' => 'Alexis Dicks-Stephen'); 
-	
+	$t1 = array ('file' => '1231-01-01', 'title' => 'Median Numbers', 'cat' => 'JavaScript', 'author' => 'Alexis Dicks-Stephen', 'fileTypePreview' => 'txt', 'fileTypeCode' => 'txt');
+	$t2 = array ('file' => '1231-01-02', 'title' => 'Case Statement', 'cat' => 'JavaScript', 'author' => 'Alexis Dicks-Stephen', 'fileTypePreview' => 'txt', 'fileTypeCode' => 'txt'); 
+	$t3 = array ('file' => '1231-01-03', 'title' => 'isNaN', 'cat' => 'JavaScript', 'author' => 'Alexis Dicks-Stephen', 'fileTypePreview' => 'txt', 'fileTypeCode' => 'txt'); 
+	$t4 = array ('file' => '1231-02-01', 'title' => 'Dynamic HTML with Loops', 'cat' => 'JavaScript', 'author' => 'Alexis Dicks-Stephen', 'fileTypePreview' => 'txt', 'fileTypeCode' => 'txt'); 
+	$t5 = array ('file' => '1231-03-01', 'title' => 'Random Number Array', 'cat' => 'JavaScript', 'author' => 'Alexis Dicks-Stephen', 'fileTypePreview' => 'txt', 'fileTypeCode' => 'txt'); 
+	$t6 = array ('file' => '1231-04-01', 'title' => 'Printing & Comparing Array Elements', 'cat' => 'JavaScript', 'author' => 'Alexis Dicks-Stephen', 'fileTypePreview' => 'txt', 'fileTypeCode' => 'txt'); 
+	$t7 = array ('file' => '1231-04-02', 'title' => 'Modifying Arrays', 'cat' => 'JavaScript', 'author' => 'Alexis Dicks-Stephen', 'fileTypePreview' => 'txt', 'fileTypeCode' => 'txt'); 
+	$t8 = array ('file' => '1231-05-01', 'title' => 'Modifying Style Elements', 'cat' => 'JavaScript', 'author' => 'Alexis Dicks-Stephen', 'fileTypePreview' => 'txt', 'fileTypeCode' => 'txt'); 
+	$t9 = array ('file' => '1231-05-02', 'title' => 'Calculator', 'cat' => 'JavaScript', 'author' => 'Alexis Dicks-Stephen', 'fileTypePreview' => 'txt', 'fileTypeCode' => 'txt'); 
+	$t10 = array ('file' => '1231-05-03', 'title' => 'Creating Arrays on the fly', 'cat' => 'JavaScript', 'author' => 'Alexis Dicks-Stephen', 'fileTypePreview' => 'txt', 'fileTypeCode' => 'txt'); 
+	$t11 = array ('file' => '1231-06-01', 'title' => 'Creating & Updating Objects', 'cat' => 'JavaScript', 'author' => 'Alexis Dicks-Stephen', 'fileTypePreview' => 'txt', 'fileTypeCode' => 'txt'); 
+	$t12 = array ('file' => '1231-07-01', 'title' => 'Mouse Coordinates', 'cat' => 'JavaScript', 'author' => 'Alexis Dicks-Stephen', 'fileTypePreview' => 'txt', 'fileTypeCode' => 'txt'); 
+	$t13 = array ('file' => '1231-07-02', 'title' => 'Manipulating Images', 'cat' => 'JavaScript', 'author' => 'Alexis Dicks-Stephen', 'fileTypePreview' => 'txt', 'fileTypeCode' => 'txt'); 
+	$t14 = array ('file' => '1231-C-01', 'title' => 'Console Logging', 'cat' => 'JavaScript', 'author' => 'Alexis Dicks-Stephen', 'fileTypePreview' => 'txt', 'fileTypeCode' => 'txt'); 
+	$t15 = array ('file' => '1231-C-02', 'title' => 'Prevent Default', 'cat' => 'JavaScript', 'author' => 'Alexis Dicks-Stephen', 'fileTypePreview' => 'txt', 'fileTypeCode' => 'txt'); 
+	$t16 = array ('file' => '1231-C-03', 'title' => 'Styling Lists on the fly', 'cat' => 'JavaScript', 'author' => 'Alexis Dicks-Stephen', 'fileTypePreview' => 'txt', 'fileTypeCode' => 'txt'); 
+	$t17 = array ('file' => '1231-A-01', 'title' => 'Searching with Angular', 'cat' => 'JavaScript', 'author' => 'Alexis Dicks-Stephen', 'fileTypePreview' => 'txt', 'fileTypeCode' => 'txt'); 
+	$t18 = array ('file' => '1223-04-01', 'title' => 'Background Gradient', 'cat' => 'CSS', 'author' => 'Alexis Dicks-Stephen', 'fileTypePreview' => 'txt', 'fileTypeCode' => 'txt'); 
+	$t19 = array ('file' => 'TMW-01-01', 'title' => 'Accessibility: WAI-ARIA & Landmark Roles', 'cat' => 'HTML', 'author' => 'Adapted from The Modern Web c2013 by Peter Gasston', 'fileTypePreview' => 'txt', 'fileTypeCode' => 'txt'); 
+	$t20 = array ('file' => 'TMW-02-01', 'title' => 'Semantic Markup & Data Attributes', 'cat' => 'HTML', 'author' => 'Adapted from The Modern Web c2013 by Peter Gasston', 'fileTypePreview' => 'txt', 'fileTypeCode' => 'txt');
+	$t21 = array ('file' => 'TMW-03-01', 'title' => 'Media Queries', 'cat' => 'CSS', 'author' => 'Adapted from The Modern Web c2013 by Peter Gasston', 'fileTypePreview' => 'txt', 'fileTypeCode' => 'txt'); 
+	$t22 = array ('file' => 'TMW-03-02', 'title' => 'Box-Sizing', 'cat' => 'CSS', 'author' => 'Adapted from The Modern Web c2013 by Peter Gasston', 'fileTypePreview' => 'txt', 'fileTypeCode' => 'txt'); 
+	$t23 = array ('file' => 'TMW-03-03', 'title' => 'Relative Units', 'cat' => 'CSS', 'author' => 'Adapted from The Modern Web c2013 by Peter Gasston', 'fileTypePreview' => 'txt', 'fileTypeCode' => 'txt'); 
+	$t24 = array ('file' => 'TMW-03-04', 'title' => 'Responsive Objects', 'cat' => 'CSS', 'author' => 'Adapted from The Modern Web c2013 by Peter Gasston', 'fileTypePreview' => 'txt', 'fileTypeCode' => 'txt'); 
+	$t25 = array ('file' => 'TMW-04-01', 'title' => 'Multi Columns', 'cat' => 'CSS', 'author' => 'Adapted from The Modern Web c2013 by Peter Gasston', 'fileTypePreview' => 'txt', 'fileTypeCode' => 'txt'); 
+	$t26 = array ('file' => 'TMW-05-01', 'title' => 'Forms', 'cat' => 'HTML', 'author' => 'Adapted from The Modern Web c2013 by Peter Gasston', 'fileTypePreview' => 'txt', 'fileTypeCode' => 'txt');
+	$t27 = array ('file' => '1168-01-01', 'title' => 'Create a Database', 'cat' => 'sql', 'author' => 'Adapted from 1168 Course materials', 'fileTypePreview' => 'txt', 'fileTypeCode' => 'txt'); 
+	$t28 = array ('file' => '1168-01-02', 'title' => 'Load a Database', 'cat' => 'sql', 'author' => 'Adapted from 1168 Course materials', 'fileTypePreview' => 'txt', 'fileTypeCode' => 'txt'); 
+	$t29 = array ('file' => '2130-01-01', 'title' => 'Print Line and Read Line', 'cat' => 'Java', 'author' => 'Alexis Dicks-Stephen', 'fileTypePreview' => 'txt', 'fileTypeCode' => 'txt'); 
+	$t30 = array ('file' => '2130-02-01', 'title' => 'Celsius to Fahrenheit Converter', 'cat' => 'Java', 'author' => 'Alexis Dicks-Stephen', 'fileTypePreview' => 'txt', 'fileTypeCode' => 'txt'); 
+	$t31 = array ('file' => '2130-02-02', 'title' => 'Volume of a Cylinder', 'cat' => 'Java', 'author' => 'Alexis Dicks-Stephen', 'fileTypePreview' => 'txt', 'fileTypeCode' => 'txt');
+    $t32 = array ('file' => '2130-02-03', 'title' => 'Convert Feet into Metres', 'cat' => 'Java', 'author' => 'Alexis Dicks-Stephen', 'fileTypePreview' => 'txt', 'fileTypeCode' => 'txt');	$t32 = array ('file' => '2130-02-03', 'title' => 'Convert Feet into Metres', 'cat' => 'Java', 'author' => 'Alexis Dicks-Stephen', 'fileTypePreview' => 'txt', 'fileTypeCode' => 'txt');
+    $t33 = array ('file' => '1230-02-01', 'title' => 'Experimenting with $_GET forms', 'cat' => 'PHP', 'author' => 'Alexis Dicks-Stephen', 'fileTypePreview' => 'php', 'fileTypeCode' => 'txt');
+
+
 // add a fourth array element to the above with its associated tags
 	$t1['tags'] = array('if', 'else', 'prompt', 'for', 'median');
 	$t2['tags'] = array('prompt', 'switch', 'case', 'getElementById', 'innerText');
@@ -61,7 +66,11 @@
 	$t27['tags'] = array('create table', 'drop table', 'linesize', 'pagesize', 'constraint', 'primary key', 'foreign key', 'references', 'describe', 'commit');
 	$t28['tags'] = array('delete from', 'insert into', 'commit', 'select', 'select *');
 	$t29['tags'] = array('System', 'out', 'println', 'Scanner', 'in', 'nextDouble()');
-	
+	$t30['tags'] = array('System', 'out', 'println', 'Scanner', 'in', 'nextDouble()');
+	$t31['tags'] = array('System', 'out', 'println', 'Scanner', 'in', 'nextDouble()', 'DecimalFormat', 'multiple inputs');
+	$t32['tags'] = array('System', 'out', 'println', 'Scanner', 'in', 'nextDouble()');
+    $t33['tags'] = array('$_GET', 'boolean', 'isset', '-moz-radial-gradient', 'input', '-webkit-radial-gradient', 'radial-gradient', 'circle', 'cover', 'is_numeric', 'isNaN', 'getElementById', 'value');
+
 	/* my attempt to automate the array building is not working 
 	$numberOfTutorials = 28;
 	$buildTutorialArray = '';
@@ -75,10 +84,10 @@
 	*/
 	
 // merge the arrays into one super array to be used henceforth
-	$tutorials = array($t1, $t2, $t3, $t4, $t5, $t6, $t7, $t8, $t9, $t10, $t11, $t12, $t13, $t14, $t15, $t16, $t17, $t18, $t19, $t20, $t21, $t22, $t23, $t24, $t25, $t26, $t27, $t28, $t29);
-
+	$tutorials = array($t1, $t2, $t3, $t4, $t5, $t6, $t7, $t8, $t9, $t10, $t11, $t12, $t13, $t14, $t15, $t16, $t17, $t18, $t19, $t20, $t21, $t22, $t23, $t24, $t25, $t26, $t27, $t28, $t29, $t30, $t31, $t32, $t33);
+	
 // merge all the tag arrays and then return unique entries
-	$preciseTags = array_unique(array_merge($t1['tags'], $t2['tags'], $t3['tags'], $t4['tags'], $t5['tags'], $t6['tags'], $t7['tags'], $t8['tags'], $t9['tags'], $t10['tags'], $t11['tags'], $t12['tags'], $t13['tags'], $t14['tags'], $t15['tags'], $t16['tags'], $t17['tags'], $t18['tags'], $t19['tags'], $t20['tags'], $t21['tags'], $t22['tags'], $t23['tags'], $t24['tags'], $t25['tags'], $t26['tags'], $t27['tags'], $t28['tags'], $t29['tags']));
+	$preciseTags = array_unique(array_merge($t1['tags'], $t2['tags'], $t3['tags'], $t4['tags'], $t5['tags'], $t6['tags'], $t7['tags'], $t8['tags'], $t9['tags'], $t10['tags'], $t11['tags'], $t12['tags'], $t13['tags'], $t14['tags'], $t15['tags'], $t16['tags'], $t17['tags'], $t18['tags'], $t19['tags'], $t20['tags'], $t21['tags'], $t22['tags'], $t23['tags'], $t24['tags'], $t25['tags'], $t26['tags'], $t27['tags'], $t28['tags'], $t29['tags'], $t30['tags'], $t31['tags'], $t32['tags'], $t33['tags']));
 	
 // alphabetize the list of tags
 	sort($preciseTags);

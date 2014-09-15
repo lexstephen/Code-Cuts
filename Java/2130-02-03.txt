@@ -1,0 +1,20 @@
+
+// Import the Scanner class
+import java.util.Scanner;
+	
+public class Maths {
+	  public static void main(String[] args) { 
+		// CONVERT FEET INTO METRES
+
+		double theFeet, theMetres;
+		System.out.println("Enter the length in feet:");
+		
+		Scanner feetInput = new Scanner(System.in);
+		theFeet = feetInput.nextDouble();
+		
+		theMetres = theFeet * 0.305;
+		
+		System.out.println(theFeet + " feet is " + theMetres + " metres.");
+		
+	}
+}

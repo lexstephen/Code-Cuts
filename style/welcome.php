@@ -3,7 +3,7 @@
 	
 	<div id="previewArea"><?php 
 // live preview pane
-		include $cat.'/'.$file.'.'.$fileType; 
+		include $cat.'/'.$file.'.'.$fileTypeCode; 
 	?></div>
 
 	

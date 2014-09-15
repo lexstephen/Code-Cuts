@@ -3,7 +3,9 @@
 	
 	$siteTitle = "Code Cuts";
 	$useStylesheet = "style/style.css";
-	$fileType = "txt";
+    $fileTypePreview = "txt";
+    $fileTypeCode = "txt";
+
 	$metaAuthor = "Alexis Dicks-Stephen";
 	$metaTitle = "HTML, CSS, JavaScript and PHP Tutorials";
 	$metaKeywords = "html, css, javascript, php";
@@ -12,7 +14,7 @@
 // if they've already selected a file for viewing, preserve that
 	if(isset($_GET['cat']) && isset($_GET['file'])) {
 		$cat = $_GET['cat'];
-		$file = $_GET['file'];
+        $file = $_GET['file'];
 
 // look in all the tutorials
 		for ($i = 0; $i < $tutCnt; $i++) {
@@ -20,8 +22,12 @@
 			if (($tutorials[$i]['cat'] == $cat) && ($tutorials[$i]['file'] == $file)) 
 				{
 // pull the tutorial's title and tags for the meta tags
-					$metaTitle = $tutorials[$i]['title'];
-					$metaAuthor = $tutorials[$i]['author'];
+                $metaTitle = $tutorials[$i]['title'];
+                $metaAuthor = $tutorials[$i]['author'];
+
+// determine which file types to look for in preview and code panes
+                $fileTypePreview = $tutorials[$i]['fileTypePreview'];
+                $fileTypeCode = $tutorials[$i]['fileTypeCode'];
 					
 // have to make a separate array to get the implode function to work 
 // couldn't use the tutorials subarray in its spot ~8 lines down

@@ -13,17 +13,38 @@
 		}
 	?></div>
 	
-	<iframe id="previewArea" src="<?php
-// live preview pane
-		echo $cat.'/'.$file.'.'.$fileTypePreview;
-	?>"></iframe>
+<?php
+    // if we are displaying a php file we need it included as an iframe to allow for frame functionality
+    // if it is just a txt file we want to embed it in a div so the html/js previews live
+
+    if ($fileTypePreview == "php") {
+        echo '<iframe id="previewArea" src="'.$cat.'/'.$file.'.'.$fileTypePreview.'"></iframe>';
+    }
+    else {
+        echo '<div id="previewArea">';
+        include $cat.'/'.$file.'.'.$fileTypePreview;
+        echo '</div>';
+    }
+?>
+
 
 	<textarea id="previewCode"><?php
 // code preview pane
 		include $cat.'/'.$file.'.'.$fileTypeCode;
 	?></textarea>
-	<input type="button" value="Update" onclick="postCode()">
-	 <input type="button" value="Reset" onclick="resetCode()"> 
+
+	<input type="submit" value="Update" onclick="<?php
+    // call function that will push to iFrame srcdoc if a PHP file is displayed
+    // if it is just a txt file call other function
+
+    if ($fileTypePreview == "php") {
+        echo 'postRichCode()';
+    }
+    else {
+        echo 'postPlainCode()';
+    }
+    ?>;">
+	<input type="submit" value="Reset" onclick="resetCode();">
 	
 	<?php
 // display article's tags

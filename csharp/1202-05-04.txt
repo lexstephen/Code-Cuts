@@ -1,0 +1,130 @@
+############ Pay.cs -> PayApp.cs is below ############
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace TakeHomePay
+{
+    class Pay
+    {
+        private string firstName, lastName, id;
+        private int employeeType;
+        double salaryAmount, hourlyRate, hoursWorked, overtimePay, weeklySalary, grossSalary, taxDeduction, rppDeduction, eiDeduction;
+        const double FEDERAL_TAX = 0.18;
+        const double RPP = 0.10;
+        const double EI = 0.06;
+
+        public string FirstName { get { return firstName; } set { firstName = value; } }
+        public string LastName { get { return lastName; } set { lastName = value; } }
+        public string Id { get { return id; } set { id = value; } }
+        public int EmployeeType { get { return employeeType; } set { employeeType = value; } }
+
+        public void enterRate(int x)
+        {
+            if (x == 1) // Salary
+            {
+                Console.WriteLine("Please enter your yearly salary");
+                salaryAmount = double.Parse(Console.ReadLine());
+                if (weeklySalary <= 0) Console.WriteLine("You should ask for a raise..");
+                weeklySalary = salaryAmount / 52;
+                grossSalary = weeklySalary;
+                taxDeduction = weeklySalary * FEDERAL_TAX;
+                rppDeduction = weeklySalary * RPP;
+                eiDeduction = weeklySalary * EI;
+                weeklySalary = weeklySalary - taxDeduction - rppDeduction - eiDeduction;
+            }
+            else if (x == 2) // Hourly
+            {
+                Console.WriteLine("Please enter your hourly rate");
+                hourlyRate = double.Parse(Console.ReadLine());
+                Console.WriteLine("Please enter your hours worked");
+                hoursWorked = double.Parse(Console.ReadLine());
+                if (hoursWorked > 40)
+                {
+                    overtimePay = (hoursWorked - 40) * 1.5;
+                    hoursWorked = 40;
+                    weeklySalary = (hoursWorked + overtimePay) * hourlyRate;
+                    grossSalary = weeklySalary;
+                }
+                else
+                {
+                    weeklySalary = hoursWorked * hourlyRate;
+                    grossSalary = weeklySalary;
+                }
+                taxDeduction = weeklySalary * FEDERAL_TAX;
+                rppDeduction = weeklySalary * RPP;
+                eiDeduction = weeklySalary * EI;
+                weeklySalary = weeklySalary - taxDeduction - rppDeduction - eiDeduction;
+            }
+        }
+
+        public override string ToString()
+        {
+            return
+                "\n"
+                + firstName
+                + " "
+                + lastName
+                + ", Employee #"
+                + id
+                + "\nYour weekly rate of "
+                + grossSalary.ToString("C")
+                + ", minus deductions of Federal Tax at "
+                + FEDERAL_TAX.ToString("P0")
+                + ", RPP at "
+                + RPP.ToString("P0")
+                + ", and EI at "
+                + EI.ToString("P0")
+                + ", leaves you with net pay of "
+                + weeklySalary.ToString("C");
+        }
+    }
+}
+
+
+
+############ PayApp.cs ############
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace TakeHomePay
+{
+    class PayApp
+    {
+        public static string AcceptInfo(string acceptWhat)
+        {
+            Console.WriteLine("Please enter your " + acceptWhat);
+            string x = Console.ReadLine();
+            return x;
+        }
+        public static int AcceptType(string acceptWhat)
+        {
+            Console.WriteLine("Please enter your " + acceptWhat);
+            int x = int.Parse(Console.ReadLine());
+            if ((x < 1) || (x > 2))
+            {
+                Console.WriteLine("Sorry, you did not enter the correct value; please re-enter employment type.");
+                x = int.Parse(Console.ReadLine());
+            }
+            return x;
+        }
+        static void Main(string[] args)
+        {
+            Pay calculatePay = new Pay();
+            calculatePay.FirstName = AcceptInfo("first name");
+            calculatePay.LastName = AcceptInfo("last name");
+            calculatePay.Id = AcceptInfo("employee ID");
+            calculatePay.EmployeeType = AcceptType("employment type\t[Enter 1 if Salary; 2 if Contractor]");
+            calculatePay.enterRate(calculatePay.EmployeeType);
+            Console.WriteLine(calculatePay);
+            Console.ReadKey();
+        }
+    }
+}

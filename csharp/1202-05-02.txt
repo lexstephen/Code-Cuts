@@ -1,0 +1,40 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace Obesity
+{
+    class Program
+    {
+
+        public static float AcceptInfo(string whatInfo)
+        {
+            Console.WriteLine("Please enter your " + whatInfo);
+            float x = float.Parse(Console.ReadLine());
+            return x;
+        }
+
+
+        static void Main(string[] args)
+        {
+            double userHeight, userWeight, calculatedBMI;
+
+            userHeight = AcceptInfo("height in meters");
+            userWeight = AcceptInfo("weight in kilograms");
+
+            calculatedBMI = userWeight / Math.Pow(userHeight, 2);
+
+            if (calculatedBMI < 18.5)
+                Console.WriteLine("\nYour BMI, " + calculatedBMI.ToString("F") + ", puts you in the Underweight range.");
+            else if ((calculatedBMI >= 18.5) && (calculatedBMI <= 24.9))
+                Console.WriteLine("\nYour BMI, " + calculatedBMI.ToString("F") + ", puts you in the Underweight range.");
+            else if ((calculatedBMI >= 25) && (calculatedBMI <= 29.9))
+                Console.WriteLine("\nYour BMI, " + calculatedBMI.ToString("F") + ", puts you in the Underweight range.");
+            else if (calculatedBMI >= 30)
+                Console.WriteLine("\nYour BMI, " + calculatedBMI.ToString("F") + ", puts you in the Underweight range.");
+
+            Console.ReadKey();
+        }
+    }
+}

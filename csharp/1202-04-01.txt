@@ -1,0 +1,135 @@
+############ Athlete.cs -> AthleteApp.cs is below ############
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Athlete
+{
+    class Athlete
+    {
+        //5-A characteristics for the Athlete class
+        private string firstName, lastName, country;
+        private float score1, score2, average;
+
+        //5-B default constructor
+        public Athlete()
+        {
+            firstName = "N /";
+            lastName = "A";
+            country = "N/A";
+            score1 = 0;
+            score2 = 0;
+        }
+
+        //5-C overloaded constructor
+        public Athlete(string userFirstName, string userLastName, string userCountry, float userScore1, float userScore2)
+        {
+            firstName = userFirstName;
+            lastName = userLastName;
+            country = userCountry;
+            score1 = userScore1;
+            score2 = userScore2;
+        }
+
+        //5-D get/set properties to be modified by AcceptChar 
+        public string FirstName { get { return firstName; } set { firstName = value; } }
+        public string LastName  { get { return lastName; } set { lastName = value; } }
+        public string Country   { get { return country; } set { country = value; } }
+
+        //5-D get/set properties to be modified by AcceptFloat 
+        public float  Score1     { get { return score1; } set { score1 = value; } }
+        public float  Score2     { get { return score2; } set { score2 = value; } }
+
+        //5-E method to calculate average
+        public float calculateAverage()
+        {
+            average = (score1 + score2) / 2;
+            return average;
+        }
+
+        //5-F include toString
+        public override string ToString()
+        {
+            return firstName
+               + " "
+               + lastName
+               + " from "
+               + country
+               + "\nScores: "
+               + score1.ToString("f2")
+               + " & "
+               + score2.ToString("f2")
+               + ".\nAverage Score: "
+               + calculateAverage().ToString("f2")
+               + ".\n\n"; 
+        }
+    }
+}
+
+############ AthleteApp.cs ############
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Athlete
+{
+    class AthleteApp
+    {
+        //7-B non-instance (static/cannot be instantiated) methods
+        public static string AcceptChar(string whatChar)
+        {
+            string inputChar;
+            Console.Write("Please enter your {0}: ", whatChar);
+            inputChar = (Console.ReadLine());
+            return inputChar;
+        }
+
+        //7-B non-instance (static/cannot be instantiated) methods
+        public static float AcceptFloat (string whatFloat)
+        {
+            float inputFloat;
+            Console.Write("Please enter your {0}: ", whatFloat);
+            inputFloat = float.Parse((Console.ReadLine()));
+            return inputFloat;
+        }
+
+        static void Main(string[] args)
+       {
+          //6-A Athlete object instantiated as genericInfo without any arguments
+            Athlete genericInfo = new Athlete();
+            genericInfo.calculateAverage();
+            Console.WriteLine(genericInfo);
+
+          //6-B Athlete object instantiated as fakeInfo with arguments
+            Athlete fakeInfo = new Athlete("Jane", "Doe", "Canada", 12, 18);
+            fakeInfo.calculateAverage();
+            Console.WriteLine(fakeInfo);
+
+          //7-A Athlete object instantiated as personalizedInfo with inputted arguments
+            Athlete personalizedInfo = new Athlete();
+
+          //5-D call 7.B AcceptChar and get/set user input
+            personalizedInfo.FirstName = AcceptChar("First Name");
+            personalizedInfo.LastName = AcceptChar("Last Name");
+            personalizedInfo.Country = AcceptChar("Country");
+
+          //5-D call 7.B AcceptFloat and get/set user input
+            personalizedInfo.Score1 = AcceptFloat("Score #1");
+            personalizedInfo.Score2 = AcceptFloat("Score #2");
+
+          //7-C update object and display data
+          //7-D calculate using an instance method
+            personalizedInfo.calculateAverage();
+            Console.WriteLine(personalizedInfo);
+
+            Console.ReadKey();
+        }
+
+    }
+}

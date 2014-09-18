@@ -1,0 +1,23 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int numberOne = 100, numberTwo = 200;
+            double theResult = 0;
+            Console.WriteLine("The numbers begin as {0} and {1}", numberOne, numberTwo);
+            ++numberOne;
+            numberTwo++;
+            Console.WriteLine("{0} is now incremented, as is {1}.", numberOne,numberTwo);
+
+            Console.ReadKey();
+        }
+    }
+}

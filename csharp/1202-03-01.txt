@@ -1,0 +1,90 @@
+############ Student.cs -> TestStudent.cs is below ############
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace LabWeek4_2
+{
+    class Student
+    {
+        private int id;
+        private string name;
+        private int age;
+        private double gpa;
+
+        public Student()
+        {
+            id = 0;
+            name = "Jane Doe";
+            age = 0;
+            gpa = 0;
+        }
+
+        public Student(int a, string b, int c, double d)
+        {
+            id = a;
+            name = b;
+            age = c;
+            gpa = d;
+        }
+        
+        public void setID(int inputtedID)
+        {
+            id = inputtedID;
+        }
+        public void setName(string inputtedName)
+        {
+            name = inputtedName;
+        }
+        public void setAge(int inputtedAge)
+        {
+            age = inputtedAge;
+        }
+        public void setGpa(double inputtedGpa)
+        {
+            gpa = inputtedGpa;
+        }
+
+        public void displayInformation()
+        {
+            Console.WriteLine("{0}'s ID is {1}.  They are {2} years old and maintain a {3:F2} GPA.", name, id, age, gpa);
+        }
+    }
+}
+
+
+############ TestStudent.cs ############
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace LabWeek4_2
+{
+    class TestStudent
+    {
+        static void Main()
+        {
+            Student student1;
+            student1 = new Student();
+
+            Console.WriteLine("Original values for Student:");
+
+            student1.displayInformation();
+
+            Console.WriteLine("\nModified values for Student:");
+
+            student1.setAge(31);
+            student1.setGpa(4.0);
+            student1.setID(100563954);
+            student1.setName("Alexis Dicks-Stephen");
+
+            student1.displayInformation();
+            Console.ReadKey();
+        }
+    }
+}

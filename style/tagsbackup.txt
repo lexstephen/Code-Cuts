@@ -1,0 +1,34 @@
+<?php  
+// sets up the search form to autocomplete possible search terms
+	echo 	'
+			<article id="tagList">';
+	echo 	'
+			<datalist id="tagSearch">';
+			
+		for ($x = 0; $x < $preciseTagsCnt; $x++) {
+			echo 	'<option>'
+					.$preciseTags[$x]
+					.'</option>
+					';
+		}
+	
+	echo 	'</datalist>';
+
+	// prints links to search results for each tag
+	for ($y = 0; $y < $preciseTagsCnt; $y++) {
+		$formattedTag[$y] = '
+		<a href="index.php?q='
+								.$preciseTags[$y]
+								.'">'
+								.$preciseTags[$y]
+								.'</a>';
+	}
+	
+	$tagList = implode(',<br> ', $formattedTag);
+	
+	echo ''
+	.$tagList;
+	
+	echo '
+	</article>';
+?>	

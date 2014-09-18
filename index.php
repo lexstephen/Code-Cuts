@@ -2,6 +2,7 @@
 	include 'style/config.php'; 	// the 'database' (because I didn't pay attention in SQL class)
 	
 	$siteTitle = "Code Cuts";
+	$siteTitleShort = "CC";
 	$useStylesheet = "style/style.css";
     $fileTypePreview = "txt";
     $fileTypeCode = "txt";
@@ -28,6 +29,8 @@
 // determine which file types to look for in preview and code panes
                 $fileTypePreview = $tutorials[$i]['fileTypePreview'];
                 $fileTypeCode = $tutorials[$i]['fileTypeCode'];
+                $showPreview = $tutorials[$i]['showPreview'];
+                $showCode = $tutorials[$i]['showCode'];
 					
 // have to make a separate array to get the implode function to work 
 // couldn't use the tutorials subarray in its spot ~8 lines down
@@ -67,8 +70,6 @@
 	} else {
 		include 'style/welcome.php';
 	}
-// module that lists all tags in use across tutorials
-	include 'style/tags.php'; 		// code to show all tags
 	
 	echo '</section>';
 	

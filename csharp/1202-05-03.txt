@@ -1,0 +1,62 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ShippingCost
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double shippingCost = 0;
+            string itemString = "item";
+
+            Console.WriteLine("Please enter the number of items purchased for a shipping estimate.");
+            int itemsPurchased = int.Parse(Console.ReadLine());
+
+            // pluralize the word item/items for display
+            if (itemsPurchased > 1)
+                itemString = "items";
+            else
+                itemString = "item";
+
+            // check number is positive
+            if (itemsPurchased < 0)
+            {
+                Console.WriteLine("Please enter a valid number.");
+                itemsPurchased = int.Parse(Console.ReadLine());
+            }
+
+            // increment shipping cost for each item & display charge
+            for (int x = 0; x <= itemsPurchased; x++)
+            {
+                if (x == 1)
+                {
+                    shippingCost += 2.99;
+                    Console.WriteLine("Item " + x + " will cost $2.99 to ship.");
+                }
+                else if ((x > 1) && (x <= 5))
+                {
+                    shippingCost += 1.99;
+                    Console.WriteLine("Item " + x + " will cost $1.99 to ship.");
+                }
+                else if ((x > 5) && (x < 15))
+                {
+                    shippingCost += 1.49;
+                    Console.WriteLine("Item " + x + " will cost $1.49 to ship.");
+                }
+                else if (x > 15)
+                {
+                    shippingCost += 0.99;
+                    Console.WriteLine("Item " + x + " will cost $0.99 to ship.");
+                }
+            }
+
+            Console.WriteLine("Shipping Cost for " + itemsPurchased + " " + itemString + " is " + shippingCost.ToString("C"));
+            Console.ReadKey();
+
+        }
+    }
+}

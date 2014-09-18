@@ -1,0 +1,127 @@
+############ Month.cs -> MonthApp.cs is below ############
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace Month
+{
+    class Month
+    {
+        private int monthNumber;
+        private int daysInMonth;
+        private string monthName;
+
+        public Month()
+        {
+        }
+
+        public int MonthNumber { get { return monthNumber; } set { monthNumber = value; } }
+		
+		// method to find month name & number of days
+        public void determineMonth(int x)
+        {
+            switch (x)
+            {
+                case 1:
+                    monthName = "January";
+                    daysInMonth = 31;
+                    break;
+                case 2:
+                    monthName = "February";
+                    daysInMonth = 28;
+                    break;
+                case 3:
+                    monthName = "March";
+                    daysInMonth = 31;
+                    break;
+                case 4:
+                    monthName = "April";
+                    daysInMonth = 30;
+                    break;
+                case 5:
+                    monthName = "May";
+                    daysInMonth = 31;
+                    break;
+                case 6:
+                    monthName = "June";
+                    daysInMonth = 30;
+                    break;
+                case 7:
+                    monthName = "July";
+                    daysInMonth = 31;
+                    break;
+                case 8:
+                    monthName = "August";
+                    daysInMonth = 31;
+                    break;
+                case 9:
+                    monthName = "September";
+                    daysInMonth = 30;
+                    break;
+                case 10:
+                    monthName = "October";
+                    daysInMonth = 31;
+                    break;
+                case 11:
+                    monthName = "November";
+                    daysInMonth = 30;
+                    break;
+                case 12:
+                    monthName = "December";
+                    daysInMonth = 31;
+                    break;
+            }
+        }
+
+        public override string ToString()
+        {
+            return
+                "The month you entered was "
+                + monthName
+                + " which has "
+                + daysInMonth
+                + " days.";
+        }
+    }
+}
+
+
+############ MonthApp.cs ############
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace Month
+{
+    class MonthApp
+    {
+		// non-instance method
+        public static int AcceptMonthNumber()
+        {
+            Console.WriteLine("Please enter the month number: ");
+            int x = int.Parse(Console.ReadLine());
+            if (x > 13 || x < 1)
+            {
+                Console.WriteLine("Your entry was invalid; please enter a valid number: ");
+                x = int.Parse(Console.ReadLine());
+            }
+            return x;
+        }
+
+        static void Main(string[] args)
+        {
+            Month findTheMonth = new Month();
+            findTheMonth.MonthNumber = AcceptMonthNumber();
+
+            findTheMonth.determineMonth(findTheMonth.MonthNumber);
+            Console.WriteLine(findTheMonth);
+
+            Console.ReadKey();
+        }
+    }
+}
+

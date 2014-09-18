@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double youthFee = 20.5;
+            double adultFee = 50.99;
+            double seniorFee = 25.75;
+
+            int enrolledYouths = 50;
+            int enrolledAdults = 30;
+            int enrolledSeniors = 20;
+
+            double youthDues = youthFee * enrolledYouths * 12;
+            double adultDues = adultFee * enrolledAdults * 12;
+            double seniorDues = seniorFee * enrolledSeniors * 12;
+
+            double totalFees = youthDues + adultDues + seniorDues;
+            
+            Console.WriteLine("The club will collect {0:c} in dues from the youths for 2014, \n{1:c} in dues from adults, and \n{2:c} in dues from seniors.  \n\nThe total amount collected will be {3:c}.",youthDues,adultDues,seniorDues,totalFees);
+            
+            Console.ReadKey();
+        }
+    }
+}

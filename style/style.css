@@ -5,7 +5,7 @@
 */
 
 body {
-	background-color : #1a35bd; 
+	background-color : #fff; 
 	color : #374152; 
 	font-family : Arial, Verdana, "sans serif"; 
 	font-size : 16px; 
@@ -26,52 +26,79 @@ dl {
 input {
 	background-color : #fff; 
 	border : 1px #000 solid;
-	margin: 1%;
+	margin: 0.5%;
+	padding: 2%;
 }
 	input[type="submit"] {
-		background-color : #fff7b6; 
+		background-color : #eee; 
 	}
 #mainHeader {
-	display : block; 
+	display : inline; 
+	float: left; 
 	margin : 0;
-	width: 100%;
+	margin-left: 1%;
+	margin-top: 1%;
+	width: 3.3%;
+	padding: 1%;
+	background-color: #1a35bd;
+	border-radius: 50%;
 }
 	#mainHeader h1 { 
 		display : block; 
 		color : #fff; 
-		font-family : Lobster, Arial Black, "sans serif"; 
-		font-size : 6rem; 
-		font-weight : normal; 
-		margin : -1% 0 -1% .1%; 
-		padding : 0.5%; 
-		text-align : left; 
+		font-family : Lobster, Arial, "sans serif"; 
+		font-size : 2rem; 
+		margin : 0; 
+		padding : 0; 
 	}
 #mainSection {
 display: block;
 margin: 0 1% auto;
-width: 95%;
 }
 	#sidebar {
 	clear: left;
 		float : left; 
+		margin: 1%;
 		margin-left : 0;
-		width : 25%; 
+		padding-right: 1%;
+		width : 18%; 
+		text-align: left;
+		height: 400px;
+		overflow-y: auto;
 	}
+		#searchResults {
+			background-color: #fff;
+			margin : 0; 
+			margin-bottom : 6%; 
+			padding : 0; 
+			padding-top: 6%;
+			text-align: center;
+		}
+		.sResult {
+			display: block;	
+			background-color : #eee; 	
+			border-top: 1px #000 solid;
+			font-size : 0.8rem; 
+			padding : 1%; 
+			text-align: left;
+		}
+		.catSmall {font-weight: bold; font-size: 75%;}
+		.sResult:nth-child(even) {
+			background-color: #fff;
+		}
 		#sidebar ul {
+		display: none;
 			list-style-type : none; 
 			margin : 0; 
 			margin-bottom : 6%; 
 			padding : 0; 
-			text-align: center;
 		}
 		#sidebar ul:last-child {
 			margin-bottom: 0;
 		}
 		#sidebar ul li {
 			background-color : #eee; 	
-			border-bottom: 1px #000 solid;
-			border-left: 1px #000 solid;
-			border-right: 1px #000 solid;
+			border-top: 1px #000 solid;
 			font-size : 0.8rem; 
 			padding : .5%; 
 		}
@@ -79,44 +106,24 @@ width: 95%;
 			background-color: #fff;
 		}
 		#sidebar .sidebarHead {
-			background-color : #1a35bd; 
+			background-color : #fff; 
 			border: 0;
-			border-bottom : 5px solid #000; 
-			color: #fff;
-			font-family : Cabin, Arial Black, "sans serif"; 
+			color: #1a35bd;
+			font-family : Cabin, Arial, "sans serif"; 
 			font-size : 1.8em; 
 			font-weight : bold; 
 			margin: 0;
 			padding : 3px; 
-			text-align : center; 
+			text-align : left; 
 		}
-		#sidebar .searchResultHead {
-			background-color : #fff7b6; 
-			color: #000;
-			font-family : Arial, Arial Black, "sans serif"; 
-			font-size : .8em; 
-			margin: 0;
-			padding : 0; 
-			text-align : center; 
-		}
-		#sidebar ul .searchResults {
-			background-color : #fff7b6; 
-		}
-		#sidebar ul .searchResults:nth-child(even) {
-			background-color : #fff; 
-		}
-		#sidebar ul .searchResults:last-child {
-		}
-		#sidebar .searchForm {
-		padding: 2%;
-		}
+		.noborder {border-bottom: 0 !important;}
 	#codeArea {
-		margin-left : 27%;
+		margin: 0;
+		margin-left : 21%;
 		text-align: center; 
-		width : 73%; 
 	}
 		#codeArea h5 {
-		color: #fff;
+		color: #1a35bd;
 			font-weight : normal; 
 			font-size : 0.7rem; 
 			font-style : italic; 
@@ -124,7 +131,7 @@ width: 95%;
 			text-align: center;
 		}
 		#codeBanner {
-			color: #fff;
+			color: #1a35bd;
 			font-size : 1.5rem; 
 			text-align: center;
 		}
@@ -138,7 +145,6 @@ width: 95%;
 		#previewArea {
 			background-color : #fff; 
 			border :  1px #000 solid; 
-			border-top :  5px #000 solid; 
 			color : #000; 
 			height : 220px; 
 			margin : 0.5% auto; 
@@ -150,7 +156,6 @@ width: 95%;
 		#previewCode {
 			background-color : #eee; 
 			border :  1px #000 solid; 
-			border-top :  5px #000 solid;  
 			color : #000; 
 			display : block; 
 			height : 220px; 
@@ -160,15 +165,15 @@ width: 95%;
 			width : 90%; 
 		}
 	#tagList {
-		color : #fff; 
+		color : #1a35bd; 
 		font-size : 0.7em; 
-		overflow-y : auto; 
-		margin : 0.5%; 
-		padding : 0.5%; 
-		text-align : justify; 
-		margin : 0.5% auto; 
-		width : 50%; 
+		padding : 1%; 
+		text-align : left; 
+		margin : 1% auto; 
 	}
+	#tagList h3 {display: inline; font-size: 1.5em; font-weight: bold;}
+	#tagList a {display: none;}
+
 #mainFooter {
 	clear: both;
 	color : #8e9ce0; 
@@ -184,7 +189,12 @@ a:visited 				{color : #374152; text-decoration : none; }
 a:active 				{color : #374152; text-decoration : none; }
 a:hover 					{color : #000; text-decoration : underline; }
 
-#mainHeader a:link, 		#codeArea a:link, 		#codeBanner a:link, 		#tagList a:link 			{color : #fff; text-decoration : none; }
-#mainHeader a:visited, 	#codeArea a:visited, 	#codeBanner a:visited, 	#tagList a:visited 		{color : #fff; text-decoration : none; }
-#mainHeader a:active, 	#codeArea a:active, 	#codeBanner a:active, 	#tagList a:active 		{color : #fff; text-decoration : none; }
-#mainHeader a:hover, 	#codeArea a:hover, 	#codeBanner a:hover, 	#tagList a:hover 		{color : #8e9ce0; text-decoration : underline; }
+#mainHeader a:link, 		
+#mainHeader a:visited, 	
+#mainHeader a:active {color: #fff; text-decoration: none;}
+#mainHeader a:hover  {color: #eee;}
+
+#codeArea a:link, 		#codeBanner a:link, 		#tagList a:link 			{color : #1a35bd; text-decoration : none; }
+#codeArea a:visited, 	#codeBanner a:visited, 	#tagList a:visited 		{color : #1a35bd; text-decoration : none; }
+#codeArea a:active, 	#codeBanner a:active, 	#tagList a:active 		{color : #1a35bd; text-decoration : none; }
+#codeArea a:hover, 	#codeBanner a:hover, 	#tagList a:hover 		{color : #8e9ce0; text-decoration : none; }

@@ -1,0 +1,25 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace Welcome_Message
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double theValueofArea;
+            theValueofArea = calculateRectangle();
+            Console.WriteLine("Things {0}", theValueofArea);
+            Console.ReadKey();
+        }
+
+        public static double calculateRectangle()
+        {
+            int recLength = 100, recWidth = 50;
+            double recArea = recLength * recWidth;
+            return recArea;
+        }
+    }
+}

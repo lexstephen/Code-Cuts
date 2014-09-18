@@ -1,0 +1,250 @@
+############ Account.cs -> TestSavings.cs is below ############
+
+using System;
+using System.Collections.Generic;
+using System.Globalization;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _1202W14As1_DICKSALEXIS
+
+{
+    class AlexisDicks_Account
+    {
+        // characteristics for the Account class
+        private string firstName;
+        private string lastName;
+        private string socialInsurance;
+        private string formattedSocialInsurance { get { return String.Format("{0: ###-###-###}", Convert.ToInt64(socialInsurance)); } }
+        private string homeAddress;
+        private string phoneNumber;
+        private string formattedPhoneNumber { get { return String.Format("{0:(###) ###-####}", Convert.ToInt64(phoneNumber)); } }
+        private double openingBalance;
+        private double originalOpeningBalance;
+        private double closingBalance;
+        private double monthlyDeposit;
+        private double yearlyDeposit;
+        private double totalDeposit;
+        private double depositPeriod;
+        const double INTEREST_RATE = 0.05;
+        private double accruedInterest;
+        private double totalAccruedInterest;
+        private string printMessage;
+
+        // default constructor
+        public AlexisDicks_Account()
+        {
+            firstName = "Jane";
+            lastName = "Doe";
+            socialInsurance = "343758785";
+            homeAddress = "123 Fake Street";
+            phoneNumber = "5555555555";
+            openingBalance = 10;
+            originalOpeningBalance = openingBalance;
+            monthlyDeposit = 5;
+            depositPeriod = 1;
+        }
+
+        // overloaded constructor
+        public AlexisDicks_Account(string userFirstName, string userLastName, string userSocialInsurance, string userHomeAddress, string userPhoneNumber, double userOpeningBalance, double userMonthlyDeposit, double userDepositPeriod)
+        {
+            firstName = userFirstName;
+            lastName = userLastName;
+            socialInsurance = userSocialInsurance;
+            homeAddress = userHomeAddress;
+            phoneNumber = userPhoneNumber;
+            openingBalance = userOpeningBalance;
+            monthlyDeposit = userMonthlyDeposit;
+            depositPeriod = userDepositPeriod;
+        }
+
+        // mutators and accessors
+        public string FirstName { get { return firstName; } set { firstName = value; } }
+        public string LastName { get { return lastName; } set { lastName = value; } }
+        public string SocialInsurance { get { return socialInsurance; } set { socialInsurance = value; } }
+        public string HomeAddress { get { return homeAddress; } set { homeAddress = value; } }
+        public string PhoneNumber { get { return phoneNumber; } set { phoneNumber = value; } }
+        public double OpeningBalance { get { return openingBalance; } set { openingBalance = value; } }
+        public double MonthlyDeposit { get { return monthlyDeposit; } set { monthlyDeposit = value; } }
+        public double DepositPeriod { get { return depositPeriod; } set { depositPeriod = value; } }
+
+        // calculations 
+
+        public double calculateInterest()
+        {
+            totalDeposit = monthlyDeposit * 12 * depositPeriod;
+
+            for (int x = 0; x < depositPeriod; x++)
+            {
+                //calculate the amount of deposits in a year
+                yearlyDeposit = monthlyDeposit * 12;
+                //add yearly deposit to opening balance
+                accruedInterest = (openingBalance + yearlyDeposit) * INTEREST_RATE;
+                totalAccruedInterest += accruedInterest;
+                //calculate interest on above and assign to opening balance
+                closingBalance = accruedInterest + yearlyDeposit + openingBalance;
+                openingBalance = closingBalance;
+            }
+            return closingBalance;
+        }
+
+        public override string ToString()
+        {
+            printMessage =
+                "\tWelcome, "
+                + firstName
+                + " "
+                + lastName + "!\n\tHere's a quick review of your personal information:"
+                + "\n\n\t\tSocial Insurance Number: \t"
+                + formattedSocialInsurance
+                + "\n\t\tAddress: \t\t\t"
+                + homeAddress
+                + "\n\t\tPhone Number: \t\t\t"
+                + formattedPhoneNumber
+                + "\n\n\tDetails of your "
+                + depositPeriod
+                + "-year, "
+                + monthlyDeposit.ToString("C")
+                + "/month high-savings interest account\n\twith "
+                + INTEREST_RATE.ToString("P0")
+                + " compounded interest:\n\n"
+                + "\t\tOpening Balance: \t\t"
+                + originalOpeningBalance.ToString("C")
+                + " CAD$ \n"
+                + "\t\tTotal Deposit: \t\t\t"
+                + totalDeposit.ToString("C")
+                + " CAD$ \n"
+                + "\t\tInterest Accrued: \t\t"
+                + totalAccruedInterest.ToString("C")
+                + " CAD$ \n"
+                + "\t\tClosing Balance: \t\t"
+                + closingBalance.ToString("C")
+                + " CAD$ \n\n";
+            return printMessage;
+        }
+    }
+}
+
+
+############ TestSavings.cs ############
+
+using System;
+using System.Collections.Generic;
+using System.Globalization;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _1202W14As1_DICKSALEXIS
+
+{
+    class AlexisDicks_TestSavings
+    {
+        // static method to prompt for string info
+        public static string AcceptChar(string whatChar, string howManyTabs)
+        {
+            string inputChar;
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.Write("\t{0}: {1}", whatChar, howManyTabs);
+            Console.ForegroundColor = ConsoleColor.White; 
+            inputChar = Console.ReadLine();
+            TextInfo titlecaseModification = new CultureInfo("en-US", false).TextInfo;
+            inputChar = titlecaseModification.ToTitleCase(inputChar);
+            return inputChar;
+        }
+
+        // static method to prompt for string info
+        public static double AcceptDouble(string whatChar, string howManyTabs)
+        {
+            double inputDouble;
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.Write("\t{0}: {1}", whatChar, howManyTabs);
+            Console.ForegroundColor = ConsoleColor.White; 
+            inputDouble = double.Parse(Console.ReadLine());
+            return inputDouble;
+        }
+
+        // main
+        static void Main(string[] args)
+        {
+            Console.SetWindowSize(80, 55);
+            Console.Title = "Alexisland National Bank | REGISTRATION";
+
+            // top banner begins
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine("\n/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine("/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine("\n                           ALEXISLAND NATIONAL BANK                           "
+                 + "\n\tArlington Branch Assistant Regional Manager: Alexis Dicks-Stephen\n");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine("--------------------------------------------------------------------------------");
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine("--------------------------------------------------------------------------------");
+            // top banner ends
+
+            Console.ForegroundColor = ConsoleColor.White;
+            AlexisDicks_Account InputAccount = new AlexisDicks_Account();
+
+            Console.WriteLine("\tWelcome! Please enter a few details about yourself and the \n\tLEX-O-MATIC registration wizard will take care of the rest!\n");
+
+            // get personal info
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine("\tPersonal Information:\n");
+            Console.ForegroundColor = ConsoleColor.White;
+            InputAccount.FirstName = AcceptChar("First name", "\t\t\t\t");
+            InputAccount.LastName = AcceptChar("Last name", "\t\t\t\t");
+            InputAccount.SocialInsurance = AcceptChar("Social insurance number (unformatted)", "\t");
+            InputAccount.HomeAddress = AcceptChar("Home address", "\t\t\t\t");
+            InputAccount.PhoneNumber = AcceptChar("Phone number (unformatted)", "\t\t");
+
+            // get financial info
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine("\n\tFinancial Information:\n");
+            Console.ForegroundColor = ConsoleColor.White;
+            InputAccount.OpeningBalance = AcceptDouble("Opening balance", "\t\t\t");
+            InputAccount.MonthlyDeposit = AcceptDouble("Monthly deposit", "\t\t\t");
+            InputAccount.DepositPeriod = AcceptDouble("Desired deposit period, in years", "\t");
+
+            // calculate the interest and bring to second screen
+            InputAccount.calculateInterest();
+            Console.Clear();
+            Console.Title = "Alexisland National Bank | USER INFORMATION";
+
+            // top banner begins
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine("\n/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine("/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine("\n                           ALEXISLAND NATIONAL BANK                           "
+                 + "\n\tArlington Branch Assistant Regional Manager: Alexis Dicks-Stephen\n");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine("--------------------------------------------------------------------------------");
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine("--------------------------------------------------------------------------------");
+            // top banner ends
+
+            // display user details
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine(InputAccount);
+
+            // bottom banner begins
+            Console.ForegroundColor = ConsoleColor.Blue; 
+            Console.WriteLine("--------------------------------------------------------------------------------");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine("--------------------------------------------------------------------------------");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine("                       Thank you for choosing ALNABANK\n");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine("\n/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\");
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine("/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\\n");
+            // bottom banner ends
+            
+            Console.ReadKey();
+        }
+    }
+}

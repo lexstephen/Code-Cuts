@@ -15,5 +15,5 @@
 
 <body>
 	<header id="mainHeader" role="banner">
-		<h1><a href="index.php"><?php echo $siteTitle; ?></a></h1>
+		<h1><a href="index.php"><?php echo $siteTitleShort; ?></a></h1>
 	</header>

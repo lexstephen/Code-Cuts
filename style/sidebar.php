@@ -7,10 +7,28 @@
 	
 // ************************************************** //
 
+// C# section
+	echo '
+	<h3 class="sidebarHead" onclick="hideTuts(\'headingCsharp\')">C#</h3>
+	<ul id="headingCsharp">';
+	for ($i = 0; $i < $tutCnt; $i++) {
+	// print CSS tutorials
+		if ($tutorials[$i]['cat'] == 'csharp') {
+			echo '
+			<li><a href="index.php?cat='
+				.$tutorials[$i]['cat']
+				.'&file='.$tutorials[$i]['file']
+				.'">'
+				.$tutorials[$i]['title']
+				.'</a></li>';
+		}
+	}
+	echo '</ul>';
+	
 // CSS section
 	echo '
-	<h3 class="sidebarHead">CSS</h3>
-	<div><ul>';
+	<h3 class="sidebarHead" onclick="hideTuts(\'headingCSS\')">CSS</h3>
+	<ul id="headingCSS">';
 	for ($i = 0; $i < $tutCnt; $i++) {
 	// print CSS tutorials
 		if ($tutorials[$i]['cat'] == 'CSS') {
@@ -23,12 +41,12 @@
 				.'</a></li>';
 		}
 	}
-	echo '</ul></div>';
+	echo '</ul>';
 
 // HTML Section
 	echo '
-	<h3 class="sidebarHead">HTML</h3>
-	<ul>';
+	<h3 class="sidebarHead" onclick="hideTuts(\'headingHTML\')">HTML</h3>
+	<ul id="headingHTML">';
 	for ($i = 0; $i < $tutCnt; $i++) {
 	// print HTML tutorials
 		if ($tutorials[$i]['cat'] == 'HTML') {
@@ -47,8 +65,8 @@
 
 // Java Section
 	echo '
-	<h3 class="sidebarHead">Java</h3>
-	<ul>';
+	<h3 class="sidebarHead" onclick="hideTuts(\'headingJava\')">Java</h3>
+	<ul id="headingJava">';
 	for ($i = 0; $i < $tutCnt; $i++) {
 	// print Java tutorials
 		if ($tutorials[$i]['cat'] == 'Java') {
@@ -66,8 +84,8 @@
 
 // JavaScript Section
 echo '
-	<h3 class="sidebarHead">JavaScript</h3>
-	<ul>';
+	<h3 class="sidebarHead" onclick="hideTuts(\'headingJavaScript\')">JavaScript</h3>
+	<ul id="headingJavaScript">';
 for ($i = 0; $i < $tutCnt; $i++) {
     // print JS tutorials
     if ($tutorials[$i]['cat'] == 'JavaScript') {
@@ -85,8 +103,8 @@ echo '
 
 // PHP Section
 echo '
-	<h3 class="sidebarHead">PHP</h3>
-	<ul>';
+	<h3 class="sidebarHead" onclick="hideTuts(\'headingPHP\')">PHP</h3>
+	<ul id="headingPHP">';
 for ($i = 0; $i < $tutCnt; $i++) {
     // print PHP tutorials
     if ($tutorials[$i]['cat'] == 'PHP') {
@@ -104,8 +122,8 @@ echo '
 
 // SQL Section
 	echo '
-	<h3 class="sidebarHead">SQL</h3>
-	<ul>';
+	<h3 class="sidebarHead" onclick="hideTuts(\'headingSQL\')">SQL</h3>
+	<ul id="headingSQL">';
 	for ($i = 0; $i < $tutCnt; $i++) {
 	// print JS tutorials
 		if ($tutorials[$i]['cat'] == 'sql') {
@@ -122,6 +140,8 @@ echo '
 	</ul>';
 
 // ************************************************** //
+// module that lists all tags in use across tutorials
+	include 'style/tags.php'; 		
 echo '
 </div>';
 ?>

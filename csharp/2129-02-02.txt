@@ -1,0 +1,37 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace _4_Pizza
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+            string pizzaOrder = "";
+            string diningOption = "";
+
+            if (checkBox1.Checked) { pizzaOrder += "\n" + checkBox1.Text; }
+            if (checkBox2.Checked) { pizzaOrder += "\n" + checkBox2.Text; }
+            if (checkBox3.Checked) { pizzaOrder += "\n" + checkBox3.Text; }
+            if (checkBox4.Checked) { pizzaOrder += "\n" + checkBox4.Text; }
+
+            if (radioButton1.Checked) { diningOption += radioButton1.Text; }
+            if (radioButton2.Checked) { diningOption += radioButton2.Text; }
+            if (radioButton3.Checked) { diningOption += radioButton3.Text; }
+
+            MessageBox.Show(String.Format("A pizza is being prepared with {0}\n\nYou selected {1}", pizzaOrder, diningOption),"Order Details",MessageBoxButtons.OK);
+        }
+    }
+}

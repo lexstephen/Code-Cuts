@@ -1,0 +1,797 @@
+############ Airport.cs -> AirportApp.cs is below ############
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+/* Assignment #2
+ * Completed by Alexis D-S
+ * and Jordan T */
+
+namespace _1202W14ASS2_ALEXIS_JORDAN
+{
+    class Airport
+    {
+        private string airportName, airportCity, airportCountry;
+        private string airportDate, dateF, dateP, dateR, monthF, monthP, monthR;
+        private string datString, formatString;
+        private float arrivalChg, departureChg, revenue;
+        private int arrivalCnt, departureCnt, passengerCnt;
+
+        public Airport()
+        {
+        }
+
+        public Airport(int da, string[][] a1)
+        {
+            airportName = a1[0][4];
+            airportCity = a1[0][5];
+            airportCountry = a1[0][6];
+            arrivalChg = float.Parse(a1[0][7]);
+            departureChg = float.Parse(a1[0][8]);
+
+            // stats screen
+            formatString = "   STATS * " + airportCity.ToUpper() + " * " + airportName.ToUpper() + " * " + airportCountry.ToUpper();
+            AirportApp.formatScreen(formatString);
+
+            datString = "   ARRIVAL CHARGE: "
+                    + arrivalChg.ToString("C")
+                    + "\tDEPARTURE CHARGE: "
+                    + departureChg.ToString("C")
+                    + "\n\n--------------------------------------------------------------------------------\n";
+           
+            for (int i = 0; i < da; i++)
+            {
+                airportDate = a1[i][0];
+                arrivalCnt = int.Parse(a1[i][1]);
+                departureCnt = int.Parse(a1[i][2]);
+                passengerCnt = int.Parse(a1[i][3]);
+
+                revenue = (arrivalChg * arrivalCnt) + (departureChg * departureCnt);
+
+                // build current toString
+                datString += "\n\t"
+                    + airportDate
+                    + "\n\t---------------------------------------------------------------"
+                    + "\n\tARRIVALS: \t\t"
+                    + arrivalCnt.ToString("N0").PadLeft(39)
+                    + "\n\tDEPARTURES: \t\t"
+                    + departureCnt.ToString("N0").PadLeft(39)
+                    + "\n\tPASSENGERS: \t\t"
+                    + passengerCnt.ToString("N0").PadLeft(39)
+                    + "\n\tREVENUE GENERATED: \t"
+                    + revenue.ToString("C").PadLeft(39)
+                    + "\n\n";
+            }
+        }
+
+
+        public string hiFlights(string[][] dArray2)
+        {
+            string[][] stats = dArray2;
+
+            int arv = int.Parse(stats[0][1]);                       // arrival cnt
+            int dep = int.Parse(stats[0][2]);                       // departure cnt
+            int a = arv + dep;                                      // flight cnt
+            int c = int.Parse(stats[0][3]);                         // passenger cnt
+            int b, d;                                               // next day controls
+
+            float f;
+            float e = (arrivalChg * arv) + (departureChg * dep);    // revenue
+
+            dateF = stats[0][0];                                    // highest flight day
+            monthF = showMonth(stats[0][0]);                        // highest flight month
+
+            dateP = stats[0][0];                                    // highest passenger day
+            monthP = showMonth(stats[0][0]);                        // highest passenger month
+
+            dateR = stats[0][0];                                    // highest revenue day
+            monthR = showMonth(stats[0][0]);                        // highest revenue month
+
+            for (int x = 1; x < stats.Length; x++)
+            {
+                arv = int.Parse(stats[x][1]);
+                dep = int.Parse(stats[x][2]);
+
+                b = arv + dep; // next day being checked
+
+                d = int.Parse(stats[x][3]); // next day being checked / passenger edition
+
+                f = (arrivalChg * arv) + (departureChg * dep); // next day being checked 3: revenge of the revenue
+
+                if (b > a)                                          // highest flights
+                {
+                    a = b;
+                    dateF = stats[x][0];
+                    monthF = showMonth(stats[x][0]);
+                }
+
+                if (d > c)                                          // highest passengers
+                {
+                    c = d;
+                    dateP = stats[x][0];
+                    monthP = showMonth(stats[x][0]);
+                }
+
+                if (f > e)                                          // highest revenue
+                {
+                    e = f;
+                    dateR = stats[x][0];
+                    monthR = showMonth(stats[x][0]);
+                    
+                }
+
+            }
+
+            return "\tMOST FLIGHTS: "
+                + monthF
+                + "\n\t---------------------------------------------------------------\n\t"
+                + a.ToString("N0")
+                + " total on "
+                + dateF
+                + ".\n\n\n\tMOST PASSENGERS: "
+                + monthP
+                + "\n\t---------------------------------------------------------------\n\t"
+                + c.ToString("N0")
+                + " total on "
+                + dateP
+                + ".\n\n\n\tMOST REVENUE: "
+                + monthR
+                + "\n\t---------------------------------------------------------------\n\t"
+                + e.ToString("C0")
+                + " total on "
+                + dateR
+                + ".\n\n\n";
+        }
+
+        public static string showMonth(string dt)
+        {
+            string[] dateBlocks = dt.Split('/');                    // split the date string into a 3pc array
+            dateBlocks[0] = dateBlocks[0].TrimStart('0');           // get rid of pesky zeroes
+            int monthSlt = int.Parse(dateBlocks[0]) - 1;            // convert month value to month array index value
+            string[] topMonth = { "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" };
+            return topMonth[monthSlt];                              //push month of the moment wherever it needs to go
+        }
+
+        public string avgReturn(string [][] dArray)                 // finds the average for the data entered to display estimates
+        {
+            string[][] avg = dArray;
+
+            float inAvg = 0;
+            float outAvg = 0;
+            float passAvg = 0;
+            float revAvg = 0;
+            float rev;
+            int ttlDays = avg.Length;
+
+            for (int x = 0; x < ttlDays; x++)
+            {
+                inAvg += float.Parse(avg[x][1]);
+                outAvg += float.Parse(avg[x][2]);
+                passAvg += float.Parse(avg[x][3]);
+                rev = (float.Parse(avg[x][7])*int.Parse(avg[x][1]))+(float.Parse(avg[x][8])*int.Parse(avg[x][2]));
+                revAvg += rev;
+            }
+
+            inAvg /= ttlDays;
+            outAvg /= ttlDays;
+            passAvg /= ttlDays;
+            revAvg /= ttlDays;
+
+
+            return "\tAVERAGE OF DATA\n\t---------------------------------------------------------------"
+                    + "\n\tARRIVALS: \t\t"
+                    + Math.Round(inAvg).ToString("N0").PadLeft(39)
+                    + "\n\tDEPARTURES: \t\t"
+                    + Math.Round(outAvg).ToString("N0").PadLeft(39)
+                    + "\n\tPASSENGERS: \t\t"
+                    + Math.Round(passAvg).ToString("N0").PadLeft(39)
+                    + "\n\tREVENUE GENERATED: \t"
+                    + revAvg.ToString("C0").PadLeft(39)
+                    + "\n\n"; 
+        }
+
+
+        public override string ToString()
+        {
+            return datString;
+        }
+    }
+}
+
+
+
+############ AirportApp.cs ############
+
+using System;
+using System.Collections.Generic;
+using System.Globalization;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _1202W14ASS2_ALEXIS_JORDAN
+{
+    class AirportApp
+    {
+        static void Main(string[] args)
+        {
+            string input, name, city, country, theMsg, reqDate, reqFlights, code, formatString;
+            float arrive, depart;
+            int days, goAgain, q, z;
+            string[][] dateA;
+            string[] dateinfoA = new string[9];
+            string[][] airportMenu = new string[32][];
+            string[] airportInfo = new string[3];
+
+            Console.SetWindowSize(80, 55);
+            Console.Title = "   AIRPORT TRACKER 3000";
+
+            // logo & prompt for # of airports
+            welcomeScreen(out goAgain);
+
+            Console.Clear();
+
+            for (int x = 0; x < goAgain; x++)
+            {
+                q = x + 1;
+
+                // airport code menu
+                formatScreen("   AIRPORT TRACKER 3000 * SELECT AIRPORT");
+                code = AcceptCode(out input, out name, out city, out country);
+
+                Console.Clear();
+
+                if (input == "exit")
+                {
+                    formatString = "   AIRPORT TRACKER 3000 * ENTER INFO ";
+                    formatScreen(formatString);
+                    name = AcceptChar("Airport #" + q + "'s Name: \t\t\t", "checkBlank");
+                    city = AcceptChar("City: \t\t\t\t\t", "checkBlank");
+                    country = AcceptChar("Country: \t\t\t\t", "checkBlank");
+                }
+                else
+                {
+                    // put city name in manual information entry if we know it
+                    formatString = "   AIRPORT TRACKER 3000 * " + city.ToUpper() + " " + name.ToUpper();
+                    formatScreen(formatString);
+                }
+
+                arrive = AcceptFloat("Runway Arrival Charge: \t[$1000.99-$3000.99]");
+                depart = AcceptFloat("Runway Departure Charge: [$1000.99-$3000.99]");
+
+                Console.WriteLine();
+
+                // set up dateA array length
+                theMsg = "Number of days being tracked: \t\t";
+                days = int.Parse(AcceptChar(theMsg, "checkBlank"));
+
+                Console.Clear();
+
+                // date info
+                formatString = "   ENTER DATES * " + city.ToUpper() + " * " + name.ToUpper();
+                formatScreen(formatString);
+
+                dateA = new string[days][];
+
+                dateinfoA[4] = name;
+                dateinfoA[5] = city;
+                dateinfoA[6] = country;
+                dateinfoA[7] = arrive.ToString();
+                dateinfoA[8] = depart.ToString();
+
+                    for (int y = 0; y < days; y++)
+                    {
+                        z = y + 1;
+
+                        reqDate = "Day " + z + ": [MM/dd/yyyy]\t";
+                        dateinfoA[0] = AcceptChar(reqDate, "date");
+
+                        reqFlights = "Arrivals for day " + z + ": \t";
+                        dateinfoA[1] = AcceptInt(reqFlights).ToString();
+
+                        reqFlights = "Departures for day " + z + ": \t";
+                        dateinfoA[2] = AcceptInt(reqFlights).ToString();
+
+                        reqFlights = "Passengers for day " + z + ": \t";
+                        dateinfoA[3] = AcceptInt(reqFlights).ToString();
+
+                        dateA[y] = new string[9];
+
+                        for (int j = 0; j < 9; j++)
+                        {
+                            dateA[y][j] = dateinfoA[j];
+                        }                   
+
+                    }
+
+                    Console.Clear();
+
+                    Airport userSession = new Airport(days, dateA);
+
+                    Console.WriteLine(userSession);
+                    Console.WriteLine(userSession.avgReturn(dateA));
+                    Console.WriteLine(userSession.hiFlights(dateA));
+
+                    if (x != goAgain-1)
+                    {
+                        Console.WriteLine("\n--------------------------------------------------------------------------------");
+                        Console.WriteLine("\n");
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine("\t\tPress any key to initialize next airport.");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        Console.WriteLine("\n");
+                        Console.WriteLine("\n--------------------------------------------------------------------------------");
+                    }
+
+                    Console.ReadKey();
+                    Console.Clear();
+            }
+
+        }
+
+        // get string information
+        public static string AcceptChar(string what, string type)
+        {
+            string input = "";
+
+            // blank cheque
+            if (type == "checkBlank") 
+            {
+                do
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.Write("\n\t{0}", what);
+                    Console.Write("\t");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    input = (Console.ReadLine());
+                }
+                while (input == "");
+
+                return input;
+            }
+
+            // date check
+            if (type == "date")
+            {
+                DateTime checkDatFormat;
+                bool isOkay = false;
+                int futureDate = 0;
+
+                do
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.Write("\n\t{0}", what);
+                    Console.ForegroundColor = ConsoleColor.White;
+                    Console.Write("\t");
+                    input = Console.ReadLine();
+
+                    // checks if date is in valid format
+                    isOkay = DateTime.TryParseExact(input,
+                                            new[] {"MM/dd/yyyy", "MM/dd/yyyy ", "M/dd/yyyy", "M/dd/yyyy ", 
+                                                    "MM/d/yyyy", "MM/d/yyyy ", "M/d/yyyy", "M/d/yyyy ",
+                                                    "MM/dd/yy", "MM/dd/yy ", "M/dd/yy", "M/dd/yy ",
+                                                    "M/d/yy", "M/d/yy "}, 
+                                            CultureInfo.InvariantCulture, 
+                                            DateTimeStyles.None, 
+                                            out checkDatFormat);
+
+                    // format user input to preferred string
+                    input = checkDatFormat.ToString("d");
+                    
+                    // if entered date is < today we are good to go
+                    futureDate = DateTime.Compare(checkDatFormat, DateTime.Today);
+                }
+                while ((!isOkay) || (futureDate >= 0));
+
+                return input;
+            }
+
+            return input;
+        }
+        
+        // get and check runway charges are within range
+        public static float AcceptFloat(string what)
+        {
+            float input = 0;
+
+                do
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.Write("\n\t{0}", what);
+                    Console.ForegroundColor = ConsoleColor.White;
+                    Console.Write("\t");
+                    input = float.Parse((Console.ReadLine()));
+                }
+                while ((input < 1000.99) || (input > 3000.99));
+
+            return input;
+        }
+
+        // get and check flights, passengers
+        public static int AcceptInt(string what)
+        {
+            int input;
+
+            do
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.Write("\n\t{0}", what);
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.Write("\t");
+                input = int.Parse((Console.ReadLine()));
+            }
+            while (input < 0);
+
+            return input;
+        }
+
+        // welcome screen
+        public static string welcomeScreen(out int goAgain)
+        {
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine();
+            Console.WriteLine("    _______ _________ _______  _______  _______  _______ _________");
+            Console.WriteLine("   |  ___  |\\__   __/|  ____ ||  ____ ||  ___  ||  ____ |\\__   __/");
+            Console.WriteLine("   | |   | |   | |   | |    ||| |    ||| |   | || |    ||   | |   ");
+            Console.WriteLine("   | |___| |   | |   | |____||| |____||| |   | || |____||   | |   ");
+            Console.WriteLine("   |  ___  |   | |   |     __||  _____|| |   | ||     __|   | |   ");
+            Console.WriteLine("   | |   | |   | |   | |\\ |   | |      | |   | || |\\ |      | |   ");
+            Console.WriteLine("   | |   | |___| |___| | \\ \\__| |      | |___| || | \\ \\__   | |   ");
+            Console.WriteLine("   |/     \\|\\_______/|/   \\__/|/       |_______||/   \\__/   |_|   ");
+            Console.WriteLine("                                                                  ");
+            Console.WriteLine("   _________ _______  _______  _______  _        _______  _______ ");
+            Console.WriteLine("   \\__   __/|  ____ ||  ___  ||  ____ \\| \\    /\\|  ____ \\|  ____ |");
+            Console.WriteLine("      | |   | |    ||| |   | || |    \\/|  \\  / /| |    \\/| |    ||");
+            Console.WriteLine("      | |   | |____||| |___| || |      |  |_/ / | |__    | |____||");
+            Console.WriteLine("      | |   |     __||  ___  || |      |   _ |  |  __|   |     __|");
+            Console.WriteLine("      | |   | |\\ |   | |   | || |      |  | \\ \\ | |      | |\\ |   ");
+            Console.WriteLine("      | |   | | \\ \\__| |   | || |____/\\|  /  \\ \\| |____/\\| | \\ \\__");
+            Console.WriteLine("      |_|   |/   \\__/|/     \\||_______/|_/    \\/|_______/|/   \\__/");
+            Console.WriteLine("                                                                  ");
+            Console.WriteLine("          ______   _______  _______  _______                      ");
+            Console.WriteLine("         / ___  \\ |  __   ||  __   ||  __   |                     ");
+            Console.WriteLine("         \\/   \\  \\| |  |  || |  |  || |  |  |                     ");
+            Console.WriteLine("            ___| /| | /   || | /   || | /   |                     ");
+            Console.WriteLine("           |___ | | |/ /| || |/ /| || |/ /| |                     ");
+            Console.WriteLine("               | \\|   / | ||   / | ||   / | |                     ");
+            Console.WriteLine("         /\\___/  /|  |__| ||  |__| ||  |__| |                     ");
+            Console.WriteLine("         \\______/ |_______||_______||_______|                     ");
+            Console.WriteLine("                                                                  ");
+            Console.WriteLine("                                                                  ");
+            Console.WriteLine("                                                                  ");
+
+            goAgain = int.Parse(AcceptChar("Number of airports you wish to enter: ", "checkBlank"));
+            
+            Console.Clear();
+             return "";
+        }
+
+        // change titlebar and page title
+        public static string formatScreen(string title)
+        {
+            string x = title;
+            Console.Title = x;
+
+            Console.WriteLine();
+
+            Console.WriteLine(x);
+
+            Console.WriteLine("\n--------------------------------------------------------------------------------");
+
+            return "";
+
+        }
+
+        // airport code menu and selection
+        public static string AcceptCode(out string input, out string name, out string city, out string country)
+        {
+            name = "";
+            city = "";
+            country = "";
+            bool endLoop = false; 
+
+            string[] airportCodes = {"AMS", "ATL", "BKK", "CAN", "CDG", "CGK", "CLT", "DEN", "DFW", "DXB", "FRA", "HKG", "HND", "IAH", "ICN", "IST", "JFK", "KUL", "LAS", "LAX", "LHR", "MAD", "MIA", "MUC", "ORD", "PEK", "PHX", "PVG", "SFO", "SIN", "YTZ", "YYZ"};
+
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("\tPlease enter the airport's 3 digit code from the following list:\n\n\n");
+
+            for (int x = 0; x < airportCodes.Length; x++)
+            {
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.Write("\t" + airportCodes[x]);
+
+                if ((x + 1) % 8 == 0)
+                {
+                    Console.WriteLine("\n");
+                }
+            }
+
+            do
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.Write("\n\n\t[Please enter one of the listed airport codes, or type exit.]\n\n\n\t");
+                Console.ForegroundColor = ConsoleColor.White;
+                input = (Console.ReadLine());
+
+                switch (input)
+                {
+                    case "exit":
+                    case "eXIT":
+                    case "exIT":
+                    case "exiT":
+                    case "Exit":
+                    case "EXit":
+                    case "EXIt":
+                    case "EXIT":
+                        input = "exit";
+                        endLoop = true;
+                        break;
+
+                    case "AMS":
+                    case "ams":
+                        name = "Amsterdam Schiphol Airport";
+                        city = "Haarlemmermeer";
+                        country = "Netherlands";
+                        endLoop = true;
+                        break;
+
+                    case "ATL":
+                    case "atl":
+                        name = "Hartsfield–Jackson Intl Airport";
+                        city = "Atlanta";
+                        country = "United States";
+                        endLoop = true;
+                        break;
+
+                    case "BKK":
+                    case "bkk":
+                        name = "Suvarnabhumi Airport";
+                        city = "Bang Phli";
+                        country = "Thailand";
+                        endLoop = true;
+                        break;
+
+                    case "CAN":
+                    case "can":
+                        name = "Baiyun International Airport";
+                        city = "Guangzhou";
+                        country = "China";
+                        endLoop = true;
+                        break;
+
+                    case "CDG":
+                    case "cdg":
+                        name = "Charles de Gaulle Airport";
+                        city = "Île-de-France";
+                        country = "France";
+                        endLoop = true;
+                        break;
+
+                    case "CGK":
+                    case "cgk":
+                        name = "Soekarno-Hatta International Airport";
+                        city = "Tangerang";
+                        country = "Indonesia";
+                        endLoop = true;
+                        break;
+
+                    case "CLT":
+                    case "clt":
+                        name = "Douglas Intl Airport";
+                        city = "Charlotte";
+                        country = "United States";
+                        endLoop = true;
+                        break;
+
+                    case "DEN":
+                    case "den":
+                        name = "International Airport";
+                        city = "Denver";
+                        country = "United States";
+                        endLoop = true;
+                        break;
+
+                    case "DFW":
+                    case "dfw":
+                        name = "International Airport";
+                        city = "Dallas-Fort Worth";
+                        country = "United States";
+                        endLoop = true;
+                        break;
+
+                    case "DXB":
+                    case "dxb":
+                        name = "International Airport";
+                        city = "Dubai";
+                        country = "United Arab Emirates";
+                        endLoop = true;
+                        break;
+
+                    case "FRA":
+                    case "fra":
+                        name = "International Airport";
+                        city = "Frankfurt";
+                        country = "Germany";
+                        endLoop = true;
+                        break;
+
+                    case "HKG":
+                    case "hkg":
+                        name = "International Airport";
+                        city = "Hong Kong";
+                        country = "China";
+                        endLoop = true;
+                        break;
+
+                    case "HND":
+                    case "hnd":
+                        name = "International Airport";
+                        city = "Tokyo";
+                        country = "Japan";
+                        endLoop = true;
+                        break;
+
+                    case "IAH":
+                    case "iah":
+                        name = "George Bush Intl Airport";
+                        city = "Houston";
+                        country = "United States";
+                        endLoop = true;
+                        break;
+
+                    case "ICN":
+                    case "icn":
+                        name = "Incheon Intl Airport";
+                        city = "Seoul";
+                        country = "Republic of Korea";
+                        endLoop = true;
+                        break;
+
+                    case "IST":
+                    case "ist":
+                        name = "Atatürk Intl Airport";
+                        city = "Istanbul";
+                        country = "Turkey";
+                        endLoop = true;
+                        break;
+
+                    case "JFK":
+                    case "jfk":
+                        name = "John F. Kennedy Intl Airport";
+                        city = "New York";
+                        country = "United States";
+                        endLoop = true;
+                        break;
+
+                    case "KUL":
+                    case "kul":
+                        name = "Sepang Intl Airport";
+                        city = "Kuala Lumpur";
+                        country = "Malaysia";
+                        endLoop = true;
+                        break;
+
+                    case "LAS":
+                    case "las":
+                        name = "McCarran Intl Airport";
+                        city = "Las Vegas";
+                        country = "United States";
+                        endLoop = true;
+                        break;
+
+                    case "LAX":
+                    case "lax":
+                        name = "Intl Airport";
+                        city = "Los Angeles";
+                        country = "United States";
+                        endLoop = true;
+                        break;
+
+                    case "LHR":
+                    case "lhr":
+                        name = "Heathrow Airport";
+                        city = "London";
+                        country = "United Kingdom";
+                        endLoop = true;
+                        break;
+
+                    case "MAD":
+                    case "mad":
+                        name = "Barajas Airport";
+                        city = "Madrid";
+                        country = "Spain";
+                        endLoop = true;
+                        break;
+
+                    case "MIA":
+                    case "mia":
+                        name = "Miami Intl Airport";
+                        city = "Miami-Dade County";
+                        country = "United States";
+                        endLoop = true;
+                        break;
+
+                    case "MUC":
+                    case "muc":
+                        name = "Freising Airport";
+                        city = "Munich";
+                        country = "Germany";
+                        endLoop = true;
+                        break;
+
+                    case "ORD":
+                    case "ord":
+                        name = "O'Hare Intl Airport";
+                        city = "Chicago";
+                        country = "United States";
+                        endLoop = true;
+                        break;
+
+                    case "PEK":
+                    case "pek":
+                        name = "Capital Intl Airport";
+                        city = "Beijing";
+                        country = "China";
+                        endLoop = true;
+                        break;
+
+                    case "PHX":
+                    case "phx":
+                        name = "Sky Harbor Intl Airport";
+                        city = "Phoenix";
+                        country = "United States";
+                        endLoop = true;
+                        break;
+
+                    case "PVG":
+                    case "pvg":
+                        name = "Pudong Intl Airport";
+                        city = "Shanghai";
+                        country = "China";
+                        endLoop = true;
+                        break;
+
+                    case "SFO":
+                    case "sfo":
+                        name = "San Francisco Intl Airport";
+                        city = "San Mateo County";
+                        country = "United States";
+                        endLoop = true;
+                        break;
+
+                    case "SIN":
+                    case "sin":
+                        name = "Changi Airport";
+                        city = "Changi";
+                        country = "Singapore";
+                        endLoop = true;
+                        break;
+
+                    case "YTZ":
+                    case "ytz":
+                        name = "Billy Bishop Airport";
+                        city = "Toronto";
+                        country = "Canada";
+                        endLoop = true;
+                        break;
+
+                    case "YYZ":
+                    case "yyz":
+                        name = "Pearson Intl Airport";
+                        city = "Toronto";
+                        country = "Canada";
+                        endLoop = true;
+                        break;
+                    default:
+                        endLoop = false;
+                        break;
+                }
+            } while (endLoop == false);
+
+            return "";
+        }
+    }
+}

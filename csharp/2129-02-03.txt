@@ -1,0 +1,75 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace _5_Fuzzy_Dice
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+            double wBcalc, rBcalc, bBcalc, subtotalCalc, taxCalc, totalCalc;
+
+            if (chkbWB.Checked)
+            {
+                wBcalc = Convert.ToDouble(txtWB.Text) * Convert.ToDouble(lblWB.Text);
+                txtWBttl.Text = wBcalc.ToString();
+            }
+            else wBcalc = 0;
+            if (chkbRB.Checked)
+            {
+                rBcalc = Convert.ToDouble(txtRB.Text) * Convert.ToDouble(lblRB.Text);
+                txtRBttl.Text = rBcalc.ToString();
+            }
+            else rBcalc = 0;
+            if (chkbBB.Checked)
+            {
+                bBcalc = Convert.ToDouble(txtBB.Text) * Convert.ToDouble(lblBB.Text);
+                txtBBttl.Text = bBcalc.ToString();
+            }
+            else bBcalc = 0;
+
+            subtotalCalc = wBcalc + rBcalc + bBcalc;
+            txtSubtotal.Text = subtotalCalc.ToString();
+
+            taxCalc = subtotalCalc * 0.05;
+            txtTax.Text = taxCalc.ToString();
+
+            txtShipping.Text = "1.50";
+
+            totalCalc = subtotalCalc + taxCalc + Convert.ToDouble(txtShipping.Text);
+            txtTtl.Text = totalCalc.ToString();
+        }
+
+        private void txtWB_TextChanged(object sender, EventArgs e)
+        {
+            chkbWB.Checked = true;
+        }
+
+        private void txtRB_TextChanged(object sender, EventArgs e)
+        {
+            chkbRB.Checked = true;
+        }
+
+        private void txtBB_TextChanged(object sender, EventArgs e)
+        {
+            chkbBB.Checked = true;
+        }
+    }
+}

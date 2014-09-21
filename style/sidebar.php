@@ -1,12 +1,11 @@
 <?php
-	echo '
-	<div id="sidebar" role="navigation">
-	';
+	echo '<div id="sidebar" role="navigation">';
 	
 	include 'search.php';
 	
 // ************************************************** //
 
+	echo '<div id="tutorialCategories">';
 // C# section
 	echo '
 	<h3 class="sidebarHead" onclick="hideTuts(\'headingCsharp\')">C#</h3>
@@ -138,10 +137,9 @@ echo '
 	}
 	echo '
 	</ul>';
+	echo '</div>';
 
 // ************************************************** //
-// module that lists all tags in use across tutorials
-	include 'style/tags.php'; 		
 echo '
 </div>';
 ?>

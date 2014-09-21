@@ -1,20 +1,7 @@
 <?php  
-// sets up the search form to autocomplete possible search terms
 	echo 	'
 			<article id="tagList">';
-	echo 	'
-			<datalist id="tagSearch">';
-			
-		for ($x = 0; $x < $preciseTagsCnt; $x++) {
-			echo 	'<option>'
-					.$preciseTags[$x]
-					.'</option>
-					';
-		}
-	
-	echo 	'</datalist>';
-
-	echo 'browse tags:<br>
+	echo '<h2 class="tagTitle">click to expand/collapse tags:</h2>
 	<h3 onclick="hide(\'linknumber\')">#</h3> ';
 	echo '<h3 onclick="hide(\'linkA\')">A</h3> ';
 	echo '<h3 onclick="hide(\'linkB\')">B</h3> ';
@@ -23,7 +10,7 @@
 	echo '<h3 onclick="hide(\'linkE\')">E</h3> ';
 	echo '<h3 onclick="hide(\'linkF\')">F</h3> ';
 	echo '<h3 onclick="hide(\'linkG\')">G</h3> ';
-	echo '<h3 onclick="hide(\'linkH\')">H</h3><br>';
+	echo '<h3 onclick="hide(\'linkH\')">H</h3> ';
 	echo '<h3 onclick="hide(\'linkI\')">I</h3> ';
 	echo '<h3 onclick="hide(\'linkJ\')">J</h3> ';
 	echo '<h3 onclick="hide(\'linkK\')">K</h3> ';
@@ -32,7 +19,7 @@
 	echo '<h3 onclick="hide(\'linkN\')">N</h3> ';
 	echo '<h3 onclick="hide(\'linkO\')">O</h3> ';
 	echo '<h3 onclick="hide(\'linkP\')">P</h3> ';
-	echo '<h3 onclick="hide(\'linkQ\')">Q</h3><br>';
+	echo '<h3 onclick="hide(\'linkQ\')">Q</h3> ';
 	echo '<h3 onclick="hide(\'linkR\')">R</h3> ';
 	echo '<h3 onclick="hide(\'linkS\')">S</h3> ';
 	echo '<h3 onclick="hide(\'linkT\')">T</h3> ';
@@ -41,7 +28,7 @@
 	echo '<h3 onclick="hide(\'linkW\')">W</h3> ';
 	echo '<h3 onclick="hide(\'linkX\')">X</h3> ';
 	echo '<h3 onclick="hide(\'linkY\')">Y</h3> ';
-	echo '<h3 onclick="hide(\'linkZ\')">Z</h3><br>	';
+	echo '<h3 onclick="hide(\'linkZ\')">Z</h3><br>';
 	
 	// prints links to search results for each tag
 	for ($y = 0; $y < $preciseTagsCnt; $y++) {
@@ -75,7 +62,7 @@
 
 	}
 	
-	$tagList = implode('', $formattedTag);
+	$tagList = implode(' ', $formattedTag);
 	
 	echo ''
 	.$tagList;

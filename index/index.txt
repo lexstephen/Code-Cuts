@@ -1,1 +1,1 @@
-Please search using the form in the sidebar or navigate the site using tags, below, or by category, on the left.
+<p><a href="http://lexstephen.com/cc">Code Cuts</a> is a repository of code written by me, Alexis Dicks-Stephen, and an excuse to develop my PHP skills.  Please feel free to browse the site by expanding any of the tag or language categories on the left.</p>

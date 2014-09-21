@@ -61,26 +61,26 @@
 
 // add a fourth array element to the above with its associated tags
 	$t1['tags'] = array('if', 'else', 'prompt', 'for', 'median');
-	$t2['tags'] = array('prompt', 'switch', 'case', 'getelementbyid', 'innertext');
-	$t3['tags'] = array('if', 'else', 'prompt', 'isnan');
-	$t4['tags'] = array('table', 'ul', 'li', 'if', 'else', 'prompt', 'getelementbyid', 'innerhtml', 'isnan');
-	$t5['tags'] = array('ul', 'li', 'if', 'else', 'prompt', 'getelementbyid', 'innerhtml', 'parseint', 'math', 'array');
-	$t6['tags'] = array('ul', 'li', 'if', 'else', 'prompt', 'getelementbyid', 'innerhtml', 'isnan', 'parseint', 'math', 'mean', 'median', 'mode', 'length', 'array', 'multidimensional array');
-	$t7['tags'] = array('for', 'getelementbyid', 'innerhtml', 'length', 'array', 'multidimensional array', 'indexof', 'lastindexof', 'pop', 'reverse', 'concat', 'shift', 'splice', 'join', 'slice', 'push', 'unshift');
-	$t8['tags'] = array('form', 'input', 'style', 'backgroundcolor', 'color', 'getelementbyid', 'function', 'onclick');
-	$t9['tags'] = array('form', 'input', 'if', 'else', 'getelementbyid', 'innerhtml', 'isnan', 'parsefloat', 'math', 'function', 'onclick');
-	$t10['tags'] = array('form', 'input', 'for', 'getelementbyid', 'innerhtml', 'isnan', 'parsefloat', 'math', 'length', 'array', 'join', 'function', 'onclick');
-	$t11['tags'] = array('form', 'input', 'getelementbyid', 'innerhtml', 'this', 'tostring', 'length', 'array', 'object', 'function', 'onclick');
-	$t12['tags'] = array('getelementbyid', 'innerhtml', 'function', 'onclick', 'onmousemove', 'onmouseout', 'pagex', 'pagey');
-	$t13['tags'] = array('table', 'img', 'style', 'transition', 'width', 'border', 'getelementbyid', 'array', 'function', 'onclick', 'onmouseout', 'onmouseover', 'document.images');
-	$t14['tags'] = array('attributes', 'if', 'for', 'getelementbyid', 'getelementsbytagname', 'length', 'array', 'childnodes', 'nodetype', 'nodename', 'console.log');
-	$t15['tags'] = array('alert', 'function', 'onclick', 'preventdefault', 'window.location', 'queryselector');
-	$t16['tags'] = array('ul', 'li', 'form', 'input', 'style', 'backgroundcolor', 'if', 'for', 'getelementsbytagname', 'length', 'array', 'function', 'childnodes', 'nodetype');
-	$t17['tags'] = array('table', 'array', 'angular', 'ng-app', 'ng-controller', 'ng-click', 'sortorder', 'reverse', 'ng-model', 'filter', 'module', 'controller');
+	$t2['tags'] = array('prompt', 'switch', 'case', 'getElementById', 'innerText');
+	$t3['tags'] = array('if', 'else', 'prompt', 'isNaN');
+	$t4['tags'] = array('table', 'ul', 'li', 'if', 'else', 'prompt', 'getElementById', 'innerHTML', 'isNaN');
+	$t5['tags'] = array('ul', 'li', 'if', 'else', 'prompt', 'getElementById', 'innerHTML', 'parseInt', 'Math', 'array');
+	$t6['tags'] = array('ul', 'li', 'if', 'else', 'prompt', 'getElementById', 'innerHTML', 'isNaN', 'parseInt', 'Math', 'mean', 'median', 'mode', 'length', 'array', 'multidimensional array');
+	$t7['tags'] = array('for', 'getElementById', 'innerHTML', 'length', 'array', 'multidimensional array', 'indexOf', 'lastIndexOf', 'pop', 'reverse', 'concat', 'shift', 'splice', 'join', 'slice', 'push', 'unshift');
+	$t8['tags'] = array('form', 'input', 'style', 'backgroundColor', 'color', 'getElementById', 'function', 'onclick');
+	$t9['tags'] = array('form', 'input', 'if', 'else', 'getElementById', 'innerHTML', 'isNaN', 'parseFloat', 'Math', 'function', 'onclick');
+	$t10['tags'] = array('form', 'input', 'for', 'getElementById', 'innerHTML', 'isNaN', 'parseFloat', 'Math', 'length', 'array', 'join', 'function', 'onclick');
+	$t11['tags'] = array('form', 'input', 'getElementById', 'innerHTML', 'this', 'toString', 'length', 'array', 'object', 'function', 'onclick');
+	$t12['tags'] = array('getElementById', 'innerHTML', 'function', 'onclick', 'onmousemove', 'onmouseout', 'pageX', 'pageY');
+	$t13['tags'] = array('table', 'img', 'style', 'transition', 'width', 'border', 'getElementById', 'array', 'function', 'onclick', 'onmouseout', 'onmouseover', 'document.images');
+	$t14['tags'] = array('attributes', 'if', 'for', 'getElementById', 'getElementsByTagName', 'length', 'array', 'childNodes', 'nodeType', 'nodeName', 'console.log');
+	$t15['tags'] = array('alert', 'function', 'onclick', 'preventDefault', 'window.location', 'querySelector');
+	$t16['tags'] = array('ul', 'li', 'form', 'input', 'style', 'backgroundColor', 'if', 'for', 'getElementsByTagName', 'length', 'array', 'function', 'childNodes', 'nodeType');
+	$t17['tags'] = array('table', 'array', 'angular', 'ng-app', 'ng-controller', 'ng-click', 'sortOrder', 'reverse', 'ng-model', 'filter', 'module', 'controller');
 	$t18['tags'] = array('header', 'section', 'footer', 'background', 'gradient', 'float', '-webkit-linear-gradient', '-o-linear-gradient', '-moz-linear-gradient', 'linear-gradient');
 	$t19['tags'] = array('header', 'nav', 'footer', 'accessibility', 'role', 'attributes', 'exact attribute value selector', 'form');
-	$t20['tags'] = array('attributes', 'exact attribute value selector', 'microformats', 'rel', 'hcard', 'rdfa', 'microdata', 'itemscope', 'itemprop', 'itemtype', 'datetime', 'schema', 'data attributes', 'api', 'queryselector');
-	$t21['tags'] = array('background', 'rel', 'width', 'if', 'else', 'function', 'screen', 'device-width', 'orientation', 'portrait', 'landscape', 'device-aspect-ratio', 'responsive', 'media', 'devicepixelratio', 'webkit', 'viewport', 'meta', 'pointer', 'matchmedia()', 'addlistener');
+	$t20['tags'] = array('attributes', 'exact attribute value selector', 'microformats', 'rel', 'hCard', 'RDFa', 'microdata', 'itemscope', 'itemprop', 'itemtype', 'datetime', 'schema', 'data attributes', 'API', 'querySelector');
+	$t21['tags'] = array('background', 'rel', 'width', 'if', 'else', 'function', 'screen', 'device-width', 'orientation', 'portrait', 'landscape', 'device-aspect-ratio', 'responsive', 'media', 'devicePixelRatio', 'webkit', 'viewport', 'meta', 'pointer', 'matchMedia()', 'addListener');
 	$t22['tags'] = array('width', 'border', 'function', 'margin', 'padding', 'calc', 'box-sizing', 'responsive');
 	$t23['tags'] = array('width', 'height', 'viewport', 'rem', 'em', 'font', 'responsive', 'vw', 'vh');
 	$t24['tags'] = array('img', 'width', 'height', 'viewport', 'responsive', 'object-fit', 'object-position');
@@ -88,33 +88,33 @@
 	$t26['tags'] = array('datetime', 'form', 'input', 'autofocus', 'placeholder', 'required', 'spellcheck', 'autocomplete', 'datalist', 'list', 'max', 'min', 'lang');
 	$t27['tags'] = array('create table', 'drop table', 'linesize', 'pagesize', 'constraint', 'primary key', 'foreign key', 'references', 'describe', 'commit');
 	$t28['tags'] = array('delete from', 'insert into', 'commit', 'select', 'select *');
-	$t29['tags'] = array('system', 'out', 'println', 'scanner', 'in', 'nextdouble()');
-	$t30['tags'] = array('system', 'out', 'println', 'scanner', 'in', 'nextdouble()');
-	$t31['tags'] = array('system', 'out', 'println', 'scanner', 'in', 'nextdouble()', 'decimalformat', 'multiple inputs', 'formatting numbers');
-	$t32['tags'] = array('system', 'out', 'println', 'scanner', 'in', 'nextdouble()');
-    $t33['tags'] = array('$_get', 'boolean', 'isset', '-moz-radial-gradient', 'input', '-webkit-radial-gradient', 'radial-gradient', 'gradient', 'circle', 'cover', 'is_numeric', 'isnan', 'getelementbyid', 'value');
-    $t34['tags'] = array('console.writeline', 'console.readkey', 'formatting numbers', 'inserting variables');
-    $t35['tags'] = array('console.writeline', 'console.readkey', 'inserting variables', 'pre-increment', 'post-increment');
-    $t36['tags'] = array('console.writeline', 'console.readkey', 'method', 'return');
-    $t37['tags'] = array('console.writeline', 'console.readkey', 'default constructor', 'overloaded constructor', 'formatting numbers', 'inserting variables', 'method');
-    $t38['tags'] = array('console.writeline', 'console.readkey', 'console.readline', 'default constructor', 'overloaded constructor', 'formatting numbers', 'inserting variables', 'method', 'get', 'set', 'mutator', 'accessor', 'tostring', 'static method', 'non-instance method', 'return', 'object', 'parse');
-    $t39['tags'] = array('console.writeline', 'console.readkey', 'console.readline', 'switch', 'case', 'get', 'set', 'mutator', 'accessor', 'break', 'tostring', 'return', 'method', 'parse', 'non-instance method');
-    $t40['tags'] = array('console.writeline', 'console.readkey', 'console.readline', 'method', 'parse', 'return', 'math.pow', 'tostring', 'formatting numbers');
-    $t41['tags'] = array('console.writeline', 'console.readkey', 'parse', 'tostring', 'formatting numbers');
-    $t42['tags'] = array('console.writeline', 'console.readkey', 'const', 'get', 'set', 'mutator', 'accessor', 'method', 'parse', 'console.readline', 'tostring', 'formatting numbers', 'non-instance method', 'return');
-    $t43['tags'] = array('console.writeline', 'console.readkey', 'formatting numbers', 'phone number', 'convert', 'const', 'default constructor', 'overloaded constructor', 'get', 'set', 'mutator', 'accessor', 'method', 'return', 'tostring', 'static method', 'console.foregroundcolor', 'consolecolor', 'cultureinfo', 'textinfo', 'totitlecase', 'parse', 'console.setwindowsize', 'console.title', 'object', 'property', 'console.clear');
-    $t44['tags'] = array('console.writeline', 'console.readkey', 'overloaded constructor', 'array', 'multidimensional array', 'parse', 'toupper', 'formatting numbers', 'padleft', 'length', 'highest number', 'tostring', 'split', 'trimstart', 'return', 'method', 'math.round', 'console.setwindowsize', 'title', 'out', 'console.clear', 'object', 'property', 'console.foregroundcolor', 'console.color', 'datetime', 'tryparseexact', 'cultureinfo', 'invariantculture', 'datetimestyles', 'datetime.compare', 'datetime.today', 'switch', 'case', 'break');
-    $t45['tags'] = array('click', 'text', 'tostring', 'convert');
-    $t46['tags'] = array('click', 'listbox', 'items', 'add', 'clear', 'count', 'enabled', 'convert', 'text', 'tostring');
-    $t47['tags'] = array('click', 'checkbox', 'checked', 'messagebox', 'show', 'format', 'text', 'inserting variables', 'messageboxbuttons');
-    $t48['tags'] = array('click', 'checkbox', 'checked', 'convert', 'text', 'tostring', 'radio buttons', 'textchanged');
-	$t49['tags'] = array('system', 'out', 'println', 'scanner', 'in', 'nextdouble()', 'decimalformat', 'multiple inputs', 'formatting numbers', 'math', 'math.pow', 'algebra');
-	$t50['tags'] = array('system', 'out', 'println', 'scanner', 'in', 'nextdouble()', 'decimalformat', 'multiple inputs', 'formatting numbers', 'algebra');
-	$t51['tags'] = array('define', 'if', '$_get', 'for', 'isset', 'switch', 'case');
-	$t52['tags'] = array('if', 'isset', '$_get', 'ternary operator');
-	$t53['tags'] = array('$_request', 'var_dump', '$_get', '$_post', '$_server', 'http_host', 'document_root', 'https', 'header', 'location', 'redirect', 'isset');
-	$t54['tags'] = array('input', 'form', 'isset', '$_get', 'is_numeric', 'ternary operator', 'for');
-	$t55['tags'] = array('network', 'router', 'lan', 'wan', 'isp', 'internet exchange points (ixp)', 'http request', 'http response', 'round trip', 'web servers', 'scripting languages available on web servers', 'scripting languages available on application servers', 'database server', 'apache', 'lamp', 'iis', 'php', 'jsp', 'asp', 'perl', 'python', 'mysql', 'oracle', 'db2', 'ms sql server', 'mysql takeover', 'number_format', 'deploy an application', 'application root directory', 'url', 'ide', 'php syntax rules', 'statement', 'comment', 'single-line comment', 'block comment', 'integer data type', 'double data type', 'boolean data type', 'string data type', 'six data types', 'literal', 'constant', '$_get', 'superglobal variable', '$_post', 'interpolation', 'compound assignment operators', 'date format', 'isset', 'empty', 'is_numeric', 'conditional expression', 'compund conditional expression', 'if statement', 'while loop', 'for loop', 'include function', 'include once function', 'require function', 'require once function', 'exit function', 'die function', 'navigating directories', 'equality operators', 'unary operator', 'binary operator', 'ternary operator', 'switch statement', 'random number', 'highest number', 'do while loop', 'break statement', 'continue statement', 'type coercion', 'case structure', 'for loop alternate structure', 'function', 'passed by value', 'passed by reference', 'scope', 'scalar value', 'naming conflicts', 'variable function', 'callback', 'anonymous function', 'closure', 'array pop', 'pass by reference - modify a string', 'function - return multiple values', 'autoglobal variable', 'default value for parameter', 'variable-length parameter lists', 'func_get_args()', 'func_num_args()', 'func_get_arg($i)', 'a library of functions', 'include path', 'usort', 'custom comparison function');
+	$t29['tags'] = array('System', 'out', 'println', 'Scanner', 'in', 'nextDouble()');
+	$t30['tags'] = array('System', 'out', 'println', 'Scanner', 'in', 'nextDouble()');
+	$t31['tags'] = array('System', 'out', 'println', 'Scanner', 'in', 'nextDouble()', 'DecimalFormat', 'multiple inputs', 'formatting numbers');
+	$t32['tags'] = array('System', 'out', 'println', 'Scanner', 'in', 'nextDouble()');
+    $t33['tags'] = array('$_GET', 'boolean', 'isset', '-moz-radial-gradient', 'input', '-webkit-radial-gradient', 'radial-gradient', 'gradient', 'circle', 'cover', 'is_numeric', 'isNaN', 'getElementById', 'value');
+    $t34['tags'] = array('Console.WriteLine', 'Console.ReadKey', 'formatting numbers', 'inserting variables');
+    $t35['tags'] = array('Console.WriteLine', 'Console.ReadKey', 'inserting variables', 'pre-increment', 'post-increment');
+    $t36['tags'] = array('Console.WriteLine', 'Console.ReadKey', 'method', 'return');
+    $t37['tags'] = array('Console.WriteLine', 'Console.ReadKey', 'default constructor', 'overloaded constructor', 'formatting numbers', 'inserting variables', 'method');
+    $t38['tags'] = array('Console.WriteLine', 'Console.ReadKey', 'Console.ReadLine', 'default constructor', 'overloaded constructor', 'formatting numbers', 'inserting variables', 'method', 'get', 'set', 'mutator', 'accessor', 'toString', 'static method', 'non-instance method', 'return', 'object', 'Parse');
+    $t39['tags'] = array('Console.WriteLine', 'Console.ReadKey', 'Console.ReadLine', 'switch', 'case', 'get', 'set', 'mutator', 'accessor', 'break', 'ToString', 'return', 'method', 'Parse', 'non-instance method');
+    $t40['tags'] = array('Console.WriteLine', 'Console.ReadKey', 'Console.ReadLine', 'method', 'Parse', 'return', 'Math.Pow', 'ToString', 'formatting numbers');
+    $t41['tags'] = array('Console.WriteLine', 'Console.ReadKey', 'Parse', 'ToString', 'formatting numbers');
+    $t42['tags'] = array('Console.WriteLine', 'Console.ReadKey', 'const', 'get', 'set', 'mutator', 'accessor', 'method', 'Parse', 'Console.ReadLine', 'ToString', 'formatting numbers', 'non-instance method', 'return');
+    $t43['tags'] = array('Console.WriteLine', 'Console.ReadKey', 'formatting numbers', 'phone number', 'Convert', 'const', 'default constructor', 'overloaded constructor', 'get', 'set', 'mutator', 'accessor', 'method', 'return', 'ToString', 'static method', 'Console.ForegroundColor', 'ConsoleColor', 'CultureInfo', 'TextInfo', 'ToTitleCase', 'Parse', 'Console.SetWindowSize', 'Console.Title', 'object', 'property', 'Console.Clear');
+    $t44['tags'] = array('Console.WriteLine', 'Console.ReadKey', 'overloaded constructor', 'array', 'multidimensional array', 'Parse', 'ToUpper', 'formatting numbers', 'PadLeft', 'Length', 'highest number', 'ToString', 'Split', 'TrimStart', 'return', 'method', 'Math.Round', 'Console.SetWindowSize', 'Title', 'out', 'Console.Clear', 'object', 'property', 'Console.ForegroundColor', 'Console.Color', 'DateTime', 'TryParseExact', 'CultureInfo', 'InvariantCulture', 'DateTimeStyles', 'DateTime.Compare', 'DateTime.Today', 'switch', 'case', 'break');
+    $t45['tags'] = array('Click', 'Text', 'ToString', 'Convert');
+    $t46['tags'] = array('Click', 'listbox', 'Items', 'Add', 'Clear', 'Count', 'Enabled', 'Convert', 'Text', 'ToString');
+    $t47['tags'] = array('Click', 'checkbox', 'Checked', 'MessageBox', 'Show', 'Format', 'Text', 'inserting variables', 'MessageBoxButtons');
+    $t48['tags'] = array('Click', 'checkbox', 'Checked', 'Convert', 'Text', 'ToString', 'radio buttons', 'TextChanged');
+	$t49['tags'] = array('System', 'out', 'println', 'Scanner', 'in', 'nextDouble()', 'DecimalFormat', 'multiple inputs', 'formatting numbers', 'Math', 'Math.pow', 'algebra');
+	$t50['tags'] = array('System', 'out', 'println', 'Scanner', 'in', 'nextDouble()', 'DecimalFormat', 'multiple inputs', 'formatting numbers', 'algebra');
+	$t51['tags'] = array('define', 'if', '$_GET', 'for', 'isset', 'switch', 'case');
+	$t52['tags'] = array('if', 'isset', '$_GET', 'ternary operator');
+	$t53['tags'] = array('$_REQUEST', 'var_dump', '$_GET', '$_POST', '$_SERVER', 'HTTP_HOST', 'DOCUMENT_ROOT', 'HTTPS', 'header', 'location', 'redirect', 'isset');
+	$t54['tags'] = array('input', 'form', 'isset', '$_GET', 'is_numeric', 'ternary operator', 'for');
+	$t55['tags'] = array('network', 'router', 'lan', 'wan', 'isp', 'internet exchange points (ixp)', 'http request', 'http response', 'round trip', 'web servers', 'scripting languages available on web servers', 'scripting languages available on application servers', 'database server', 'apache', 'lamp', 'iis', 'php', 'jsp', 'asp', 'perl', 'python', 'mysql', 'oracle', 'db2', 'ms sql server', 'mysql takeover', 'number_format', 'deploy an application', 'application root directory', 'url', 'ide', 'php syntax rules', 'statement', 'comment', 'single-line comment', 'block comment', 'integer data type', 'double data type', 'boolean data type', 'string data type', 'six data types', 'literal', 'constant', '$_get', 'superglobal variable', '$_post', 'interpolation', 'compound assignment operators', 'date format', 'isset', 'empty', 'is_numeric', 'conditional expression', 'compund conditional expression', 'if statement', 'while loop', 'for loop', 'include function', 'include once function', 'require function', 'require once function', 'exit function', 'die function', 'navigating directories', 'equality operators', 'unary operator', 'binary operator', 'ternary operator', 'switch statement', 'random number', 'highest number', 'do while loop', 'break statement', 'continue statement', 'type coercion', 'case structure', 'for loop – alternate structure', 'function', 'passed by value', 'passed by reference', 'scope', 'scalar value', 'naming conflicts', 'variable function', 'callback', 'anonymous function', 'closure', 'array pop', 'pass by reference – modify a string', 'function – return multiple values', 'autoglobal variable', 'default value for parameter', 'variable-length parameter lists', 'func_get_args()', 'func_num_args()', 'func_get_arg($i)', 'a library of functions', 'include path', 'usort', 'custom comparison function');
 
 	/* my attempt to automate the array building is not working 
 	$numberOfTutorials = 28;
@@ -140,19 +140,5 @@
 // count things; it's handy to have
 	$tutCnt = count($tutorials);
 	$preciseTagsCnt = count($preciseTags);
-	
-// sets up the search form to autocomplete possible search terms
-	
-	echo 	'
-			<datalist id="tagSearch">';
-			
-		for ($x = 0; $x < $preciseTagsCnt; $x++) {
-			echo 	'<option>'
-					.$preciseTags[$x]
-					.'</option>
-					';
-		}
-	
-	echo 	'</datalist>';
 
 ?>

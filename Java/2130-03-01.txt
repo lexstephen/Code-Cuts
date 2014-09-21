@@ -1,0 +1,43 @@
+// Import the Scanner & DecimalFormat class
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+public class QE {
+
+	public static void main(String[] args) {
+
+		// Solve Quadratic Equations
+		/* Write a program that prompts the user to enter values for a, b, and c
+		 * and displays the result based on the discriminant. 
+		 * If the discriminant is positive, display two roots. 
+		 * If the discriminant is 0, display one root. 
+		 * Otherwise, display “The equation has no real roots”. */
+
+		double a, b, c, discriminant, result1, result2;
+		System.out.println("Enter three numbers separated by spaces:");
+		
+		Scanner numInput = new Scanner(System.in);
+		a = numInput.nextDouble();
+		b = numInput.nextDouble();
+		c = numInput.nextDouble();
+		
+		discriminant = (b*b) - (4 * a * c);
+
+		DecimalFormat numForm = new DecimalFormat("#.######");
+		
+		if (discriminant > 0) {
+			result1 = ((-b + Math.pow(((b*b) - (4*a*c)),0.5)) / (2*a));
+			result2 = ((-b - Math.pow(((b*b) - (4*a*c)),0.5)) / (2*a));	
+			System.out.println("The equation has two roots: " + numForm.format(result1) + " " + numForm.format(result2));
+		}
+		else if (discriminant == 0) {
+			result1 = ((-b + Math.pow(((b*b) - (4*a*c)),0.5)) / (2*a));
+			System.out.println("The equation has one root: " + numForm.format(result1));
+		}
+		else if (discriminant < 0) {
+			System.out.println("The equation has no real roots.");
+		}
+		
+	}
+
+}

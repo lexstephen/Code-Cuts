@@ -1,0 +1,35 @@
+&lt;?php
+	/* Printing literal vs value of variable */
+	 print "<h1>$_SERVER[DOCUMENT_ROOT]</h1> ^variable in double quotes displays value"; 
+	 print '<h1>$_SERVER[DOCUMENT_ROOT]</h1> ^variable in single quotes displays literal'; 
+
+	 /* how to use the header to redirect - commented out for obvious reasons
+	 if (!empty($_SERVER['HTTPS']) && ('on' == $_SERVER['HTTPS'])) {
+		$uri = 'https://';
+	 } else {
+		$uri = 'http://';
+	 }
+	 $uri .= $_SERVER['HTTP_HOST'];
+	 
+	 header('Location: http://google.ca');
+	
+	 // if this is uploaded to a server, 
+	 // when we send requests to a server, the first thing that it does is checks for the resource you requested, ensures it's there and then sends it back to you
+ 	 // go to inspect element, check network tab, refresh web page to watch what requests are made
+	
+	 exit; */
+	 
+	 echo "<h1>var_dump(\$_SERVER):</h1><pre>";
+	 var_dump($_SERVER);
+	 echo "</pre><hr><h1>var_dump(\$_SERVER[\"DOCUMENT_ROOT\"]):</h1><pre>";
+	 var_dump($_SERVER["DOCUMENT_ROOT"]);
+	 echo "</pre>";
+	 
+	 /* if page has a ?parameter=value they can be found through $_REQUEST
+	  request grabs both $_GET and $_POST */
+	  
+	 if (isset($_REQUEST['color'])) {
+		var_dump($_REQUEST);
+		echo "<br>".$_REQUEST["color"];
+	}
+?>

@@ -1,4 +1,3 @@
-<pre>
 /* script name: LOAD1BIGPV11E.SQL                        */
 /* purpose:     Loads Oracle tables for Big PVFC DB EDM  */
 /*             (NOT Raw Materials, Supplies, Uses tbls)  */
@@ -171,4 +170,3 @@ COMMIT;
 select * from USES_T;
 select * from SUPPLIES_T;
 select * from RawMaterial_T; */
-</pre>

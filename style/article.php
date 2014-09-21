@@ -1,5 +1,6 @@
 <article id="codeArea" role="main">
-	<div id="codeBanner"><?php
+<?php
+	echo '<div id="codeBanner">';
 // display article's category, title
 		for ($i = 0; $i < $tutCnt; $i++) {
 			if (($tutorials[$i]['cat'] == $cat) && ($tutorials[$i]['file'] == $file)) 
@@ -29,12 +30,13 @@
 						echo '</h5>';
 				}
 		}
-	?></div>
-	
-<?php
+	echo '</div>';
+
+	// first check if the preview pane is turned on ($showPreview = 1)
     // if we are displaying a php file we need it included as an iframe to allow for frame functionality
     // if it is just a txt file we want to embed it in a div so the html/js previews live
-	if ($showPreview) {
+	// also check if the code pane is turned on ($showCode = 1)
+	if (($showPreview) && ($showCode)) {
 		if ($fileTypePreview == "php") {
 			echo '<iframe id="previewArea" src="'.$cat.'/'.$file.'.'.$fileTypePreview.'"></iframe>';
 		}
@@ -44,28 +46,42 @@
 			echo '</div>';
 		}
 	}
-		if ($showCode) {
+	if (($showPreview) && (!$showCode)) {
+		if ($fileTypePreview == "php") {
+			echo '<iframe id="previewAreaLg" src="'.$cat.'/'.$file.'.'.$fileTypePreview.'"></iframe>';
+		}
+		else {
+			echo '<div id="previewAreaLg">';
+			include $cat.'/'.$file.'.'.$fileTypePreview;
+			echo '</div>';
+		}
+	}
+		if (($showCode) && (!$showPreview)) {
+		echo '<textarea id="previewCodeLg">';
+		include $cat.'/'.$file.'.'.$fileTypeCode;
+		echo '</textarea>';
+	}
+		if (($showCode) && ($showPreview)) {
 		echo '<textarea id="previewCode">';
 		include $cat.'/'.$file.'.'.$fileTypeCode;
 		echo '</textarea>';
 	}
-?>
 
-
-	<?php
-    // call function that will push to iFrame srcdoc if a PHP file is displayed
-    // if it is just a txt file call other function
-
-    if ($fileTypePreview == "php") {
-        echo '<input type="submit" value="Update" onclick="postRichCode();">
-	<input type="submit" value="Reset" onclick="resetCode();">';
-    }
-    else if (($cat == "csharp") || ($cat == "Java") || ($cat == "sql")) {
-		// don't print submit buttons if the categories don't require them
-    }
-    else {
-        echo '<input type="submit" value="Update" onclick="postPlainCode();">
-	<input type="submit" value="Reset" onclick="resetCode();">';
-    }
+/*	
+	// update and reset buttons
+	if ($showCode) {
+		if ($fileTypePreview == "php") { // postRichCode() changes the iframe srcdoc
+			echo '<input type="submit" value="Update" onclick="postRichCode();">
+		<input type="submit" value="Reset" onclick="resetCode();">';
+		}
+		else if (($cat == "csharp") || ($cat == "Java") || ($cat == "sql")) {
+			// don't print submit buttons if the categories don't require them
+		}
+		else { // postPlainCode() simply overwrites a div's innerHTML
+			echo '<input type="submit" value="Update" onclick="postPlainCode();">
+		<input type="submit" value="Reset" onclick="resetCode();">';
+		}
+	}
+*/
     ?>
 </article>

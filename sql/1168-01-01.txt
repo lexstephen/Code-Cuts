@@ -1,5 +1,4 @@
 /* script name: CREATEBIGPV11E.SQL                  	 */
-<pre>
 /* purpose:     Builds Oracle tables for Big PVFC DB 11e */
 /* date:        7 Sep 2013                               */
 /* updated:                                              */
@@ -323,4 +322,3 @@ describe Customer_T;
 
 
 COMMIT;
-</pre>

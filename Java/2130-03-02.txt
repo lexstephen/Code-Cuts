@@ -1,0 +1,36 @@
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+public class CramersRule {
+
+	public static void main(String[] args) {
+		// Solve 2 X 2 Linear Equations
+		// Use Cramer's Rule to solve
+
+		double a, b, c, d, e, f, check, x, y;
+		System.out.println("Enter six numbers separated by spaces:");
+		
+		Scanner numInput = new Scanner(System.in);
+		a = numInput.nextDouble();
+		b = numInput.nextDouble();
+		c = numInput.nextDouble();
+		d = numInput.nextDouble();
+		e = numInput.nextDouble();
+		f = numInput.nextDouble();
+		
+		check = (a*d) - (b*c);
+		
+		if (check == 0) {
+			System.out.println("The equation has no solution");
+		}
+		else {
+			x = (((e*d) - (b*f))/((a*d) - (b*c)));
+			y = (((a*f) - (e*c))/((a*d) - (b*c)));
+	
+			DecimalFormat numForm = new DecimalFormat("#.#");
+					
+			System.out.println("x is " + numForm.format(x) + " and y is " + numForm.format(y));
+		}
+	}
+
+}

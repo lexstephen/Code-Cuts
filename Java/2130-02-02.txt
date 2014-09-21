@@ -1,6 +1,7 @@
 
-// Import the Scanner class
+// Import the Scanner & DecimalFormat class
 import java.util.Scanner;
+import java.text.DecimalFormat;
 	
 public class Maths {
 	  public static void main(String[] args) { 

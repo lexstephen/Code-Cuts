@@ -11,6 +11,7 @@
 
 	<link rel="stylesheet" href="<?php echo $useStylesheet; ?>">
 
+	<?php include 'style/scripts.php';	// js in php file to allow for best of both worlds ?>
 </head>
 
 <body>

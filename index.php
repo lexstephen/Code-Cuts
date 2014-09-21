@@ -16,6 +16,8 @@
 	if(isset($_GET['cat']) && isset($_GET['file'])) {
 		$cat = $_GET['cat'];
         $file = $_GET['file'];
+        $showPreview = 1;
+        $showCode = 0;
 
 // look in all the tutorials
 		for ($i = 0; $i < $tutCnt; $i++) {
@@ -55,10 +57,16 @@
 // this has the html up until the end of the header tag
 // meta info populated on the fly depending on above codes
 	include 'style/header.php'; 	// header
-	include 'style/scripts.php';
 	
 	echo '<section id="mainSection">';
-
+	echo '<form class="searchForm" action="index.php" role="search">
+				<input type="search" name="q" list="tagSearch"> 
+				<input type="hidden" name="cat" value="'.$cat.'"> 
+				<input type="hidden" name="file" value="'.$file.'"><br>
+				<input type="submit" value="search">
+				<input type="reset" value="clear" onclick="hideSearchResults()">
+			</form>';
+			
 // html and php for sidebar (sidebar pulls in search.php)
 	include 'style/sidebar.php'; 	// sidebar
 	

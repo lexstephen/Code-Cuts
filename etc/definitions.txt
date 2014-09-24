@@ -1,0 +1,36 @@
+<html lang="en-us" ng-app="defs">
+<head>
+	<title>Definitions</title>
+</head>
+
+<body>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+<script src="etc/definitions.js"></script>
+
+<article>
+<div ng-controller="defList">
+	<p>Search definitions: <span class="hiL">{{ lookFor.subject }} {{ lookFor.chapter }} {{ lookFor.term }} {{ lookFor.definition }}</span></p>
+	<table>
+		<tr>
+			<td><a href="" ng-click="sortOrder='subject'; reverse=!reverse;">Subject</a></td>
+			<td><a href="" ng-click="sortOrder='chapter'; reverse=!reverse;">Chapter</a></td>
+			<td><a href="" ng-click="sortOrder='term'; reverse=!reverse;">Term</a></td>
+			<td><a href="" ng-click="sortOrder='definition'; reverse=!reverse;">Definition</a></td>
+		</tr>
+			<td><input type="text" ng-model="lookFor.subject"></td>
+			<td><input type="text" ng-model="lookFor.chapter"></td>
+			<td><input type="text" ng-model="lookFor.term"></td>
+			<td><input type="text" ng-model="lookFor.definition"></td>
+		</tr>
+		<tr ng-repeat="def in theDefs | filter:lookFor:strict | orderBy:sortOrder">
+			<td>{{ def.subject }}</td>
+			<td>{{ def.chapter }}</td>
+			<td>{{ def.term }}</td>
+			<td>{{ def.definition }}</td>
+		</tr>
+	</table>
+	</div>
+</article>
+	
+</body>
+</html>

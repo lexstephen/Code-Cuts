@@ -1,0 +1,279 @@
+<table id="definitionTable">
+<tr><td>ch</td><td>TERM</td><td>DEFINITION</td></tr>
+<tr><td>ch3</td><td>Four main functions of operating system</td><td>1: provide a user interface; 2: manage files; 3: manage hardware; 4: manage applications</td></tr>
+<tr><td>ch3</td><td>aero interface</td><td>glassy, 3D user interface; not available for Windows 7 starter and home basic editions; requires one gigabyte of RAM, direct X 9 graphics, 128 MB graphics memory</td></tr>
+<tr><td>ch3</td><td>Dialog box</td><td>the difference between a window and a dialog box is a window can be resized and a dialog box cannot</td></tr>
+<tr><td>ch3</td><td>Aero snap</td><td>automatically maximizes window when you drag it to the top of the desktop; drag right or left to snap and fill half of the screen</td></tr>
+<tr><td>ch3</td><td>Aero shake</td><td>grab the title bar and shake a window to minimize all other windows</td></tr>
+<tr><td>ch3</td><td>Jump list</td><td>the little menu that pops up when you right click on an icon on your taskbar</td></tr>
+<tr><td>ch3</td><td>Gadget</td><td>a mini app that appears on the desktop; Vista gadgets appear in the Vista sidebar on the right side of the desktop</td></tr>
+<tr><td>ch3</td><td>Notification area</td><td>also called the system tray or systray, usually on the right side of the taskbar and displays open services</td></tr>
+<tr><td>ch3</td><td>Services</td><td>a program that runs in the background to support or serve windows or an application; volume control, network connectivity</td></tr>
+<tr><td>ch3</td><td>Process</td><td>a program that is running under the authority of the shell, together with the system resources assigned to it</td></tr>
+<tr><td>ch3</td><td>Personalization</td><td>right click anywhere on the desktop and choose personalize from the shortcut menu; Controls desktop, sounds, mouse action, colour schemes, display settings</td></tr>
+<tr><td>ch3</td><td>Volume</td><td>a partition of a hard drive; C:, D:; Windows can handle up to four partitions on a drive</td></tr>
+<tr><td>ch3</td><td>Library</td><td>a collection of one or more folders that might be stored on different local drives or on the network; defaults are documents, music, pictures, and videos</td></tr>
+<tr><td>ch3</td><td>View hidden files and extensions for known file types</td><td>Start/Control Panel/Appearance and personalization/Folder options</td></tr>
+<tr><td>ch3</td><td>Briefcase folder</td><td>a folder that can be used to sync up files in this folder with its corresponding briefcase folder on another computer</td></tr>
+<tr><td>ch3</td><td>Naming folders</td><td>maximum length of *a path and filename* cannot exceed 260 characters</td></tr>
+<tr><td>ch3</td><td>File/folder attributes</td><td>assigned properties; such things as hide a file, make it read only, flag for backup; Right Click item/Properties</td></tr>
+<tr><td>ch3</td><td>System Window</td><td>quick look at what hardware and software are installed; Start/right click Computer/Properties; lists edition of Windows, service packs, 32 or 64 bit, memory, Windows Experience Index</td></tr>
+<tr><td>ch3</td><td>Windows experience Index</td><td>rating of the system's overall performance on a scale from 1.0 to 7.9</td></tr>
+<tr><td>ch3</td><td>System information window</td><td>msinfo32.exe; more details about a system, hardware and software, configuration, currently running programs; lists drivers that load successfully to help troubleshoot</td></tr>
+<tr><td>ch3</td><td>Device drivers</td><td>small programs stored on the hard drive that tell the computer how to communicate with a specific hardware device such as a printer, network card, or scanner</td></tr>
+<tr><td>ch3</td><td>Control Panel</td><td>window containing several small utility programs called applets that are used to manage hardware, software, users, and the system</td></tr>
+<tr><td>ch3</td><td>Action center</td><td>new to Windows 7, lists errors and issues that need attention; flag icon in taskbar</td></tr>
+<tr><td>ch3</td><td>User account control box</td><td>UAC; alert that pops up when user attempts to perform an action that can only be done with administrative privileges; prevents malicious background tasks from gaining administrative privileges when the administrator is logged on; makes it easier for administrator to login from any user account but still perform necessary tasks</td></tr>
+<tr><td>ch3</td><td>Network and sharing Center</td><td>accessed from Control Panel or taskbar; helps user troubleshoot connectivity issues</td></tr>
+<tr><td>ch7</td><td>Editions of Windows 7</td><td>Windows 7 Starter: netbooks, developing nations, only 32 bit 7 edition; Windows 7 Home Basic: Limited features, underdeveloped countries only; Windows 7 Home Premium: similar to home basic, some additional features; Windows 7 professional: business users, multiple site licenses/volume licensing; Windows 7 enterprise: additional features over professional, bitlocker drive encryption, multiple languages, does not include DVD maker, multiple licenses available; Windows 7 ultimate: every Windows 7 feature, no multiple licenses</td></tr>
+<tr><td>ch7</td><td>Windows 7 K/N Editions</td><td>ID'd by N, K or KN in name; operating system without multimedia utilities, required due to an antitrust ruling to break up monopolies in Europe, Utilities can be legally downloaded from Microsoft website after installation of operating system</td></tr>
+<tr><td>ch7</td><td>Original equipment manufacturer license</td><td>OEM; costs less but can only be installed on a new PC for resale; license costs less if you purchase a license to upgrade from Vista or XP; full license is required for any computer with an older OS</td></tr>
+<tr><td>ch7</td><td>Seven in stall disc</td><td>content is same regardless of the full or upgrade license purchased; can perform a clean install or an upgrade; product key is tied to the full or upgrade license you purchase and activates software accordingly</td></tr>
+<tr><td>ch7</td><td>Maximum memory supported by Windows 7 editions</td><td>32 bit versions: 4 GB maximum, all but starter (2GB); 64 bit: Ultimate, enterprise, professional: 192 GB; home premium: 16 GB; home basic: 8 GB</td></tr>
+<tr><td>ch7</td><td>Dual boot</td><td>allows you to install a new OS without disturbing the old one so you can boot to either OS; useful to test if devices will work with Windows 7</td></tr>
+<tr><td>ch7</td><td>Compatibility mode</td><td>a group of settings that can be applied to older drivers or applications that might cause them to work in Windows 7</td></tr>
+<tr><td>ch7</td><td>Windows XP mode</td><td>a windows XP environment installed in Windows 7 that can be used to support older applications; XP product key not required; runs under Virtual PC, installed on Windows 7 professional, enterprise, or ultimate</td></tr>
+<tr><td>ch7</td><td>Installing without a DVD drive</td><td>download from website; use external DVD drive, configure BIOS; copy installation files to a USB flash drive; use DVD drive on networked computer</td></tr>
+<tr><td>ch7</td><td>Factory recovery partition</td><td>brand name computer is likely to have a hidden recovery partition that contains a recovery utility and installation files</td></tr>
+<tr><td>ch7</td><td>Virtual machine</td><td>software that simulates the hardware of the physical computer, can be used to install and run multiple operating systems at the same time, training users, run legacy software, capture screenshots of the boot process; popular programs are virtual PC by Microsoft, virtual box by Oracle, and VMware</td></tr>
+<tr><td>ch7</td><td>ISO image</td><td></td></tr>
+<tr><td>ch7</td><td>Clean install</td><td>also called custom installation, overwrite the existing operating system and applications; fresh start, reformat hard drive</td></tr>
+<tr><td>ch7</td><td>In place upgrade</td><td>launched from the desktop, installation carries forward user settings and its installed applications; rating systems can only be upgraded if upgrade paths are correct: ie Vista Ultimate can upgrade to Win 7 Ultimate but Vista Enterprise could not; cannot install a 64 bit OS over an existing 32 bit; Vista service pack one must be installed in Vista to upgrade to Windows 7</td></tr>
+<tr><td>ch7</td><td>Filesystem</td><td>the overall structure of an operating system uses to name, store and organize files on a volume, Windows always installed on a volume using the NTFS filesystem</td></tr>
+<tr><td>ch7</td><td>Windows workgroup and home group</td><td>P2P network that is managed by each computer without centralized control; in a work group each computer maintains a list of users and their rights on that PC, in a home group, each computer shares files folders libraries and printers with other computers in the home group; home group provides less security then workgroup because any user of any computer in the home group can access resources; Home group is new to Windows 7 and cannot connect to Windows Vista or XP computers</td></tr>
+<tr><td>ch7</td><td>Windows domain</td><td>illogical group of networked computers that share a centralized directory database of user account information and security for the entire group of computers; a type of client/server network, resources managed by centralized computers; directory database is controlled by a network operating system such as Windows server 2011, UNIX, and Linux</td></tr>
+<tr><td>ch7</td><td>Active Directory</td><td>Directory database used by Windows Server to control a network; each user on the network has his own domain level account called a global account, global username or network ID</td></tr>
+<tr><td>ch7</td><td>Boot loader menu</td><td>when you boot with a dual boot, this appears and asks you to select an operating system</td></tr>
+<tr><td>ch7</td><td>Activation</td><td>if you don't activate Windows 7 during the installation, you have 30 days to do so</td></tr>
+<tr><td>ch7</td><td>Device manager</td><td>DEVMGMT.MSC; primary windows tool for managing hardware, lists hardware and the drivers they use, errors</td></tr>
+<tr><td>ch7</td><td>Windows easy transfer</td><td>Windows 7/Vista version of XP's files and settings transfer wizard; copies user data and settings from one computer to another; when large scale transition is required, User State migration tool is used</td></tr>
+<tr><td>ch7</td><td>Deployment strategy</td><td>a procedure to install windows, device drivers, and applications on a computer and can include the process to transfer user settings, application settings, and datafiles from an old installation to a new one</td></tr>
+<tr><td>ch7</td><td>Touch Time</td><td>the amount of time you must sit in front of an individual computer as Windows is installed</td></tr>
+<tr><td>ch7</td><td>Deployment strategy: high touch with retail media</td><td>fewer than 100 computers; all work done by a tech sitting at the computer</td></tr>
+<tr><td>ch7</td><td>Distribution server</td><td>copy setup files to a file server on the network and share the folder to save time doing multiple installations</td></tr>
+<tr><td>ch7</td><td>User state migration tool</td><td>a commandline tool that works only when the computer is a member of a Windows domain</td></tr>
+<tr><td>ch7</td><td>Windows automated installation kit</td><td>contains a group of tools used to deploy Windows 7 in large organizations</td></tr>
+<tr><td>ch7</td><td>Deployment strategies: high touch with standard image</td><td>100 to 200 computers; administrator prepares an image called a standard image that includes Windows 7, drivers, and applications that are standard to all the computers that might use the image; hardware independent, can be installed on any computer; uses disk cloning to copy</td></tr>
+<tr><td>ch7</td><td>Drive imaging</td><td>aka disk cloning; used to clone the entire hard drive to another bootable media, true image by Acronis, Norton ghost by Symantec Corp., Clonezilla</td></tr>
+<tr><td>ch7</td><td>Image deployment</td><td>installing a standard image on another computer; always results in a clean install rather than an upgrade; usually stored on an 8 GB or larger bootable USB flash drive or on a bootable DVD along with windows</td></tr>
+<tr><td>ch7</td><td>Deployment strategy: light touch, high volume deployment</td><td>200 to 500 computers; Uses a deployment server on the network to serve up the installation after a tech starts the process; distribution share included in the installation; install begins by booting to Windows PE or the PXE; technician not required to respond to prompts after install begins</td></tr>
+<tr><td>ch7</td><td>Unattended installation</td><td>technician does not need to be present because administrator password, domain name and other details are stored in an answer file</td></tr>
+<tr><td>ch7</td><td>Map toolkit</td><td>Microsoft assessment and planning toolkit; can be used by an administrator to query hundreds of computers in a single scan and determine if compatible with windows 7</td></tr>
+<tr><td>ch7</td><td>Deployment strategy: zero touch, high volume deployment</td><td>more than 500 computers; difficult to set up and requires complex tools; does not require the user to start the process, uses push automation and remote network installation with no user intervention required; can turn on a computer that is turned off and even works when no OS is installed or the current one is corrupted</td></tr>
+<tr><td>ch7</td><td>Pull automation</td><td>the user starts the process</td></tr>
+<tr><td>ch7</td><td>Push automation</td><td>a server automatically pushes the installation to a computer when a user is not likely to be sitting at it</td></tr>
+<tr><td>ch7</td><td>Batch file</td><td>a text file containing a series of OS commands; might be automatically executed as part of the zero touch installation or manually executed in a light touch or high touch installation</td></tr>
+<tr><td>ch7</td><td>Distribution share</td><td>windows, device drivers, applications</td></tr>
+<tr><td>ch7</td><td>Windows PE</td><td>windows preinstallation environment; minimum operating system used to start an installation</td></tr>
+<tr><td>ch7</td><td>PXE</td><td>Preboot eXecution environment; programming contained in the BIOS code on the motherboard, used to start up the computer and search for a server on the network to provide a bootable operating system</td></tr>
+<tr><td>ch10</td><td>Preventative maintenance</td><td>at least once a month, verify critical settings and clean up hard drive; windows needs about 15% free space for defragmenting and other processes</td></tr>
+<tr><td>ch10</td><td>User profile name space</td><td>collection of user data and settings; subfolders; ntuser.dat file copied to registry when user logs on</td></tr>
+<tr><td>ch10</td><td>Registry</td><td>database of hardware and software configuration information, user preferences, and application settings; c:\windows\system 32\config</td></tr>
+<tr><td>ch10</td><td>Initialization files</td><td>ini/inf extension; text files windows stores some data in</td></tr>
+<tr><td>ch10</td><td>Offline files</td><td>stored in the client side caching (CSC) folder, C:\windows\CSC; Utility that syncs when a connection is later established</td></tr>
+<tr><td>ch10</td><td>Defragment</td><td>rearrange fragments or parts of files on the drive so each file is stored on the drive in contiguous clusters; not necessary to improve read/write time in a solid state drive with no moving parts</td></tr>
+<tr><td>ch10</td><td>Cluster/file a location unit</td><td>a group of whole sectors, the number of sectors in the cluster is fixed and is determined when the file system is installed; A file is stored in whole clusters and the unused space at the end is slack</td></tr>
+<tr><td>ch10</td><td>Slack</td><td>wasted free space in a whole cluster</td></tr>
+<tr><td>ch10</td><td>NTFS filesystem</td><td>more efficient for large drives, offers better security and file/folder compression</td></tr>
+<tr><td>ch10</td><td>Virtual memory paging</td><td>a file used by windows in the same way it uses memory, to enhance the amount of RAM in the system; C:\Pagefile.sys; can be moved to a comparably fast secondary hard drive to save space on C:\</td></tr>
+<tr><td>ch10</td><td>System image</td><td>the backup of the Windows 7 volume, used to recover a failed Windows volume; includes and replaces entire drive, must always be created on an internal or external hard drive</td></tr>
+<tr><td>ch10</td><td>System protection utility</td><td>automatically backs up system files and stores them on the hard drive at regular intervals and just before you install software or hardware; aka restore points</td></tr>
+<tr><td>ch10</td><td>System restore</td><td>restores the system to its condition at the time a restore point was made; can replace certain keys in a registry but cannot completely rebuild a totally corrupted registry; cannot remove a virus or worm infection; restore points can be lost if that area of the drive is corrupted; viruses and other malware can hide in restore points</td></tr>
+<tr><td>ch10</td><td>Hard drive</td><td>divided into concentric circles called tracks, and tracks are divided into sectors; all data stored on sectors, sometimes called records, usually 512 bytes, the low level formatting done before the drive leaves the factory; drive is further divided into one or more partitions</td></tr>
+<tr><td>ch10</td><td>Partition table</td><td>windows can track up to four partitions on a drive and uses partition table stored in the very first sector on the hard drive called the Master Boot record</td></tr>
+<tr><td>ch10</td><td>Extended partition</td><td>the fourth partition, can hold one or more volumes called logical drives</td></tr>
+<tr><td>ch10</td><td>High level format/formatting the drive</td><td>installing a drive letter, filesystem and root directory on a volume</td></tr>
+<tr><td>ch10</td><td>Active partition</td><td>the bootable partition that start up BIOS turns to when searching for an operating system</td></tr>
+<tr><td>ch10</td><td>System partition</td><td>the active partition of the hard drive, the partition that contains the Boot manager</td></tr>
+<tr><td>ch10</td><td>Boot manager</td><td>aka boot loader, the OS program that starts up windows</td></tr>
+<tr><td>ch10</td><td>Boot partition</td><td>the partition where the Windows operating system is stored</td></tr>
+<tr><td>ch10</td><td>Best filesystem</td><td>uses smaller allocation unit or cluster sizes, more efficient use of disk space when storing many small files, reliable, gives fewer errors, supports encryption, Better security</td></tr>
+<tr><td>ch10</td><td>exFAT</td><td>Large external storage devices that you want to use with other operating systems; 64 bit wide file allocation table</td></tr>
+<tr><td>ch10</td><td>FAT32</td><td>small hard drives or USB flash drives, not as much overhead as NTFS</td></tr>
+<tr><td>ch10</td><td>FAT16</td><td>16 bit file allocation table, only recommended on volumes less than 4 GB</td></tr>
+<tr><td>ch10</td><td>CDFS</td><td>compact disc filesystem, older filesystem used by optical discs</td></tr>
+<tr><td>ch10</td><td>UDF</td><td>universal disk format, replaces CDFS</td></tr>
+<tr><td>ch10</td><td>Elevated command prompt window</td><td>has administrative privileges</td></tr>
+<tr><td>ch10</td><td>dir /p</td><td>lists one screen at a time</td></tr>
+<tr><td>ch10</td><td>dir /w</td><td>presents information using wide format, details omitted, files and folders listed in columns</td></tr>
+<tr><td>ch10</td><td>dir /s</td><td>includes subdirectory entries</td></tr>
+<tr><td>ch10</td><td>MD</td><td>command to create a subdirectory under a directory, "make directory"</td></tr>
+<tr><td>ch10</td><td>CD</td><td>change directory</td></tr>
+<tr><td>ch10</td><td>RD</td><td>remove directory, directory must contain no files, subdirectories, cannot be the current directory</td></tr>
+<tr><td>ch10</td><td>del</td><td>delete a file</td></tr>
+<tr><td>ch10</td><td>ren</td><td>rename a file</td></tr>
+<tr><td>ch10</td><td>/V</td><td>size of each new file is compared to the size of the original file when copying</td></tr>
+<tr><td>ch10</td><td>/Y</td><td>when used, confirmation message does not appear asking you to confirm before overwriting a file</td></tr>
+<tr><td>ch10</td><td>Recover</td><td>attempts to recover a file when parts of the file are corrupted, best used from Windows 7 recovery environment</td></tr>
+<tr><td>ch10</td><td>X copy</td><td>more powerful than the copy command, can copy subfolders or only files modified after a certain date</td></tr>
+<tr><td>ch10</td><td>Robo copy</td><td>robust file copy, New to Windows 7, intended to replace X copy</td></tr>
+<tr><td>ch10</td><td>Chkdsk</td><td>fixes filesystem errors and recovers data from bad sectors</td></tr>
+<tr><td>ch10</td><td>FAT</td><td>file allocation table, keeps a record of each cluster belonging to a file</td></tr>
+<tr><td>ch10</td><td>MFT</td><td>Master file table, used by NTFS filesystem</td></tr>
+<tr><td>ch10</td><td>Lost allocation units</td><td>aka lost clusters, clusters marked as used in the fat or MFT, but the cluster does not belong to any file</td></tr>
+<tr><td>ch10</td><td>Cross linked clusters</td><td>marked in the fat or MFT as belonging to more than one file</td></tr>
+<tr><td>ch10</td><td>Chkdsk C:/F</td><td>check the hard drive for filesystem errors and repair of them</td></tr>
+<tr><td>ch10</td><td>Chkdsk C:/R</td><td>fix filesystem errors and also examine the each sector of the drive for bad sectors; most thorough</td></tr>
+<tr><td>ch10</td><td>Fragmented files</td><td>files written to a disc in noncontiguous clusters</td></tr>
+<tr><td>ch10</td><td>Format</td><td>high level format in stalls a filesystem and erases all data on the volume</td></tr>
+<tr><td>ch10</td><td>Shutdown</td><td>log off a local or remote computer; must be logged in as an administrator</td></tr>
+<tr><td>ch10</td><td>Disk management</td><td>primary tool for managing hard drives; manage partitions on a drive; prepare a drive for first use; mount a drive</td></tr>
+<tr><td>ch10</td><td>Partition</td><td>is called a partition until it is formatted and then it is called a volume</td></tr>
+<tr><td>ch10</td><td>Basic disk</td><td>a single hard drive that works independently of other hard drives</td></tr>
+<tr><td>ch10</td><td>GUID/GPT</td><td>globally unique identifier partition table; supports up to 128 partitions, recommended for drives larger than 2 TB; more reliable but can only be used by 64 bit operating systems, computers that have an EFI or UEFI chip rather than traditional BIOS chip</td></tr>
+<tr><td>ch10</td><td>MBR</td><td>master boot record; more popular partitioning system; writes an MBR record to the first sector of the disk containing the master boot program and the partition table</td></tr>
+<tr><td>ch10</td><td>Master boot program</td><td>purpose is to begin the process of finding and loading an OS installed on the drive</td></tr>
+<tr><td>ch10</td><td>Partition table</td><td>contains the description, location, and size of each partition on the drive</td></tr>
+<tr><td>ch10</td><td>Mounted drive</td><td>a volume that can be accessed by way of a folder on another volume so that the folder has more available space</td></tr>
+<tr><td>ch10</td><td>Mount point</td><td>a folder that is used as a shortcut to space on another volume</td></tr>
+<tr><td>ch10</td><td>Dynamic disk</td><td>works with other hard drives to hold data; volumes stored on dynamic disks are called dynamic volumes; several dynamic disks can work together to collectively present a single dynamic volume to the system</td></tr>
+<tr><td>ch10</td><td>Simple volume</td><td>a volume that is stored on only one hard drive</td></tr>
+<tr><td>ch10</td><td>Offline disc status</td><td>indicates a dynamic disk has become corrupted or is unavailable, caused by corrupted filesystem, loose drive cables, hard drive failure</td></tr>
+<tr><td>ch10</td><td>LIP</td><td>language interface pack; translates some of the windows user interface to another language</td></tr>
+<tr><td>ch11</td><td>Shell</td><td>the portion of an OS that relates to the user and two applications</td></tr>
+<tr><td>ch11</td><td>Kernel</td><td>responsible for interacting with hardware;  main components are the HAL and the executive services interface</td></tr>
+<tr><td>ch11</td><td>User mode</td><td>subsystem of the shell that has limited access to system information and can access hardware only through other OS services</td></tr>
+<tr><td>ch11</td><td>Win32 subsystem</td><td>provides log onto the system and other security functions, all applications relate to windows by way of this subsystem</td></tr>
+<tr><td>ch11</td><td>HAL</td><td>hardware abstraction layer, the layer closest to the hardware; when Windows is first installed it builds the how based on the type of CPU installed; cannot be moved from one computer to another</td></tr>
+<tr><td>ch11</td><td>Executive services interface</td><td>a group of services that operate in kernel mode between the user mode subsystems and the HAL; services contained in ntoskrnl.exe manage memory, I/O devices, filesystems, some security</td></tr>
+<tr><td>ch11</td><td>Process</td><td>a program running under the authority of the shell, together with the system resources assigned to it; sometimes known as an instance</td></tr>
+<tr><td>ch11</td><td>Thread</td><td>a single task, such as the task of printing a file that the process requests from the kernel</td></tr>
+<tr><td>ch11</td><td>Task manager</td><td>lets you view the applications and processes running on your computer as well as information about process and memory performance, network activity, user activities</td></tr>
+<tr><td>ch11</td><td>Task manager applications tab</td><td>shows the status of active applications</td></tr>
+<tr><td>ch11</td><td>TaskManager processes tab</td><td>list system services and other processes associated with applications, how much CPU time and memory the process uses</td></tr>
+<tr><td>ch11</td><td>TaskManager services tab</td><td>lists the services currently installed along with the status of each</td></tr>
+<tr><td>ch11</td><td>Taskmanager performance tab</td><td>provides graphs to give you a look at system resources; CPU usage; memory graph; physical memory usage history</td></tr>
+<tr><td>ch11</td><td>Task manager networking tab</td><td>monitor network activity and bandwidth</td></tr>
+<tr><td>ch11</td><td>TaskManager users tab</td><td>all users logged onto the system</td></tr>
+<tr><td>ch11</td><td>System configuration/MS config</td><td>discover what processes are launched at start up, disable a process from loading; reports only what it is programmed to look for, looks in certain registry keys and start up folders; does not report all startup processes</td></tr>
+<tr><td>ch11</td><td>Services console</td><td>services.msc, controls windows and third party services installed on the system</td></tr>
+<tr><td>ch11</td><td>Computer management</td><td>compmgmt.msc; console, consolidate several windows administrative tools</td></tr>
+<tr><td>ch11</td><td>Microsoft management console</td><td>MMC.exe; those utility used to build your own customized console windows</td></tr>
+<tr><td>ch11</td><td>Snap in</td><td>individual tools that make up a customized console window; *.msc</td></tr>
+<tr><td>ch11</td><td>Event viewer</td><td>eventvwr.msc; logs of events such as hardware or network failure, error message, device or service that fails to start, General Protection Fault</td></tr>
+<tr><td>ch11</td><td>Task scheduler</td><td>can be set to launch a task or program at a future time including at start up</td></tr>
+<tr><td>ch11</td><td>Registry editor</td><td>Regedit.exe; used to edit registry keys</td></tr>
+<tr><td>ch11</td><td>Registry</td><td>a database designed with a tree like structure called a hierarchical database that contains configuration information for Windows, users, applications, hardware; built by windows using hardware configuration, hives, ntuser.dat</td></tr>
+<tr><td>ch11</td><td>Hives</td><td>stored in C:\windows\system 32\config folder; SAM: security accounts manager; security; software; system; default</td></tr>
+<tr><td>ch11</td><td>High level keys</td><td>the five sections that a registry is organized into; ie HKEY_CURRENT_USER</td></tr>
+<tr><td>ch11</td><td>HKEY LOCAL MACHINE/HKLM</td><td>most important key, contains hardware, software, security data</td></tr>
+<tr><td>ch11</td><td>HKEY CURRENT CONFIG/HKCC</td><td>information that identifies each hardware device</td></tr>
+<tr><td>ch11</td><td>HKEY CLASSES ROOT/HKCR</td><td>stores information that determines which application is opened when a user opens a file</td></tr>
+<tr><td>ch11</td><td>HKEY USERS/HKU</td><td>data about all users</td></tr>
+<tr><td>ch11</td><td>HKEY CURRENT USER/HKCU</td><td>Data about the current user; info stored in the ntuser.dat file</td></tr>
+<tr><td>ch11</td><td>Before editing the Registry</td><td>there is no undo feature; create a restore point, back up a registry key before you edit it, copy the system 32 config folder, in windows XP back up this system state</td></tr>
+<tr><td>ch11</td><td>Performance information into rules</td><td>information to evaluate the performance of the system and adjust windows</td></tr>
+<tr><td>ch11</td><td>Windows seven resource monitor</td><td>resmon.exe; monitors the performance of the processor, memory, hard drive, network</td></tr>
+<tr><td>ch11</td><td>Windows seven reliability monitor</td><td>problems and errors that happen over time, unless log is cleared, reports problems since Windows installation</td></tr>
+<tr><td>ch11</td><td>Windows 7 performance monitor</td><td>Microsoft management console snapping that can track activity by hardware and software to measure performance in real time;  can save data in logs, unlike Resource Monitor</td></tr>
+<tr><td>ch11</td><td>Data collector set</td><td>a set of counters that you can use to collect data about the system and save this data in a report or log file</td></tr>
+<tr><td>ch11</td><td>Ways to improve windows performance</td><td>perform routine maintenance; clean windows start up; check if the hardware supports the OS; check for performance warnings; check for a history of problems; disable the indexer for windows search; plug any memory leaks; consider using ready boost; disable the aero interface; disable the Vista sidebar</td></tr>
+<tr><td>ch11</td><td>Windows 7 indexer</td><td>responsible for maintaining an index of files and folders on a hard drive to speed up search</td></tr>
+<tr><td>ch11</td><td>Memory leak</td><td>caused when an application does not properly release memory allocated to it that it no longer needs and continually requests more memory than it needs</td></tr>
+<tr><td>ch11</td><td>Ready boost</td><td>uses a flash drive or SD card to boost hard drive performance; faster flash memory used as a buffer to speed up hard drive access time</td></tr>
+<tr><td>ch11</td><td>Steps for Manually removing software</td><td>try the uninstall routine first; delete program files; delete registry entries; remove the program from the menu and desktop; remove startup processes</td></tr>
+<tr><td>ch12</td><td>Action center</td><td>system window or action center flag in taskbar; solve problems when installing a device/application, with software or hardware; history of past and current problems</td></tr>
+<tr><td>ch12</td><td>Advanced boot options menu</td><td>F8 key when Windows loads; several options to troubleshoot boot problems; boot options menu in XP</td></tr>
+<tr><td>ch12</td><td>Backup and restore</td><td>start menu; used to backup and restore data and system image, make a rescue disc</td></tr>
+<tr><td>ch12</td><td>Chkdsk</td><td>enter at command prompt; check and repair errors on a drive; start up problems may be caused if chkdsk fixes critical system files that were affected by these errors</td></tr>
+<tr><td>ch12</td><td>Cipher</td><td>enter at command prompt; logged in as admin, use command to decrypt a file that is not available because the user account that encrypted the file is no longer accessible</td></tr>
+<tr><td>ch12</td><td>Compatibility mode</td><td>accessed via Action Center or program files shortcut menu; resolve issues that prevent legacy applications or drivers from working</td></tr>
+<tr><td>ch12</td><td>Component services</td><td>Control Panel/administrative tools; registers a component of an application with the system</td></tr>
+<tr><td>ch12</td><td>Computer management</td><td>Compmgmt.msc; Control Panel or command prompt; access several snap ins to manage and troubleshoot a system</td></tr>
+<tr><td>ch12</td><td>Data sources</td><td>ODBC; Control Panel/administrative tools; installs drivers so that an application can open a foreign data source</td></tr>
+<tr><td>ch12</td><td>Device driver rollback</td><td>device manager; replace a driver with one that worked before the current one was installed</td></tr>
+<tr><td>ch12</td><td>Device manager</td><td>devmgmt.msc; access via system window or XP system properties window; solve problems with hardware devices, update drivers, disable/uninstall a device</td></tr>
+<tr><td>ch12</td><td>Disk cleanup</td><td>cleanmgr.exe; accessed from a drive's properties box or by command prompt; delete unused files to free up disk space</td></tr>
+<tr><td>ch12</td><td>Disc defragmenter</td><td>dfrg.msc or defrag.exe; accessed from a drives properties box or at command prompt; Defrag a volume on a magnetic hard drive</td></tr>
+<tr><td>ch12</td><td>Disk management</td><td>discmgmt.msc; accessed from the computer management console or command prompt; view and modify partitions on hard drives and format drives</td></tr>
+<tr><td>ch12</td><td>File signature verification tool</td><td>sigverif.exe; command prompt; searches for installed drivers that are unsigned, stores results in \windows\SIgverif.tXT; used to verify that the software has been approved by Microsoft</td></tr>
+<tr><td>ch12</td><td>Driver verifier</td><td>verifier.exe; command prompt; identify a driver that is causing a problem, puts stress on selected drivers which causes the driver with the problem to crash; used to solve system lock up errors or blue screen errors caused by a corrupted I/O device driver</td></tr>
+<tr><td>ch12</td><td>Error reporting or archived messages</td><td>error messages displayed when and application error occurs; appears in action center</td></tr>
+<tr><td>ch12</td><td> Event viewer</td><td>eventvwr.msc; access from computer management console or in administrative tools; log error messages for security, system, and hardware problems</td></tr>
+<tr><td>ch12</td><td>Group policy</td><td>gpedit.msc; command prompt, or computer management console, only available in the business and professional editions of windows; display and change policies controlling users and the computer</td></tr>
+<tr><td>ch12</td><td>Last known good configuration</td><td>F8 at start up, select from the advanced boot options menu; use when the windows won't start normally and want to revert system to before a setting, driver, or application was changed</td></tr>
+<tr><td>ch12</td><td>Memory diagnostics</td><td>mdsched.exe; command prompt or from system recovery options menu after booting Windows recovery environment; used to test memory</td></tr>
+<tr><td>ch12</td><td>Network and sharing Center</td><td>taskbar, Control Panel; manage network connections and security</td></tr>
+<tr><td>ch12</td><td>Performance monitor</td><td>perfmon.msc; command prompt; identify performance bottleneck</td></tr>
+<tr><td>ch12</td><td>Programs and features window</td><td>Control Panel; uninstall, repair, update software or device drivers</td></tr>
+<tr><td>ch12</td><td>Registry editor</td><td>regedit.exe; command prompt; view and edit the registry</td></tr>
+<tr><td>ch12</td><td>Reliability Monitor</td><td>Action Center; history of past problems</td></tr>
+<tr><td>ch12</td><td>Resource Monitor</td><td>resmon.exe; TaskManager, Action Center; view performance of CPU, memory, hard drive, network</td></tr>
+<tr><td>ch12</td><td>Runas</td><td>runas.exe; command prompt, shortcut menu; run a program using different permissions from those assigned to the currently logged on user</td></tr>
+<tr><td>ch12</td><td>Safemode</td><td>F8 at start up; use when Windows does not start or starts with errors; loads desktop with minimum configuration to solve driver, display, or application problems</td></tr>
+<tr><td>ch12</td><td>SC</td><td>SC.exe; command prompt; stop or start a device that runs in the background</td></tr>
+<tr><td>ch12</td><td>Services</td><td>services.msc; command prompt; graphical version of SC</td></tr>
+<tr><td>ch12</td><td>Software Explorer</td><td>accessed from the Windows Defender window; view and change programs launched at start up</td></tr>
+<tr><td>ch12</td><td>System configuration</td><td>MSconfig.exe; enter in search box; troubleshoot startup process by temporarily disabling start up programs and services</td></tr>
+<tr><td>ch12</td><td>System File Checker</td><td>SFC.exe; command prompt; verify the version of all system files when Windows loads; used when system files may be corrupted but windows still loads</td></tr>
+<tr><td>ch12</td><td>System information</td><td>MSinfo32.exe; enter in the search box; display information about hardware, applications, windows</td></tr>
+<tr><td>ch12</td><td>System information</td><td>systeminfo.exe; command prompt; text only version of System Information; log information using the command systeminfo.exe>myfile.txt</td></tr>
+<tr><td>ch12</td><td>System restore</td><td>rstrui.exe; start menu, safemode, system recovery options menu in the windows RE; restore system to previous restore point, restores registry, system files, application files; restore points automatically created when Windows System Protection is turned on</td></tr>
+<tr><td>ch12</td><td>Tasks killing utilities</td><td>TSkill.exe/taskkill.exe; command prompt; business and professional editions of windows only; stop or kill a process/program currently running; useful managing background services such as an email server or web server</td></tr>
+<tr><td>ch12</td><td>Task lister</td><td>tasklist.exe; command prompt; lists currently running processes</td></tr>
+<tr><td>ch12</td><td>Task manager</td><td>taskman.exe; right click taskbar, start TaskManager; list and stop currently running processes; stop a locked up application</td></tr>
+<tr><td>ch12</td><td>Windows Defender</td><td>Control Panel; monitors activity, alerts if a running program appears to be malicious</td></tr>
+<tr><td>ch12</td><td>Windows File Protection</td><td>service that runs in the background to protect system files and restore overwritten system files as needed</td></tr>
+<tr><td>ch12</td><td>Windows Firewall</td><td>service that runs in the background to prevent or filter uninvited communication from another computer</td></tr>
+<tr><td>ch12</td><td>Windows Update</td><td>wupdmgr.exe; accessed from start menu; download latest patches from Microsoft website</td></tr>
+<tr><td>ch12</td><td>Windows XP Mode</td><td>download and install on Windows 7 professional/ultimate editions to run legacy applications that don't work in compatibility mode</td></tr>
+<tr><td>ch12</td><td>Troubleshooting any computer problem</td><td>1: interview the user and back up data; 2: establish a theory; 3: test your theory; 4: plan the fix and resolve the problem; 5: verify and prevent; 6: document</td></tr>
+<tr><td>ch12</td><td>13 rules for troubleshooting</td><td>1: approach the problem systematically; 2: establish your priorities; 3: beware of user error; 4: keep your cool and don't rush; 5: make no assumptions; 6: try the simple things first; 7: become a researcher; 8: divide and conquer; 9: write things down; 10: don't assume the worst; 11: reboot and start over; 12: use the least invasive solution first; 13: know your starting point</td></tr>
+<tr><td>ch12</td><td>Interview the user and back up data</td><td>describe/recreate problem; error messages; when did it start; program/software used; recent changes; recent thunderstorm/electrical problem; has anyone else used computer; establish priorities, beware user error, keep your cool and don't rush</td></tr>
+<tr><td>ch12</td><td>Examine the system and make your best guess</td><td>reproduce problem and observe for yourself; decide if hardware or software related; make your best guess, question the obvious; make no assumptions, try the simple things first, become a researcher</td></tr>
+<tr><td>ch12</td><td>Test your theory</td><td>divide and conquer, write things down, don't assume the worst, reboot and start over</td></tr>
+<tr><td>ch12</td><td>Plan your solution and then fix the problem</td><td>use the least invasive solution first; know your starting point</td></tr>
+<tr><td>ch12</td><td>Verify the fix and take preventative action</td><td>reboot the system after repair and verify all is well, Internet works, printer works, etc.</td></tr>
+<tr><td>ch12</td><td>Document what happened</td><td>write down in initial symptoms, source of problem, how it was fixed</td></tr>
+<tr><td>ch12</td><td>Blue screen of death</td><td>process running in kernel mode encounters a problem and windows must stop the system; Google error messages; use event viewer, Windows update, system restore, memory diagnostics/CHKDSK</td></tr>
+<tr><td>ch12</td><td>BSOD/bad pool header</td><td>corrupted Windows update, bad memory, corrupted application</td></tr>
+<tr><td>ch12</td><td>BSOD/NTFS file system</td><td>hard drive most likely corrupted; try running checkdisk with the /r parameter</td></tr>
+<tr><td>ch12</td><td>BSOD/kernel data inpage error</td><td>Windows could not read the paging file, might be corrupted because of bad memory, corrupted hard drive, feeling processor; rebuild pagefile.SYS</td></tr>
+<tr><td>ch12</td><td>BSOD/unexpected kernel mode trap</td><td>bad memory; run memory diagnostics</td></tr>
+<tr><td>ch12</td><td>BSOD/divide by zero error</td><td>caused by application running when error occurred</td></tr>
+<tr><td>ch12</td><td>Windows 32 bit/64 bit patches</td><td>make sure the patch you install applies to your installation of windows</td></tr>
+<tr><td>ch12</td><td>x86</td><td>refers to 32bit CPUs/processors/operating systems</td></tr>
+<tr><td>ch12</td><td>x86/64</td><td>hybrid processor; processes either 32 bit or 64 bit; AMD 64; Intel core 2 duo; AMD Athlon</td></tr>
+<tr><td>ch12</td><td>IA64</td><td>64 bit Intel processors such as the Xeon or Itanium, servers/highend workstations</td></tr>
+<tr><td>ch12</td><td>x64</td><td>64bit operating system</td></tr>
+<tr><td>ch12</td><td>Memory diagnostics</td><td>difficult to diagnose because they can in terms Mckently disappear; mistaken as application errors, user errors, hardware errors</td></tr>
+<tr><td>ch12</td><td>System File Checker</td><td>application/hardware problem might be caused by corrupted Windows system file; protects system files, keeps cache of current system files in case it needs to refresh a damaged file</td></tr>
+<tr><td>ch12</td><td>sfc /scannow</td><td>use System File Checker utility to scan all system files and verify</td></tr>
+<tr><td>ch12</td><td>sfc /scanonce</td><td>use System File Checker utility after next reboot</td></tr>
+<tr><td>ch12</td><td>Elevated command prompt window</td><td>start/programs/accessories/rightclick command prompt/run as administrator</td></tr>
+<tr><td>ch12</td><td>Improper shutdowns</td><td>likely hardware including memory, motherboard, CPU, video card, overheating; check event viewer, apply any Windows patches, use memory diagnostics and chkdsk; Verify temperature of the CPU in BIOS</td></tr>
+<tr><td>ch12</td><td>Endless shutdown and restart</td><td>try to boot safemode, press F8; once loaded, open system window, start/right click computer/properties/startup and recovery, disable automatic restart under system failure</td></tr>
+<tr><td>ch12</td><td>General steps for solving application errors</td><td>step one: interview the user and backup data, ask them to reproduce, reboot system; step two: error messages, the web and blogs might help, Action Center, event viewer, reliability Monitor; step three: consider the data/application is corrupted, restore application to default settings, uninstall, reinstall, replace datafile; step four: consider outside interference, virus, low resources, services failing to start, bad memory or hard drive, background conflict if application works in safe mode; step five: consider windows might be the problem, download updates, use System File Checker, system restore</td></tr>
+<tr><td>ch12</td><td>When an application hangs</td><td>TaskManager, task list, task kill</td></tr>
+<tr><td>ch12</td><td>process identify</td><td>PID; A number that identifies each running process</td></tr>
+<tr><td>ch12</td><td>Tasklist</td><td>command that returns the process identify</td></tr>
+<tr><td>ch12</td><td>Taskkill</td><td>uses the process ID to kill the process; taskkill /f /pid:2212</td></tr>
+<tr><td>ch12</td><td>ODBC tool</td><td>data sources open database connectivity tool; Control Panel/administrative tools; used to allow datafiles to be connected to applications they normally would not use</td></tr>
+<tr><td>ch12</td><td>Component services</td><td>COM+; Microsoft management console snapping, used to register components, build relationship between main program and its components which are normally established by registry entries</td></tr>
+<tr><td>ch12</td><td>When the application never worked</td><td>update windows and search the web; run the install program or application as admin; check compatibility center; ensure the application is digitally signed</td></tr>
+<tr><td>ch03</td><td>Summary</td><td>An operating system manages hardware, runs applications, provides an interface for users, and stores, retrieves, and manipulates files.</td></tr>
+<tr><td>ch03</td><td>Summary</td><td>The Windows 7 and Vista desktop offers the aero user interface. This do includes the sidebar with gadgets. Gadgets are placed directly on the Windows 7 desktop.</td></tr>
+<tr><td>ch03</td><td>Summary</td><td>Four ways to launch an application are to use the start menu, the search box, Windows Explorer, or a shortcut icon on the desktop or taskbar.</td></tr>
+<tr><td>ch03</td><td>Summary</td><td>Use Windows 7 Aero snap and Aero shake to manage open windows on the desktop.</td></tr>
+<tr><td>ch03</td><td>Summary</td><td>The right side of the task bar is called the notification area, which some call the system tray.</td></tr>
+<tr><td>ch03</td><td>Summary</td><td>Windows Explorer and the computer window are used to manage files, folders/directories, and libraries. Vista/XP do not support libraries.</td></tr>
+<tr><td>ch03</td><td>Summary</td><td>The file extension indicates how the file contents are organized and formatted and what program uses the file.</td></tr>
+<tr><td>ch03</td><td>Summary</td><td>Use the control panel folder options box to change the way Windows Explorer works and displays files and folders.</td></tr>
+<tr><td>ch03</td><td>Summary</td><td>The system window gives a quick overview of the system, including which edition and version of Windows is installed and the amount of installed memory.</td></tr>
+<tr><td>ch03</td><td>Summary</td><td>The system information window gives much information about the computer, including hardware, drivers, OS, and applications.</td></tr>
+<tr><td>ch03</td><td>Summary</td><td>Control Panel gives access to a group of utility programs used to manage the system.</td></tr>
+<tr><td>ch03</td><td>Summary</td><td>The Windows 7 Action Center is a centralized location used to solve problems with security and computer maintenance issues.</td></tr>
+<tr><td>ch03</td><td>Summary</td><td>The User Account Control box is used to protect the system against malware or accidental changes by inexperienced users.</td></tr>
+<tr><td>ch03</td><td>Summary</td><td>Use the network and sharing Center to manage, secure, and troubleshoot network connections.</td></tr>
+<tr><td>ch03</td><td>Summary</td><td>Use the web and the windows help and support utility to teach yourself about windows and how to support it.</td></tr>
+<tr><td>ch07</td><td>Summary</td><td>The Windows 7 editions are starter, home basic, home premium, professional, enterprise, and ultimate.</td></tr>
+<tr><td>ch07</td><td>Summary</td><td>Windows can be purchased as the less expensive OEM version or the more expensive retail version. The OEM version can only be installed on a new PC for resale.</td></tr>
+<tr><td>ch07</td><td>Summary</td><td>Each addition of Windows 7 can be purchased using 32</td></tr>
+<tr><td>ch07</td><td>Summary</td><td>A 32 bit OS cannot address as much memory as a 64 bit OS. A 64 bit OS performs better and requires more memory than a 32 bit OS.</td></tr>
+<tr><td>ch07</td><td>Summary</td><td>Windows can be installed from the set up DVD, from files downloaded from the Internet, from a hidden partition on the hard drive/factory recovery partition, or in a virtual machine.</td></tr>
+<tr><td>ch07</td><td>Summary</td><td>Windows can be installed as an inplace upgrade, a clean installation, or in a dual boot environment with another OS.</td></tr>
+<tr><td>ch07</td><td>Summary</td><td>A hard drive contains one or more partitions or volumes. Normally, Windows is installed on the C: volume in the C:\Windows folder.</td></tr>
+<tr><td>ch07</td><td>Summary</td><td>Windows supports two types of user accounts. An administrator account has more rights than a standard account.</td></tr>
+<tr><td>ch07</td><td>Summary</td><td>A Windows computer can use a home group, workgroup, or domain configuration to join a network. Using a workgroup or home group, each computer on the network is responsible for sharing its resources with other computers on the network. In a domain, the domain controller manages network resources. Windows home editions cannot join a domain. Windows starter and home basic can join a home group but cannot create one.</td></tr>
+<tr><td>ch07</td><td>Summary</td><td>Four deployment strategies for installing windows are: high touch with retail media; high touch with standard image; light touch with high volume; and zero touch with high volume.</td></tr>
+</table>

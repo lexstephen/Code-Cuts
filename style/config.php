@@ -1,12 +1,12 @@
 <?php 
 
 // manually enter the file, title and category of each entry
-	$t1 = array ('file' => '1231-01-01', 'title' => 'Median Numbers', 'cat' => 'JavaScript', 'author' => 'Alexis Dicks-Stephen', 'fileTypePreview' => 'txt', 'fileTypeCode' => 'txt', 'showPreview' => 1, 'showCode' => 1);
-	$t2 = array ('file' => '1231-01-02', 'title' => 'Case Statement', 'cat' => 'JavaScript', 'author' => 'Alexis Dicks-Stephen', 'fileTypePreview' => 'txt', 'fileTypeCode' => 'txt', 'showPreview' => 1, 'showCode' => 1); 
-	$t3 = array ('file' => '1231-01-03', 'title' => 'isNaN', 'cat' => 'JavaScript', 'author' => 'Alexis Dicks-Stephen', 'fileTypePreview' => 'txt', 'fileTypeCode' => 'txt', 'showPreview' => 1, 'showCode' => 1); 
-	$t4 = array ('file' => '1231-02-01', 'title' => 'Dynamic HTML with Loops', 'cat' => 'JavaScript', 'author' => 'Alexis Dicks-Stephen', 'fileTypePreview' => 'txt', 'fileTypeCode' => 'txt', 'showPreview' => 1, 'showCode' => 1); 
-	$t5 = array ('file' => '1231-03-01', 'title' => 'Random Number Array', 'cat' => 'JavaScript', 'author' => 'Alexis Dicks-Stephen', 'fileTypePreview' => 'txt', 'fileTypeCode' => 'txt', 'showPreview' => 1, 'showCode' => 1); 
-	$t6 = array ('file' => '1231-04-01', 'title' => 'Printing & Comparing Array Elements', 'cat' => 'JavaScript', 'author' => 'Alexis Dicks-Stephen', 'fileTypePreview' => 'txt', 'fileTypeCode' => 'txt', 'showPreview' => 1, 'showCode' => 1); 
+	$t1 = array ('file' => '1231-01-01', 'title' => 'Median Numbers', 'cat' => 'JavaScript', 'author' => 'Alexis Dicks-Stephen', 'fileTypePreview' => 'php', 'fileTypeCode' => 'txt', 'showPreview' => 1, 'showCode' => 1);
+	$t2 = array ('file' => '1231-01-02', 'title' => 'Case Statement', 'cat' => 'JavaScript', 'author' => 'Alexis Dicks-Stephen', 'fileTypePreview' => 'php', 'fileTypeCode' => 'txt', 'showPreview' => 1, 'showCode' => 1); 
+	$t3 = array ('file' => '1231-01-03', 'title' => 'isNaN', 'cat' => 'JavaScript', 'author' => 'Alexis Dicks-Stephen', 'fileTypePreview' => 'php', 'fileTypeCode' => 'txt', 'showPreview' => 1, 'showCode' => 1); 
+	$t4 = array ('file' => '1231-02-01', 'title' => 'Dynamic HTML with Loops', 'cat' => 'JavaScript', 'author' => 'Alexis Dicks-Stephen', 'fileTypePreview' => 'php', 'fileTypeCode' => 'txt', 'showPreview' => 1, 'showCode' => 1); 
+	$t5 = array ('file' => '1231-03-01', 'title' => 'Random Number Array & Statistics', 'cat' => 'JavaScript', 'author' => 'Alexis Dicks-Stephen', 'fileTypePreview' => 'php', 'fileTypeCode' => 'txt', 'showPreview' => 1, 'showCode' => 1); 
+	$t6 = array ('file' => '1231-04-01', 'title' => 'Printing & Comparing Array Elements', 'cat' => 'JavaScript', 'author' => 'Alexis Dicks-Stephen', 'fileTypePreview' => 'php', 'fileTypeCode' => 'txt', 'showPreview' => 1, 'showCode' => 1); 
 	$t7 = array ('file' => '1231-04-02', 'title' => 'Modifying Arrays', 'cat' => 'JavaScript', 'author' => 'Alexis Dicks-Stephen', 'fileTypePreview' => 'txt', 'fileTypeCode' => 'txt', 'showPreview' => 1, 'showCode' => 1); 
 	$t8 = array ('file' => '1231-05-01', 'title' => 'Modifying Style Elements', 'cat' => 'JavaScript', 'author' => 'Alexis Dicks-Stephen', 'fileTypePreview' => 'txt', 'fileTypeCode' => 'txt', 'showPreview' => 1, 'showCode' => 1); 
 	$t9 = array ('file' => '1231-05-02', 'title' => 'Calculator', 'cat' => 'JavaScript', 'author' => 'Alexis Dicks-Stephen', 'fileTypePreview' => 'txt', 'fileTypeCode' => 'txt', 'showPreview' => 1, 'showCode' => 1); 
@@ -56,7 +56,7 @@
 	$t52 = array ('file' => '1230-03-02', 'title' => 'Previous & Next Buttons', 'cat' => 'PHP', 'author' => 'Alexis Dicks-Stephen', 'fileTypePreview' => 'php', 'fileTypeCode' => 'txt', 'showPreview' => 1, 'showCode' => 1);
 	$t53 = array ('file' => '1230-01-01', 'title' => 'Fun with $_REQUEST', 'cat' => 'PHP', 'author' => 'Alexis Dicks-Stephen', 'fileTypePreview' => 'php', 'fileTypeCode' => 'txt', 'showPreview' => 1, 'showCode' => 1);
 	$t54 = array ('file' => '1230-03-03', 'title' => 'Dynamic Loops', 'cat' => 'PHP', 'author' => 'Alexis Dicks-Stephen', 'fileTypePreview' => 'php', 'fileTypeCode' => 'txt', 'showPreview' => 1, 'showCode' => 1);
-	$t55 = array ('file' => 'def-1230-01', 'title' => 'Definitions: Chs 1, 2, 8 & 13', 'cat' => 'PHP', 'author' => 'Adapted from Murach\'s PHP & MySQL', 'fileTypePreview' => 'txt', 'fileTypeCode' => 'txt', 'showPreview' => 1, 'showCode' => 0);
+	$t55 = array ('file' => 'definitions', 'title' => 'Definitions', 'cat' => 'etc', 'author' => 'Alexis Dicks-Stephen', 'fileTypePreview' => 'txt', 'fileTypeCode' => 'txt', 'showPreview' => 1, 'showCode' => 0);
 
 
 // add a fourth array element to the above with its associated tags
@@ -64,7 +64,7 @@
 	$t2['tags'] = array('prompt', 'switch', 'case', 'getelementbyid', 'innertext');
 	$t3['tags'] = array('if', 'else', 'prompt', 'isnan');
 	$t4['tags'] = array('table', 'ul', 'li', 'if', 'else', 'prompt', 'getelementbyid', 'innerhtml', 'isnan');
-	$t5['tags'] = array('ul', 'li', 'if', 'else', 'prompt', 'getelementbyid', 'innerhtml', 'parseint', 'math', 'array');
+	$t5['tags'] = array('ul', 'li', 'if', 'else', 'prompt', 'getelementbyid', 'innerhtml', 'parseint', 'math', 'array', 'random', 'odd numbers', 'even numbers');
 	$t6['tags'] = array('ul', 'li', 'if', 'else', 'prompt', 'getelementbyid', 'innerhtml', 'isnan', 'parseint', 'math', 'mean', 'median', 'mode', 'length', 'array', 'multidimensional array');
 	$t7['tags'] = array('for', 'getelementbyid', 'innerhtml', 'length', 'array', 'multidimensional array', 'indexof', 'lastindexof', 'pop', 'reverse', 'concat', 'shift', 'splice', 'join', 'slice', 'push', 'unshift');
 	$t8['tags'] = array('form', 'input', 'style', 'backgroundcolor', 'color', 'getelementbyid', 'function', 'onclick');
@@ -114,8 +114,8 @@
 	$t52['tags'] = array('if', 'isset', '$_get', 'ternary operator');
 	$t53['tags'] = array('$_request', 'var_dump', '$_get', '$_post', '$_server', 'http_host', 'document_root', 'https', 'header', 'location', 'redirect', 'isset');
 	$t54['tags'] = array('input', 'form', 'isset', '$_get', 'is_numeric', 'ternary operator', 'for');
-	$t55['tags'] = array('network', 'router', 'lan', 'wan', 'isp', 'internet exchange points (ixp)', 'http request', 'http response', 'round trip', 'web servers', 'scripting languages available on web servers', 'scripting languages available on application servers', 'database server', 'apache', 'lamp', 'iis', 'php', 'jsp', 'asp', 'perl', 'python', 'mysql', 'oracle', 'db2', 'ms sql server', 'mysql takeover', 'number_format', 'deploy an application', 'application root directory', 'url', 'ide', 'php syntax rules', 'statement', 'comment', 'single-line comment', 'block comment', 'integer data type', 'double data type', 'boolean data type', 'string data type', 'six data types', 'literal', 'constant', '$_get', 'superglobal variable', '$_post', 'interpolation', 'compound assignment operators', 'date format', 'isset', 'empty', 'is_numeric', 'conditional expression', 'compund conditional expression', 'if statement', 'while loop', 'for loop', 'include function', 'include once function', 'require function', 'require once function', 'exit function', 'die function', 'navigating directories', 'equality operators', 'unary operator', 'binary operator', 'ternary operator', 'switch statement', 'random number', 'highest number', 'do while loop', 'break statement', 'continue statement', 'type coercion', 'case structure', 'for loop alternate structure', 'function', 'passed by value', 'passed by reference', 'scope', 'scalar value', 'naming conflicts', 'variable function', 'callback', 'anonymous function', 'closure', 'array pop', 'pass by reference - modify a string', 'function - return multiple values', 'autoglobal variable', 'default value for parameter', 'variable-length parameter lists', 'func_get_args()', 'func_num_args()', 'func_get_arg($i)', 'a library of functions', 'include path', 'usort', 'custom comparison function');
-
+	$t55['tags'] = array ('definitions', 'c#', 'java', 'javascript', 'html', 'css', 'php');
+	
 	/* my attempt to automate the array building is not working 
 	$numberOfTutorials = 28;
 	$buildTutorialArray = '';

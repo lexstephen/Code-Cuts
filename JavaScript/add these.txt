@@ -1,0 +1,134 @@
+
+<script type="text/javascript">
+	var numberOfRows = prompt("How many rows would you like?");
+	var numberOfCols = prompt("How many columns would you like?");
+	
+	//determine if user has provided adequate values
+	if (isNaN(numberOfRows) || numberOfRows <= 0) {
+		document.getElementById("heading").innerHTML = "Please enter a positive integer. <a href='index2.html'>Try again</a>.";
+	} else if (isNaN(numberOfCols) || numberOfCols <= 0) {
+		document.getElementById("heading").innerHTML = "Please enter a positive integer. <a href='index2.html'>Try again</a>.";
+	} else {
+		var multiTable = "<table>";
+		for (rowIteration = 1; rowIteration <= numberOfRows; rowIteration++) {
+			multiTable += "<tr>";
+				for (colIteration = 1; colIteration <= numberOfCols; colIteration++) {
+					multiTable += "<td>" + colIteration * rowIteration + "</td>";
+				}
+			multiTable += "</tr>";
+		}
+		multiTable += "</table>";
+		document.getElementById("heading").innerHTML = multiTable;
+	}
+</script>
+
+---------------------------------------------------------------------------------------------------
+<script type="text/javascript">
+	var entries = prompt("How many list items would you like?");
+
+	
+	//determine if user has provided adequate values
+	if (isNaN(entries) || entries <= 0) {
+		document.getElementById("heading2").innerHTML = "Please enter a positive integer. <a href='index.html'>Try again</a>.";
+
+	} else {
+
+		var printedList = "<ul>";
+	
+		for (var i = 1; i <= entries; i++) {
+
+			printedList += "<li>List Item #" + i + "</li>";
+
+		}
+
+		printedList += "</ul>";
+	
+		document.getElementById("heading2").innerHTML = printedList;
+	}
+</script>
+------------------------------------------------------------------------------------------------------
+<script type="text/javascript">
+	//initialize an array called theNumbers
+	var indexNumber = prompt("Enter the index of the array element you would like to modify");
+	var valueOfNumber = prompt("Enter the value to replace");
+	var theNumber = parseInt(Math.random() * 100);
+	var div01 = document.getElementById("div01");
+		
+	var listOfNumbers = new Array();
+	var printedList = "<b>Numbers</b>:<br>[ ";
+	
+	for (var i = 0; i < 10; i++) {
+		//pick a number to store in array slot i
+			listOfNumbers[i] = theNumber;
+			printedList += listOfNumbers[i];
+				if (i<9) {
+					printedList += ", ";
+				}
+	}
+			printedList += " ]<br><hr><br>";
+			div01.innerHTML = printedList;
+	
+			printedList += "<b>Modified Numbers</b>: <br>[ ";
+	for (var i = 0; i < 10; i++) {
+		//pick a number to store in array slot i
+			listOfNumbers[i] = theNumber;
+		if (isNaN(indexNumber) || indexNumber <= 0) {
+			indexNumber = valueOfNumber;
+			printedList += "Your index was not a valid entry; the second number you entered has been used instead. ]<br><br>[ ";
+		} else if (isNaN(indexNumber) || indexNumber >= 10) {
+			indexNumber = valueOfNumber;
+			printedList += "Your index was not a valid entry; the second number you entered has been used instead. ]<br><br>[ ";
+		} else  {
+			listOfNumbers[indexNumber] = valueOfNumber;
+		} 
+		//print number & link styling to printedList list
+			printedList += listOfNumbers[i];
+				if (i<9) {
+					printedList += ", ";
+				}
+	}
+			printedList += " ]";
+	
+	div01.innerHTML = printedList;
+	
+</script>
+--------------------------------------------------------------------------
+
+<script type="text/javascript">
+	//initialize an array called theNumbers
+	var theNumbers = new Array(); 
+	
+	//set up variable referencing page element
+	var div01 = document.getElementById("div01");
+	var div02 = document.getElementById("div02");
+			
+	//set up the print types
+	var formattedVariables = "";
+	var unformattedVariables = "[ ";
+	
+	//20 iterations determining which variable to assign the number to
+	for (i = 0; i < 20; i++) {
+		//pick a number to store in array slot i
+			theNumbers[i] = parseInt(Math.random() * 10);
+			//print number & styling to un/formattedVariables
+		}
+	for (i = 0; i < 20; i++) {
+				formattedVariables += " " + theNumbers[i];
+				unformattedVariables += theNumbers[i];
+				
+			//determine if the number is even
+				if (theNumbers[i]%2 === 0 && theNumbers[i+1]%2 === 0) {
+					unformattedVariables += "-";
+				} else {
+					unformattedVariables += " ";
+				}
+	}
+		
+	//set up the print types
+	 formattedVariables += "";
+	 unformattedVariables += "]";
+
+	//write the lists
+	div01.innerHTML = formattedVariables;
+	div02.innerHTML = unformattedVariables;
+</script>

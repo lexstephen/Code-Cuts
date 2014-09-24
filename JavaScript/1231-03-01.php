@@ -130,53 +130,5 @@
 </script>
 
 <div class="clear"></div>
-
-
-<div id="divA01"></div>
-<div id="divA02"></div>
-<div id="divA03"></div>
-
-<script type="text/javascript">
-	//initialize an array called theNumbers2
-	var theNumbers2 = new Array(); 
-	
-	//set up variables referencing page elements
-	var divA01 = document.getElementById("divA01");
-	var divA02 = document.getElementById("divA02");
-	var divA03 = document.getElementById("divA03");
-			
-	//set up the three lists
-	var allVariables = "<ul><li class=\"heading\">All Numbers</li>";
-	var evenVariables = "<ul><li class=\"heading\">Even Numbers</li>";
-	var oddVariables = "<ul><li class=\"heading\">Odd Numbers</li>";
-	
-	//50 iterations determining which variable to assign the number to
-	for (i = 0; i < 50; i++) {
-		//pick a number to store in array slot i
-			theNumbers2[i] = parseInt(Math.random() * 100);
-		
-		//print number & link styling to allVariables
-			allVariables += "<li>" + theNumbers2[i] + "</li>";
-			
-		//determine if the number is even
-		if (theNumbers2[i]%2 === 0) {
-			evenVariables += "<li>" + theNumbers2[i] + "</li>";
-		}
-		
-		//determine if the number is odd
-		else if (theNumbers2[i]%2 != 0) {
-			oddVariables += "<li>" + theNumbers2[i] + "</li>";}
-		}
-		
-		//close the lists
-			allVariables += "</ul>";
-			evenVariables += "</ul>";
-			oddVariables += "</ul>";
-			
-		//write the lists
-			divA01.innerHTML = allVariables;
-			divA02.innerHTML = evenVariables;
-			divA03.innerHTML = oddVariables;
-</script>
 </body>
 </html>

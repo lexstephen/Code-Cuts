@@ -1,0 +1,280 @@
+<table id="definitionTable">
+<tr><td>chapter</td><td>term</td><td>def.</td></tr>
+<tr><td>ch1</td><td>Database</td><td>Organized collection of logically related data</td></tr>
+<tr><td>ch1</td><td>structured data types</td><td>numeric, character, dates - stored in tabular form, found in traditional dbs and data warehouses</td></tr>
+<tr><td>ch1</td><td>information</td><td>data that has been processed in such a way that the knowledge of the person who uses the data is increased; data in context</td></tr>
+<tr><td>ch1</td><td>metadata</td><td>data that describes the properties or characteristics of end-user data and the context of those data</td></tr>
+<tr><td>ch1</td><td>disadvantages of file processing systems</td><td>program data dependence, duplication, limited sharing, lengthy dev times, excessive program maintenance</td></tr>
+<tr><td>ch1</td><td>data models</td><td>graphical systems used to capture the nature and relationships among data; made of entities, attributes and relationships</td></tr>
+<tr><td>ch1</td><td>entity</td><td>a person, place, object, event, or concept in the user environment about which the organization wishes to maintain data</td></tr>
+<tr><td>ch1</td><td>relational database</td><td>a database that represents data as a collection of tables in which all data relationships are represented by common values (fields) in related tables</td></tr>
+<tr><td>ch1</td><td>database management system (DBMS)</td><td>software system used to create, maintain and provide controlled access to user databases</td></tr>
+<tr><td>ch1</td><td>advantages of database approach</td><td>program data independence, planned data redundancy, improved consistency and sharing, reduced maintenance, enforcement of standards, improved accessibility and responsiveness</td></tr>
+<tr><td>ch1</td><td>data independence</td><td>the separation of data descriptions from the application programs that use the data</td></tr>
+<tr><td>ch1</td><td>user view</td><td>a logical description of some portion of the database that is required by a user to perform some task</td></tr>
+<tr><td>ch1</td><td>constraint</td><td>a rule that cannot be violated by database users</td></tr>
+<tr><td>ch1</td><td>relational integrity constraint</td><td>a rule ensuring associated entities remain associated and does not allow partial deletion of data</td></tr>
+<tr><td>ch1</td><td>SQL</td><td>structured query language</td></tr>
+<tr><td>ch1</td><td>program data dependence</td><td>data descriptions and the logic are built into individual application programs</td></tr>
+<tr><td>ch1</td><td>costs and risks of the database approach</td><td>specialized personnel; installation and management cost and complexity; conversion costs; explicit backup and recovery; organizational conflict</td></tr>
+<tr><td>ch1</td><td>CASE - computer aided software engineering</td><td>automated tools that provide support for some portion of the sys dev process; help create data models and in some cases generate code</td></tr>
+<tr><td>ch1</td><td>repository</td><td>a centralized knowledge base for all data definitions, relationships, screen and report formats; extended set of metadata important for managing databases</td></tr>
+<tr><td>ch1</td><td>enterprise data modeling</td><td>the first step in database development, in which the scope and general contents of organizational databases are specified; planning a database</td></tr>
+<tr><td>ch1</td><td>SDLC - systems development life cycle</td><td>the traditional methodology used to develop, maintain, and replace information systems; circular system: planning, analysis, design, implementation, maintenance</td></tr>
+<tr><td>ch1</td><td>conceptual data modeling</td><td>detailed data model that identifies all the organizational data that must be managed in an IS</td></tr>
+<tr><td>ch1</td><td>conceptual schema</td><td>a detailed, technology-independent specification of the overall structure of organizational data; the "output" of conceptual data modeling</td></tr>
+<tr><td>ch1</td><td>logical schema</td><td>the representation of a database or a particular data management technology; part of logical database design process</td></tr>
+<tr><td>ch1</td><td>logical database design</td><td>transforming conceptual schema into logical schema; describing the data in terms of the data management technology that will be used to implement the database</td></tr>
+<tr><td>ch1</td><td>database implementation</td><td>write, test and install programs to access, create or modify database; finalize documentation, train users, set up procedures</td></tr>
+<tr><td>ch1</td><td>database maintenance</td><td>add, delete or change characteristics of the structure of the database to meet changing conditions, correct errors or improve speed; rebuild contaminated dbs</td></tr>
+<tr><td>ch1</td><td>RAD - rapid application development methods</td><td>an iterative process of rapidly repeating analysis, design and implementation steps until the desired system is reached; work best when most of the necessary structures already exist - best if primarily retrieving data</td></tr>
+<tr><td>ch1</td><td>prototyping</td><td>RAD method - iterative process of sys dev in which requirements are converted to a working system that is continually revised through close work between analysts and users</td></tr>
+<tr><td>ch1</td><td>agile software development</td><td>emphasizes individuals and interactions over processes and tools, working software over comprehensive documentation, response to change over following a plan</td></tr>
+<tr><td>ch1</td><td>three schema architecture for db dev</td><td>described by ANSI; 1. external schema: combined view of database users (bottom-up) and enterprise data model (top up); 2. conceptual schema: combines the external views into a comprehensive definition of data; 3. internal schema: consists of a logical (representation of data for a type of data management technology, i.e., relational) and physical (representation and storage in a particular DBMS, i.e., Oracle)</td></tr>
+<tr><td>ch1</td><td>project</td><td>a planned undertaking of related activities to reach an objective that has a beginning and an end; executed during Analysis, Logical Design, Physical design, implementation phases; closed down at end of implementation</td></tr>
+<tr><td>ch1</td><td>project team</td><td>includes Business analysts, systems analysts, db analysts and data modelers, users, programmers, db architects, db administrators, project managers</td></tr>
+<tr><td>ch1</td><td>hierarchical model</td><td>files organized top-down</td></tr>
+<tr><td>ch1</td><td>network model</td><td>each file can be associated with an arbitrary number of other files</td></tr>
+<tr><td>ch1</td><td>relational model</td><td>organizes data in the form of tables and relationships among them</td></tr>
+<tr><td>ch1</td><td>object-oriented model</td><td>based on object classes and relationships among them</td></tr>
+<tr><td>ch1</td><td>multidimensional model</td><td>form the basis for data warehouses; allow data to be viewed in cube or star schema</td></tr>
+<tr><td>ch1</td><td>object-relational model</td><td>hybrid of OO and relational databases</td></tr>
+<tr><td>ch1</td><td>need for db technology</td><td>greater independence between programs and data; reduced maintenance costs; manage increasingly complex data types/structures; easier/faster access to non-programmers; powerful platforms for decision support applications</td></tr>
+<tr><td>ch1</td><td>1960s</td><td>file processing systems dominant; first DBMS introduced for large and complex problems such as NASA applications</td></tr>
+<tr><td>ch1</td><td>1970s</td><td>DBMS becomes a commercial reality; hierarchical and network dbs developed; regarded as first-generation; limited data independence and lengthy development times</td></tr>
+<tr><td>ch1</td><td>1980s</td><td>relational model dev'd in 70s but emerged in 80s as dominant tech; second-generation; ease of access for non-programmers; SQL used for data retrieval</td></tr>
+<tr><td>ch1</td><td>1990s</td><td>client/server computing; data warehousing and internet applications emerged; multimedia databases spurred growth of object-oriented databases (third generation) to handle complexity</td></tr>
+<tr><td>ch1</td><td>2000 and beyond</td><td>relational model still most widely used; OO and OR continue to grow; NoSQL dev'd</td></tr>
+<tr><td>ch1</td><td>NoSQL</td><td>Not Only Structured Query Language - set of db tech specifically designed to address large structured/unstructured data potentially stored across various locations, ie, blogs, wikis, social networking, data containing images and sound</td></tr>
+<tr><td>ch1</td><td>query</td><td>command issued to database</td></tr>
+<tr><td>ch1</td><td>categories of db applications</td><td>personal, two-tier (client/server - database stored on server; clients access it via application installed on their computer), and multi-tier/server database (application server and db server)</td></tr>
+<tr><td>ch1</td><td>enterprise resource planning</td><td>a business management system that integrates all functions of the enterprise such as manufacturing, sales, finance, marketing, inventory, accounting and HR. ERP systems are software that provides the data necessary for the enterprise to examine and manage its activities</td></tr>
+<tr><td>ch1</td><td>data warehouse</td><td>an integrated decision support database whose content is derived from the various operational databases; can allow for historical information</td></tr>
+<tr><td>ch2</td><td>business rule</td><td>statement that defines or constrains some aspect of the business; intended to assert business structure or to control/influence behavior of a business; aka integrity constraint</td></tr>
+<tr><td>ch2</td><td>term</td><td>a word or phrase with a specific meaning for the business</td></tr>
+<tr><td>ch2</td><td>fact</td><td>an association between two or more terms</td></tr>
+<tr><td>ch2</td><td>entity relationship model</td><td>a logical representation of the data for an organization or for a business area, using entities for categories of data and relationships for associations between entities</td></tr>
+<tr><td>ch2</td><td>entity relationship diagram</td><td>a graphical representation of an entity-relationship model</td></tr>
+<tr><td>ch2</td><td>entity type</td><td>a collection of entities that share common properties or characteristics</td></tr>
+<tr><td>ch2</td><td>entity instance</td><td>a single occurrence of an entity type</td></tr>
+<tr><td>ch2</td><td>strong entity type</td><td>an entity that exists independently of other entities</td></tr>
+<tr><td>ch2</td><td>weak entity type</td><td>an entity type whose existence depends on some other entity type; aka dependent entity</td></tr>
+<tr><td>ch2</td><td>identifying owner</td><td>the enetity type on which the weak entity type depends</td></tr>
+<tr><td>ch2</td><td>identifying relationship</td><td>the relationship between a weak entity type and its owner</td></tr>
+<tr><td>ch2</td><td>attribute</td><td>a property or characteristic of an entity or relationship type that is of interest to the organization</td></tr>
+<tr><td>ch2</td><td>required attribute</td><td>an attribute that must have a value for every entity or relationship instance with which it is associated</td></tr>
+<tr><td>ch2</td><td>optional attribute</td><td>an attribute that may not have a value for every entity or relationship instance with which it is associated</td></tr>
+<tr><td>ch2</td><td>composite attribute</td><td>an attribute that has meaningful component parts; i.e. Address contains Street, City, Postal Code</td></tr>
+<tr><td>ch2</td><td>simple attribute</td><td>An attribute that cannot be broken down into smaller components that are meaningful to the organization</td></tr>
+<tr><td>ch2</td><td>multivalued attribute</td><td>an attribute that may take on more than one value for a given entity or relationship instance; i.e. Skills may include PHP, HTML, eyeliner application</td></tr>
+<tr><td>ch2</td><td>derived attribute</td><td>an attribute whose values can be calculated from related attribute values</td></tr>
+<tr><td>ch2</td><td>identifier</td><td>an attribute or combination thereof whose value distinguishes instance of an entity type; i.e. Student ID as a unique identifier for the Student type</td></tr>
+<tr><td>ch2</td><td>composite identifier</td><td>an identifier consisting of a composite attribute; i.e. Flight ID being created by combining Flight Number and Date entities</td></tr>
+<tr><td>ch2</td><td>relationship instance</td><td>an association between or among entity instances where each relationship instance associates exactly one entity from each participating entity type</td></tr>
+<tr><td>ch2</td><td>associative entity</td><td>an entity type that associates the instances of one or more entity types and contains attributes that are peculiar to the relationship between those entity instances; represented with rounded corners; aka gerunds; ie an Employee may have the associative entity Certificate tied to the entity Course</td></tr>
+<tr><td>ch2</td><td>degree</td><td>the number of entity types that participate in a relationship</td></tr>
+<tr><td>ch2</td><td>unary relationship</td><td>a relationship between instances of a single entity type; aka recursive relationships; ie Is Married To is a 1:1 in the PERSON type, Manages is 1:M in EMPLOYEE type</td></tr>
+<tr><td>ch2</td><td>binary relationship</td><td>a relationship between the instances of two entity types; most common; ie Employee assigned to Parking Space; Product Line contains Product; Student registers for Course</td></tr>
+<tr><td>ch2</td><td>ternary relationship</td><td>simultaneous relationship among the instances of three entity types; ie Supply Schedule depends on Vendor, Part and Warehouse entities simultaneously</td></tr>
+<tr><td>ch2</td><td>cardinality constraint</td><td>a rule specifying the number of instances of one entity that can or must be associated with each instance of another entity</td></tr>
+<tr><td>ch2</td><td>minimum cardinality</td><td>the minimum number of instances of one entity that may be associated with each instance of another entity</td></tr>
+<tr><td>ch2</td><td>maximum cardinality</td><td>the maximum number of instances of one entity that may be associated with each instance of another entity</td></tr>
+<tr><td>ch2</td><td>time stamp</td><td>a time value associated with a data value often indicating when some event occurred that affected the data value</td></tr>
+<tr><td>ch3</td><td>EER - enhanced entity relationship model</td><td>a model that has resulted from extending the original ER model with new modeling constructs; developments include subtype/supertype relationships</td></tr>
+<tr><td>ch3</td><td>subtype</td><td>a subgrouping of entities in an entity type that is meaningful to the organizatrion and shares common attributes or relationships distinct from other subgroupings; ie Student is an entity type with two subtypes Graduate Student and Undergraduate Student</td></tr>
+<tr><td>ch3</td><td>supertype</td><td>a generic entity that has a relationship with one or more subtypes; ie Student; connected to subtypes with a circle, sometimes U shaped objects on lines to identify the subtypes</td></tr>
+<tr><td>ch3</td><td>attribute inheritance</td><td>a property by which subtype entities inherit values of all attributes and instances of all relationships of their supertype</td></tr>
+<tr><td>ch3</td><td>generalization</td><td>the process of defining a more general entity type from a set of more specialized entity types (COMBINE)</td></tr>
+<tr><td>ch3</td><td>specialization</td><td>the process of defining one or more subtypes of the supertype and forming supertype/subtype relationships (BREAK APART)</td></tr>
+<tr><td>ch3</td><td>completeness constraint</td><td>a type of constraint that addresses whether the instance of a supertype must also be a member of at least one subtype; has two possible rules: total specialization (every option predefined) or partial specialization (can be one or other entity or another which has not been defined)</td></tr>
+<tr><td>ch3</td><td>total specializiation rule</td><td>a rule that specifies that each entity instance of a supertype must be a member of some subtype in the relationship; ie a Patient must be an Outpatient or a Resident and cannot be both or neither</td></tr>
+<tr><td>ch3</td><td>partial specialization rule</td><td>a rule that specifies that an entity instance of a supertype is allowed not to belong to any subtype; a Car is a Car and a Truck is a Truck but a Motorcycle may simply fall under the Vehicle supertype</td></tr>
+<tr><td>ch3</td><td>disjointness constraint</td><td>a constraint that addresses whether an instance of a supertype may simultaneously be a member of two or more subtypes; has two rules: disjoint and overlap rule</td></tr>
+<tr><td>ch3</td><td>disjoint rule</td><td>a rule that specifies that an instance of a supertype may not simultaneously be a member of two or more subtypes; ie Patient cannot be both Resident and Outpatient; identified on diagrams with a d in a circle</td></tr>
+<tr><td>ch3</td><td>overlap rule</td><td>a rule that specifies that an instance of a supertype may simultaneously be a member of two or more subtypes</td></tr>
+<tr><td>ch3</td><td>subtype discriminator</td><td>an attribute of a supertype whose values determine the target subtype or supertypes; ie Employee Type in the Employee supertype may identify the Hourly subtype as H, Salaried as S, etc, adding a new employee as an S automatically inserts it into the Salaried subtype</td></tr>
+<tr><td>ch3</td><td>supertype/subtype hierarchy</td><td>a hierarchical arrangement of supertypes and subtypes in which each subtype has only one supertype</td></tr>
+<tr><td>ch3</td><td>entity cluster</td><td>a set of one or more entity types and associated relationships grouped into a single abstract entity type</td></tr>
+<tr><td>ch3</td><td>universal data model</td><td>a generic or template data model that can be reused as a starting point for a data modeling project</td></tr>
+<tr><td>ch4</td><td>relation</td><td>a named two-dimensional table of data</td></tr>
+<tr><td>ch4</td><td>primary key</td><td>an attribute or combination of attributes that uniquely identifies each row in a relation</td></tr>
+<tr><td>ch4</td><td>composite key</td><td>a primary key consisting of more than one attribute</td></tr>
+<tr><td>ch4</td><td>foreign key</td><td>an attribute in a relation that serves as the primary key of another relation in the same database</td></tr>
+<tr><td>ch4</td><td>null</td><td>a value that may be assigned to an attribute when no other value applies or when the applicable value is unknown</td></tr>
+<tr><td>ch4</td><td>entity integrity rule</td><td>a rule that states that no primary key attribute (or component of a primary key attribute) may be null</td></tr>
+<tr><td>ch4</td><td>referential integrity constraint</td><td>a rule that states that either each foreign key value must match a primary key value in another relation or the foreign key value must be null</td></tr>
+<tr><td>ch4</td><td>well-structured relation</td><td>a relation that contains minimal redundancy and allows users to insert, modify and delete the rows in a table without errors or inconsistencies</td></tr>
+<tr><td>ch4</td><td>anomaly</td><td>an error or inconsistency that may result when a user attempts to update a table that contains redundant data; the three types of anomalies are insertion, deletion and modification anomalies</td></tr>
+<tr><td>ch4</td><td>surrogate primary key</td><td>a serial number or other system-assigned primary key for a relation</td></tr>
+<tr><td>ch4</td><td>recursive foreign key</td><td>a foreign key in a relation that references the primary key values of the same relation</td></tr>
+<tr><td>ch4</td><td>normalization</td><td>the process of decomposing relations with anomalies to produce smaller, well-structured relations</td></tr>
+<tr><td>ch4</td><td>normal form</td><td>a state of a relation that requires that certain rules regarding relationships between attributes (or functional dependencies) are satisfied; ie removing multivalued attributes so that there is only a single value at the intersection of each row and column of a table</td></tr>
+<tr><td>ch4</td><td>functional dependency</td><td>a constraint between two attributes in which the value of one attribute is determined by the value of another</td></tr>
+<tr><td>ch4</td><td>determinant</td><td>the attribute on the left side of the arrow in a functional dependency</td></tr>
+<tr><td>ch4</td><td>candidate key</td><td>an attribute or combination thereof that uniquely identifies a row in a relation</td></tr>
+<tr><td>ch4</td><td>1NF first normal form</td><td>a relation that has a primary key and in which there are no repeating groups, ie, a single fact at the intersection of each row and column</td></tr>
+<tr><td>ch4</td><td>2NF second normal form</td><td>a relation in first normal form in which every nonkey attribute is fully functionally dependent on the primary key</td></tr>
+<tr><td>ch4</td><td>partial functional dependency</td><td>a functional dependency in which one or more nonkey attributes are functionally dependent on part but not all of the primary key</td></tr>
+<tr><td>ch4</td><td>3NF third normal form</td><td>a relation that is in second normal form and has no transitive dependencies</td></tr>
+<tr><td>ch4</td><td>transitive dependency</td><td>a functional dependency between the primary key and one or more nonkey attributes that are dependent on the primary key via another nonkey attribute</td></tr>
+<tr><td>ch4</td><td>synonyms</td><td>two or more attributes that have different names but the same meaning</td></tr>
+<tr><td>ch4</td><td>alias</td><td>an alternative name used for an attribute</td></tr>
+<tr><td>ch4</td><td>homonym</td><td>an attribute that may have more than one meaning</td></tr>
+<tr><td>ch4</td><td>enterprise key</td><td>a primary key whose value is unique across all relations</td></tr>
+<tr><td>ch5</td><td>Field</td><td>the smallest unit of application data recognized system software</td></tr>
+<tr><td>ch5</td><td>Datatype</td><td>a detailed coding scheme recognized by system software such as a DBMS for representing organizational data</td></tr>
+<tr><td>ch5</td><td>Denormalization</td><td>the process of transforming normalized relations into non-normalized physical record specifications</td></tr>
+<tr><td>ch5</td><td>Horizontal partitioning</td><td>distribution of the rows of a logical relation into several separate tables</td></tr>
+<tr><td>ch5</td><td>Vertical partitioning</td><td>distribution of the columns of a logical relation into several separate physical tables</td></tr>
+<tr><td>ch5</td><td>Table space</td><td>a named logical storage unit in which data from one or more database tables, views, or other database objects may be stored</td></tr>
+<tr><td>ch5</td><td>Extent</td><td>contiguous section of disk storage space</td></tr>
+<tr><td>ch5</td><td>File organization</td><td>a technique for physically arranging the records of a file on secondary storage devices</td></tr>
+<tr><td>ch5</td><td>Sequential file organization</td><td>the storage of records in a file in sequence according to a primary key value</td></tr>
+<tr><td>ch5</td><td>Indexed file organization</td><td>the storage of records either sequentially or non-sequentially with an index that allows software to locate individual records</td></tr>
+<tr><td>ch5</td><td>Index</td><td>a table or other data structure used to determine in a file the location of records that satisfy a condition</td></tr>
+<tr><td>ch5</td><td>Secondary key</td><td>one field or a combination of fields for which more than one record may have the same combination of values; also called a non unique key</td></tr>
+<tr><td>ch5</td><td>Join Index</td><td>an index on columns from two or more tables that come from the same domain of values</td></tr>
+<tr><td>ch5</td><td>Hashed File organization</td><td>storage system in which the address for each record is determined using a hashing algorithm</td></tr>
+<tr><td>ch5</td><td>Hashing algorithm</td><td>a routine that converts a primary keyvalue into a relative record number or relative file address</td></tr>
+<tr><td>ch5</td><td>Hash index table</td><td>a file organization that uses hashing to map the key into a location in an index, where there is a pointer to the actual data record matching the hash key</td></tr>
+<tr><td>ch5</td><td>Pointer</td><td>a field of data indicating a target address that can be used to locate a related field or record of data</td></tr>
+<tr><td>ch5</td><td>notation</td><td>Defined set of principles that represent information</td></tr>
+<tr><td>ch5</td><td>Convert conceptual to logical model</td><td>1. Add Attributes; 2. Convert M:M to two 1:Ms (rule of thumb: original M sides reversed: stick M to associative entry side</td></tr>
+<tr><td>ch5</td><td>Artifacts</td><td>are made up to satisfy certain conditions</td></tr>
+<tr><td>ch5</td><td>Parent</td><td>Always the "1" side of a 1:M</td></tr>
+<tr><td>ch5</td><td>1NF / 2NF / 3NF</td><td>Normal forms - rememember mnenomic: The Key, The Whole Key, Nothing But The Key</td></tr>
+<tr><td>ch5</td><td>1NF</td><td>No MVA</td></tr>
+<tr><td>ch5</td><td>2NF</td><td>The Whole Key - no partial dependencies; ie no non-key attributes depending on only part of the key</td></tr>
+<tr><td>ch5</td><td>3NF</td><td>Nothing but the key - no transitive dependencies</td></tr>
+<tr><td>ch5</td><td>tree search</td><td>average time to find desired record = depth of tree</td></tr>
+<tr><td>ch6</td><td>rdbms</td><td>relational DBMS - collection of tables in which all data relationships are represented by common values in related tables</td></tr>
+<tr><td>ch6</td><td>catalog</td><td>a set of schemas that when put together consitute a description of a database</td></tr>
+<tr><td>ch6</td><td>schema</td><td>a structure that contains descriptions of objects created by a user such as base tables, views, and constraints, as part of a database</td></tr>
+<tr><td>ch6</td><td>DDL</td><td>data definition language - commands used to define a database including those for creating, altering and dropping tables and establishing constraints</td></tr>
+<tr><td>ch6</td><td>DML</td><td>data manipulation language - commands used to maintain and query a database, including those for updating, inserting, modifying and querying data</td></tr>
+<tr><td>ch6</td><td>DCL</td><td>data control language - commands used to control a database, including those for administering priveleges and committing (saving) data</td></tr>
+<tr><td>ch6</td><td>SQL SELECT syntax</td><td>SELECT (ALL/DISTINCT) column_list FROM table_list [WHERE conditional expression] [GROUP BY group_by_column_list] [HAVING conditional expression] [ORDER BY order_by_column_list]</td></tr>
+<tr><td>ch6</td><td>CHARACTER (CHAR)</td><td>Fixed length string</td></tr>
+<tr><td>ch6</td><td>VARCHAR</td><td>Variable length string</td></tr>
+<tr><td>ch6</td><td>BLOB</td><td>Binary large object - stores binary string values in hexadecimal format; variable length</td></tr>
+<tr><td>ch6</td><td>NUMERIC</td><td>Exact numbers with defined precision and scale</td></tr>
+<tr><td>ch6</td><td>INTEGER</td><td>Exact numbers with a predefined precision and scale of zero</td></tr>
+<tr><td>ch6</td><td>TIMESTAMP</td><td>Stores a moment an event occurs</td></tr>
+<tr><td>ch6</td><td>BOOLEAN</td><td>true, false or unknown</td></tr>
+<tr><td>ch6</td><td>CREATE DATABASE</td><td>CREATE SCHEMA database_name; AUTHORIZATION owner_user_id</td></tr>
+<tr><td>ch6</td><td>SQL DDL CREATE COMMANDS</td><td>CREATE SCHEMA - define the portion of a database that a particular user owns; depend on a catalog and contain schema objects, base views, domains, constraints etc</td></tr>
+<tr><td>ch6</td><td>CREATE TABLE</td><td>Defines a new table and its columns; base or derived table; derived created by executing a query that uses one or more tables or views</td></tr>
+<tr><td>ch6</td><td>CREATE VIEW</td><td>Defines a logical table from one or more tables or views; views may not be indexed; limitations exist on updating data through a view</td></tr>
+<tr><td>ch6</td><td>Reverse of CREATE commands</td><td>DROP TABLE tablename; DROP SCHEMA; DROP VIEW; ALTER TABLE allows for adding, dropping or changing a column/constraint</td></tr>
+<tr><td>ch6</td><td>CREATE CHARACTER SET</td><td>Define a character set for text strings</td></tr>
+<tr><td>ch6</td><td>CREATE COLLATION</td><td>A named schema object that specifies the order that a character set will assume; existing collations may be manipulated to create a new collation</td></tr>
+<tr><td>ch6</td><td>CREATE TRANSLATION</td><td>A named set of rules that maps characters from a source character set to a destination character set for translation or conversion purposes</td></tr>
+<tr><td>ch6</td><td>CREATE ASSERTION</td><td>A schema object that establishes a check constraint that is violated if the constraint is false</td></tr>
+<tr><td>ch6</td><td>CREATE DOMAIN</td><td>A schema object that establishes a domain or set of valid values for an attribute. Data type will be specified and a default value, collation or other constraint may also be specified if desired</td></tr>
+<tr><td>ch6</td><td>CREATING TABLES</td><td>Identify appropriate data types; identify columns that can accept null values; identify columns that need to be unique; identify all primary/foreign keys; determine default values for any columns that may require them; identify any columns that may have domain specifications that are more constrained than the data type assigned to them; create tables</td></tr>
+<tr><td>ch6</td><td>FOREIGN KEY</td><td>When a FK is defined, referential integrity will be enforced</td></tr>
+<tr><td>ch6</td><td>DUAL TABLE</td><td>Used to run an SQL command against a system variable, eg, SELECT Sysdate FROM Dual; displays the current date; SELECT 8 + 4 FROM DUAL displays the result of this arithmetic</td></tr>
+<tr><td>ch6</td><td>DATA INTEGRITY CONTROLS</td><td>SQL REFERENCES clause prevents a FK value from being added if it is not already a valid value in referenced PK column</td></tr>
+<tr><td>ch6</td><td>ON UPDATE RESTRICT</td><td>Any updates that would delete or change a primary key value will be rejected unless no foreign key references that value in any child table</td></tr>
+<tr><td>ch6</td><td>ON UPDATE CASCADE</td><td>If a value is changed, that will flow through to the child table</td></tr>
+<tr><td>ch6</td><td>ON UPDATE SET NULL</td><td>Allow update but change linked values to NULL</td></tr>
+<tr><td>ch6</td><td>Deleting customer records</td><td>ON DELETE RESTRICT, CASCADE, SET NULL, SET DEFAULT</td></tr>
+<tr><td>ch6</td><td>Changing table definitions</td><td>ALTER TABLE adds new columns; command may include keywords such as ADD, DROP or ALTER</td></tr>
+<tr><td>ch6</td><td>Removing tables</td><td>DROP TABLE command; can be qualified by RESTRICT or CASCADE or TRUNCATE</td></tr>
+<tr><td>ch6</td><td>Inserting, Updating, Deleting Data</td><td>INSERT - when only adding partial data, enter 'null' or specify exactly which columns data is assigned to, otherwise insert data in the same order columns were specified</td></tr>
+<tr><td>ch6</td><td>INPUT</td><td>Insert multiple rows of data as a batch</td></tr>
+<tr><td>ch6</td><td>Updating Database Contents</td><td>SET value WHERE x; MERGE INTO values USING/ON/WHEN MATCHED/WHEN NOT MATCHED/THEN UPDATE/INSERT</td></tr>
+<tr><td>ch6</td><td>Improving RDBMS performance</td><td>Index primary/secondary keys; select file organizations for base tables that match the type of processing activities (ie keeping DB sorted by a frequently used sorting key); clustering data; maintaining statistics about tables and indexes so that the DBMS can find efficiencies</td></tr>
+<tr><td>ch6</td><td>Indexes</td><td>Created in most RDBMSs to provide rapid random and sequential access to base table data. No standard syntax. Indexes can be created for both primary and secondary keys; terms include CREATE INDEX, CREATE UNIQUE INDEX, DROP INDEX; each index consumes extra storage space and requires overheard maintenance time</td></tr>
+<tr><td>ch6</td><td>CLAUSES OF SELECT STATEMENT</td><td>SELECT - lists columns; FROM chooses tables or views from which columns will be listed; WHERE - conditions for row selection (not required) - special keywords are DISTINCT (no duplicate rows) and *(all columns from all items in FROM clause)</td></tr>
+<tr><td>ch6</td><td>MATHEMATICAL FUNCTIONS</td><td>MIN, MAX, COUNT, SUM, ROUND, TRUNC, MOD (modular arithmetic)</td></tr>
+<tr><td>ch6</td><td>STRING FUNCTIONS</td><td>LOWER (change all to lowercase), UPPER, INITCAP, CONCAT, SUBSTR (isolate certain character positions) and COALESCE (find the first not NULL values in a list of columns)</td></tr>
+<tr><td>ch6</td><td>Date Functions</td><td>NEXT_DAY, ADD_MONTHS, MONTHS_BETWEEN</td></tr>
+<tr><td>ch6</td><td>Other Standard Functions</td><td>TOP (find the top n values), AVG, ANY, COUNT, EVERY, GROUPING, SOME</td></tr>
+<tr><td>ch6</td><td>Scalar aggregate</td><td>A single value returned from an SQL query that includes an aggregate function</td></tr>
+<tr><td>ch6</td><td>Vector aggregate</td><td>Multiple values returned from an SQL query that includes an aggregate function</td></tr>
+<tr><td>ch6</td><td>Base table</td><td>A table in the relational data model containing the inserted raw data; base tables correspond to the relations that are identified in the database's conceptual schema</td></tr>
+<tr><td>ch6</td><td>Virtual table</td><td>A table constructed automatically as needed by a DBMS; virtual tables are not maintained as real data</td></tr>
+<tr><td>ch6</td><td>Dynamic view</td><td>A virtual table that is created dynamically upon request by a user. A dynamic view is not a temporary table, rather, its definition is stored in the system catalog and the contents of the view are materialized as a result of an SQL query that uses the view. It differs from a materialized view which may be stored on a disk and refreshed at intervals or when used depending on the RDBMS</td></tr>
+<tr><td>ch6</td><td>Materialized view</td><td>Copies or replicas of data, based on SQL queries created in the same manner as dynamic views. However a materialized view exists as a table and thus care must be taken to keep it synchronized with its associated base tables</td></tr>
+<tr><td>ch6</td><td>Dynamic Views</td><td>Pros: simplifies query commands, data security/confidentiality, contain most current base table data; uses little storage space; provide a customized view for a user; establish physical data independence; Cons: uses processing time recreating the view each time it is reference, may or may not be directly updatable</td></tr>
+<tr><td>ch7</td><td>Join</td><td>A relational operated that causes two tables with a command domain to be combined into a single table or view</td></tr>
+<tr><td>ch7</td><td>Equi-join</td><td>A join in which the joining condition is based on equality between values in the common columns. Common columns appear (redundantly) in the result table</td></tr>
+<tr><td>ch7</td><td>Cartesian join</td><td>(Find good definition, this book does not have it)</td></tr>
+<tr><td>ch7</td><td>Natural join</td><td>A join that is the same as an equijoin except that one of the duplicate columns is eliminated in the result table</td></tr>
+<tr><td>ch7</td><td>Outer join</td><td>A join in which rows that do not have matching values in common columns are nevertheless included in the result table</td></tr>
+<tr><td>ch7</td><td>INNER JOIN</td><td>Selects all rows from both tables as long as there is a match between the columns in both tables</td></tr>
+<tr><td>ch7</td><td>LEFT OUTER JOIN</td><td>Returns all rows from the left table with the matching rows from the right table; the result is NULL in the right side when there is no match</td></tr>
+<tr><td>ch7</td><td>RIGHT OUTER JOIN</td><td>Returns all rows from the right table with the matching rows from the left table; the result is NULL in the left side when there is no match</td></tr>
+<tr><td>ch7</td><td>FULL OUTER JOIN</td><td>Returns all rows from the left and right tables</td></tr>
+<tr><td>ch7</td><td>Self join</td><td>joining a table with itself - used in unary relationships such as when an employee is being managed by another employee</td></tr>
+<tr><td>ch7</td><td>Subqueries</td><td>Placing an inner query within a WHERE or HAVING clause of an outer query; can be nested multiple times; operators used include IN, NOT, ANY, ALL, EXISTS, NOT EXISTS</td></tr>
+<tr><td>ch7</td><td>Correlated subquery</td><td>a subquery in which processing the inner query depends on data from the outer query</td></tr>
+<tr><td>ch7</td><td>Combining queries</td><td>UNION clause used to combine the output from multiple queries together into a single result table; INTERSECT and MINUS may be used</td></tr>
+<tr><td>ch7</td><td>CAST</td><td>control data type conversion eg change INT into CHAR</td></tr>
+<tr><td>ch7</td><td>Conditional Expressions</td><td>CASE statement can be constructed using either an expression that equates to a value, or a predicate; also NULLIF and COALESCE</td></tr>
+<tr><td>ch7</td><td>Predicate</td><td>based on three-value logic (true, false, don't know) but allows for more complex operations</td></tr>
+<tr><td>ch7</td><td>UDT</td><td>User-defined data type; a data type that a user can define by making it a subclass of a standard type or creating a type that behaves as an object; UDTs may also have defined functions and methods</td></tr>
+<tr><td>ch7</td><td>OLAP</td><td>Online analytical processing functions - SQL language extensions. Linear regressions, correlations, moving averages can now be calculated without moving the data outside the database</td></tr>
+<tr><td>ch7</td><td>Built-in Functions</td><td>CEILING, FLOOR, SQRT, RANK, DENSE_RANK, ROLLUP, CUBE, SAMPLE, OVER or WINDOW</td></tr>
+<tr><td>ch7</td><td>CEILING</td><td>Computes the least integer greater than or equal to its argument</td></tr>
+<tr><td>ch7</td><td>FLOOR</td><td>Computes the greatest integer less than or equal to its argument</td></tr>
+<tr><td>ch7</td><td>SQRT</td><td>Computes the square root</td></tr>
+<tr><td>ch7</td><td>RANK</td><td>Computes the ordinal rank of a row within its window. Implies that if duplicates exist, there will be gaps in the ranks assigned. The rank of the row is defined as 1 plus the number of rows preceding the row that are not peers of the row being ranked</td></tr>
+<tr><td>ch7</td><td>DENSE_RANK</td><td>Computes the ordinal rank of a row within its window. Implies that if duplicates exist, there will be no gaps in the ranks assigned. The rank of the row is the number of distinct rows preceding the row and itself</td></tr>
+<tr><td>ch7</td><td>ROLLUP</td><td>Works with GROUP BY to compute aggregate values for each level of the hierarchy specified by the group by columns. Hierarchy is assumed to be left to right in the list of group by columns</td></tr>
+<tr><td>ch7</td><td>CUBE</td><td>Works with group by to create a subtotal of all possible columns for the aggregate specified</td></tr>
+<tr><td>ch7</td><td>SAMPLE</td><td>Reduces the number of rows by returning one or more random samples (with or without replacement)</td></tr>
+<tr><td>ch7</td><td>OVER or WINDOW</td><td>Creates partitions of data, based on values of one or more columns over which other analytical functions eg rank can be computed</td></tr>
+<tr><td>ch7</td><td>New data types</td><td>BIGINT - exact numeric type of scale 0, meaning it is an integer; INT, SMALLINT</td></tr>
+<tr><td>ch7</td><td>MULTISET</td><td>A new collection data type; differs from ARRAY because it can contain duplicates; unordered, all elements are of the same element type</td></tr>
+<tr><td>ch7</td><td>Persistent Stored Modules</td><td>Extensions defined in SQL:1999 that include the capability to create and drop modules of code stored in the database schema across user sessions. Contains several SQL control statements: CASE, IF, LOOP, LEAVE, FOR, WHILE, REPEAT, ITERATE</td></tr>
+<tr><td>ch7</td><td>CASE</td><td>Executes different sets of sequences according to a comparison of values or the value of a WHEN clause, using either search conditions or value expressions; logic is similar to that of an SQL CASE expression but ends with END CASE rather than END and has no equivalent to the ELSE NULL clause</td></tr>
+<tr><td>ch7</td><td>IF</td><td>If a predicate is TRUE, executes an SQL statement. Statement ends with an ENDIF and contains ELSE and ELSEIF statements to manage flow control for different conditions</td></tr>
+<tr><td>ch7</td><td>LOOP</td><td>Causes a statement to be executed repeatedly until a condition exist that results in an exit</td></tr>
+<tr><td>ch7</td><td>LEAVE</td><td>Sets a condition that results in exiting a loop</td></tr>
+<tr><td>ch7</td><td>FOR</td><td>Executes once for each row of a result set</td></tr>
+<tr><td>ch7</td><td>WHILE</td><td>Executes as long as a particular condition exists. Incorporates logic that functions as a LEAVE statement</td></tr>
+<tr><td>ch7</td><td>REPEAT</td><td>Similar to the WHILE statement but tests the condition after execution of the SQL statement</td></tr>
+<tr><td>ch7</td><td>ITERATE</td><td>Restarts a loop</td></tr>
+<tr><td>ch7</td><td>Triggers and Routines</td><td>Support for user-defined functions or procedures</td></tr>
+<tr><td>ch7</td><td>Triggers</td><td>A named set of SQL statements that are considered (triggered) when a data modification (ie INSERT, UPDATE, DELETE) occurs or if certain data definitions are encountered. If a condition stated within a trigger is met, then a prescribed action is taken; contains three parts: the event, the condition and the action [syntax CREATE TRIGGER name AFTER UPDATE OF column ON table FOR EACH ROW INSERT INTO column VALUES (values, comma, separated)]</td></tr>
+<tr><td>ch7</td><td>Function</td><td>A stored subroutine that returns one value and has only input parameters</td></tr>
+<tr><td>ch7</td><td>Procedure</td><td>A collection of procedural and SQL statements that are assigned a unique name within the schema and stored in the database</td></tr>
+<tr><td>ch7</td><td>Routines</td><td>Similar to triggers but must be explicitly called to execute; can be procedures or functions</td></tr>
+<tr><td>ch7</td><td>Embedded SQL</td><td>Hard coded SQL statements included in a program written in another language such as C# or Java</td></tr>
+<tr><td>ch7</td><td>Dynamic SQL</td><td>Specific SQL code generated on the fly while an application is processing</td></tr>
+<tr><td>ch8</td><td>Client/server system</td><td>A networked computing model that distributes processes between clients and servers, which supply the requested services. In a database system, the database generally resides on a server that processes the DBMS. The clients may process the application systems or request services from another server that holds the application programs</td></tr>
+<tr><td>ch8</td><td>Client/server architectures</td><td>Three components of application logic include: 1. Input/Output or Presentation Logic, component responsible for formatting and presentation; 2. Processing Logic, which handles data processing logic such as data validation and identification of processing errors, business rules logic, data management logic; 3. Storage, component responsible for data storage and retrieval from the physical storage devices associated with the application; storage logic usually resides on the database server</td></tr>
+<tr><td>ch8</td><td>Application partitioning</td><td>The process of assigning portions of application code to client or server partitions after it is written to achieve better performance and interoperability (ability of a component to function on different platforms)</td></tr>
+<tr><td>ch8</td><td>Fat Client</td><td>A client PC that is responsible for processing presentation logic, extensive application and business rules logic, and many DBMS functions</td></tr>
+<tr><td>ch8</td><td>Database Server</td><td>A computer responsible for database storage, access and processing in a client/server environment. Some people also use this term to describe a two-tier client/server application.</td></tr>
+<tr><td>ch8</td><td>Middleware</td><td>Software that allows an application to interoperate with other software without requiring the user to understand and code the low-level operations necessary to achieve interoperability</td></tr>
+<tr><td>ch8</td><td>API</td><td>Application program interface - set of routines that an application program uses to direct the performance of procedures by the computer's OS</td></tr>
+<tr><td>ch8</td><td>ODBC</td><td>Open database connectivity - an API that provides a common language for application programs to access and process SQL databases independent of the particular DBMS that is accessed</td></tr>
+<tr><td>ch8</td><td>Three-tier architecture</td><td>A client/server configuration that includes three layers: a client layer and two server layers. Although the nature of the server layers differs, a common configuration contains an application server and a database server; aka n-tier, multitier, enhanced client/server architectures; most common three tier in use is web-based applications</td></tr>
+<tr><td>ch8</td><td>Thin client</td><td>An application where the client (PC) accessing the application primarily provides the user interfaces and some application processing, usually with no or limited local data storage</td></tr>
+<tr><td>ch8</td><td>Web application components</td><td>1. A database server - hosts storage logic for the application and hosts the DBMS; DBMS can reside on same or different machine as web server. 2. Web server - provides the basic functionality needed to receive and respond to requests from browser clients, use HTTP or HTTPS as a protocol; 3. An application server - provides the basic building blocks for creating dynamic Websites and web based applications; eg .NET, Java Platform, ColdFusion; 4. A web browser</td></tr>
+<tr><td>ch8</td><td>JSP</td><td>Java Server Pages - mixture of HTML and Java; HTML parts used to display information on the browser, Java parts used to process information sent from an HTML form</td></tr>
+<tr><td>ch8</td><td>Java servlet</td><td>A java program that is stored on the server and contains the business and database logic for a Java-based application</td></tr>
+<tr><td>ch8</td><td>MVC</td><td>Model View Controller architecture in which presentation logic (view), business logic (controller/model) and the database logic (model) are separated</td></tr>
+<tr><td>ch8</td><td>Considerations in Three-Tier Applications</td><td>Stored procedures - modules of code that implement application logic and are included on the database server - writing stored procedures can take more time than using Java or VB to create an application; Transactions - by default most db connections assume that you would like to commit the results of executing a query immediately, but it is possible to define the notion of a business “transaction” in your program; Database Connections - because a database server is not always on the same physical machine as the web server, the act of making and maintaining a database connection can be very resource intensive, often allow a limited number of simultaneous connections; most database drivers relieve application developers of the burden of managing db connections by using the concept of connection pooling</td></tr>
+<tr><td>ch8</td><td>TP</td><td>A Transaction Processing monitor reduces the number of connections to a server; a program that controls data transfer between clients and servers to provide a consistent environment for online transaction processing (OLTP)</td></tr>
+<tr><td>ch8</td><td>Key Benefits of Three-Tier Applications</td><td>Scalability, technological flexibility, lower long-term costs, better match of systems to business needs, improved customer service; competitive advantage, reduced risk</td></tr>
+<tr><td>ch8</td><td>Scalability</td><td>3-tier architecture is more scalable than 2-tier; middle tier can be used to reduce the load on a database server by using TP</td></tr>
+<tr><td>ch8</td><td>Technological Flexibility</td><td>Easier to change DBMS engines with a three tier; middle tier can even be moved to a different platform</td></tr>
+<tr><td>ch8</td><td>Cloud computing</td><td>A model for providing ubiquitous, convenient and on-demand network access to a set of shared computing resources (networks, servers, applications and services); all cloud services share: On-demand Self service, Broad network access, Resource pooling, Rapid elasticity, Measured services (pay for what you use)</td></tr>
+<tr><td>ch8</td><td>Infrastructure-As-A-Service</td><td>Category of cloud computing referring to use of technologies such as servers, storage and networks from external service providers; buying, running and maintaining equipment/software borne by service providers. Examples include Microsoft's Azure and Rackspace</td></tr>
+<tr><td>ch8</td><td>Platform-As-A-Service</td><td>Cloud computing category that refers to the provision of building blocks of key technological solutions on the cloud; examples include application servers, web servers, database technologies.</td></tr>
+<tr><td>ch8</td><td>Software-As-A-Service</td><td>An entire application or application suite being run on the cloud via the Internet instead of on an organization's own infrastructure; ie; Salesforce.com's CRM system</td></tr>
+<tr><td>ch8</td><td>XML</td><td>Extensible Markup Language; text-based scripting language used to describe data structures hierarchically, using HTML-like tags</td></tr>
+<tr><td>ch8</td><td>XSD</td><td>XML Schema Definition - Language used for defining XML databases that has been recommended by the W3C</td></tr>
+<tr><td>ch8</td><td>XPath</td><td>One of a set of XML technologies that supports XQuery development. XPath expressions are used to locate data in XML documents</td></tr>
+<tr><td>ch8</td><td>XQuery</td><td>An XML transformation language that allows applications to query both relational databases and XML data</td></tr>
+<tr><td>ch8</td><td>XSLT</td><td>Extensible Stylesheet Language Transformation - a language used to transform complex XML documents and also used to create HTML pages from XML documents</td></tr>
+<tr><td>ch8</td><td>Web Services</td><td>A set of emerging standards that define protocols for automatic communication between software programs over the web. Web services are XML based and usually run in the background to establish transparent communication among computers</td></tr>
+<tr><td>ch8</td><td>UDDI</td><td>Universal Description, Discovery and Integration - a technical specification for creating a distributed registry of Web services and business that are open to communicating through Web services</td></tr>
+<tr><td>ch8</td><td>WSDL</td><td>Web Services Description Language - an XML based grammar or language used to describe a webservice and specify a public interface for that service</td></tr>
+<tr><td>ch8</td><td>SOAP</td><td>Simple Object Access Protocol- an XML based communication protocol used for sending messages between applications via the Internet</td></tr>
+<tr><td>ch8</td><td>SOA</td><td>Service Oriented Architecture - a collection of services that communicate with each other in some manner, usually by passing data or coordinating a business activity</td></tr>
+</table>

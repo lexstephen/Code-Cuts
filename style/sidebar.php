@@ -139,6 +139,26 @@ echo '
 	</ul>';
 	echo '</div>';
 
+// Et cetera Section
+	echo '
+	<h3 class="sidebarHead" onclick="hideTuts(\'headingetc\')">&</h3>
+	<ul id="headingetc">';
+	for ($i = 0; $i < $tutCnt; $i++) {
+	// print other tutorials
+		if ($tutorials[$i]['cat'] == 'etc') {
+			echo '
+			<li><a href="index.php?cat='
+				.$tutorials[$i]['cat']
+				.'&file='.$tutorials[$i]['file']
+				.'">'
+				.$tutorials[$i]['title']
+				.'</a></li>';
+		}
+	}
+	echo '
+	</ul>';
+	echo '</div>';
+
 // ************************************************** //
 echo '
 </div>';

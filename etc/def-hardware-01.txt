@@ -1,0 +1,559 @@
+<table id="definitionTable">
+<tr><td>CH</td><td>Item</td><td>Definition</td></tr>
+<tr><td>ch1</td><td>SATA</td><td>Serial ATA; new standard</td></tr>
+<tr><td>ch1</td><td>PATA</td><td>Parallel ATA; past; aka IDE - uses ribbon cables - motherboard had 2 cables with 2 connections</td></tr>
+<tr><td>ch1</td><td>ANSI</td><td>American National Standards Institute</td></tr>
+<tr><td>ch1</td><td>IDE</td><td>Integrated Device Electronics; AKA PATA; 2 cables with 2 connections is usual</td></tr>
+<tr><td>ch1</td><td>Molex power connector</td><td>4 pin power connector for PATA</td></tr>
+<tr><td>ch1</td><td>Berg power connector</td><td>4 pin power connector for Floppy</td></tr>
+<tr><td>ch1</td><td>EIDE</td><td>Enhanced IDE</td></tr>
+<tr><td>ch1</td><td>Volts</td><td>Measure of electrical force</td></tr>
+<tr><td>ch1</td><td>Amp</td><td>Measure of electrical current</td></tr>
+<tr><td>ch1</td><td>Ohm</td><td>Measure of resistance to electricity</td></tr>
+<tr><td>ch1</td><td>Joule</td><td>A measure of work or energy - one joule is the work required to push an electrical current of one amp through a resistance of one ohm</td></tr>
+<tr><td>ch1</td><td>Watt</td><td>A measure of electrical power.  One watt is one joule per second.  Calculated by multiplying VOLTS by AMPS. (W=VxA)</td></tr>
+<tr><td>ch1</td><td>Alternating Current</td><td>House current; oscillates 60 times per second (60 hertz) from +115V to -115V</td></tr>
+<tr><td>ch1</td><td>Direct Current</td><td>What electronics use; travels in only one direction</td></tr>
+<tr><td>ch1</td><td>Rectifier</td><td>Converts AC to DC - PSU is a rectifier; converts house AC to electronics DC</td></tr>
+<tr><td>ch1</td><td>Inverter</td><td>Converts DC to AC</td></tr>
+<tr><td>ch1</td><td>Transformer</td><td>Keeps power constant but changes the ratio of current to voltage</td></tr>
+<tr><td>ch1</td><td>Outlet</td><td>Round bit is the ground, left facing wall is neutral, other is .hot</td></tr>
+<tr><td>ch1</td><td>Class C Extinguisher</td><td>Used for electrical fires</td></tr>
+<tr><td>ch1</td><td>Faraday cage</td><td>Device designed to protect against ESD; ie; anti static bags</td></tr>
+<tr><td>ch1</td><td>Firmware</td><td>BIOS programs stored on a special ROM chip embedded in mobo</td></tr>
+<tr><td>ch1</td><td>CMOS RAM</td><td>Startup instructions that direct BIOS where to find OS, date, time and passwords</td></tr>
+<tr><td>ch1</td><td>POST</td><td>Power-on self-test</td></tr>
+<tr><td>ch1</td><td>Multimeter</td><td>Measures voltage, current, resistance and/or continuity</td></tr>
+<tr><td>ch1</td><td>Loopback plug</td><td>Used to test if a port is working and/or the speed of the port</td></tr>
+<tr><td>ch1</td><td>Video Ports</td><td>VGA, S-Video, DVI, DisplayPort, HDMI</td></tr>
+<tr><td>ch1</td><td>ATX</td><td>Advanced Technology Extended - 12"x9.6" </td></tr>
+<tr><td>ch1</td><td>4-pin motherboard aux connector</td><td>A connector on the mobo used to provide additional power to the processor other than that supplied by the 20 pin connector</td></tr>
+<tr><td>ch1</td><td>8-pin motherboard aux connector</td><td>Next gen of 4-pin; provides additional power to the processor other than the 20-pin/P1 connector</td></tr>
+<tr><td>ch1</td><td>20-pin P1 connector</td><td>Used by older ATX power supple and motherboard; provides +3.3V, -3.3V, +12V, -12V and an optional and rarely used -5V</td></tr>
+<tr><td>ch1</td><td>24-pin P1 connector</td><td>Used by ATX v2.2 power supply and motherboard; provides additional power for PCIe slots</td></tr>
+<tr><td>ch1</td><td>ATX12V power supply audio port</td><td>ATX V2.1 power supply that provides a 12V power cord with a 4-pin connector to be used by the auxiliary 4-pin power connector on motherboards used to provide extra power to processors</td></tr>
+<tr><td>ch1</td><td>BIOS</td><td>Basic Input/Output System</td></tr>
+<tr><td>ch1</td><td>CPU</td><td>Central Processing Unit</td></tr>
+<tr><td>ch1</td><td>CMOS Setup</td><td>The program in system BIOS that can change the values in CMOS RAM</td></tr>
+<tr><td>ch1</td><td>DB-15 Port</td><td>A 15-pin female port that transmits analog video</td></tr>
+<tr><td>ch1</td><td>DIMM</td><td>Dual Inline Memory Module</td></tr>
+<tr><td>ch1</td><td>DisplayPort</td><td>A port that transmits digital video and audio and is slowly replacing VGA and DVI ports</td></tr>
+<tr><td>ch1</td><td>Dual Voltage Selector Switch</td><td>Switch on the back of the computer case where you can switch the input voltage to 115V in the US or 220V in other countries</td></tr>
+<tr><td>ch1</td><td>DVI port</td><td>Digital Video Interface</td></tr>
+<tr><td>ch1</td><td>Ethernet Port</td><td>A port used by a network cable to connect to a wired network.</td></tr>
+<tr><td>ch1</td><td>Expansion Card</td><td>A circuit board inserted into a slot on the motherboard to enhance the capability of the computer.</td></tr>
+<tr><td>ch1</td><td>eSATA</td><td>external SATA - use a special shielded SATA cable for external plugging - shaped differently than SATA so that unshielded cables cannot be used outside case</td></tr>
+<tr><td>ch1</td><td>FRU</td><td>Field Replaceable Unit</td></tr>
+<tr><td>ch1</td><td>FireWire port</td><td>IEEE 1394 port</td></tr>
+<tr><td>ch1</td><td>Hard Disk Drive</td><td>The main secondary storage of a computer.  Magnetic or Solid-state. </td></tr>
+<tr><td>ch1</td><td>HDMI</td><td>High Definition Multimedia Interface</td></tr>
+<tr><td>ch1</td><td>Heat sink</td><td>Uses fins to draw heat away from the processor; fans then blow the heat away</td></tr>
+<tr><td>ch1</td><td>IEEE1394 Port</td><td>aka FireWire - a port used for high-speed multimedia devices such as camcorders.</td></tr>
+<tr><td>ch1</td><td>MATX</td><td>micro ATX - 9.6" x 9.6"</td></tr>
+<tr><td>ch1</td><td>Modem port</td><td>A port used to connect dial-up phone lines to computers.</td></tr>
+<tr><td>ch1</td><td>Parallel port</td><td>An outdated 25-pin female port on a computer the transmitted data in parallel, 8 bits at a time, usually used with a printer.  Ports named LPT1 and LPT2; replaced by USB.</td></tr>
+<tr><td>ch1</td><td>PCI</td><td>Peripheral Component Interconnect</td></tr>
+<tr><td>ch1</td><td>PCIe</td><td>Peripheral Component Interconnect Express - latest evolution of PCI, not backwards compatible.  Slots in several sizes including x1, x4, x8 and x16.</td></tr>
+<tr><td>ch1</td><td>PCIe Power Connector</td><td>6-pin PCIe connector provides an extra 12V of power for high-end video cards</td></tr>
+<tr><td>ch1</td><td>Power Supply Tester</td><td>A device that tests the output of each power cord coming from a power supply</td></tr>
+<tr><td>ch1</td><td>PS/2 Port</td><td>A round 6-pin port used by a keyboard or mouse.</td></tr>
+<tr><td>ch1</td><td>RAM</td><td>Random Access Memory</td></tr>
+<tr><td>ch1</td><td>RJ-11</td><td>A phone line connection or port found on modems, telephones, house phones</td></tr>
+<tr><td>ch1</td><td>RJ-45</td><td>RJ = Registered Jack.  Large phone jack port, connects network adapter and other devices.</td></tr>
+<tr><td>ch1</td><td>S-Video Port</td><td>A 4-pin or 7-pin round video port that sends two signals over the cable, one for colour and one for brightness, used by high end TVs and video equipment</td></tr>
+<tr><td>ch1</td><td>S/PDIF</td><td>Sony/Phillips Digital Interface sound port</td></tr>
+<tr><td>ch1</td><td>Startup BIOS</td><td>Part of system BIOS that is responsible for controlling the computer when it is first turned on; gives control over the OS once it is loaded</td></tr>
+<tr><td>ch1</td><td>System BIOS</td><td>BIOS located on the motherboard that is used to control essential devices before the OS is loaded</td></tr>
+<tr><td>ch1</td><td>BIOS setup</td><td>The program in system BIOS that can change the values in CMOS RAM</td></tr>
+<tr><td>ch1</td><td>Thunderbolt port</td><td>A port that transmits both video and data on the same port and cable.  Shapred the same as and compatible with DisplayPort devices.</td></tr>
+<tr><td>ch1</td><td>USB port</td><td>Universal Serial Bus port</td></tr>
+<tr><td>ch1</td><td>VGA</td><td>Video Graphics Array port</td></tr>
+<tr><td>ch1</td><td>Video Memory</td><td>Memory used by the video controller; might be on video card or part of system's memory.  </td></tr>
+<tr><td>ch2</td><td>Case Fan</td><td>A fan inside a computer case used to draw air out of or into the case</td></tr>
+<tr><td>ch2</td><td>Cooler</td><td>Sits atop the processor; consists of a fanand heat sink</td></tr>
+<tr><td>ch2</td><td>Front Panel Connectors</td><td>The wires that lead from the front panel header to the front of the case.  Solid=positive; striped=negative.</td></tr>
+<tr><td>ch2</td><td>Front Panel Header</td><td>A group of pins on the motherboard which connect to wires that connect to the front panel</td></tr>
+<tr><td>ch2</td><td>Overclocking</td><td>Making the computer perform faster than system clock frequency to improve speed</td></tr>
+<tr><td>ch2</td><td>Spacers</td><td>Round plastic or metal pegs that separate the motherboard from the case</td></tr>
+<tr><td>ch2</td><td>Standoffs</td><td>Round plastic or metal pegs that separate the motherboard from the case</td></tr>
+<tr><td>ch2</td><td>Thermal compound</td><td>Placed between the bottom of the cooler heatsink and the top of the processor to eliminate air pockets</td></tr>
+<tr><td>ch2</td><td>Removing computer components</td><td>Expansion cards, Motherboard, power supply, drives</td></tr>
+<tr><td>ch2</td><td>Assembling computer components</td><td>Power supply, drives, motherboard, expansion cards</td></tr>
+<tr><td>ch2</td><td>Pulse width modulation</td><td>supported when 4-pin connector connects fan power cord to motherboard</td></tr>
+<tr><td>ch2</td><td>Rail</td><td>the term used to describe each voltage line of the power supply</td></tr>
+<tr><td>ch2</td><td>Dual Video Cards</td><td>Supported by NIVIDIA's SLI and AMD's Crossfire</td></tr>
+<tr><td>ch4</td><td>Mini ITX</td><td>aka ITX - 6.7" x 6.7" - used in low end computers; sometimes mobo/processor combo units</td></tr>
+<tr><td>ch4</td><td>FlexATX</td><td>Smaller version of MicroATX; 9"x7.5"</td></tr>
+<tr><td>ch4</td><td>BTX</td><td>Up to 12.8" wide - large version for improved air flow & up to 7 expansion slots</td></tr>
+<tr><td>ch4</td><td>MicroBTX</td><td>Up to 10.4" wide, up to 4 expansion slots</td></tr>
+<tr><td>ch4</td><td>PicoBTX</td><td>Up to 8"; up to 2 expansion slots</td></tr>
+<tr><td>ch4</td><td>NLX</td><td>9" x 13.6"; used in low-end systems with a riser card</td></tr>
+<tr><td>ch4</td><td>Intel LGA2011 socket</td><td>High end gaming and servers; may require liquid cooling.  Flip chip land grid array.  Used by Second Gen (Sandy Bridge, Core i7 Extreme, Core i7, Core i5, Core i3, Pentium and Celeron</td></tr>
+<tr><td>ch4</td><td>Intel LGA1155 / FCLGA1155</td><td>Most popular socket; DDR3 memory.  Thrid Generation (Ivy Bridge) Core i7, Core i5, Second Gen (Sandy) Core i7 Extreme, Core i7, Core i5, Core i3, Pentium and Celeron</td></tr>
+<tr><td>ch4</td><td>Intel LGA1156, Socket H, Socket H1</td><td>Also FCLGA, DDR3 memory.  Core i7, Core i5, Core i3, Pentium and Celeron</td></tr>
+<tr><td>ch4</td><td>Intel LGA 1366 or Socket B</td><td>DDR3; Core i7, Core i7 Extreme</td></tr>
+<tr><td>ch4</td><td>Intel LGA771 or Socket J</td><td>High end workstations; low-end servers.  Works with DDR2 memory on boards that have two processor sockets.  Core 2 Extreme</td></tr>
+<tr><td>ch4</td><td>Intel LGA775 or Socket T</td><td>DDR3 and DDR2 memory; Core 2 Extreme, Core 2 Quad, Core 2 Duo, Pentium Dual Core; Pentium Extreme Edition; Pentium D; Pentium 4; Celeron</td></tr>
+<tr><td>ch4</td><td>Intel Socket 478</td><td>Uses a dense micro pin grid array (mPGA); Pentium 4 and Celeron</td></tr>
+<tr><td>ch4</td><td>Intel Socket 423</td><td>39 x 39 SPGA grid; Pentium 4</td></tr>
+<tr><td>ch4</td><td>PGA</td><td>Pin grid array - holes aligned in uniform rows</td></tr>
+<tr><td>ch4</td><td>LGA</td><td>Land grid array - blunt protruding pinson the socket connect with lands/pads on the bottom of the processor</td></tr>
+<tr><td>ch4</td><td>FCLGA</td><td>Flip chip land grid array - top of the chip is on the bottom and makes contact with the socket</td></tr>
+<tr><td>ch4</td><td>FCPGA</td><td>Flip chip pin grid array</td></tr>
+<tr><td>ch4</td><td>SPGA</td><td>Staggered pin grid aray - pins staggered to squeeze more into a small space</td></tr>
+<tr><td>ch4</td><td>BGA</td><td>Ball grid array - processor soldered to mobo and purchased as a unit</td></tr>
+<tr><td>ch4</td><td>ZIF</td><td>Zero insertion force - processor socket has levers on the side to smoothly insert processor</td></tr>
+<tr><td>ch4</td><td>AMD Processors</td><td>Use PGA socket architecture for desktop; Socket F/LGA for some server processors</td></tr>
+<tr><td>ch4</td><td>AMD F2</td><td>DDR3; 904 holes; Trinity processors</td></tr>
+<tr><td>ch4</td><td>AMD FM1</td><td>DDR3; 905 holes; AMD A4, A6, A8, E2, Athlon II</td></tr>
+<tr><td>ch4</td><td>AMD AM3+</td><td>DDR3; 942 holes; AM3 processors; AMD FX</td></tr>
+<tr><td>ch4</td><td>AMD AM3 or AMD3</td><td>DDR3 or DDR2; 941 holes; Phenom II</td></tr>
+<tr><td>ch4</td><td>AMD AM2+ or AMD2+</td><td>DDR2; 940 holes; Phenom II, Phenom, Athlon</td></tr>
+<tr><td>ch4</td><td>AMD Socket F (1207) or F</td><td>Servers and high end workstations; 1207 pins; Opteron, Athlon 64 FX</td></tr>
+<tr><td>ch4</td><td>AMD AM2, AMD2, M2</td><td>DDR2; 940 holes; Athlon 64, Athlon, Phenom, Sempron, Second Gen Opteron</td></tr>
+<tr><td>ch4</td><td>AMD Socket 940</td><td>DDR; 940 holes; Athlon</td></tr>
+<tr><td>ch4</td><td>Chipset</td><td>Set of chips on the motherboard that works with processor to control the memory, buses, and some peripherals</td></tr>
+<tr><td>ch4</td><td>Chipset manufacturers</td><td>Intel, AMD, NVIDIA, SiS and VIA</td></tr>
+<tr><td>ch4</td><td>Intel North Bridge</td><td>Fast end of the hub; contains memory and graphics controller; connects to processor via 64bit FSB</td></tr>
+<tr><td>ch4</td><td>Intel Front Side Bus / System bus / host bus</td><td>64-bit bus that connects North Bridge and processor (replaced by QPI for X58 and onward)</td></tr>
+<tr><td>ch4</td><td>Intel South Bridge</td><td>Input/output controller hub (ICH) - all other devices connect to this hub</td></tr>
+<tr><td>ch4</td><td>Intel Nehalem / X58 chipset - "Previous Generation"</td><td>DDR3 memory moved up and is connected directly to processor; FSB replaced by QPI.  Nehalem chipsets support LGA1366 sockets, Core i7 processors, and PCIe v2; can also support SLI or Crossfire</td></tr>
+<tr><td>ch4</td><td>QPI</td><td>Quick Path Interconnect - 16 lanes of data packets; works same way PCIe works</td></tr>
+<tr><td>ch4</td><td>SLI</td><td>NVIDIA's method for connecting dual graphics cards; uses nForce chipset</td></tr>
+<tr><td>ch4</td><td>Crossfire</td><td>AMD's method for connecting dual (to quad) graphics processors</td></tr>
+<tr><td>ch4</td><td>Intel Sandy Bridge - "Second Generation"</td><td>Memory and graphics controller in the processor.  Only one chipset housing needed, which houses Platform Controller Hub. Includes X79, P67, H67, Q65, Q67 and B65. (65, 67, 79)</td></tr>
+<tr><td>ch4</td><td>Intel Ivy Bridge - "Third Generation"</td><td>Single Platform Controller Hub; uses lesspower, squeeze more transistors into smaller space.  Includes B75, Q75, Q77, H77, Z75, Z77. (75s and 77s)</td></tr>
+<tr><td>ch4</td><td>AMD A-Series chipsets (Trinity)</td><td>Competes with Ivy Bridge; notebook market</td></tr>
+<tr><td>ch4</td><td>AMD 9-Series</td><td>Supports CrossfireX technologies</td></tr>
+<tr><td>ch4</td><td>AMD 9-Series, 8-Series, 7-Series</td><td>Designed for gamer/multimedia enthusiast;  good graphics and supports overclocking</td></tr>
+<tr><td>ch4</td><td>AMD 580X Crossfire</td><td>Supports ATI Crossfire</td></tr>
+<tr><td>ch4</td><td>AMD 780V </td><td>Business model</td></tr>
+<tr><td>ch4</td><td>AMD 740G and 690</td><td>Low-end, inexpensive systems</td></tr>
+<tr><td>ch4</td><td>Traces</td><td>Circuits on a mobo that enable data, instructions and power to move from component to component</td></tr>
+<tr><td>ch4</td><td>Bus</td><td>a collection of traces; aka expansion bus, local bus, local I/O bus, local video bus</td></tr>
+<tr><td>ch4</td><td>Data Bus</td><td>The lines of the bus used for data (think of a bus riding on a highway of traces)</td></tr>
+<tr><td>ch4</td><td>Protocol</td><td>Set of rules and standards that any two entities use for communication</td></tr>
+<tr><td>ch4</td><td>Data Path Size</td><td>Width of a data bus; 8, 16, 32, 64 or 128 bits wide (8 wires/lines = 8 bits)</td></tr>
+<tr><td>ch4</td><td>System Clock</td><td>Dedicated to timing the activities on the motherboard; a single dedicated line</td></tr>
+<tr><td>ch4</td><td>Hertz (Hz)</td><td>One cycle per second.  Memory, Front Side Bus, processor and some other components measured in Hz</td></tr>
+<tr><td>ch4</td><td>Megahertz (MHz)</td><td>One million cycles per second</td></tr>
+<tr><td>ch4</td><td>Gigahertz</td><td>One billion cycles per second</td></tr>
+<tr><td>ch4</td><td>Local bus</td><td>Runs in sync with system clock</td></tr>
+<tr><td>ch4</td><td>Local I/O bus</td><td>Connects to the slower I/O controller hub or South Bridge</td></tr>
+<tr><td>ch4</td><td>Expansion Bus</td><td>Runs independently of the system clock</td></tr>
+<tr><td>ch4</td><td>Local video bus</td><td>Connects to the North Bridge or processor from graphics</td></tr>
+<tr><td>ch4</td><td>PCIe v2 Bus</td><td>Local video and local I/O; serial data path up to 32 bits; 2.5 GHz; up to 500 MB/sec per lane in each direction</td></tr>
+<tr><td>ch4</td><td>PCIe v1.1 Bus and PCIe v1 Bus</td><td>Local video and local I/O; serial data path up to 16 bits; 1.25 GHz; up to 250 MB/sec per lane in each direction; because it is serial it transmits data in packets which is faster; comes in x1 (4 wires), x4 (16 wires), x8 (32 wires) and x16 (64 wires) sizes. </td></tr>
+<tr><td>ch4</td><td>PCI-X Bus</td><td>Local I/O; 64 bit data path; 32 address lines; 66, 133, 266 or 533 MHz; up to 8.5 GB/sec.  Options are 3.3V, 5V or Universal 64 bit connector on cards.</td></tr>
+<tr><td>ch4</td><td>PCI Bus</td><td>Local I/O; 32 or 64 bit data path; 32 or 64 address lines; 33 or 66 MHz; 133, 266 or 532 MB/sec.  Options are 3.3V, 5V or Universal 32bit connector on cards.</td></tr>
+<tr><td>ch4</td><td>AGP 1x, 2x, 3x, 4x, 8x Bus</td><td>Local video; 32 bit data path; 66, 75 or 100 MHz; 266MB/sec to 2.1 GB/sec</td></tr>
+<tr><td>ch4</td><td>FireWire 400 and 800 Bus</td><td>Local I/O or expansion; 1 bit data path; serial; up to 3.2 Gbps</td></tr>
+<tr><td>ch4</td><td>USB 1.1, 2.0 and 3.0 Bus</td><td>Expansion bus; 1 bit data path; serial; 3MHz; 12 or 480 Mbps or 5.0 Gbps</td></tr>
+<tr><td>ch4</td><td>Riser card</td><td>Allows for an expansion card to be installed into a tight space; can be 3.3 or 5V depending on its orientation</td></tr>
+<tr><td>ch4</td><td>AGP</td><td>Accelerated Graphics Port.  Replaced by PCIe, but was video card/slot of choice for years. All slots 2.9 inches long and have 132 pins.</td></tr>
+<tr><td>ch4</td><td>AGP 1.0</td><td>1x speed (cycles per clock beat); 266 MB/sec throughput; 3.3V; 3.3 slot</td></tr>
+<tr><td>ch4</td><td>AGP 2.0</td><td>1x, 2x, or 4x speed; 533 MB/sec or 1.06 GB/sec; 3.3 or 1.5V; slots keyed to 1.5, 3.3 or universal</td></tr>
+<tr><td>ch4</td><td>AGP Pro</td><td>Applies to all speeds; 1.5 or 3.3 V; keyed for AGP Pro 1.5, 3.3 and Universal</td></tr>
+<tr><td>ch4</td><td>AGP 3.0</td><td>4x or 8x speed; 2.12 GB/sec; 1.5V and 0.8V; C124Universal AGP 3.0 slot; keyed for 1.5V and AGP Pro 1.5V</td></tr>
+<tr><td>ch4</td><td>On-board ports</td><td>Typically includes 2 x USB andsound ports; may also include a network port, FireWire, video port, eSATA and a port for a wireless antenna.</td></tr>
+<tr><td>ch4</td><td>I/O Shield</td><td>Board sold with motherboard which covers/allows for on-board ports</td></tr>
+<tr><td>ch4</td><td>Connector modules</td><td>Installed into empty expansion card slots and attached to motherboard to provide extra USB, FireWire etc</td></tr>
+<tr><td>ch4</td><td>Header</td><td>If a connector is a group of pins sticking up from the motherboard it is called a header.</td></tr>
+<tr><td>ch4</td><td>Jumper</td><td>Two small posts or pins that stick up off a motherboard; are 'open' or 'closed' depending on the jumper cover positioning</td></tr>
+<tr><td>ch4</td><td>UEFI</td><td>Unified Extensible Firmware Interface - new standard replacing BIOS standard - interface between firmware and the OS; improves on processes for booting and loadingdrivers</td></tr>
+<tr><td>ch4</td><td>Event logging</td><td>Notifies you if the case has been opened</td></tr>
+<tr><td>ch4</td><td>LoJack</td><td>Technology embedded in laptops to protect against theft; GPS positioning; remote access to lock/erase</td></tr>
+<tr><td>ch4</td><td>TPM Chip</td><td>Trusted Platform Module - chip that holds a BitLocker encryption key aka startup key.  TPM installed on motherboard; associated drive is encrypted and will not work unless it can read the key from the TPM.</td></tr>
+<tr><td>ch4</td><td>Flashing BIOS</td><td>The process of upgrading or updating the programming stored on the firmware chip</td></tr>
+<tr><td>ch4</td><td>Ways to flash BIOS</td><td>Express BIOS Update - done from Windows; Setup BIOS - update via USB drive; ISO image - from a bootable CD</td></tr>
+<tr><td>ch4</td><td>Recovering a failed flashing</td><td>Download recovery files and store on USB drive; set jumper to recover from failed BIOS update</td></tr>
+<tr><td>ch4</td><td>Accelerated Hub Architecture</td><td>Intel chipset design that uses a dedicated bus to transfer data between the two main processor chips</td></tr>
+<tr><td>ch4</td><td>Intel Chipsets</td><td>A > N > S > I</td></tr>
+<tr><td>ch4</td><td>ISO Image</td><td>A file with an .iso extension holds an image of all the data, including the file system, stored on an optical disc.  ISO stands for International Organization for Standardization.</td></tr>
+<tr><td>ch4</td><td>Virtual Machine</td><td>One or more logical machines created within one physical machine.</td></tr>
+<tr><td>ch4</td><td>Virtualization</td><td>Software used to manage and create multiple virtual machines</td></tr>
+<tr><td>ch4</td><td>Wait State</td><td>A clock tick in which nothing happens, used to ensure that the microprocessor isn't getting ahead of slower components.  A 0-wait state is preferable to a 1-wait state.</td></tr>
+<tr><td>ch5</td><td>Characteristics of Processors</td><td>Clock speed, processor speed, socket and chipset supported, processor architecture, multiprocessing abilities, memory cache</td></tr>
+<tr><td>ch5</td><td>Important Intel sockets</td><td>PGA988, LGA2011, LGA1155, LGA1156, LGA1366, LGA775</td></tr>
+<tr><td>ch5</td><td>Important AMD sockets</td><td>AM3+, AM3, AM2+, AM2, FM1, F, 940</td></tr>
+<tr><td>ch5</td><td>Multiprocessing</td><td>Two ALUs (processing units) installed within a single processor; Pentium was first</td></tr>
+<tr><td>ch5</td><td>Dual Processors</td><td>Two processor sockets on a server motherboard</td></tr>
+<tr><td>ch5</td><td>Multi-core Processing</td><td>Multiple processors installed in the same processer housing</td></tr>
+<tr><td>ch5</td><td>Multithreading</td><td>Each processor handles two threads at the same time; to do this it requires extra registers or holding areas within the processor housing</td></tr>
+<tr><td>ch5</td><td>HyperThreading</td><td>Intel's term for a processor capable of Multithreading</td></tr>
+<tr><td>ch5</td><td>HyperTransport</td><td>AMD's term for a processor capable of multithreading</td></tr>
+<tr><td>ch5</td><td>L1 Cache</td><td>Level 1 Cache - memory on the processor chip (processor die)</td></tr>
+<tr><td>ch5</td><td>L2 Cache</td><td>Memory stored in the processor package but not on the die</td></tr>
+<tr><td>ch5</td><td>L3 Cache</td><td>Still in the processor package but farther from the processor core</td></tr>
+<tr><td>ch5</td><td>SRAM</td><td>Static RAM - memory used in a memory cache</td></tr>
+<tr><td>ch5</td><td>DRAM</td><td>Dynamic RAM - voltatile memory - used on the motherboard - DDR, DDR2, DDR3</td></tr>
+<tr><td>ch5</td><td>Registers</td><td>Small holding areas on the processor chip that work like RAM</td></tr>
+<tr><td>ch5</td><td>Processor Frequency</td><td>The speed at which the processor operates internally</td></tr>
+<tr><td>ch5</td><td>Multiplier</td><td>How much faster the processor operates than the Front Side Bus</td></tr>
+<tr><td>ch5</td><td>32-bit Processors</td><td>aka x86 processors</td></tr>
+<tr><td>ch5</td><td>32 or 64-bit Processors</td><td>aka x86-64 processors; first was AMD's Athlon 64; they call the tech AMD64.  Intel used in Pentium 4 processors and called the tech Extended Memory 64 Technology (EM64T)</td></tr>
+<tr><td>ch5</td><td>64-bit processors</td><td>Used in servers including Itanium and Xeon processors.  Known by Intel as IA64, aka x64 processors. </td></tr>
+<tr><td>ch5</td><td>Intel Third Generation (Ivy) Processors</td><td>Core i7, Core i5 - 8/6MB cache, quad core, DDR3, dual channel memory</td></tr>
+<tr><td>ch5</td><td>Intel Second Generation (Sandy) Processors</td><td>Core i7 Extreme, Core i7, Core i5, Core i3, Pentium</td></tr>
+<tr><td>ch5</td><td>Previous Generation Processors</td><td>Core i7 Extreme, Core i7, Core i5, Core i3, Atom, Celeron, Celeron Desktop, Celeron D, Core 2 Extreme, Core 2 Quad, Core 2 Duo, Pentium Extreme, Pentium, Pentium 4, Pentium D</td></tr>
+<tr><td>ch5</td><td>Centrino Technology</td><td>Intel processor, chipset and wireless network adapter all interconnected as a unit to improve laptop performance</td></tr>
+<tr><td>ch5</td><td>Intel Atom processor</td><td>Intel's smallest processor, used in low end desktops, laptops and netbooks</td></tr>
+<tr><td>ch5</td><td>AMD FX Black Edition processors</td><td>FX 4-Core, FX 6-Core, FX 8-Core; use AM3+ socket</td></tr>
+<tr><td>ch5</td><td>AMD Phenom Family processors</td><td>Phenom II X6, Phenom II X6 Black, Phenom II X4, Phenom II X3, Phenom II X2, Phenom X4, Phenom X3; uses AM3 and AM2+ sockets</td></tr>
+<tr><td>ch5</td><td>AMD Athlon Family processors</td><td>Athlon II X2, Athlon X2, Athlon; uses AM3, AM3 and AM2 socket</td></tr>
+<tr><td>ch5</td><td>AMD Sempron Family processors</td><td>Sempron</td></tr>
+<tr><td>ch5</td><td>AMD Laptop processors</td><td>Athlon, Turion, V Series, Phenom and Sempron</td></tr>
+<tr><td>ch5</td><td>SODIMM</td><td>Small outline dual inline memory module - used in laptops</td></tr>
+<tr><td>ch5</td><td>DDR3 DIMM</td><td>240 pins; supports quad, triple or dual channels as well as single channel. Notch is further from centre of DIMM compared to DDR2.</td></tr>
+<tr><td>ch5</td><td>DDR2 DIMM</td><td>240 pins; supports single and dual channels. One notch in centre of connector.</td></tr>
+<tr><td>ch5</td><td>DDR DIMM</td><td>184 pin; dual or single channels.  One offset notch.</td></tr>
+<tr><td>ch5</td><td>SDRAM DIMM</td><td>168 pin; two notches</td></tr>
+<tr><td>ch5</td><td>RIMM</td><td>184 pins; two notches near the centre of the connector</td></tr>
+<tr><td>ch5</td><td>SDRAM</td><td>Synchronous dynamic RAM - dynamic RAM used on DIMMs</td></tr>
+<tr><td>ch5</td><td>DDR</td><td>Double Data Rate - processes data as the beat rises and falls</td></tr>
+<tr><td>ch5</td><td>Dual Channels</td><td>Memory controller can access two DIMMs at the same time (four slots on motherboard - 2 DIMMs per channel)</td></tr>
+<tr><td>ch5</td><td>Quad Channeling</td><td>Introduced with Sandy Bridge chipsets/processors.  </td></tr>
+<tr><td>ch5</td><td>DIMM Speeds</td><td>Measured in MHz or PC Rating</td></tr>
+<tr><td>ch5</td><td>PC Ratings</td><td>Total bandwidth of data moving between the module and CPU.  MHz x byte size of data path.  If a DDR is 800 MHz and the data path is 64 bits (8 bytes) then it is 800 x 8 = 6400 MB/second = PC6400 rating.</td></tr>
+<tr><td>ch5</td><td>Memory Bank</td><td>The memory a processor addresses at one time; 64 bits wide</td></tr>
+<tr><td>ch5</td><td>ECC</td><td>Error Correcting Code - odd extra chip used to detect and correct a single error in a single bit</td></tr>
+<tr><td>ch5</td><td>Parity</td><td>Older, used in SIMMs.  A ninth bit stored with every 8 bits in a byte - if memory is using odd parity the ninth bit is either a 1 or a 0 to make the number of ones in the byte odd.  Cannot correct error; only detects.</td></tr>
+<tr><td>ch5</td><td>DIMM data path width</td><td>Usually 64 bits; with ECC it is 72 bits</td></tr>
+<tr><td>ch5</td><td>Parity Error 1</td><td>Parity error on the motherboard</td></tr>
+<tr><td>ch5</td><td>Parity Error 2</td><td>Parity error on the expansion card</td></tr>
+<tr><td>ch5</td><td>Buffers / Registers</td><td>Hold data and amplify a signal just before the data is written to the module.  Buffering is older than registers.  Some DIMMs buffer, some use registers, some do neither.</td></tr>
+<tr><td>ch5</td><td>Notches on SDRAM</td><td>Identify whether the RAM is registered (RFU), buffered or unbuffered memory.  Also identifies the voltage level.  Prevents insertion/component conficts.</td></tr>
+<tr><td>ch5</td><td>CAS Latency</td><td>Column Access Strobe - the number of clock cycles required to write or read a column of data off a memory module. CAS used more than RAS.  </td></tr>
+<tr><td>ch5</td><td>RAS Latency</td><td>Row Access Strobe - the number of clock cycles required to write or read a row of data off a memory module. </td></tr>
+<tr><td>ch5</td><td>RDRam</td><td>Direct Rambus RAM aka Direct RDRAM.  A Rambus Inc module is called RIMM.  Uses C-RIMM to fill in empty slots.</td></tr>
+<tr><td>ch5</td><td>Factors affecting Memory performance</td><td>Total RAM; memory technology (DDR2, DDR3); speed in MHz or PC Rating; ECC or non-ECC; CL or RL Rating; Single, dual, triple or quad channeling</td></tr>
+<tr><td>ch5</td><td>Memory Limits</td><td>Limit for 32-bit OS is 4GB installed RAM.  A 64-bit OS can go much higher; Windows 7 Home Premium can use up to 16GB of RAM.</td></tr>
+<tr><td>ch5</td><td>Windows - Access System Info</td><td>Run "Msinfo32"</td></tr>
+<tr><td>ch5</td><td>SPD</td><td>Serial Presence Detect - DIMM technology that declares the size, speed, voltage and data path width of the module to the BIOS</td></tr>
+<tr><td>ch5</td><td>DRAM uses</td><td>SIMM, SO-DIMM, RIMM and SIMM</td></tr>
+<tr><td>ch5</td><td>Dual Ranked</td><td>Double sided DIMM with more than one memory bank (with 64-bit data path) known as dual ranked</td></tr>
+<tr><td>ch6</td><td>SSD</td><td>Solid State Device / Solid State Drive - has no moving parts.  Uses non-volatile memory; flash memory is stored on EEPROM chips; memory inside an SSD is called NAND flash memory.</td></tr>
+<tr><td>ch6</td><td>EEPROM</td><td>Electronically Erasable Programmable Read Only Memory - the chips inside a SSD drive housing.  Contain grids of rows and columns with two transistors at each intersection that contain a 1 or a 0 bit.  </td></tr>
+<tr><td>ch6</td><td>Floating Gate</td><td>Transistor that accepts the zero or one state according to a logic test called NAND</td></tr>
+<tr><td>ch6</td><td>NAND Flash Memory</td><td>The term for memory in an SSD - memory that passes the NAND test</td></tr>
+<tr><td>ch6</td><td>Magnetic Hard Drive</td><td>One, two or more platters/disks that stack and spin in unison</td></tr>
+<tr><td>ch6</td><td>Read/write Head</td><td>Moves across the disk surface as all disks rotate, to read or write data; controlled by actuator</td></tr>
+<tr><td>ch6</td><td>Sector</td><td>Segment of track - used to be 512 bytes - now 4096 bytes is norm</td></tr>
+<tr><td>ch6</td><td>Track</td><td>Concentric circle on disk</td></tr>
+<tr><td>ch6</td><td>Hybrid Hard Drive</td><td>Use both SSD and MHD technologies; uses flash memory as a buffer.  Must be supported by OS</td></tr>
+<tr><td>ch6</td><td>ReadyDrive</td><td>Name of technology used by Windows 7/Vista to support hybrid hard drives</td></tr>
+<tr><td>ch6</td><td>Low-level Formatting</td><td>Sector markings written on a magnetic hard drive before leaving the factory</td></tr>
+<tr><td>ch6</td><td>SMART</td><td>Self-Monitoring Analysis and Reporting Technology - used to predict when a drive is likely to fail (monitors drive performance, termperature in SSD; disk spin-up time, distance between the head and the disk of magnetic).  Many SSD drives report to the BIOS the number of write operations which can be a predictor. </td></tr>
+<tr><td>ch6</td><td>Cluster</td><td>A group of several sectors</td></tr>
+<tr><td>ch6</td><td>LBA</td><td>Logical Block Addressing - sequential numbering system used to address all the sectors on the drive.</td></tr>
+<tr><td>ch6</td><td>Interface Standards</td><td>Define data speeds and transfer methods between the drive controller, BIOS, chipset and OS; defined by T13, published by ANSI</td></tr>
+<tr><td>ch6</td><td>ATA - IDE/ATA Standard</td><td>2.1 to 8.3MB/sec - First T13 and ANSI standard for IDE drives; limited to no more than 528 MB.; supports PIO modes 0-2</td></tr>
+<tr><td>ch6</td><td>ATA-2, ATAPI, Fast ATA, PATA, EIDE</td><td>up to 16.6 MB/sec - Broke the 528 MB barrier; allows up to four IDE devices; defines the EIDE standard; supports PIO Modes 3-4 and DMA 1-2</td></tr>
+<tr><td>ch6</td><td>ATA-3</td><td>Up to 16.6 MB/sec - Improved version of ATA 2 and introducted SMART</td></tr>
+<tr><td>ch6</td><td>ATA/ATAPI-4, Ultra ATA, Fast ATA-2, Ultra DMA Modes 0-2, DMA/33</td><td>Up to 33.3 MB/sec - 80-conductor cable to improve signal integrity; defined Ultra DMA modes 0-2</td></tr>
+<tr><td>ch6</td><td>ATA/ATAPI-5, Ultra ATA/66, Ultra DMA/66</td><td>Up to 66.6 MB/sec - defined Ultra DMA modes 3-4</td></tr>
+<tr><td>ch6</td><td>ATA/ATAPI-6, Ultra ATA/100, Ultra DMA/100</td><td>Up to 100 MB/sec - defined Ultra DMA mode 5; supports drives larger then 137 GB</td></tr>
+<tr><td>ch6</td><td>ATA/ATAPI-7, Ultra ATA/133, SATA I, SAS STP</td><td>Parallel transfer to 133 MB/sec; serial to 1.5 Gb/sec (remember: parallel bytes; serial bis) - Can use 80 conductor or serial ATA cable.  Defines Ultra DMA mode 6, SATA, Serial Attached SCSI (SAS) coexisting with SATA by using STP (Sata Tunneling Protocol)</td></tr>
+<tr><td>ch6</td><td>SAS</td><td>Serial Attached SCSI - uses smaller, longer, round cables than traditional SCSI, allows for more than 15 devices</td></tr>
+<tr><td>ch6</td><td>STP</td><td>SATA Tunneling Protocol</td></tr>
+<tr><td>ch6</td><td>ATAPI</td><td>Advanced Technology Attachment Packet Interface - optical drive must follow this standard to connect using an IDEA connector</td></tr>
+<tr><td>ch6</td><td>ATA/ATAPI-8</td><td>Defined hybrid drives and SATA II; no new revisions expected because PATA is retired</td></tr>
+<tr><td>ch6</td><td>80-conductor IDE cable</td><td>40 pins and 80 wires; extra 40 wires reduce crosstalk; req'd by ATA/66 and above; blue connector to motherboard, black to master, grey to slave.  If only one connection use black.</td></tr>
+<tr><td>ch6</td><td>DMA Transfer Mode</td><td>Direct Memory Access - transfers data directly from the drive to memory without involving CPU; mode 0 slowest up to mode 6 fastest</td></tr>
+<tr><td>ch6</td><td>PIO Transfer Mode</td><td>Programmed Input/Output - involves the CPU and is slower than DMA; mode 0 is slowest to mode 4 being fastest</td></tr>
+<tr><td>ch6</td><td>Ultra DMA</td><td>Data is transferred twice for each clock beat</td></tr>
+<tr><td>ch6</td><td>Independent Device Timing</td><td>Allows two devices on same cable to run at different speeds (as long as motherboard supports those speeds)</td></tr>
+<tr><td>ch6</td><td>Serial Interface Standards</td><td>Defined by T13, published by the Serial ATA International Organization</td></tr>
+<tr><td>ch6</td><td>SATA Revision 1.x, SATA I or SATA1, Serial ATA-150, Sata/150, SATA-150</td><td>1.5 Gb/sec; first introduced with ATA/ATAPI-7</td></tr>
+<tr><td>ch6</td><td>SATA Revision 2.x, SATA II or SATA2, Serial ATA-300, SATA/300, SATA-300</td><td>3 Gb/sec; First SATAII standards published by T13 within ATA/ATAPI-8, later revisions of SATAII were published by SATA-IO; most motherboards used by 2010, standard first out in 2006</td></tr>
+<tr><td>ch6</td><td>SATA Revision 3.x, SATA III or SATA3, Serial ATA-600, SATA/600, SATA-600</td><td>6 Gb/sec; SATAIII first published by SATA-IO in 2009; in use in most modern motherboards</td></tr>
+<tr><td>ch6</td><td>Hot-swapping</td><td>Connect and disconnect a drive while a system is running</td></tr>
+<tr><td>ch6</td><td>SATA data cable</td><td>7-pin; up to 1 meter in length</td></tr>
+<tr><td>ch6</td><td>SATA power cable</td><td>15-pin</td></tr>
+<tr><td>ch6</td><td>SCSI</td><td>Small Computer System Interface - supports 7 or 15 devices depending on standard; host adapter assigned SCSI ID 7, then 6-0, 15-8. </td></tr>
+<tr><td>ch6</td><td>SCSI Host Adapter Card/Host Adapter</td><td>The gateway from the system bus to the SCSI bus; card inserted into PCIe slot on motherboard; uses ribbon cables internally and round cables externally</td></tr>
+<tr><td>ch6</td><td>SCSI ID</td><td>ID assigned to the device by means of DIP switches, dials on device or software settings; physical device gets SCSI ID but can contain several logical devices embedded within, referred to by their LUN</td></tr>
+<tr><td>ch6</td><td>LUN</td><td>Logical Unit Number - subID of SCSI ID - ie a CD ROM jukebox may have seven trays inside SCSI ID 5, fourth tray in jukebox referred to as 5:4</td></tr>
+<tr><td>ch6</td><td>Terminating Resistor</td><td>Used to reduce electrical "noise" or interference on a SCSI cable, caps end of chain of SCSI devices</td></tr>
+<tr><td>ch6</td><td>50-pin SCSI connector / A Cable</td><td>Narrow SCSI cable</td></tr>
+<tr><td>ch6</td><td>68-pin SCSI connector / P Cable</td><td>Wide SCSI cable</td></tr>
+<tr><td>ch6</td><td>25-pin SCSI connector</td><td>Narrow SCSI cable that looks like a parallel port connector</td></tr>
+<tr><td>ch6</td><td>DIP Switch</td><td>Alternative to jumpers; outdated technology</td></tr>
+<tr><td>ch6</td><td>Autodetection</td><td>BIOS detects and automatically selects correct drive capacity, configuration and best possible standard supported by hard drive and motherboard</td></tr>
+<tr><td>ch6</td><td>Hard Drive considerations</td><td>Capacity of the drive, spindle speed, interface standard, cache or buffer size</td></tr>
+<tr><td>ch6</td><td>Header</td><td>Connector on motherboard</td></tr>
+<tr><td>ch6</td><td>Universal Bay Kit</td><td>Used to fit small hard drives into standard drive bays</td></tr>
+<tr><td>ch6</td><td>Master</td><td>Device installed on a Primary or Secondary IDE channel at the end connector of EIDE ribbon; controls the channel; usually the boot drive; drive 0; designation made by setting jumpers or using DIP switch; fastest drive should be on Master, if possible, should be only connection on primary channel</td></tr>
+<tr><td>ch6</td><td>Slave</td><td>Installed on Primary or Secondary IDE channel at the middle connector of EIDE ribbon; drive 1; designation made by setting jumpers or using DIP switch</td></tr>
+<tr><td>ch6</td><td>Steps to Install Hard Drive</td><td>1. Open case and determine how to configure it; 2. Set jumpers to ID Master/Slave; 3. Mount Drive in Bay</td></tr>
+<tr><td>ch6</td><td>Single Drive Configuration</td><td>Only hard drive on EIDE channel</td></tr>
+<tr><td>ch6</td><td>Master-drive configuration</td><td>The first of two drives; likely the boot device</td></tr>
+<tr><td>ch6</td><td>Slave-drive configuration</td><td>The second drive using this channel/data cable.</td></tr>
+<tr><td>ch6</td><td>Cable-select configuration</td><td>The cable-select data cable determines which of the two drives is the master and which is the slave</td></tr>
+<tr><td>ch6</td><td>RAID</td><td>Redundant Array of Inexpensive (or Independent) Disks - configuration of two or more hard drives to work together as an array.  Must be configured before Windows installed! </td></tr>
+<tr><td>ch6</td><td>Fault Tolerance</td><td>Used on high-end servers and important workstations; a computer's ability to recover from fault or a catastrophe</td></tr>
+<tr><td>ch6</td><td>Spanning</td><td>aka JBOD (Just a Bunch of Disks) - uses two drives to hold a single volume such as drive E:\ - when first drive is full it continues writing data to the second</td></tr>
+<tr><td>ch6</td><td>RAID 0</td><td>Striped data - writes data evenly across the two dissk tso that no one disk receives all activity</td></tr>
+<tr><td>ch6</td><td>RAID 1</td><td>Mirrored data - same information written to both disks to improve fault tolerance</td></tr>
+<tr><td>ch6</td><td>RAID 5</td><td>Stripes data across three or more drives and uses parity checking - if one drive fails it can be recreated using the parity information</td></tr>
+<tr><td>ch6</td><td>RAID 10</td><td>Pronounced "1-0" as is a combination of RAID 1 and RAID 0.  Takes at least four disks; data is striped and mirrored across a second set of drives. A A B B. </td></tr>
+<tr><td>ch6</td><td>Hardware RAID</td><td>RAID configurations set at the hardware level by a RAID controller that is part of the motherboard BIOS or a RAID controller expansion card; preferred as hardware may be able to protect the data even if OS gets corrupted</td></tr>
+<tr><td>ch6</td><td>Software RAID</td><td>RAID configurations set at the software level; Disk Management Utility in Windows; considered an unstable solution and slower than hardware RAID. </td></tr>
+<tr><td>ch6</td><td>Tape Drives</td><td>Can use SATA, PATA or SCSI interfaces internally or USB, FireWire, SCSI, SAS or eSATA externally; sequential access</td></tr>
+<tr><td>ch6</td><td>WORM</td><td>Write Once Read Many - supported by some tape drives; prevents erasure of data</td></tr>
+<tr><td>ch6</td><td>Sequential Access</td><td>Data stored on tape must be read from the beginning and along until required data is found. </td></tr>
+<tr><td>ch6</td><td>Data Cartridges</td><td>Full sized; 4x6"</td></tr>
+<tr><td>ch6</td><td>Minicartridges</td><td>Smaller than data cartridges; popular because they fit into a standard 3 inch drive bay</td></tr>
+<tr><td>ch6</td><td>Floppy drive</td><td>1.44 MB storage; 34-pin ribbon cable; Berg power connector.  Ribbon has a twist in it - drive that has the twist between it and the controller is A:\</td></tr>
+<tr><td>ch6</td><td>Ribbon edge</td><td>Coloured strip down the side indicates pin 1</td></tr>
+<tr><td>ch8</td><td>eSATA Version 3 (eSATA 600)</td><td>6.0 Gbps; cable to 2m</td></tr>
+<tr><td>ch8</td><td>SuperSpeed USB (USB 3.0)</td><td>5.0 Gbps; cable to 3m</td></tr>
+<tr><td>ch8</td><td>eSATA Version 2 (eSATA-300)</td><td>3.0 Gbps; cable to 2m</td></tr>
+<tr><td>ch8</td><td>eSATA Version 1 (eSATA-150)</td><td>1.5 Gbps or 1500 Mbps; cable to 2m</td></tr>
+<tr><td>ch8</td><td>1394a (FireWire 400)</td><td>400 Mbps; cable to 4.5m; supports two types of connectors and cables: 4-pin (no voltage) and 6-pin (with voltage); allows for 16 daisy chained devices</td></tr>
+<tr><td>ch8</td><td>1394b (FireWire 800)</td><td>1.2 Gbps or 800Mbps; cable to 100m; uses a 9-pin connector; allows for up to 63 devices daisy-chained</td></tr>
+<tr><td>ch8</td><td>WiFi 802.11n / RF of 2.4 GHz or 5.0 GHz</td><td>500Mbps; range to 70m</td></tr>
+<tr><td>ch8</td><td>WiFi 802.11g / RF of 2.4GHz</td><td>54Mbps; range to 100m</td></tr>
+<tr><td>ch8</td><td>WiFi 802.11b / RF of 2.4 GHz</td><td>11Mbps; range to 100m</td></tr>
+<tr><td>ch8</td><td>WiFi 802.11a / RF of 5.0 GHz</td><td>54Mbps; range to 50m</td></tr>
+<tr><td>ch8</td><td>Hi-Speed USB (USB 2.0)</td><td>480Mbps; cable to 5m</td></tr>
+<tr><td>ch8</td><td>Original USB (USB 1.1)</td><td>12Mbps or 1.5Mbps; cable to 3m</td></tr>
+<tr><td>ch8</td><td>Parallel</td><td>1.5Mbps; cables to 4.5m</td></tr>
+<tr><td>ch8</td><td>Serial</td><td>115.2Kbps; cables to 50 feet</td></tr>
+<tr><td>ch8</td><td>Bluetooth wireless / RF of 2.4 GHz</td><td>3Mbps; range to 10m</td></tr>
+<tr><td>ch8</td><td>Infrared Wireless</td><td>Invisible light frequency range of 100 to 400 THz just above red light; up to 4 Mbps for fast speed IR; 1.15 Mbps for medium speed; 115 Kbps for slow speed; range up to 5 meters</td></tr>
+<tr><td>ch8</td><td>USB 3.0 B-Male connector</td><td>Used by SuperSpeedUSB 3.0 devices such as printers, scanners; will not fit a 1.1 or 2.0 device; ports are blue</td></tr>
+<tr><td>ch8</td><td>USB 3.0 Micro-B connector</td><td>Used by SuperSpeed USB 3.0 devices; not compatible with regular Micro-B connectors</td></tr>
+<tr><td>ch8</td><td>Micro-A connector</td><td>Five pins and smaller than Mini-B; small electronic devices</td></tr>
+<tr><td>ch8</td><td>Micro-B connector</td><td>Five pins and a smaller height than the Mini-B; small electronic devices</td></tr>
+<tr><td>ch8</td><td>Mini-B connector</td><td>Five pins, often used to connect small electronic devices such as digital camera to computer</td></tr>
+<tr><td>ch8</td><td>MiniDin-6 connector</td><td>6-pin connector that looks like a PS/2, used in oudated tv and video equipment</td></tr>
+<tr><td>ch8</td><td>A Male connector</td><td>Flat and wide, connectors to A-Male USB port</td></tr>
+<tr><td>ch8</td><td>B Male connector</td><td>Square, connects to USB 1.x or 2.0 devices</td></tr>
+<tr><td>ch8</td><td>Hot swappable</td><td>Plug or unplug without powering down the system</td></tr>
+<tr><td>ch8</td><td>Infrared</td><td>Outdated wireless tech mostly replaced by Bluetooth</td></tr>
+<tr><td>ch8</td><td>biometric device</td><td>input device that inputs biological data about a person such as fingerprints, handprints, face, voice, eye, signature</td></tr>
+<tr><td>ch8</td><td>digitizing tablet</td><td>graphics tablet or digitizer; used to hand draw and usually connects to a USB port</td></tr>
+<tr><td>ch8</td><td>stylus</td><td>used with digitizing tablet to "draw" or "write"</td></tr>
+<tr><td>ch8</td><td>touch screen</td><td>input device that uses a monitor or LCD panel as the backdrop for input options</td></tr>
+<tr><td>ch8</td><td>TV tuner card</td><td>a port on the card receives input from a TV cable and lets you view TV on your computer</td></tr>
+<tr><td>ch8</td><td>sound card</td><td>expansion card with sound ports</td></tr>
+<tr><td>ch8</td><td>video capture card</td><td>lets you capture the video input and save it to your hard drive</td></tr>
+<tr><td>ch8</td><td>MIDI</td><td>Musical instrument digital interface; a set of standards that are used to represent music in digital form; port is a 5-pin DIN port that looks like a PS/2 keyboard port, only larger; input OR output port but not both; usually connected to a mixer</td></tr>
+<tr><td>ch8</td><td>KVM</td><td>keyboard, video, mouse switch - allows you to use one of each on multiple computers; usually used in server rooms; does not require device drivers</td></tr>
+<tr><td>ch8</td><td>Device Manager</td><td>Control Panel > System and Security > Device Manager - manages hardware and device drivers; can roll-back and update drivers within</td></tr>
+<tr><td>ch8</td><td>Action Centre</td><td>Control Panel > System and Security > Action Centre - list of problems/solutions for troubleshooting</td></tr>
+<tr><td>ch8</td><td>CRT</td><td>cathode tune ray monitor; use mercury and must be disposed of carefully</td></tr>
+<tr><td>ch8</td><td>plasma monitor</td><td>provides high contrast with better colour than LCD monitors; works by discharging xenon and neon plasma on flat glass and don't contain mercury; expensive, heavy and usually only available in large commercial sizes</td></tr>
+<tr><td>ch8</td><td>projector</td><td>used to shine a light that projects a transparent image onto a larger screen; several types of technologies used including LCD; often installed as dual monitor</td></tr>
+<tr><td>ch8</td><td>LCD</td><td>liquid crystal display monitor; first used in laptops; produce an image using easily polarized molecules; 8 layers including polarizer, glass, column electrodes, colour layer, liquid crystal layer, row electrodes</td></tr>
+<tr><td>ch8</td><td>LED</td><td>light emitting diode; backlighting on an LCD screen; uses less mercury</td></tr>
+<tr><td>ch8</td><td>OLED</td><td>organic light emitting diode - a thin LED layer or film between two grids of electrodes and does not use backlisting; produces deeper blacks, better contrast, less power</td></tr>
+<tr><td>ch8</td><td>pixel</td><td>intersection of a row electrode and a coulmn electrode on the LCD panel</td></tr>
+<tr><td>ch8</td><td>native resolution</td><td>number of pixels built into the LCD monitor; usually highest quality option</td></tr>
+<tr><td>ch8</td><td>pixel pitch</td><td>the distance between adjacent pixels on the screen, e.g. .283mm, smaller is better</td></tr>
+<tr><td>ch8</td><td>resolution</td><td>number of spots or pixels on a screen that can be addressed by software</td></tr>
+<tr><td>ch8</td><td>refresh rate</td><td>aka response time - the time it takes for a monitor to build one screen, measured in ms or MHz; 12ms:83fps, 16ms:63fps; lower ms the better</td></tr>
+<tr><td>ch8</td><td>contrast ratio</td><td>contrast between the true black and true white on the screen; higher is better: 1000:1 > 700:1</td></tr>
+<tr><td>ch8</td><td>dynamic contrast ratio</td><td>backlighting adjusted to give the effect of an overall brighter or darker image; contrast ratio more important indicator of quality than dcr</td></tr>
+<tr><td>ch8</td><td>DB-15</td><td>aka VGA; 15-pin video port; three signals of red, green, blue</td></tr>
+<tr><td>ch8</td><td>DVI-D</td><td>only transmits digital data</td></tr>
+<tr><td>ch8</td><td>DVI-I</td><td>supports analog and digital signals; can be used with an adapter to a VGA port</td></tr>
+<tr><td>ch8</td><td>DVI-A</td><td>only transmits analog data</td></tr>
+<tr><td>ch8</td><td>composite video port</td><td>RGB port - rg&b mixed together in same signal; method used by TV and when connected to and displaying on a TV</td></tr>
+<tr><td>ch8</td><td>dxdiag.exe</td><td>DirectX diagnostic tool</td></tr>
+<tr><td>ch8</td><td>formatting</td><td>installing a new file system on a device; process erases all data</td></tr>
+<tr><td>ch8</td><td>NTFS</td><td>New Technology file system primarily used by hard drives</td></tr>
+<tr><td>ch8</td><td>exFAT</td><td>file system used by removable storage devices such as large capacity USB flash drives/memory cards</td></tr>
+<tr><td>ch8</td><td>FAT 32 / FAT</td><td>file system used by smaller capacity devices</td></tr>
+<tr><td>ch8</td><td>CDFS</td><td>Compact disc file system</td></tr>
+<tr><td>ch8</td><td>UDF</td><td>Universal disk format file system (optical storage) used by CD and Blu-Ray</td></tr>
+<tr><td>ch8</td><td>DVD</td><td>Can hold two layers of data on each side; both sides can be written to</td></tr>
+<tr><td>ch8</td><td>Blu-Ray</td><td>Can hold two layers of data on each side; both sides can be written to</td></tr>
+<tr><td>ch8</td><td>SD Card</td><td>Standards are 3.0: SDXC (32GB-2TB exFAT) > 2.0: SDHC (4GB-32GB FAT) > 1.0: SD (<2GB FAT) (only backwards compatible)</td></tr>
+<tr><td>ch8</td><td>CompactFlash</td><td>Type of photo memory card using UDMA (ultra direct memory access) to transfer data without involving CPU</td></tr>
+<tr><td>ch8</td><td>xD-Picture card</td><td>memory card, postage stamp sized, needs adapter to use in SD slot</td></tr>
+<tr><td>ch9</td><td>expert system</td><td>software designed to help solve problems</td></tr>
+<tr><td>ch9</td><td>ticket</td><td>a record of a help request and what is happening to resolve it</td></tr>
+<tr><td>ch9</td><td>call tracking</td><td>software designed to track the progress and resolution of a ticket</td></tr>
+<tr><td>ch9</td><td>what customers want</td><td>positive attitude; no interruptions; polite language; sensitivity to cultural differences; ownership of the customer`s problem; dependability; credibility; integrity; knowledge of the law; professional demeanour</td></tr>
+<tr><td>ch9</td><td>interview the customer</td><td>describe the problem; when did it start; what was the situation when error occurred; programs/software using at time; has the case moved recently; recent thunderstorm or electrical problem; hardware, software or configuration changes; anyone else use the computer; is there data that needs to be backed up; can you reproduce problem</td></tr>
+<tr><td>ch9</td><td>slow customers over phone</td><td>be specific; have them back up; ask what is on the screen often; follow on your own PC; compliment to build confidence; tactfully explain someone should come onsite</td></tr>
+<tr><td>ch9</td><td>overconfident customers</td><td>compliment; ask them to slow down so you can catch up; direct them to do simple things with tact; don't accuse them of making mistakes; try not to use jargon even if they do</td></tr>
+<tr><td>ch9</td><td>complaining customers</td><td>listen actively and make them know they're not being ignored; give them time to vent, and apologize; don't be defensive; know your workplace rights re: harassment; ask them to slow down so you can help; summarize what you agree on so progress feels apparent</td></tr>
+<tr><td>ch9</td><td>license</td><td>the right to use software</td></tr>
+<tr><td>ch9</td><td>copyright</td><td>the right to copy the work belongs to the creator or others to whom the creator transfers this right</td></tr>
+<tr><td>ch9</td><td>software piracy</td><td>making unauthorized copies of original software (Federal Copyright Act allows for one backup copy to be made)</td></tr>
+<tr><td>ch9</td><td>site license</td><td>purchased to obtain the right to use multiple copies of software</td></tr>
+<tr><td>ch9</td><td>chain of custody</td><td>includes exactly what, when and from whom evidence was collected, its condition, and how it was secured while in your posession</td></tr>
+<tr><td>ch9</td><td>customizing computer systems</td><td>meet application requirements; balance functionality and budget; consider hardware compatibility</td></tr>
+<tr><td>ch9</td><td>CAD/CAM workstation</td><td>Computer-aided Design/Manufacturing workstations - architects, graphic designers; needs high end video card, quad channel memory motherboard, powerful multicore processor, large CPU, fast hard drive</td></tr>
+<tr><td>ch9</td><td>A/V workstation</td><td>Audio/Video Editing - same as CAD/CAM but with less expensive graphics card and processor, sometimes Blu-Ray and dual monitors</td></tr>
+<tr><td>ch9</td><td>Virtualization workstation</td><td>One physical machine hosts many; controlled by VM software; requires multicore processor; extra RAM; OS and space for it on each</td></tr>
+<tr><td>ch9</td><td>hypervisor</td><td>software that supports virtualization</td></tr>
+<tr><td>ch9</td><td>hardware-assisted virtualization</td><td>supported by modern motherboard, enhances the CPU support for virtual machines</td></tr>
+<tr><td>ch9</td><td>Gaming PC</td><td>requires powerful processor and high end video, sound cards; often an overclocked system; liquid cooling sometimes preferred</td></tr>
+<tr><td>ch9</td><td>HTPC</td><td>Home Theatre PC; requires applicatio0n software; HDMI port; cable TV input; satellite TV input; internet access, remote control, low background noise, surround sound support, case form factor</td></tr>
+<tr><td>ch9</td><td>10 foot user interface</td><td>applications software used to control display menus in a font big enough to be seen from 10 feet away</td></tr>
+<tr><td>ch9</td><td>HTPC case</td><td>form factor accomodating a MicroATX, miniITX or miniDTX motherboard</td></tr>
+<tr><td>ch9</td><td>Home Server PC</td><td>shared by all computers in a LAN; moderate processor; maximum storage speed and capacity; fast network transfer; print sharing; onboard video; windows home server2011 is best</td></tr>
+<tr><td>ch9</td><td>thick client</td><td>aka fat client, regular desktop or laptop sometimes used as a client by virtualization server</td></tr>
+<tr><td>ch9</td><td>thin client</td><td>has little computer power and an operating system, might only need browser to communicate with server that does all processing</td></tr>
+<tr><td>ch9</td><td>virtualization server</td><td>provides a virtual desktop for users on multiple client machines</td></tr>
+<tr><td>ch13</td><td>error - unexpected shutdown</td><td>try to narrow down to application or device causing problem; possible faulty RAM, motherboard or processor</td></tr>
+<tr><td>ch13</td><td>error - BSOD</td><td>blue screen of death; devices, device drivers or corrupted Windows install</td></tr>
+<tr><td>ch13</td><td>error - msgs on black screen</td><td>most likely an error at POST</td></tr>
+<tr><td>ch13</td><td>error - system freeze</td><td>problem is likely Windows or an application</td></tr>
+<tr><td>ch13</td><td>error - POST code beeps</td><td>BIOS communicates POST errors as beeps before it tests video; beep codes can be found on internet</td></tr>
+<tr><td>ch13</td><td>error - blank screen, noiseless and lightless powerup</td><td>power is not getting to system</td></tr>
+<tr><td>ch13</td><td>error - fan spinning, lights on, blank screen powerup</td><td>troubleshoot video; is monitor on/plugged in; does indicator light at front of monitor turn on?</td></tr>
+<tr><td>ch13</td><td>error - BIOS time/date wrong</td><td>CMOS battery needs to be replaced</td></tr>
+<tr><td>ch13</td><td>error - wrong boot device</td><td>change priority in BIOS setup</td></tr>
+<tr><td>ch13</td><td>error - continuous reboots</td><td>could be overheating, failing processor, motherboard, RAM or Windows installation; check fan and temperature settings in BIOS</td></tr>
+<tr><td>ch13</td><td>error - no power</td><td>check surge protector, wall outlet, power supply connectors</td></tr>
+<tr><td>ch13</td><td>error - fans spin but no power</td><td>check power supply is secured; use power supply tested to check voltage</td></tr>
+<tr><td>ch13</td><td>error - smoke/burning smell</td><td>immediately unplug computer; serious problem</td></tr>
+<tr><td>ch13</td><td>error - loud whining</td><td>noise is likely failing power supply or hard drive; might be a short; may have power supply underrated for system</td></tr>
+<tr><td>ch13</td><td>error - intermittent device failure</td><td>overheating or failing RAM, motherboard, processor or hard drive; check processor temperature in BIOS; run diagnostics on RAM and hard drive</td></tr>
+<tr><td>ch13</td><td>error - checksum bad</td><td>CMOS RAM might be corrupted; reset BIOS, try flashing BIOS</td></tr>
+<tr><td>ch13</td><td>error - memory size decreased</td><td>memory module might be bad</td></tr>
+<tr><td>ch13</td><td>error - processor thermal trip error</td><td>overheating</td></tr>
+<tr><td>ch13</td><td>error - overclocking failed</td><td>turn off overclocking; might not be OC but a power supply problem</td></tr>
+<tr><td>ch13</td><td>error - no boot disk/fixed disk/etc</td><td>make sure boot disk priority is correct in BIOS</td></tr>
+<tr><td>ch13</td><td>error - missing BOOTMGR/NTLDR/OS</td><td>OS boot manager program is needed to start Windows; missing or corrupted</td></tr>
+<tr><td>ch13</td><td>troubleshooting mobo, CPU, RAM</td><td>boot begins but powers down; hangs or becomes unstable at off times; connected components don't work - virus; failing memory module; application or Windows error; update/patch Windows; not enough RAM; compromised BIOS settings; disable quick boot to access full POST report; flash BIOS; update drivers for non-working components; verify ports are enabled in BIOS</td></tr>
+<tr><td>ch13</td><td>troubleshooting</td><td>chck obvious things first (plugged in, properly seated); trade known good for suspected bad devices; trade suspected bad for known good (install suspicious parts in good computer to see what shuts it down); remove one component after enough to isolate; boot from CD if necessary; back up data; remove drive and install in second system (does not need to be physically installed, just connect); use an IDE to USB or USB to SATA converter for diagnostic testing</td></tr>
+<tr><td>ch13</td><td>troubleshooting electrical</td><td>symptoms are dead PC; locks during boot; error codes or beeps during booting; burnt parts/odours; unexpected powerdown; whining sounds</td></tr>
+<tr><td>ch13</td><td>intermittent problems</td><td>PC stops or hangs; reboots itself; memory errors; data written incorrectly to HDD; keyboard works at odd times; power supply overheats or whines</td></tr>
+<tr><td>ch13</td><td>motherboard power problems</td><td>shorts occur when motherboard touches chassis; check for missing standoffs, damage to bottom of motherboard, burnt out capacitors that are brown or corroded</td></tr>
+<tr><td>ch13</td><td>problems with overheating</td><td>system hangs or freezes just after boot; BSOD error; cannot hear a fan or it is whining; cannot feel air pulled in/out of case; clean system of dust and tie cables for aiirflow; check processor and cooler are connected; check BIOS temperature readings and overclocking; flash BIOS; replace thermal compound</td></tr>
+<tr><td>ch13</td><td>CAG</td><td>chassis air guide - round air duct that helps to pull and direct fresh air</td></tr>
+<tr><td>ch13</td><td>POST before video active</td><td>pre-video check; one or no beep = all is well; more beeps require you to check beep code documentation for error</td></tr>
+<tr><td>ch13</td><td>Memory Diagnostics</td><td>tool used to test memory</td></tr>
+<tr><td>ch13</td><td>driver store</td><td>Windows stores a copy of every driver</td></tr>
+<tr><td>ch13</td><td>problems installing</td><td>verify plugs and seating; thermal compound if CPU; reboot system; check pins in processor socket; enough cooling in case; clean edge connectors of memory modules and cards; reinstall old processor if replaced, flash bios, re-install new processor</td></tr>
+<tr><td>ch13</td><td>troubleshooting hard drives</td><td>problems usually appear at POST; BIOS may not be able to access drive because of the drive, data cable, electrical system, motherboard, configuration; try booting with other media; check RAID array; check jumper settings; listen to hear if it spins; try drive in a working system</td></tr>
+<tr><td>ch13</td><td>artifacts</td><td>horizontally torn images on screen; video controller out of sync with the refresh rate; gpu might be overheating</td></tr>
+<tr><td>ch13</td><td>degauss button</td><td>eliminate accumulated or stray magnetic fields on CRT monitors</td></tr>
+<tr><td>ch13</td><td>brownouts / sags</td><td>temporary voltage reductions</td></tr>
+<tr><td>ch13</td><td>UPS</td><td>uninterruptible power supply - combats against brownouts</td></tr>
+<tr><td>ch13</td><td>zero-fill utility</td><td>completely wipe a hard drive without destroying it</td></tr>
+<tr><td>ch15</td><td>packet</td><td>what each data segment is put into; header contains MAC, IP and port address</td></tr>
+<tr><td>ch15</td><td>hardware address</td><td>media access control/physical/adapter address; address of Ethernet NIC</td></tr>
+<tr><td>ch15</td><td>gateway</td><td>any device that network traffic can use to leave one network and go to another</td></tr>
+<tr><td>ch15</td><td>IP address</td><td>32 bit or 128 bit string assigned to a network conection</td></tr>
+<tr><td>ch15</td><td>intranet</td><td>a private network that uses TCP/IP protocols</td></tr>
+<tr><td>ch15</td><td>subnet</td><td>a subsystem of a larger network</td></tr>
+<tr><td>ch15</td><td>port number</td><td>an application on a computer listens at a predetermined address that uniquely identifies the application on the computer</td></tr>
+<tr><td>ch15</td><td>dynamic IP address</td><td>assigned randomlyon login</td></tr>
+<tr><td>ch15</td><td>DHCP</td><td>assigns random IP address - client uses port 67; server uses port 68</td></tr>
+<tr><td>ch15</td><td>Class A</td><td>1.0.0.0-126 (126 networks; 16 million IP addresses in each); license for a single octet, 3 remaining octets all hosts</td></tr>
+<tr><td>ch15</td><td>Class B</td><td>128.0.0.0-191.255 (16,000 networks; 65,000 IP addresses in each); two octets leased for network portion</td></tr>
+<tr><td>ch15</td><td>Class C</td><td>192-223.255.255 (2 million networks; 254 IP addresses in each); three octets as network address</td></tr>
+<tr><td>ch15</td><td>multicast address</td><td>Class D IP addresses; octets 224 through 239; one host sends to multiple hosts</td></tr>
+<tr><td>ch15</td><td>subnet mask</td><td>identifies which part of an IP address is the network portion and which is the host portion</td></tr>
+<tr><td>ch15</td><td>classful subnet mask</td><td>if you don't divide a network into subnets, the default subnet mark is used (network portion aligns with class license)</td></tr>
+<tr><td>ch15</td><td>classeless subnet mask</td><td>does not align the network ID with the network octets assigned by the class license</td></tr>
+<tr><td>ch15</td><td>NAT</td><td>network address translation - substitutes public IP address of the router for the private address of the other computer when these computers need to communicate on the internet</td></tr>
+<tr><td>ch15</td><td>private IP address</td><td>(10-10.255; 172.16-172.31.255; 192.168-192.168.255) reserved for various uses</td></tr>
+<tr><td>ch15</td><td>APIPA</td><td>automatic private IP address - if DHCP fails to lease an IP address to a device the range 169.254 is used</td></tr>
+<tr><td>ch15</td><td>link or local link</td><td>a LAN or WAN bounded by routers</td></tr>
+<tr><td>ch15</td><td>interface</td><td>a node's attachment to a link</td></tr>
+<tr><td>ch15</td><td>interface ID</td><td>the last four blocks off an IPv6 address uniquely identify the interface</td></tr>
+<tr><td>ch15</td><td>neighbours</td><td>two or more nodes on the same link</td></tr>
+<tr><td>ch15</td><td>ISATAP / Teredo / 6TO4</td><td>tunneling protocol for IPv6 packets to travel over IPv4 network</td></tr>
+<tr><td>ch15</td><td>multicasting</td><td>packets delivered to all nodes on a network; FF00::/8</td></tr>
+<tr><td>ch15</td><td>ipv6 anycast address</td><td>used by routers; identifies multiple destinations, packets delivered to the closest destination</td></tr>
+<tr><td>ch15</td><td>ipv6 global unicast address</td><td>aka global address - can be routed on the internet; usually begin with 2000::/3- the /3 indicates the first three bits are fixed at 001</td></tr>
+<tr><td>ch15</td><td>ipv6 link-local address</td><td>used for communicating with nodes on the same link; most begin with FE80::/64; not allowed on internet</td></tr>
+<tr><td>ch15</td><td>ipv6 unique local address</td><td>ULA - used to identify a specific site within a large organization; hybrid addresses between global unicast and link-local addresses - FC00::/7, FD00::/8</td></tr>
+<tr><td>ch15</td><td>ipv6 subnet ID</td><td>the last block in the 64 bit prefix of an ipv6 address</td></tr>
+<tr><td>ch15</td><td>host name</td><td>the name of a computer and can be named in place of its IP address - ww, ftp, Jean's Computer, etc</td></tr>
+<tr><td>ch15</td><td>domain name</td><td>identifies a network; google of google.com, i.e.</td></tr>
+<tr><td>ch15</td><td>fully qualified domain name</td><td>FQDN - identifies a computer and the network to which it belongs - www.google.com</td></tr>
+<tr><td>ch15</td><td>name resolution</td><td>the process of associating a character based name with an IP address</td></tr>
+<tr><td>ch15</td><td>DNS server</td><td>port 53 - uses DNS protocol to perform name resolution</td></tr>
+<tr><td>ch15</td><td>Hosts file</td><td>DNS cache loaded at system startup</td></tr>
+<tr><td>ch15</td><td>connection-oriented protocol</td><td>guaranteed delivery, i.e., TCP</td></tr>
+<tr><td>ch15</td><td>DNS client</td><td>when windows queries the DNS server for a name resolution it is called the DNS client</td></tr>
+<tr><td>ch15</td><td>TCP/IP</td><td>transmission control protocol/internet protocol - makes a connection, checks whether the data is received, resends if it isn't</td></tr>
+<tr><td>ch15</td><td>UDP</td><td>User DataGram protocol - used for broadcasting, when speed of transmission is more important than full delivery; connectionless</td></tr>
+<tr><td>ch15</td><td>connectionless protocol/best effort protocol</td><td>unverified delivery; faster; i.e. UDP</td></tr>
+<tr><td>ch15</td><td>HTTP</td><td>port 80</td></tr>
+<tr><td>ch15</td><td>HTTPS</td><td>port 443 - works with SSL (secure sockets layer) and TLS (transport layer security) security protocols to encrypt/decrypt data in a secured socket.</td></tr>
+<tr><td>ch15</td><td>SMTP</td><td>simple mail transfer protocol - port 25 - routes email</td></tr>
+<tr><td>ch15</td><td>SMTP AUTH</td><td>smtp authentication - authenticates user before transmission</td></tr>
+<tr><td>ch15</td><td>MIMO</td><td>multiple input/multiple output - </td></tr>
+<tr><td>ch15</td><td>IMAP4</td><td>port 143 - email managed on the server</td></tr>
+<tr><td>ch15</td><td>POP3</td><td>port 110 - email downloaded to client computer; deleted from server</td></tr>
+<tr><td>ch15</td><td>Telnet</td><td>port 23 - control a computer remotely; clear text data transfer</td></tr>
+<tr><td>ch15</td><td>LDAP</td><td>lightweight directory access protocol - used when an application needs to query a database; not encrypted,an encryption layer sometimes added to LDAP transmissions</td></tr>
+<tr><td>ch15</td><td>SMB</td><td>server message block - file/print sharing protocol</td></tr>
+<tr><td>ch15</td><td>FTP</td><td>port 20/21 - transfer files between computers</td></tr>
+<tr><td>ch15</td><td>SSH</td><td>secure shell - port 22 - pass login information to a remote computer and control it over a network; encrypted, difficult to hack</td></tr>
+<tr><td>ch15</td><td>SFTP</td><td>secure ftp - encrypted file transfer, variation of SSH protocol</td></tr>
+<tr><td>ch15</td><td>SNMP</td><td>simple network management protocol - used to monitor network traffic</td></tr>
+<tr><td>ch15</td><td>RDP</td><td>remote desktop protocol - port 3389 - used by the Windows Remote Desktop and Remote Assistance utilities to connect to and control a remote computer</td></tr>
+<tr><td>ch15</td><td>alternate IP address</td><td>Can be used if a computer needs to have a static IP address in one network it periodically connects to</td></tr>
+<tr><td>ch15</td><td>SSID</td><td>service set identifier - the name of a wireless device, broadcast by the device</td></tr>
+<tr><td>ch15</td><td>SIM card</td><td>subscriber identification module - flash memory with info to connect to a cellular network</td></tr>
+<tr><td>ch15</td><td>SOHO</td><td>small office home office network</td></tr>
+<tr><td>ch15</td><td>QoS</td><td>giving network performance preference to certain applications</td></tr>
+<tr><td>ch15</td><td>port filtering</td><td>opening or closing certain ports so they can/cannot be used</td></tr>
+<tr><td>ch15</td><td>port forwarding</td><td>passing data to the particular computer/application it is addressed to from the firewall</td></tr>
+<tr><td>ch15</td><td>port triggering</td><td>opening a port when communication is issued through another port</td></tr>
+<tr><td>ch15</td><td>DMZ</td><td>demilitarized zone; a computer not protected by a firewall</td></tr>
+<tr><td>ch15</td><td>WEP</td><td>wired equivalent privacy - 802.11 encryption key - outdated; weak security due to its static key</td></tr>
+<tr><td>ch15</td><td>WPA / TKIP</td><td>wifi protected access / temporal key integrity protocol - stronger than WEP, encryption keys constantly changing</td></tr>
+<tr><td>ch15</td><td>WPA2</td><td>wii protected access 2; based on the AES standard; latest and best</td></tr>
+<tr><td>ch15</td><td>AES</td><td>advanced encryption standard - improved on TKIP encryption keys</td></tr>
+<tr><td>ch15</td><td>WPS</td><td>wifi protected setup; allows users to use a button on device to sync connection </td></tr>
+<tr><td>ch19</td><td>notebook warranty concerns</td><td>gather notebook model, serial number, name, phone and address of purchaser; on-site technician, ship away or service online/over the phone</td></tr>
+<tr><td>ch19</td><td>OEM</td><td>original equipment manufacturer; operating system preinstalled, suited to notebook's requirements and drivers</td></tr>
+<tr><td>ch19</td><td>notebook care</td><td>don't pack tightly, keep away from magnetic fields (TV, speakers, fridges, cellphone in use), room temperature</td></tr>
+<tr><td>ch19</td><td>keyboard backlight</td><td>lights up the keyboard</td></tr>
+<tr><td>ch19</td><td>touchpad</td><td>most common pointing device</td></tr>
+<tr><td>ch19</td><td>pointing stick / TrackPoint</td><td>Lenovo ThinkPad notebooks use a button embedded in the keyboard in lieu of a mouse or touchpad</td></tr>
+<tr><td>ch19</td><td>PCMCIA card</td><td>Slots offered on notebooks to receive peripheral devices</td></tr>
+<tr><td>ch19</td><td>PC Card</td><td>the size of a thick credit card; 16 bit ISA bus; designed originally for adding memory to a notebook</td></tr>
+<tr><td>ch19</td><td>CardBus</td><td>Increased bus width to 32 bits; backwards compatible; bumpy strip on one edge prevents insertion errors</td></tr>
+<tr><td>ch19</td><td>ExpressCard/34</td><td>34mm PCIe/USB 2.0 standard expansion card; can also fit into /54</td></tr>
+<tr><td>ch19</td><td>ExpressCard/54</td><td>54mm PCIe/USB 2.0 standard expansion card; cannot fit into /34</td></tr>
+<tr><td>ch19</td><td>lithium ion</td><td>used in most battery packs</td></tr>
+<tr><td>ch19</td><td>auto-switching</td><td>ac adapters auto switch from 110V to 220V as required</td></tr>
+<tr><td>ch19</td><td>sheet battery</td><td>fits on the bottom of the notebook to supply extra battery</td></tr>
+<tr><td>ch19</td><td>inverter</td><td>converts DC to AC</td></tr>
+<tr><td>ch19</td><td>standby mode</td><td>Windows XP</td></tr>
+<tr><td>ch19</td><td>sleep/suspend mode</td><td>Windows 7/Vista</td></tr>
+<tr><td>ch19</td><td>sleep timers</td><td>the amount of time the computer is idle before switching to sleep mode</td></tr>
+<tr><td>ch19</td><td>hibernation</td><td>saves all work and powers down; when the power button is pushed it restores its current state</td></tr>
+<tr><td>ch19</td><td>ACPI</td><td>advanced configuration and power interface - BIOS power settingsused when computer has trouble recovering from sleep or hibernation</td></tr>
+<tr><td>ch19</td><td>S1 State</td><td>hard drive and monitor turned off, everything else normal</td></tr>
+<tr><td>ch19</td><td>S2 state</td><td>the processor is also turned off</td></tr>
+<tr><td>ch19</td><td>S3 state</td><td>everything shut down except RAM and enough of system to respond to wakeup</td></tr>
+<tr><td>ch19</td><td>S4 state</td><td>hibernation mode</td></tr>
+<tr><td>ch19</td><td>S5 state</td><td>power off state after a normal shutdown</td></tr>
+<tr><td>ch19</td><td>docking port</td><td>a connector on the bottom of the notebook to connect to a port replicator or docking station</td></tr>
+<tr><td>ch19</td><td>port replicator</td><td>provides ports to allow a notebook to connect a monitor, keyboard, AC power adapter and other peripherals</td></tr>
+<tr><td>ch19</td><td>docking station</td><td>provides port replicator functions but also additional slots for adding secondary storage devices and expansion cards</td></tr>
+<tr><td>ch19</td><td>204 pin SO DIMM</td><td>DDR3</td></tr>
+<tr><td>ch19</td><td>200 pin SO DIMM</td><td>DDR2 or DDR</td></tr>
+<tr><td>ch19</td><td>72 pin SO DIMM</td><td>FPM or EDO memory</td></tr>
+<tr><td>ch19</td><td>160 pin SO RIMM</td><td>Rambus memory</td></tr>
+<tr><td>ch19</td><td>replacing notebook hard drive</td><td>drives are 2.5 inches wide; some use SSD technology; SATA or 44-pin PATA; proprietary motherboard connector/adapter sometimes used</td></tr>
+<tr><td>ch19</td><td>dis- and re-assembling a notebook</td><td>many different screw sizes and lengths; cable connectors sometimes ZIF connectors; some screws only meant to be used once, do not strip</td></tr>
+<tr><td>ch19</td><td>replacing the keyboard / touchpad</td><td>keyboard ribbon cable connects it to motherboard; sometimes touchpad and keyboard are one complete FRU; touchpad sometimes part of the keyboard bezel</td></tr>
+<tr><td>ch19</td><td>replacing optical drives</td><td>sometimes necessary to remove keyboard to access; bay should slide out</td></tr>
+<tr><td>ch19</td><td>replacing expansion cards</td><td>likely to use Mini PCIe slots; remove cover, disconnect antenna and unscrew to replace</td></tr>
+<tr><td>ch19</td><td>Mini PCIe</td><td>expansion card used in notebooks</td></tr>
+<tr><td>ch19</td><td>Mini PCI Express</td><td>expansion card used in notebooks</td></tr>
+<tr><td>ch19</td><td>Mini PCI</td><td>expansion card used in notebooks</td></tr>
+<tr><td>ch19</td><td>replacing the processor</td><td>often found when cover of laptop removed, remove fan/heat sink to access; turn the CPU socket 90 degrees to open</td></tr>
+<tr><td>ch19</td><td>replacing the motherboard</td><td>will require full disassembly; consider installing an external device rather than replacing motehrboard; check for diagnostic software before disassembling; once most components are removed a single screw holds motherboard in place</td></tr>
+<tr><td>ch19</td><td>replacing the lcd panel</td><td>troubleshoot by connecting second monitor to notebook to verify that the problem is with the LCD panel and not internal; sometimes a FRU; disassemble and remove lcd panel, inverter card</td></tr>
+<tr><td>ch19</td><td>troubleshooting notebooks</td><td>NumLock key interferes with logon; Wireless note working indicates keyboard switch may have been triggered</td></tr>
+<tr><td>ch19</td><td>power or battery problems</td><td>a hot battery maynot charge; allow to cool before recharging</td></tr>
+<tr><td>ch19</td><td>no display</td><td>if a black LCD screen but a power light is on, video subsystem may be source of the problem; try to use video port on notebook to connect to external monitor; drivers could need updating; refer to Event Viewer for reporting</td></tr>
+<tr><td>ch19</td><td>video problems</td><td>Set to native resolution; adjust brightness; update drivers</td></tr>
+<tr><td>ch19</td><td>ghost cursor</td><td>a trail left behind when you use the mouse</td></tr>
+</table>

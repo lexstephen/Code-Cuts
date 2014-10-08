@@ -1,0 +1,15 @@
+public class Ex5dot4 {
+
+	public static void main(String[] args) {
+		// Program that converts miles into kilometers
+		// EffThis casts the damned integer into a damned double so Java will cooperate
+		
+		for (int miles = 1; miles <= 10; miles++) {
+			double effThis = (double) miles;
+			double kilometres = effThis * 1.609;
+			System.out.printf("\n %-4.0f \t\t %4.3f", effThis, kilometres);
+			
+		}
+	}
+
+}

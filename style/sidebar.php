@@ -141,11 +141,11 @@ echo '
 
 // Et cetera Section
 	echo '
-	<h3 class="sidebarHead" onclick="hideTuts(\'headingetc\')">&</h3>
-	<ul id="headingetc">';
+	<h3 class="sidebarHead" onclick="hideTuts(\'headingdef\')">&</h3>
+	<ul id="headingdef">';
 	for ($i = 0; $i < $tutCnt; $i++) {
 	// print other tutorials
-		if ($tutorials[$i]['cat'] == 'etc') {
+		if ($tutorials[$i]['cat'] == 'def') {
 			echo '
 			<li><a href="index.php?cat='
 				.$tutorials[$i]['cat']

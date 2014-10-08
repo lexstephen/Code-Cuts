@@ -1,0 +1,19 @@
+public class Ex5dot3a {
+
+	public static void main(String[] args) {
+	
+		System.out.print("Kilograms\tPounds");
+		
+		for (double x = 1; x < 200; x++) {
+			double y = x * 2.2;
+			/**
+			 * single digit number %-4.0f
+			 * tab separated with
+			 * one decimal place %4.1f
+			 */
+			System.out.printf("\n %-4.0f \t\t %4.2f", x, y);
+		}
+		
+	}
+
+}

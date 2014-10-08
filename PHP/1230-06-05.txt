@@ -1,0 +1,66 @@
+&lt;?php
+	session_start();
+	
+	// include 'functions.inc.php';
+	// -----------functions.inc.php
+	// generic function to return a parameter from get/post
+	function getParam($name)
+	{
+		if(isset($_REQUEST[$name]))
+			return $_REQUEST[$name];
+		return '';
+	}
+
+	// check if a user is allowed to see a particular page
+	function auth()
+	{
+		if(isset($_SESSION['can_login']) && $_SESSION['can_login'])
+		{
+			return true;
+		}
+		return false;
+	}
+	// -----------functions.inc.php ends
+	
+	// include 'styleprefs.inc.php';
+	// -----------styleprefs.inc.php
+	if (getParam('color')) 
+	{
+		$color = getParam('color');
+		setcookie ('color', $color, strtotime('+1 year'), '/');
+	}
+	
+	else
+	{
+		if (isset($_COOKIE['color']))
+			$color = $_COOKIE['color'];
+		else
+			$color = '#00ace0';
+	}
+	
+	// -----------styleprefs.inc.php ends
+	
+	// if they didn't get can_login set in the auth function, send them back to login.php with an error message
+	if(!auth())
+	{
+		$_SESSION['error'] = 'Please log in.';
+		header('location: login.php');
+	}
+ ?>
+
+&lt;!DOCTYPE html>
+&lt;html>
+&lt;head>
+	&lt;title>Dashboard&lt;/title>
+&lt;/head>
+&lt;style>
+	body 			{background-color: &lt;?php echo $color; ?>; color: #000; text-align: left; font-family: Verdana, sans-serif; font-size: 16pt;}
+	.wk5			{color: #000; font-size: 14pt; text-transform: lowercase; border-bottom: 1px #000 solid;}
+&lt;/style>
+&lt;body>
+
+&lt;h2 class="wk5">Dashboard&lt;/h2>
+&lt;p>&lt;/p>
+
+&lt;/body>
+&lt;/html>

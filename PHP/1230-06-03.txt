@@ -1,0 +1,12 @@
+&lt;?php 
+
+header('Content-type: application/pdf');
+
+// does not change page URL; browser downloads file without any page load
+header('Content-Disposition: attachment; filename="downloaded.pdf"');
+
+// displays file in browser window
+// doesn't seem to want to work in the inline frame above though
+readfile('testfile.pdf');
+
+?>

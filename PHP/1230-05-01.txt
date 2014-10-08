@@ -1,0 +1,42 @@
+&lt;!DOCTYPE html>
+&lt;html>
+&lt;head>
+	&lt;title>Fun with Functions&lt;/title>
+&lt;/head>
+&lt;style>
+	body 		{background-color: #fff;
+					color: #000;
+					text-align: left;
+					font-size: 12pt;}
+	#wk5			{color: red;}
+	#tb td:nth-child(odd) {background-color: #eee;}
+&lt;/style>
+&lt;body>
+
+&lt;h1 id="wk5">Build A Table Function&lt;/h1>
+
+&lt;?php 
+
+	function this_builds_the_table($rows, $cols) {			// this is the function signature
+		$table = '&lt;table id="tb">';
+		
+		for ($x = 0; $x &lt; $rows; $x++) {
+			$table .= '&lt;tr>';
+			
+			for ($y = 0; $y &lt; $cols; $y++) {
+				$table .= '&lt;td> row #' . $x . '&lt;/td>';
+			}
+			
+			$table .= '&lt;/tr>';
+		}
+		
+		return $table .= '&lt;/table>';
+	}
+
+	for ($i = 1; $i &lt;= 5; $i++) 
+		echo this_builds_the_table($i+2,$i+4);				// parameters can be modified by the variable
+	
+?>
+
+&lt;/body>
+&lt;/html>

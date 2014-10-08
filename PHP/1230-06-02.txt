@@ -1,0 +1,79 @@
+&lt;?php
+
+	// checks if a number is even
+	function isEven($val) {
+		return ($val % 2 == 0);
+	}
+	
+	// adds an array of numbers up
+	// parameters can be even, odd or all
+	// build an option in the future to start and stop at specific indexes
+	function totalWhat($numbers,$what) {
+		$result = 0;
+		foreach ($numbers as $num) {
+			switch ($what) {
+				case 'even': 
+					(isEven($num))?$result += $num:"";
+					break;
+				case 'odd': 
+					!(isEven($num))?$result += $num:"";
+					break;
+				case 'all': 
+					$result += $num;
+					break;
+				default:
+					break;
+			}
+		}
+		return "$what numbers total: $result";
+	}
+	
+	// copy all even numbers into a new array 
+	function copyEven($array) {
+		$tempArray = array();
+		
+		for ($x = 0; $x &lt; count($array); $x++) 
+			if (isEven($array[$x]))
+				$tempArray[] = $array[$x];
+		
+		return $tempArray;
+	}
+	
+	// create a list of 10 random numbers from 1-100
+	function this_builds_the_list() {
+		$vals = array();
+		
+		for ($i = 0; $i &lt; 10; $i++) {
+			$vals[] = rand(1,100);
+		}
+		
+		return $vals;
+	}
+	
+	// print the array of random numbers
+	function this_prints_the_list($built) {
+		for ($j = 0; $j &lt; count($built); $j++) {
+				echo $built[$j] . ' ';
+		}
+	}
+	
+	
+	// store the random numbers in a variable to send to the other functions
+	$theList = this_builds_the_list();
+	
+	// store the even numbers in a variable to send to the other functions
+	$evenList = copyEven($theList);
+	
+	// print all random numbers
+	echo 'Array of random numbers: ';
+	echo this_prints_the_list($theList) . '&lt;br>';
+	
+	// print the even numbers
+	echo 'Array of even numbers: ';
+	echo this_prints_the_list($evenList) . '&lt;br>';
+			
+	// total even, odd, then all numbers
+	echo totalWhat($theList,'even') . '&lt;br>';
+	echo totalWhat($theList,'odd') . '&lt;br>';
+	echo totalWhat($theList,'all') . '&lt;br>';
+?>

@@ -56,9 +56,25 @@
 	$t52 = array ('file' => '1230-03-02', 'title' => 'Previous & Next Buttons', 'cat' => 'PHP', 'author' => 'Alexis Dicks-Stephen', 'fileTypePreview' => 'php', 'fileTypeCode' => 'txt', 'showPreview' => 1, 'showCode' => 1);
 	$t53 = array ('file' => '1230-01-01', 'title' => 'Fun with $_REQUEST', 'cat' => 'PHP', 'author' => 'Alexis Dicks-Stephen', 'fileTypePreview' => 'php', 'fileTypeCode' => 'txt', 'showPreview' => 1, 'showCode' => 1);
 	$t54 = array ('file' => '1230-03-03', 'title' => 'Dynamic Loops', 'cat' => 'PHP', 'author' => 'Alexis Dicks-Stephen', 'fileTypePreview' => 'php', 'fileTypeCode' => 'txt', 'showPreview' => 1, 'showCode' => 1);
-	$t55 = array ('file' => 'definitions', 'title' => 'Definitions', 'cat' => 'etc', 'author' => 'Alexis Dicks-Stephen', 'fileTypePreview' => 'txt', 'fileTypeCode' => 'txt', 'showPreview' => 1, 'showCode' => 0);
-
-
+	$t55 = array ('file' => 'definitions', 'title' => 'Definitions', 'cat' => 'def', 'author' => 'Alexis Dicks-Stephen', 'fileTypePreview' => 'txt', 'fileTypeCode' => 'txt', 'showPreview' => 1, 'showCode' => 0);
+	$t56 = array ('file' => '1230-05-01', 'title' => 'Build-a-table Function', 'cat' => 'PHP', 'author' => 'Alexis Dicks-Stephen', 'fileTypePreview' => 'php', 'fileTypeCode' => 'txt', 'showPreview' => 1, 'showCode' => 1);
+	$t57 = array ('file' => '1230-05-02', 'title' => 'Store a function in a variable / variable scope', 'cat' => 'PHP', 'author' => 'Alexis Dicks-Stephen', 'fileTypePreview' => 'php', 'fileTypeCode' => 'txt', 'showPreview' => 1, 'showCode' => 1);
+	$t58 = array ('file' => '1230-05-03', 'title' => 'Define constants, include files', 'cat' => 'PHP', 'author' => 'Alexis Dicks-Stephen', 'fileTypePreview' => 'php', 'fileTypeCode' => 'txt', 'showPreview' => 1, 'showCode' => 1);
+	$t59 = array ('file' => '1230-05-04', 'title' => 'Arrays', 'cat' => 'PHP', 'author' => 'Alexis Dicks-Stephen', 'fileTypePreview' => 'php', 'fileTypeCode' => 'txt', 'showPreview' => 1, 'showCode' => 1);
+	$t60 = array ('file' => '1230-04-01', 'title' => 'Loops and $_GET', 'cat' => 'PHP', 'author' => 'Alexis Dicks-Stephen', 'fileTypePreview' => 'php', 'fileTypeCode' => 'txt', 'showPreview' => 1, 'showCode' => 1);
+    $t61 = array ('file' => '2130-05-01', 'title' => 'Timed Random Number Addition', 'cat' => 'Java', 'author' => 'Alexis Dicks-Stephen', 'fileTypePreview' => 'txt', 'fileTypeCode' => 'txt', 'showPreview' => 0, 'showCode' => 1);
+	$t62 = array ('file' => '2130-05-02', 'title' => 'Kilogram to Pound Converter', 'cat' => 'Java', 'author' => 'Alexis Dicks-Stephen', 'fileTypePreview' => 'txt', 'fileTypeCode' => 'txt', 'showPreview' => 0, 'showCode' => 1);
+	$t63 = array ('file' => '2130-05-03', 'title' => 'Mile to Kilometre Converter', 'cat' => 'Java', 'author' => 'Alexis Dicks-Stephen', 'fileTypePreview' => 'txt', 'fileTypeCode' => 'txt', 'showPreview' => 0, 'showCode' => 1);
+	$t64 = array ('file' => '1230-04-02', 'title' => 'Manipulating Arrays', 'cat' => 'PHP', 'author' => 'Alexis Dicks-Stephen', 'fileTypePreview' => 'php', 'fileTypeCode' => 'txt', 'showPreview' => 1, 'showCode' => 1);
+	$t65 = array ('file' => '1230-06-01', 'title' => 'Random Numbers and Arrays', 'cat' => 'PHP', 'author' => 'Alexis Dicks-Stephen', 'fileTypePreview' => 'php', 'fileTypeCode' => 'txt', 'showPreview' => 1, 'showCode' => 1);
+	$t66 = array ('file' => '1230-06-02', 'title' => 'Functions and Arrays', 'cat' => 'PHP', 'author' => 'Alexis Dicks-Stephen', 'fileTypePreview' => 'php', 'fileTypeCode' => 'txt', 'showPreview' => 1, 'showCode' => 1);
+	$t67 = array ('file' => '1230-06-03', 'title' => 'File Download', 'cat' => 'PHP', 'author' => 'Alexis Dicks-Stephen', 'fileTypePreview' => 'php', 'fileTypeCode' => 'txt', 'showPreview' => 1, 'showCode' => 1);
+	$t68 = array ('file' => '1230-06-04', 'title' => 'Login Page', 'cat' => 'PHP', 'author' => 'Alexis Dicks-Stephen', 'fileTypePreview' => 'php', 'fileTypeCode' => 'txt', 'showPreview' => 1, 'showCode' => 1);
+	$t69 = array ('file' => '1230-06-05', 'title' => 'Dashboard Page', 'cat' => 'PHP', 'author' => 'Alexis Dicks-Stephen', 'fileTypePreview' => 'php', 'fileTypeCode' => 'txt', 'showPreview' => 1, 'showCode' => 1);
+	
+	
+	
+	
 // add a fourth array element to the above with its associated tags
 	$t1['tags'] = array('if', 'else', 'prompt', 'for', 'median');
 	$t2['tags'] = array('prompt', 'switch', 'case', 'getelementbyid', 'innertext');
@@ -115,6 +131,20 @@
 	$t53['tags'] = array('$_request', 'var_dump', '$_get', '$_post', '$_server', 'http_host', 'document_root', 'https', 'header', 'location', 'redirect', 'isset');
 	$t54['tags'] = array('input', 'form', 'isset', '$_get', 'is_numeric', 'ternary operator', 'for');
 	$t55['tags'] = array ('definitions', 'c#', 'java', 'javascript', 'html', 'css', 'php');
+	$t56['tags'] = array ('function', 'table', 'return', 'echo');
+	$t57['tags'] = array ('function', 'global', 'scope');
+	$t58['tags'] = array ('constant', 'include', 'include_once', 'require', 'require_once', '__FILE__', 'defined', 'define', '__LINE__', 'echo');
+	$t59['tags'] = array ('array', 'count', 'var_dump', 'print_r', 'sizeof', 'foreach', 'ascending', 'descending', 'associative array');
+	$t60['tags'] = array ('if', 'ternary operator', 'switch', 'case', 'while', 'loop', 'do while', 'for', 'form', 'input', 'dropdown', 'select', 'option', 'submit');
+	$t61['tags'] = array ('currentTimeMillis', 'scanner', 'final', 'constant', 'Math', 'random', 'range', 'swap', 'println', 'if', 'ternary operator', 'timer');
+	$t62['tags'] = array ('for', 'format specifier', 'decimal', 'printf');
+	$t63['tags'] = array ('for', 'format specifier', 'decimal', 'printf', 'cast');
+	$t64['tags'] = array ('foreach', 'array', 'index', 'delete from array', 'reindex', 'variable substitution', 'count', 'end of array', 'isset', 'random numbers', 'sum', 'average', 'null values', 'range', 'step', 'array_pad', 'array_merge', 'array_slice', 'array_splice', 'array_push', 'array_pop', 'array_shift', 'array_unshift', 'stack', 'queue', 'var_dump', 'array_values', 'end', 'key', 'mt_rand', 'unset', 'array_fill', 'implode', 'comma separated values');
+	$t65['tags'] = array ();
+	$t66['tags'] = array ();
+	$t67['tags'] = array ();
+	$t68['tags'] = array ();
+	$t69['tags'] = array ();
 	
 	/* my attempt to automate the array building is not working 
 	$numberOfTutorials = 28;
@@ -129,10 +159,10 @@
 	*/
 	
 // merge the arrays into one super array to be used henceforth
-	$tutorials = array($t1, $t2, $t3, $t4, $t5, $t6, $t7, $t8, $t9, $t10, $t11, $t12, $t13, $t14, $t15, $t16, $t17, $t18, $t19, $t20, $t21, $t22, $t23, $t24, $t25, $t26, $t27, $t28, $t29, $t30, $t31, $t32, $t33, $t34, $t35, $t36, $t37, $t38, $t39, $t40, $t41, $t42, $t43, $t44, $t45, $t46, $t47, $t48, $t49, $t50, $t51, $t52, $t53, $t54, $t55);
+	$tutorials = array($t1, $t2, $t3, $t4, $t5, $t6, $t7, $t8, $t9, $t10, $t11, $t12, $t13, $t14, $t15, $t16, $t17, $t18, $t19, $t20, $t21, $t22, $t23, $t24, $t25, $t26, $t27, $t28, $t29, $t30, $t31, $t32, $t33, $t34, $t35, $t36, $t37, $t38, $t39, $t40, $t41, $t42, $t43, $t44, $t45, $t46, $t47, $t48, $t49, $t50, $t51, $t52, $t53, $t54, $t55, $t56, $t57, $t58, $t59, $t60, $t61, $t62, $t63, $t64, $t65, $t66, $t67, $t68, $t69);
 	
 // merge all the tag arrays and then return unique entries
-	$preciseTags = array_unique(array_merge($t1['tags'], $t2['tags'], $t3['tags'], $t4['tags'], $t5['tags'], $t6['tags'], $t7['tags'], $t8['tags'], $t9['tags'], $t10['tags'], $t11['tags'], $t12['tags'], $t13['tags'], $t14['tags'], $t15['tags'], $t16['tags'], $t17['tags'], $t18['tags'], $t19['tags'], $t20['tags'], $t21['tags'], $t22['tags'], $t23['tags'], $t24['tags'], $t25['tags'], $t26['tags'], $t27['tags'], $t28['tags'], $t29['tags'], $t30['tags'], $t31['tags'], $t32['tags'], $t33['tags'], $t34['tags'], $t35['tags'], $t36['tags'], $t37['tags'], $t38['tags'], $t39['tags'], $t40['tags'], $t41['tags'], $t42['tags'], $t43['tags'], $t44['tags'], $t45['tags'], $t46['tags'], $t47['tags'], $t48['tags'], $t49['tags'], $t50['tags'], $t51['tags'], $t52['tags'], $t53['tags'], $t54['tags'], $t55['tags']));
+	$preciseTags = array_unique(array_merge($t1['tags'], $t2['tags'], $t3['tags'], $t4['tags'], $t5['tags'], $t6['tags'], $t7['tags'], $t8['tags'], $t9['tags'], $t10['tags'], $t11['tags'], $t12['tags'], $t13['tags'], $t14['tags'], $t15['tags'], $t16['tags'], $t17['tags'], $t18['tags'], $t19['tags'], $t20['tags'], $t21['tags'], $t22['tags'], $t23['tags'], $t24['tags'], $t25['tags'], $t26['tags'], $t27['tags'], $t28['tags'], $t29['tags'], $t30['tags'], $t31['tags'], $t32['tags'], $t33['tags'], $t34['tags'], $t35['tags'], $t36['tags'], $t37['tags'], $t38['tags'], $t39['tags'], $t40['tags'], $t41['tags'], $t42['tags'], $t43['tags'], $t44['tags'], $t45['tags'], $t46['tags'], $t47['tags'], $t48['tags'], $t49['tags'], $t50['tags'], $t51['tags'], $t52['tags'], $t53['tags'], $t54['tags'], $t55['tags'], $t56['tags'], $t57['tags'], $t58['tags'], $t59['tags'], $t60['tags'], $t61['tags'], $t62['tags'], $t63['tags'], $t64['tags'], $t65['tags'], $t66['tags'], $t67['tags'], $t68['tags'], $t69['tags']));
 	
 // alphabetize the list of tags
 	sort($preciseTags);

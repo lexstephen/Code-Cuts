@@ -1,0 +1,75 @@
+&lt;!DOCTYPE html>
+&lt;html>
+&lt;head>
+	&lt;title>Fun with Functions 2: Electric Bugaloo&lt;/title>
+&lt;/head>
+&lt;style>
+	body 		{background-color: #fff;
+					color: #000;
+					text-align: left;
+					font-size: 12pt;}
+	#array			{color: red;}
+&lt;/style>
+&lt;body>
+
+&lt;h1 id="array">It's a shame about Array&lt;/h1>
+
+&lt;script>
+	var lexRay =  [12, 13, 14];
+	document.write(lexRay[1]);
+&lt;/script>
+&lt;?php
+	
+	// $thisArray = array();			declare an array this way
+	$thisArray = [1,2,3,4,5];		// 	or this way
+
+	$thisArray[count($thisArray)] = 10;		// stick a value at the end of the array
+	$thisArray[] = '22';					// or this way
+	
+	echo '&lt;hr> Var Dump&lt;br>';
+	
+	var_dump($thisArray);					// show indexes, data types and values
+	
+	echo '&lt;hr> Print_R&lt;br>';
+	
+	print_r($thisArray);					// show indexes and values
+	
+	echo '&lt;hr> Loop through the array&lt;br>';
+	
+	for ($x = 0; $x &lt; sizeof($thisArray); $x++) {		// size of finds you the limit
+		echo $thisArray[$x] . "&lt;br>";
+	}
+		echo '&lt;br>&lt;hr>Foreach as Array&lt;br>';
+
+	foreach ($thisArray as $x) {
+		echo $x . "&lt;br>";
+	}
+	
+	
+	$y = 0;
+		echo '&lt;br>&lt;hr>Foreach sumup&lt;br>';
+
+	foreach ($thisArray as $x) {
+		$y += $x;
+	}
+	echo $y;
+	
+	echo '&lt;br>&lt;hr>Backward countdown&lt;br>';
+	
+	$total = 0;
+	for ($i=count($thisArray)-1; $i >= 0; $i--) {
+		$total += $thisArray[$i];
+		echo $thisArray[$i] . '&lt;br>';
+	}
+	
+	echo '&lt;br>&lt;hr>Associative Array&lt;br>';
+	
+	$newArray = array('uno' => 'the first value');
+	$newArray['dos'] = 'the second value';
+	
+	echo $newArray['uno'] . '&lt;br>';
+	echo $newArray['dos'] . '&lt;br>';
+?>
+
+&lt;/body>
+&lt;/html>

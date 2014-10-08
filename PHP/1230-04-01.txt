@@ -1,0 +1,158 @@
+&lt;!DOCTYPE html>
+&lt;html>
+&lt;head>
+	&lt;title>Lab Manual 3&lt;/title>
+&lt;/head>
+&lt;link href='http://fonts.googleapis.com/css?family=Signika' rel='stylesheet' type='text/css'>
+&lt;style>
+	body 		{background-color: #FFF380;
+					color: #000;
+					text-align: center;
+					font-family: 'Signika', sans-serif;
+					font-size: 12pt;}
+	.wk5			{color: #F62817; font-size: 14pt; text-transform: lowercase;}
+	hr				{color: #FBB917; background-color: #FBB917; height: 3px;}
+&lt;/style>
+&lt;body>
+
+&lt;?php
+	print "&lt;h1 class=\"wk5\">If Statement - Odd or Even&lt;/h1>";
+	
+	$number = 2323;
+	if($number%2 == 0)
+		echo "$number is an even number&lt;br>";
+	else
+		echo "$number is an odd number&lt;br>";
+		
+	echo "&lt;hr>";
+	
+	print "&lt;h1 class=\"wk5\">Ternary Operator - Odd or Even&lt;/h1>";
+	
+	echo ($number%2 == 0)?"$number is still an even number&lt;br>":"$number is still an odd number&lt;br>";
+	
+	echo "&lt;hr>";
+	
+	print "&lt;h1 class=\"wk5\">If Statement - Which Grade?&lt;/h1>";
+	
+	$mark = 77;
+	if ($mark >= 90)
+		$letterGrade = 'an A+';
+	else if ($mark >= 80)
+		$letterGrade = 'an A';
+	else if ($mark >= 70)
+		$letterGrade = 'a B';
+	else if ($mark >= 60)
+		$letterGrade = 'a C';
+	else if ($mark >= 50)
+		$letterGrade = 'a D';
+	else
+		$letterGrade = 'another trip';
+	
+	echo "Your mark, $mark, earned you $letterGrade.&lt;br>";
+	
+	echo "&lt;hr>";
+	print "&lt;h1 class=\"wk5\">Switch Statement - Which Grade?&lt;/h1>";
+	
+	switch($mark) {
+		case $mark >= 90:
+			$letterGrade = 'an A+';
+			break;
+		case $mark >= 80:
+			$letterGrade = 'an A';
+			break;
+		case $mark >= 70:
+			$letterGrade = 'a B';
+			break;
+		case $mark >= 60:
+			$letterGrade = 'a C';
+			break;
+		case $mark >= 50:
+			$letterGrade = 'a D';
+			break;
+		default:
+			$letterGrade = 'another trip';
+			break;
+	}
+	
+	echo "Your mark, $mark, still earned you $letterGrade.";
+	
+	echo "&lt;hr>";
+	print "&lt;h1 class=\"wk5\">While Loop - Start and End variables&lt;/h1>";
+	
+	$x = 11;
+	$y = 14;
+	
+	// ensure y is the higher of the two variables
+		if ($y &lt; $x) {
+			$temp = $x;
+			$x = $y;
+			$y = $temp;
+		}
+		
+	print "$y is bigger than $x&lt;br>";
+	
+	
+	while ($x &lt;= $y) {
+		print "\n$x &lt;br>";
+		$x++;
+	}
+	
+	echo "&lt;hr>";
+	print "&lt;h1 class=\"wk5\">Do While Loop - Start and End variables&lt;/h1>";
+	
+	$x = 1;
+	$y = 7;
+	
+	do {
+		print "\n$x &lt;br>";
+		$x++;
+		}
+	while ($x &lt;= $y);
+	
+	echo "&lt;hr>";
+	print "&lt;h1 class=\"wk5\">For Loop - Start and End variables&lt;/h1>";
+		
+	$x = 7;
+	$y = 12;
+	
+	for ($x; $x &lt;= $y; $x++) {
+		print "\n$x &lt;br>";
+	}
+	
+	echo "&lt;hr>";
+	print "&lt;h1 class=\"wk5\">\$_GET Form manipulation&lt;/h1>";
+	
+	print "&lt;form>
+			&lt;input type=\"text\" name=\"n1\" placeholder=\"Number 1\">
+			&lt;select name=\"doWhat\">
+				&lt;option value=\"+\">+&lt;/option>
+				&lt;option value=\"-\">-&lt;/option>
+				&lt;option value=\"x\">x&lt;/option>
+				&lt;option value=\"/\">/&lt;/option>
+			&lt;/select>
+			&lt;input type=\"text\" name=\"n2\" placeholder=\"Number 2\">
+			&lt;input type=\"submit\">
+		&lt;/form>";
+		
+	if($_GET) {
+		if(isset($_GET['n1'])) {
+			$n1 = $_GET['n1'];
+			$n2 = $_GET['n2'];
+			$doWhat = $_GET['doWhat'];
+			
+			if ($doWhat == "+")
+				$answer = $n1 + $n2;
+			else if ($doWhat == "-")
+				$answer = $n1 - $n2;
+			else if ($doWhat == "x")
+				$answer = $n1 * $n2;
+			else if ($doWhat == "/")
+				$answer = $n1 / $n2;
+				
+			print "&lt;br>$n1 $doWhat $n2 is $answer";
+		}
+	}
+?>
+
+&lt;/body>
+&lt;/html>

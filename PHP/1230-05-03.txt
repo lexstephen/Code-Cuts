@@ -1,0 +1,50 @@
+&lt;!DOCTYPE html>
+&lt;html>
+&lt;head>
+	&lt;title>Fun with Functions 2: Electric Bugaloo&lt;/title>
+&lt;/head>
+&lt;style>
+	body 		{background-color: #fff;
+					color: #000;
+					text-align: left;
+					font-size: 12pt;}
+	#wk5			{color: red;}
+&lt;/style>
+&lt;body>
+
+&lt;h1 id="wk5">Define Constants, include Functions&lt;/h1>
+
+&lt;?php 
+
+// include_once and require_once prevents you from 
+// including twice and causing fatal errors
+// commented out due to nature of CC's design
+// include_once 'functions.php'; 
+
+/* functions.php is: &lt;?php  */
+	function maziar () {
+		echo __FUNCTION__;
+	}
+/* ?> */
+
+define('TEST',14);
+
+if (defined('TEST')) 
+	echo '&lt;b>Print a defined constant without the $&lt;/b>:&lt;br>'; 
+	echo TEST;
+	
+	echo '&lt;hr>&lt;b>Built-in variable to supply path and file name&lt;/b>:&lt;br>'; 
+	
+	echo __FILE__; // gives you path and filename
+	
+	echo '&lt;hr>&lt;b>Call a function defined in an include&lt;/b>:&lt;br>(Function only echoes its name)&lt;br>'; 
+	
+	echo maziar();
+	
+	echo '&lt;hr>&lt;b>Tell me the line number of the PHP code&lt;/b>:&lt;br>'; 
+	echo __LINE__;
+	
+?>
+
+&lt;/body>
+&lt;/html>

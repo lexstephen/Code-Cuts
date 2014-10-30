@@ -1,0 +1,561 @@
+############ Form -> TestRecords, Record, DoubleRecord and Form1.Designer are below ############
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace RecordStore
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+
+            lblDisc1.Visible = false;
+            lblDisc2.Visible = false;
+            lstTracks2.Visible = false;
+            btnAddTrackDisc2.Visible = false;
+            btnRmvTrackDisc2.Visible = false;
+
+        }
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+            string[] tempList = new string[lstTracks1.Items.Count];
+            string[] tempList2 = new string[lstTracks2.Items.Count];
+
+            if (rdoDouble.Checked)
+            {
+                for (int i = 0; i < lstTracks1.Items.Count; i++)
+                {
+                    tempList[i] = Convert.ToString(lstTracks1.Items[i]);
+                }
+
+                for (int i = 0; i < lstTracks2.Items.Count; i++)
+                {
+                    tempList2[i] = Convert.ToString(lstTracks2.Items[i]);
+                }
+                DoubleRecord userEntry = new DoubleRecord(txtArtistName.Text, 
+							txtAlbumName.Text, 
+							tempList, 
+							tempList2);
+                lblAlbumList.Text += userEntry.ToString();
+            }
+            else
+            {
+                for (int i = 0; i < lstTracks1.Items.Count; i++)
+                {
+                    tempList[i] = Convert.ToString(lstTracks1.Items[i]);
+                }
+                Record userEntry = new Record(txtArtistName.Text, 
+							txtAlbumName.Text, 
+							tempList);
+                lblAlbumList.Text += userEntry.ToString();
+            }
+        }
+
+        private void btnAddTrack_Click(object sender, EventArgs e)
+        {
+            lstTracks1.Items.Add(txtTrack.Text);
+            txtTrack.Clear();
+            txtTrack.Focus();
+        }
+
+        private void rdoDouble_CheckedChanged(object sender, EventArgs e)
+        {
+            lblDisc1.Visible = true;
+            lblDisc2.Visible = true;
+            lstTracks2.Visible = true;
+            btnAddTrackDisc2.Visible = true;
+            btnRmvTrackDisc2.Visible = true;
+        }
+
+        private void rdoSingle_CheckedChanged(object sender, EventArgs e)
+        {
+            lblDisc1.Visible = false;
+            lblDisc2.Visible = false;
+            lstTracks2.Visible = false;
+            btnAddTrackDisc2.Visible = false;
+            btnRmvTrackDisc2.Visible = false;
+        }
+
+        private void btnAddTrackDisc2_Click(object sender, EventArgs e)
+        {
+            lstTracks2.Items.Add(txtTrack.Text);
+            txtTrack.Clear();
+            txtTrack.Focus();
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            lstTracks1.Items.Clear();
+            lstTracks2.Items.Clear();
+            txtAlbumName.Text = "";
+            txtArtistName.Text = "";
+        }
+
+        private void btnRmvTrackDisc1_Click(object sender, EventArgs e)
+        {
+            lstTracks1.Items.Remove(lstTracks1.SelectedItem);
+        }
+
+        private void btnRmvTrackDisc2_Click(object sender, EventArgs e)
+        {
+            lstTracks2.Items.Remove(lstTracks2.SelectedItem);
+        }
+    }
+}
+
+############ TestRecords, Record and DoubleRecord are below ############
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace RecordStore
+{
+    static class TestRecords
+    {
+        /// <summary>
+        /// The main entry point for the application.
+        /// </summary>
+        [STAThread]
+        static void Main()
+        {
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new Form1());
+        }
+    }
+}
+
+############ Record.cs, DoubleRecord.cs and Form1.Designer.cs are below ############
+using System;
+
+class Record
+{
+    private string artistName, albumName;
+    private string[] trackList;
+
+    public Record() { }
+
+    public Record(string artist, string album, string[] tracks)
+    {
+        artistName = artist;
+        albumName = album;
+        trackList = tracks;
+    }
+
+    public string ArtistName
+    {
+        get { return artistName; }
+        set { artistName = value; }
+    }
+
+    public string AlbumName
+    {
+        get { return albumName; }
+        set { albumName = value; }
+    }
+
+    public string[] TrackList
+    {
+        get { return trackList; }
+        set { trackList = value; }
+    }
+
+    public override string ToString()
+    {
+        string listedTracks = ""; 
+
+        for (int x = 1; x <= trackList.Length; x++)
+        {
+            listedTracks += x + ". " + trackList[(x-1)] + "\n";
+        }
+        return string.Format("\n{0}     {1}\n{2}\n", artistName, 
+									albumName, listedTracks);
+    }
+}
+
+############ DoubleRecord.cs, Form1.Designer.cs is below ############
+using System;
+
+class DoubleRecord : Record
+{
+    private string[] trackList2;
+
+    public DoubleRecord() { }
+
+    public DoubleRecord(string artist, string album, 
+						string[] tracks, string[] tracks2)
+        : base (artist, album, tracks)
+    {
+        trackList2 = tracks2;
+    }
+
+    public string[] TrackList2
+    {
+        get { return trackList2; }
+        set { trackList2 = value; }
+    }
+    public override string ToString()
+    {
+        string listedTracks2 = "";
+
+        for (int x = 1; x <= trackList2.Length; x++)
+        {
+            listedTracks2 += x + ". " + trackList2[(x - 1)] + "\n";
+        }
+
+        return string.Format("{0}{1}\n", base.ToString(), listedTracks2);
+    }
+}
+
+
+############ Form1.Designer.cs ############
+namespace RecordStore
+{
+    partial class Form1
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed 
+		/// resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.btnClear = new System.Windows.Forms.Button();
+            this.btnAddTrackDisc2 = new System.Windows.Forms.Button();
+            this.lblDisc2 = new System.Windows.Forms.Label();
+            this.lblDisc1 = new System.Windows.Forms.Label();
+            this.lstTracks2 = new System.Windows.Forms.ListBox();
+            this.btnAddTrackDisc1 = new System.Windows.Forms.Button();
+            this.txtTrack = new System.Windows.Forms.TextBox();
+            this.lblTracklist = new System.Windows.Forms.Label();
+            this.lstTracks1 = new System.Windows.Forms.ListBox();
+            this.rdoDouble = new System.Windows.Forms.RadioButton();
+            this.rdoSingle = new System.Windows.Forms.RadioButton();
+            this.btnSubmit = new System.Windows.Forms.Button();
+            this.txtAlbumName = new System.Windows.Forms.TextBox();
+            this.txtArtistName = new System.Windows.Forms.TextBox();
+            this.lblAlbumName = new System.Windows.Forms.Label();
+            this.lblArtistName = new System.Windows.Forms.Label();
+            this.lblTtl = new System.Windows.Forms.Label();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.lblAlbumList = new System.Windows.Forms.Label();
+            this.btnRmvTrackDisc1 = new System.Windows.Forms.Button();
+            this.btnRmvTrackDisc2 = new System.Windows.Forms.Button();
+            this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl1.Location = new System.Drawing.Point(0, 0);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(435, 412);
+            this.tabControl1.TabIndex = 0;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.btnRmvTrackDisc2);
+            this.tabPage1.Controls.Add(this.btnRmvTrackDisc1);
+            this.tabPage1.Controls.Add(this.btnClear);
+            this.tabPage1.Controls.Add(this.btnAddTrackDisc2);
+            this.tabPage1.Controls.Add(this.lblDisc2);
+            this.tabPage1.Controls.Add(this.lblDisc1);
+            this.tabPage1.Controls.Add(this.lstTracks2);
+            this.tabPage1.Controls.Add(this.btnAddTrackDisc1);
+            this.tabPage1.Controls.Add(this.txtTrack);
+            this.tabPage1.Controls.Add(this.lblTracklist);
+            this.tabPage1.Controls.Add(this.lstTracks1);
+            this.tabPage1.Controls.Add(this.rdoDouble);
+            this.tabPage1.Controls.Add(this.rdoSingle);
+            this.tabPage1.Controls.Add(this.btnSubmit);
+            this.tabPage1.Controls.Add(this.txtAlbumName);
+            this.tabPage1.Controls.Add(this.txtArtistName);
+            this.tabPage1.Controls.Add(this.lblAlbumName);
+            this.tabPage1.Controls.Add(this.lblArtistName);
+            this.tabPage1.Controls.Add(this.lblTtl);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(427, 386);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Album Entry";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // btnClear
+            // 
+            this.btnClear.Location = new System.Drawing.Point(220, 355);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(75, 23);
+            this.btnClear.TabIndex = 16;
+            this.btnClear.Text = "Clear";
+            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            // 
+            // btnAddTrackDisc2
+            // 
+            this.btnAddTrackDisc2.Location = new System.Drawing.Point(262, 270);
+            this.btnAddTrackDisc2.Name = "btnAddTrackDisc2";
+            this.btnAddTrackDisc2.Size = new System.Drawing.Size(50, 23);
+            this.btnAddTrackDisc2.TabIndex = 15;
+            this.btnAddTrackDisc2.Text = "Add";
+            this.btnAddTrackDisc2.UseVisualStyleBackColor = true;
+            this.btnAddTrackDisc2.Click += new System.EventHandler(this.btnAddTrackDisc2_Click);
+            // 
+            // lblDisc2
+            // 
+            this.lblDisc2.AutoSize = true;
+            this.lblDisc2.Location = new System.Drawing.Point(291, 153);
+            this.lblDisc2.Name = "lblDisc2";
+            this.lblDisc2.Size = new System.Drawing.Size(52, 13);
+            this.lblDisc2.TabIndex = 14;
+            this.lblDisc2.Text = "Disc Two";
+            // 
+            // lblDisc1
+            // 
+            this.lblDisc1.AutoSize = true;
+            this.lblDisc1.Location = new System.Drawing.Point(170, 153);
+            this.lblDisc1.Name = "lblDisc1";
+            this.lblDisc1.Size = new System.Drawing.Size(51, 13);
+            this.lblDisc1.TabIndex = 13;
+            this.lblDisc1.Text = "Disc One";
+            // 
+            // lstTracks2
+            // 
+            this.lstTracks2.FormattingEnabled = true;
+            this.lstTracks2.Location = new System.Drawing.Point(262, 169);
+            this.lstTracks2.Name = "lstTracks2";
+            this.lstTracks2.Size = new System.Drawing.Size(120, 95);
+            this.lstTracks2.TabIndex = 12;
+            // 
+            // btnAddTrackDisc1
+            // 
+            this.btnAddTrackDisc1.Location = new System.Drawing.Point(136, 270);
+            this.btnAddTrackDisc1.Name = "btnAddTrackDisc1";
+            this.btnAddTrackDisc1.Size = new System.Drawing.Size(48, 23);
+            this.btnAddTrackDisc1.TabIndex = 11;
+            this.btnAddTrackDisc1.Text = "Add";
+            this.btnAddTrackDisc1.UseVisualStyleBackColor = true;
+            this.btnAddTrackDisc1.Click += new System.EventHandler(this.btnAddTrack_Click);
+            // 
+            // txtTrack
+            // 
+            this.txtTrack.Location = new System.Drawing.Point(30, 186);
+            this.txtTrack.Name = "txtTrack";
+            this.txtTrack.Size = new System.Drawing.Size(100, 20);
+            this.txtTrack.TabIndex = 10;
+            // 
+            // lblTracklist
+            // 
+            this.lblTracklist.AutoSize = true;
+            this.lblTracklist.Location = new System.Drawing.Point(80, 170);
+            this.lblTracklist.Name = "lblTracklist";
+            this.lblTracklist.Size = new System.Drawing.Size(50, 13);
+            this.lblTracklist.TabIndex = 9;
+            this.lblTracklist.Text = "Tracklist:";
+            // 
+            // lstTracks1
+            // 
+            this.lstTracks1.FormattingEnabled = true;
+            this.lstTracks1.Location = new System.Drawing.Point(136, 169);
+            this.lstTracks1.Name = "lstTracks1";
+            this.lstTracks1.Size = new System.Drawing.Size(120, 95);
+            this.lstTracks1.TabIndex = 8;
+            // 
+            // rdoDouble
+            // 
+            this.rdoDouble.AutoSize = true;
+            this.rdoDouble.Location = new System.Drawing.Point(221, 114);
+            this.rdoDouble.Name = "rdoDouble";
+            this.rdoDouble.Size = new System.Drawing.Size(91, 17);
+            this.rdoDouble.TabIndex = 7;
+            this.rdoDouble.TabStop = true;
+            this.rdoDouble.Text = "Double Album";
+            this.rdoDouble.UseVisualStyleBackColor = true;
+            this.rdoDouble.CheckedChanged += new System.EventHandler(this.rdoDouble_CheckedChanged);
+            // 
+            // rdoSingle
+            // 
+            this.rdoSingle.AutoSize = true;
+            this.rdoSingle.Checked = true;
+            this.rdoSingle.Location = new System.Drawing.Point(129, 114);
+            this.rdoSingle.Name = "rdoSingle";
+            this.rdoSingle.Size = new System.Drawing.Size(86, 17);
+            this.rdoSingle.TabIndex = 6;
+            this.rdoSingle.TabStop = true;
+            this.rdoSingle.Text = "Single Album";
+            this.rdoSingle.UseVisualStyleBackColor = true;
+            this.rdoSingle.CheckedChanged += new System.EventHandler(this.rdoSingle_CheckedChanged);
+            // 
+            // btnSubmit
+            // 
+            this.btnSubmit.Location = new System.Drawing.Point(131, 355);
+            this.btnSubmit.Name = "btnSubmit";
+            this.btnSubmit.Size = new System.Drawing.Size(75, 23);
+            this.btnSubmit.TabIndex = 5;
+            this.btnSubmit.Text = "Add Record";
+            this.btnSubmit.UseVisualStyleBackColor = true;
+            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
+            // 
+            // txtAlbumName
+            // 
+            this.txtAlbumName.Location = new System.Drawing.Point(194, 77);
+            this.txtAlbumName.Name = "txtAlbumName";
+            this.txtAlbumName.Size = new System.Drawing.Size(100, 20);
+            this.txtAlbumName.TabIndex = 4;
+            // 
+            // txtArtistName
+            // 
+            this.txtArtistName.Location = new System.Drawing.Point(194, 53);
+            this.txtArtistName.Name = "txtArtistName";
+            this.txtArtistName.Size = new System.Drawing.Size(100, 20);
+            this.txtArtistName.TabIndex = 3;
+            // 
+            // lblAlbumName
+            // 
+            this.lblAlbumName.AutoSize = true;
+            this.lblAlbumName.Location = new System.Drawing.Point(133, 77);
+            this.lblAlbumName.Name = "lblAlbumName";
+            this.lblAlbumName.Size = new System.Drawing.Size(39, 13);
+            this.lblAlbumName.TabIndex = 2;
+            this.lblAlbumName.Text = "Album:";
+            // 
+            // lblArtistName
+            // 
+            this.lblArtistName.AutoSize = true;
+            this.lblArtistName.Location = new System.Drawing.Point(139, 53);
+            this.lblArtistName.Name = "lblArtistName";
+            this.lblArtistName.Size = new System.Drawing.Size(33, 13);
+            this.lblArtistName.TabIndex = 1;
+            this.lblArtistName.Text = "Artist:";
+            // 
+            // lblTtl
+            // 
+            this.lblTtl.AutoSize = true;
+            this.lblTtl.Font = new System.Drawing.Font("Script MT Bold", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTtl.Location = new System.Drawing.Point(93, 7);
+            this.lblTtl.Name = "lblTtl";
+            this.lblTtl.Size = new System.Drawing.Size(240, 38);
+            this.lblTtl.TabIndex = 0;
+            this.lblTtl.Text = "Record Collection";
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.lblAlbumList);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(427, 386);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Album List";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // lblAlbumList
+            // 
+            this.lblAlbumList.AutoSize = true;
+            this.lblAlbumList.Location = new System.Drawing.Point(84, 65);
+            this.lblAlbumList.Name = "lblAlbumList";
+            this.lblAlbumList.Size = new System.Drawing.Size(0, 13);
+            this.lblAlbumList.TabIndex = 0;
+            // 
+            // btnRmvTrackDisc1
+            // 
+            this.btnRmvTrackDisc1.Location = new System.Drawing.Point(190, 270);
+            this.btnRmvTrackDisc1.Name = "btnRmvTrackDisc1";
+            this.btnRmvTrackDisc1.Size = new System.Drawing.Size(66, 23);
+            this.btnRmvTrackDisc1.TabIndex = 17;
+            this.btnRmvTrackDisc1.Text = "Remove";
+            this.btnRmvTrackDisc1.UseVisualStyleBackColor = true;
+            this.btnRmvTrackDisc1.Click += new System.EventHandler(this.btnRmvTrackDisc1_Click);
+            // 
+            // btnRmvTrackDisc2
+            // 
+            this.btnRmvTrackDisc2.Location = new System.Drawing.Point(318, 270);
+            this.btnRmvTrackDisc2.Name = "btnRmvTrackDisc2";
+            this.btnRmvTrackDisc2.Size = new System.Drawing.Size(64, 23);
+            this.btnRmvTrackDisc2.TabIndex = 18;
+            this.btnRmvTrackDisc2.Text = "Remove";
+            this.btnRmvTrackDisc2.UseVisualStyleBackColor = true;
+            this.btnRmvTrackDisc2.Click += new System.EventHandler(this.btnRmvTrackDisc2_Click);
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(435, 412);
+            this.Controls.Add(this.tabControl1);
+            this.Name = "Form1";
+            this.Text = "Form1";
+            this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.Button btnSubmit;
+        private System.Windows.Forms.TextBox txtAlbumName;
+        private System.Windows.Forms.TextBox txtArtistName;
+        private System.Windows.Forms.Label lblAlbumName;
+        private System.Windows.Forms.Label lblArtistName;
+        private System.Windows.Forms.Label lblTtl;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.Label lblAlbumList;
+        private System.Windows.Forms.RadioButton rdoDouble;
+        private System.Windows.Forms.RadioButton rdoSingle;
+        private System.Windows.Forms.ListBox lstTracks1;
+        private System.Windows.Forms.Button btnAddTrackDisc1;
+        private System.Windows.Forms.TextBox txtTrack;
+        private System.Windows.Forms.Label lblTracklist;
+        private System.Windows.Forms.ListBox lstTracks2;
+        private System.Windows.Forms.Label lblDisc2;
+        private System.Windows.Forms.Label lblDisc1;
+        private System.Windows.Forms.Button btnAddTrackDisc2;
+        private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.Button btnRmvTrackDisc2;
+        private System.Windows.Forms.Button btnRmvTrackDisc1;
+    }
+}

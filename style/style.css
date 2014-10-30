@@ -199,21 +199,24 @@ margin: 0;
 			width : 95%; 
 		}
 		#previewCode {
+			white-space: pre-wrap;
 			background-color : #eee; 
 			border :  1px #000 solid; 
 			color : #000; 
 			display : block; 
+			height : 220px; 
 			margin : 0.5% auto; 
+			overflow-y : auto; 
 			padding : 0.5%; 
 			text-align: left;		
 			width : 95%; 
 		}
 		#previewCodeLg {
+			white-space: pre-wrap;
 			background-color : #eee; 
 			border :  1px #000 solid; 
 			color : #000; 
 			display : block; 
-			height : 470px; 
 			margin : 0.5% auto; 
 			padding : 0.5%; 
 			text-align: left;		
@@ -232,8 +235,9 @@ margin: 0;
 
 
 #definitionTable, #definitionTable td 	{border: 1px #000 solid; margin: 0; padding: 0; border-collapse: collapse;}
-#definitionTable td {padding: 2px;}
-#definitionTable td:nth-child(2) {font-weight: bold; width: 200px;}
+#definitionTable td 						{padding: 2px;}
+#definitionTable td:nth-child(2) 		{font-weight: bold; width: 200px;}
+
 a:link 					{color : #374152; text-decoration : none; }
 a:visited 				{color : #374152; text-decoration : none; }
 a:active 				{color : #374152; text-decoration : none; }
@@ -241,10 +245,10 @@ a:hover 					{color : #000; text-decoration : underline; }
 
 #mainHeader a:link, 		
 #mainHeader a:visited, 	
-#mainHeader a:active {color: #fff; text-decoration: none;}
-#mainHeader a:hover  {color: #eee;}
+#mainHeader a:active 	{color: #fff; text-decoration: none;}
+#mainHeader a:hover  	{color: #eee;}
 
 #codeArea a:link, 		#codeBanner a:link, 		#tagList a:link 			{color : #1a35bd; text-decoration : none; }
 #codeArea a:visited, 	#codeBanner a:visited, 	#tagList a:visited 		{color : #1a35bd; text-decoration : none; }
-#codeArea a:active, 	#codeBanner a:active, 	#tagList a:active 		{color : #1a35bd; text-decoration : none; }
-#codeArea a:hover, 	#codeBanner a:hover, 	#tagList a:hover 		{color : #8e9ce0; text-decoration : none; }
+#codeArea a:active, 		#codeBanner a:active, 	#tagList a:active 		{color : #1a35bd; text-decoration : none; }
+#codeArea a:hover, 		#codeBanner a:hover, 	#tagList a:hover 		{color : #8e9ce0; text-decoration : none; }

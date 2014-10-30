@@ -1,0 +1,48 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Wk5_6ex2
+{
+    public partial class Form1 : Form
+    {
+        // Write an application which makes use of a generic method – 
+        // Max(T num1 ,T num2) which finds largest of any two numbers 
+        // of a given type. For exmple when you have a generic definition, 
+        // then you will be calling this method to find largest of 
+        // two integers, two doubles, two floats etc.
+
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+            dynamic num1 = txtNum1.Text;
+            dynamic num2 = txtNum2.Text;
+
+            lblResult.Text = Max(num1, num2).ToString();
+
+        }
+
+        public static double Max<T>(T num1, T num2) {
+            double n1 = Convert.ToDouble(num1);
+            double n2 = Convert.ToDouble(num2);
+            double largest;
+
+            if (n1 > n2)
+                largest = n1;
+            else 
+                largest = n2;
+
+        return largest;
+        }
+    }
+}

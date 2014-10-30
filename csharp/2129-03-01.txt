@@ -1,0 +1,40 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Wk5and6_Methods_and_Classes
+{
+    // Write an application which makes use of a generic method – 
+    // Sum(T num1 ,T num2) which adds any two numbers of a given type. 
+    // For example when you have a generic definition, then you will be 
+    // calling this method to add two integers, two doubles, two floats etc.
+
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+            dynamic num1 = txtNum1.Text;
+            dynamic num2 = txtNum2.Text;
+
+            lblResult.Text = addNumbers(num1, num2).ToString();
+        }
+
+        public static double addNumbers<T>(T n1, T n2)
+        {
+            double result = Convert.ToDouble(n1);
+            result += Convert.ToDouble(n2);
+            return result;
+        }
+    }
+}

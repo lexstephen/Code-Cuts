@@ -74,6 +74,12 @@
     $t70 = array ('file' => '2129-03-01', 'title' => 'Generic Method to Add Numbers', 'cat' => 'csharp', 'author' => 'Alexis Dicks-Stephen', 'fileTypePreview' => 'txt', 'fileTypeCode' => 'txt', 'showPreview' => 0, 'showCode' => 1);
     $t71 = array ('file' => '2129-03-02', 'title' => 'Generic Method to Find Max Number', 'cat' => 'csharp', 'author' => 'Alexis Dicks-Stephen', 'fileTypePreview' => 'txt', 'fileTypeCode' => 'txt', 'showPreview' => 0, 'showCode' => 1);
     $t72 = array ('file' => '2129-04-01', 'title' => 'Record Collection', 'cat' => 'csharp', 'author' => 'Alexis Dicks-Stephen', 'fileTypePreview' => 'txt', 'fileTypeCode' => 'txt', 'showPreview' => 0, 'showCode' => 1);
+	$t73 = array ('file' => '1230-07-01', 'title' => 'Phone Store', 'cat' => 'PHP', 'author' => 'Alexis Dicks-Stephen', 'fileTypePreview' => 'php', 'fileTypeCode' => 'txt', 'showPreview' => 1, 'showCode' => 1);
+	$t74 = array ('file' => '1230-08-01', 'title' => 'Parent and Child Classes', 'cat' => 'PHP', 'author' => 'Alexis Dicks-Stephen', 'fileTypePreview' => 'php', 'fileTypeCode' => 'txt', 'showPreview' => 1, 'showCode' => 1);
+    $t75 = array ('file' => '1230-08-02', 'title' => 'Final Functions', 'cat' => 'PHP', 'author' => 'Alexis Dicks-Stephen', 'fileTypePreview' => 'php', 'fileTypeCode' => 'txt', 'showPreview' => 1, 'showCode' => 1);
+    $t76 = array ('file' => '1230-08-03', 'title' => 'Abstract Classes', 'cat' => 'PHP', 'author' => 'Alexis Dicks-Stephen', 'fileTypePreview' => 'php', 'fileTypeCode' => 'txt', 'showPreview' => 1, 'showCode' => 1);
+    $t77 = array ('file' => '1230-08-04', 'title' => 'Interfaces', 'cat' => 'PHP', 'author' => 'Alexis Dicks-Stephen', 'fileTypePreview' => 'php', 'fileTypeCode' => 'txt', 'showPreview' => 1, 'showCode' => 1);
+    $t78 = array ('file' => '2130-06-01', 'title' => 'Student, Staff and Faculty inheriting from Person superclass', 'cat' => 'Java', 'author' => 'Alexis Dicks-Stephen', 'fileTypePreview' => 'txt', 'fileTypeCode' => 'txt', 'showPreview' => 0, 'showCode' => 1);
 	
 	
 	
@@ -151,6 +157,12 @@
 	$t70['tags'] = array ('dynamic', 'number conversion', 'Convert.ToDouble', 'Convert', 'ToDouble', 'method', 'generic method', '<T>', 'ToString', 'return');
 	$t71['tags'] = array ('dynamic', 'number conversion', 'Convert.ToDouble', 'Convert', 'ToDouble', 'method', 'generic method', '<T>', 'ToString', 'return', 'max');
 	$t72['tags'] = array ('inheritance', 'polymorphism', 'radio buttons', 'base class', 'derived class', 'array', 'Visible', 'Checked', 'Textbox', 'Tabs', 'Clear', 'Listbox', 'Add', 'Remove', 'ToString', 'Items', 'Focus', 'Accessor', 'get', 'Mutator', 'set', 'for', 'string.Format', 'format specifier');
+	$t73['tags'] = array ('session', 'session_start', 'class', 'private', 'public', 'function', 'constructor', '__construct', 'this', 'get', 'set', 'instantiate', 'array_key_exists', 'return', 'foreach', 'isset', '$_SESSION');
+	$t74['tags'] = array ();
+	$t75['tags'] = array ();
+	$t76['tags'] = array ();
+	$t77['tags'] = array ();
+	$t78['tags'] = array ();
 	
 	/* my attempt to automate the array building is not working 
 	$numberOfTutorials = 28;
@@ -165,10 +177,10 @@
 	*/
 	
 // merge the arrays into one super array to be used henceforth
-	$tutorials = array($t1, $t2, $t3, $t4, $t5, $t6, $t7, $t8, $t9, $t10, $t11, $t12, $t13, $t14, $t15, $t16, $t17, $t18, $t19, $t20, $t21, $t22, $t23, $t24, $t25, $t26, $t27, $t28, $t29, $t30, $t31, $t32, $t33, $t34, $t35, $t36, $t37, $t38, $t39, $t40, $t41, $t42, $t43, $t44, $t45, $t46, $t47, $t48, $t49, $t50, $t51, $t52, $t53, $t54, $t55, $t56, $t57, $t58, $t59, $t60, $t61, $t62, $t63, $t64, $t65, $t66, $t67, $t68, $t69, $t70, $t71, $t72);
+	$tutorials = array($t1, $t2, $t3, $t4, $t5, $t6, $t7, $t8, $t9, $t10, $t11, $t12, $t13, $t14, $t15, $t16, $t17, $t18, $t19, $t20, $t21, $t22, $t23, $t24, $t25, $t26, $t27, $t28, $t29, $t30, $t31, $t32, $t33, $t34, $t35, $t36, $t37, $t38, $t39, $t40, $t41, $t42, $t43, $t44, $t45, $t46, $t47, $t48, $t49, $t50, $t51, $t52, $t53, $t54, $t55, $t56, $t57, $t58, $t59, $t60, $t61, $t62, $t63, $t64, $t65, $t66, $t67, $t68, $t69, $t70, $t71, $t72, $t73, $t74, $t75, $t76, $t77, $t78);
 	
 // merge all the tag arrays and then return unique entries
-	$preciseTags = array_unique(array_merge($t1['tags'], $t2['tags'], $t3['tags'], $t4['tags'], $t5['tags'], $t6['tags'], $t7['tags'], $t8['tags'], $t9['tags'], $t10['tags'], $t11['tags'], $t12['tags'], $t13['tags'], $t14['tags'], $t15['tags'], $t16['tags'], $t17['tags'], $t18['tags'], $t19['tags'], $t20['tags'], $t21['tags'], $t22['tags'], $t23['tags'], $t24['tags'], $t25['tags'], $t26['tags'], $t27['tags'], $t28['tags'], $t29['tags'], $t30['tags'], $t31['tags'], $t32['tags'], $t33['tags'], $t34['tags'], $t35['tags'], $t36['tags'], $t37['tags'], $t38['tags'], $t39['tags'], $t40['tags'], $t41['tags'], $t42['tags'], $t43['tags'], $t44['tags'], $t45['tags'], $t46['tags'], $t47['tags'], $t48['tags'], $t49['tags'], $t50['tags'], $t51['tags'], $t52['tags'], $t53['tags'], $t54['tags'], $t55['tags'], $t56['tags'], $t57['tags'], $t58['tags'], $t59['tags'], $t60['tags'], $t61['tags'], $t62['tags'], $t63['tags'], $t64['tags'], $t65['tags'], $t66['tags'], $t67['tags'], $t68['tags'], $t69['tags'], $t70['tags'], $t71['tags'], $t72['tags']));
+	$preciseTags = array_unique(array_merge($t1['tags'], $t2['tags'], $t3['tags'], $t4['tags'], $t5['tags'], $t6['tags'], $t7['tags'], $t8['tags'], $t9['tags'], $t10['tags'], $t11['tags'], $t12['tags'], $t13['tags'], $t14['tags'], $t15['tags'], $t16['tags'], $t17['tags'], $t18['tags'], $t19['tags'], $t20['tags'], $t21['tags'], $t22['tags'], $t23['tags'], $t24['tags'], $t25['tags'], $t26['tags'], $t27['tags'], $t28['tags'], $t29['tags'], $t30['tags'], $t31['tags'], $t32['tags'], $t33['tags'], $t34['tags'], $t35['tags'], $t36['tags'], $t37['tags'], $t38['tags'], $t39['tags'], $t40['tags'], $t41['tags'], $t42['tags'], $t43['tags'], $t44['tags'], $t45['tags'], $t46['tags'], $t47['tags'], $t48['tags'], $t49['tags'], $t50['tags'], $t51['tags'], $t52['tags'], $t53['tags'], $t54['tags'], $t55['tags'], $t56['tags'], $t57['tags'], $t58['tags'], $t59['tags'], $t60['tags'], $t61['tags'], $t62['tags'], $t63['tags'], $t64['tags'], $t65['tags'], $t66['tags'], $t67['tags'], $t68['tags'], $t69['tags'], $t70['tags'], $t71['tags'], $t72['tags'], $t73['tags'], $t74['tags'], $t75['tags'], $t76['tags'], $t77['tags'], $t78['tags']));
 	
 // alphabetize the list of tags
 	sort($preciseTags);

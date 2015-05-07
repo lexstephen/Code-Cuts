@@ -57,14 +57,14 @@
 		}
 	}
 		if (($showCode) && (!$showPreview)) {
-		echo '<pre id="previewCodeLg">';
+		echo '<textarea id="previewCodeLg">';
 		include $cat.'/'.$file.'.'.$fileTypeCode;
-		echo '</pre>';
+		echo '</textarea>';
 	}
 		if (($showCode) && ($showPreview)) {
-		echo '<pre id="previewCode">';
+		echo '<textarea id="previewCode">';
 		include $cat.'/'.$file.'.'.$fileTypeCode;
-		echo '</pre>';
+		echo '</textarea>';
 	}
 
 /*	

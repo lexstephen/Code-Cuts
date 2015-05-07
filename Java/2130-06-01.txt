@@ -1,0 +1,314 @@
+/** File structure:
+*	AllThePeople -> contains the main
+*	MyDate -> sets up a date object (year is not working right)
+*	Person -> superclass for Student and Employee
+*	Student
+*	Employee -> superclass for Staff and Faculty
+*	Staff
+*	Faculty */
+	
+/** ----------------------------------------------------------------------------------------------------
+* AllThePeople
+* ---------------------------------------------------------------------------------------------------- */
+package allthepeople;
+
+import java.text.NumberFormat;
+import java.util.Locale;
+import java.util.Scanner;
+
+/**
+ *
+ * @author Alexis Dicks-Stephen
+ * 
+ */
+
+public class AllThePeople {
+	public static void main(String[] args) {
+            Scanner input = new Scanner(System.in);
+            boolean goAgain = true;
+            try {
+                while (goAgain) {
+                    System.out.println("What do you do at George Brown?\nPlease type 'student', 'staff' or 'faculty'.");
+                    String choice = input.next();
+
+                    if (choice.toLowerCase().equals("student")) {
+                        askStudentQuestions();
+                        goAgain = false;
+                    } else if (choice.toLowerCase().equals("staff")) {
+                        askStaffQuestions();
+                        goAgain = false;
+                    } else if (choice.toLowerCase().equals("faculty")) {
+                        askFacultyQuestions();
+                        goAgain = false;
+                    } else  {
+                        System.out.println("Invalid entry.");
+                    }
+                }
+            }
+            catch(Exception ex) {
+                System.out.println("Sorry, an error occured.");
+            }
+            finally {
+                input.close();
+            }
+        }
+       
+        public static String[] askBasics() {
+            Scanner input = new Scanner(System.in);
+            String[] tempBasics = new String[4];
+                System.out.print("Please enter your name: ");
+                tempBasics[0] = input.nextLine();
+                System.out.print("Please enter your address: ");
+                tempBasics[1] = input.nextLine();
+                System.out.print("Please enter your phone number: ");
+                tempBasics[2] = input.nextLine();
+                System.out.print("Please enter your email address: ");
+                tempBasics[3] = input.nextLine();
+            return tempBasics;
+        }
+        
+        public static String[] askEmployeeBasics() {
+            Scanner input = new Scanner(System.in);
+            String[] tempEmployee = new String[5];
+                System.out.print("Please enter your office location: ");
+                   tempEmployee[0] = input.nextLine();
+                System.out.print("Please enter your salary: ");
+                   tempEmployee[1] = (input.nextLine());
+                System.out.print("Please enter your hire date in the form of MM DD YYYY: ");
+                    tempEmployee[2] = input.next();
+                    tempEmployee[3] = input.next();
+                    tempEmployee[4] = input.next();
+            return tempEmployee;
+        }
+        
+        public static void askStudentQuestions() {
+            Scanner input = new Scanner(System.in);
+            String[] theBasics = new String[4];
+            Student studentGuy = new Student();   
+                theBasics = askBasics();
+                    studentGuy.setName(theBasics[0]);
+                    studentGuy.setAddress(theBasics[1]);
+                    studentGuy.setPhone(theBasics[2]);
+                    studentGuy.setEmail(theBasics[3]);
+                System.out.print("Please enter your school status: ");
+                    studentGuy.setStatus(input.nextLine());
+            System.out.println(studentGuy);
+        }
+        
+        public static void askFacultyQuestions() {
+            Scanner input = new Scanner(System.in);
+            String[] theBasics = new String[4];
+            String[] empBasics = new String[5];
+            Faculty facultyGuy = new Faculty();
+                theBasics = askBasics();
+                    facultyGuy.setName(theBasics[0]);
+                    facultyGuy.setAddress(theBasics[1]);
+                    facultyGuy.setPhone(theBasics[2]);
+                    facultyGuy.setEmail(theBasics[3]);
+                empBasics = askEmployeeBasics();
+                    facultyGuy.setOffice(empBasics[0]);
+                    facultyGuy.setSalary(Double.parseDouble(empBasics[1]));
+                    facultyGuy.setDateHired(Integer.parseInt(empBasics[2]), Integer.parseInt(empBasics[3]), Integer.parseInt(empBasics[4]));
+                System.out.print("Please enter your office hours: ");
+                    facultyGuy.setOfficeHours(input.nextLine());
+                System.out.print("Please enter your rank: ");
+                    facultyGuy.setRank(input.nextLine());
+            System.out.println(facultyGuy);
+        }
+        
+        public static void askStaffQuestions() {
+            Scanner input = new Scanner(System.in);
+            String[] theBasics = new String[4];
+            String[] empBasics = new String[5];
+            Staff staffGuy = new Staff();
+                theBasics = askBasics();
+                    staffGuy.setName(theBasics[0]);
+                    staffGuy.setAddress(theBasics[1]);
+                    staffGuy.setPhone(theBasics[2]);
+                    staffGuy.setEmail(theBasics[3]);
+                empBasics = askEmployeeBasics();
+                    staffGuy.setOffice(empBasics[0]);
+                    staffGuy.setSalary(Double.parseDouble(empBasics[1]));
+                    staffGuy.setDateHired(Integer.parseInt(empBasics[2]), Integer.parseInt(empBasics[3]), Integer.parseInt(empBasics[4]));
+                System.out.print("Please enter your title: ");
+                    staffGuy.setTitle(input.nextLine());
+            System.out.println(staffGuy);
+        }
+}
+/** ----------------------------------------------------------------------------------------------------
+* MyDate
+* ---------------------------------------------------------------------------------------------------- */
+
+/**
+ *
+ * @author Alexis Dicks-Stephen
+ * 
+ */
+
+import java.util.Date;
+import java.util.Calendar;
+
+public class MyDate {
+    int theMonth, theDate, theYear;
+    Date myDateDate;
+    
+    public MyDate(int aMonth, int aDate, int aYear) {
+        theMonth = aMonth - 1;
+        theDate = aDate;
+        theYear = aYear;
+        
+        Calendar cal = Calendar.getInstance();
+        cal.set(Calendar.MONTH, theMonth);
+        cal.set(Calendar.DATE, theDate);
+        cal.set(Calendar.YEAR, theYear);
+        cal.set(Calendar.HOUR_OF_DAY, 0);
+        cal.set(Calendar.MINUTE, 0);
+        cal.set(Calendar.SECOND, 0);
+        cal.set(Calendar.MILLISECOND, 0);
+        
+        this.myDateDate = cal.getTime();
+    }
+    
+    @Override public String toString() {
+        return this.myDateDate.toString();
+    }
+}
+/** ----------------------------------------------------------------------------------------------------
+* Person
+* ---------------------------------------------------------------------------------------------------- */
+
+/**
+ *
+ * @author Alexis Dicks-Stephen
+ * 
+ */
+
+public abstract class Person {
+    protected String name, address, phoneNumber, emailAddress;
+    
+    protected Person() {}
+    
+    protected Person(String theirName, String theirAddress,
+            String theirPhoneNumber, String theirEmailAddress) {
+	this.name = theirName;
+        this.address = theirAddress;
+        this.phoneNumber = theirPhoneNumber;
+        this.emailAddress = theirEmailAddress;
+    }
+    
+    public String setName(String aName)         {this.name = aName; return name;}
+    public String setAddress(String anAddress)  {this.address = anAddress; return address;}
+    public String setPhone(String aPhone)       {this.phoneNumber = aPhone; return phoneNumber;}
+    public String setEmail(String anEmail)      {this.emailAddress = anEmail; return emailAddress;}
+    
+    
+    public String toString() {
+        return "-----------------------------------\n"
+                + "Name:\t\t" + name 
+                + "\nAddress:\t" + address 
+                + "\nPhone Number:\t" + phoneNumber 
+                + "\nEmail Address:\t" + emailAddress;
+    }
+}
+/** ----------------------------------------------------------------------------------------------------
+* Student
+* ---------------------------------------------------------------------------------------------------- */
+
+/**
+ *
+ * @author Alexis Dicks-Stephen
+ * 
+ */
+
+class Student extends Person {
+    String status;
+    
+    public Student() {}
+    
+    public String setStatus(String aStatus) 
+        {this.status = aStatus; return status;}
+    
+    @Override public String toString() {
+        return super.toString() + "\nStatus: \t" + status;
+    }
+}
+/** ----------------------------------------------------------------------------------------------------
+* Employee
+* ---------------------------------------------------------------------------------------------------- */
+/*
+
+/**
+ *
+ * @author Alexis Dicks-Stephen
+ * 
+ */
+
+class Employee extends Person {
+    String office;
+    double salary;
+    MyDate dateHired;
+    int hireMonth, hireDay, hireYear;
+    
+    //this sets up the salary to be formatted nicely
+    Locale locale = new Locale("en", "US");
+    NumberFormat currencyFormatter = NumberFormat.getCurrencyInstance(locale);
+    
+    public Employee() {}
+    
+    public String setOffice(String aOffice) {this.office = aOffice; return office;}
+    public double setSalary(double aSalary) {this.salary = aSalary; return salary;}
+    public MyDate setDateHired(int aHireMonth, int aHireDay, int aHireYear) {
+        dateHired = new MyDate(aHireMonth, aHireDay, aHireDay); // send in as mm/dd/yyyy}
+        return dateHired;
+    }
+    
+    @Override public String toString() {
+        return super.toString() + "\nDate Hired:\t" + dateHired + "\nSalary:\t\t" + currencyFormatter.format(salary) ;
+    }
+}
+/** ----------------------------------------------------------------------------------------------------
+* Staff
+* ---------------------------------------------------------------------------------------------------- */
+/*
+
+/**
+ *
+ * @author Alexis Dicks-Stephen
+ * 
+ */
+
+class Staff extends Employee {
+    String title;
+    public Staff() {}
+    
+    public String setTitle(String aTitle) {this.title = aTitle; return title;}
+    
+    @Override public String toString() {
+        return super.toString() + "\nTitle:\t\t\t" + title;
+    }
+}
+/** ----------------------------------------------------------------------------------------------------
+* Faculty
+* ---------------------------------------------------------------------------------------------------- */
+/*
+
+/**
+ *
+ * @author Alexis Dicks-Stephen
+ * 
+ */
+
+class Faculty extends Employee {
+    String officeHours, rank;
+    int hireMonth, hireDate, hireYear;
+    MyDate dateHired;
+    
+    public Faculty() {}
+    
+    public String setOfficeHours(String anOfficeHour) {this.officeHours = anOfficeHour; return officeHours;}
+    public String setRank(String aRank) {this.rank = aRank; return rank;}
+    
+    @Override public String toString() {
+        return super.toString() + "\nOffice Hours:\t" + officeHours + "\nRank:\t\t" + rank;
+    }
+}

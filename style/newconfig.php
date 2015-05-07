@@ -99,17 +99,41 @@
         
         public function listCats()
         {
-            $catQry = "SELECT `name` FROM `category` 
+            $catQry = "SELECT * FROM `category` 
                     JOIN `catmap`
                     ON `category`.`id` = `catmap`.`cat_id`
                     ORDER BY `name` ASC";
             $result = $this->con->query($catQry);
             $cats = $result->fetchAll();
             
+            $statement = '';
+            
+            foreach ($cats as $cat) {
+                    echo $cat['name'] . '<br>';
+                    $codeList = $this->listCodes($cat['cat_id']);
+            }
+            
+            $statement = rtrim($statement,', ');
+            
+            return $statement;
+        }
+        
+        public function listCodes($categoryID)
+        {
+            $catQry = "SELECT title
+                    FROM code 
+                    WHERE id = 
+                      (SELECT code_id 
+                        FROM catmap
+                        WHERE cat_id = $categoryID)
+                    ORDER BY title ASC";
+            $result = $this->con->query($catQry);
+            $cats = $result->fetchAll();
+            
             $kitties = '';
             
             foreach ($cats as $cat) {
-                    $kitties .= $cat['name'] . ', ';
+                    echo $cat['title'] . '<br>';
             }
             
             $kitties = rtrim($kitties,', ');

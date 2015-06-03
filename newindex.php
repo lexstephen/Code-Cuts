@@ -9,10 +9,8 @@
 	include 'style/header.php'; 	// header
 	
 	echo '<section id="mainSection">';
-	echo '<form class="searchForm" action="index.php" role="search">
+	echo '<form class="searchForm" action="newindex.php" role="search">
 				<input type="search" name="q" list="tagSearch"> 
-				<input type="hidden" name="cat" value=""> 
-				<input type="hidden" name="file" value=""><br>
 				<input type="submit" value="search">
 				<input type="reset" value="clear" onclick="hideSearchResults()">
 			</form>';
